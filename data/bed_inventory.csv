@@ -1,0 +1,231 @@
+bed_id,department,ward_name,bed_type,room_number,status,has_telemetry,has_ventilator_support,has_negative_pressure,turnaround_time_mins
+BED-101,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-101,Occupied,1,0,0,43
+BED-102,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-102,Available,1,0,0,46
+BED-103,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-103,Maintenance,1,1,0,35
+BED-104,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-104,Maintenance,1,0,0,32
+BED-105,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-105,Occupied,1,0,0,28
+BED-106,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-106,Available,1,1,0,30
+BED-107,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-107,Available,1,0,0,64
+BED-108,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-108,Occupied,1,0,0,49
+BED-109,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-109,Occupied,1,1,0,25
+BED-110,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-110,Available,1,0,0,26
+BED-111,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-111,Available,1,0,0,42
+BED-112,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-112,Occupied,1,1,0,42
+BED-113,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-113,Occupied,1,0,0,42
+BED-114,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-114,Occupied,1,0,0,35
+BED-115,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-115,Occupied,1,1,0,36
+BED-116,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-116,Occupied,1,0,0,40
+BED-117,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-117,Occupied,1,0,0,38
+BED-118,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-118,Available,1,1,0,18
+BED-119,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-119,Occupied,1,0,0,35
+BED-120,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-120,Occupied,1,0,0,30
+BED-121,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-121,Occupied,1,1,0,39
+BED-122,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-122,Occupied,1,0,0,64
+BED-123,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-123,Occupied,1,0,0,41
+BED-124,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-124,Occupied,1,1,0,35
+BED-125,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-125,Maintenance,1,0,0,46
+BED-126,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-126,Occupied,1,0,0,42
+BED-127,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-127,Occupied,1,1,0,41
+BED-128,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-128,Occupied,1,0,0,43
+BED-129,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-129,Occupied,1,0,0,56
+BED-130,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-130,Occupied,1,1,0,27
+BED-131,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-131,Occupied,1,0,0,42
+BED-132,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-132,Occupied,1,0,0,29
+BED-133,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-133,Occupied,1,1,0,42
+BED-134,Emergency,Floor 1 - Wing Alpha,ER Observation,EME-134,Available,1,0,0,29
+BED-135,Emergency,Floor 1 - Wing Alpha,ER Rapid Triage,EME-135,Maintenance,1,0,0,34
+BED-136,Emergency,Floor 1 - Wing Alpha,ER Resus Bay,EME-136,Occupied,1,1,0,35
+BED-137,ICU,Floor 2 - Critical Core,Surgical ICU (SICU),ICU-101,Available,1,1,0,46
+BED-138,ICU,Floor 2 - Critical Core,Cardiac Care (CCU),ICU-102,Occupied,1,1,0,46
+BED-139,ICU,Floor 2 - Critical Core,Neuro ICU,ICU-103,Occupied,1,1,0,26
+BED-140,ICU,Floor 2 - Critical Core,Medical ICU (MICU),ICU-104,Occupied,1,1,0,38
+BED-141,ICU,Floor 2 - Critical Core,Surgical ICU (SICU),ICU-105,Cleaning,1,1,0,31
+BED-142,ICU,Floor 2 - Critical Core,Cardiac Care (CCU),ICU-106,Occupied,1,1,0,26
+BED-143,ICU,Floor 2 - Critical Core,Neuro ICU,ICU-107,Occupied,1,1,0,36
+BED-144,ICU,Floor 2 - Critical Core,Medical ICU (MICU),ICU-108,Occupied,1,1,0,35
+BED-145,ICU,Floor 2 - Critical Core,Surgical ICU (SICU),ICU-109,Occupied,1,1,0,59
+BED-146,ICU,Floor 2 - Critical Core,Cardiac Care (CCU),ICU-110,Occupied,1,1,0,41
+BED-147,ICU,Floor 2 - Critical Core,Neuro ICU,ICU-111,Occupied,1,1,0,25
+BED-148,ICU,Floor 2 - Critical Core,Medical ICU (MICU),ICU-112,Occupied,1,1,0,32
+BED-149,ICU,Floor 2 - Critical Core,Surgical ICU (SICU),ICU-113,Occupied,1,1,0,47
+BED-150,ICU,Floor 2 - Critical Core,Cardiac Care (CCU),ICU-114,Occupied,1,1,0,56
+BED-151,ICU,Floor 2 - Critical Core,Neuro ICU,ICU-115,Occupied,1,1,0,23
+BED-152,ICU,Floor 2 - Critical Core,Medical ICU (MICU),ICU-116,Occupied,1,1,0,21
+BED-153,ICU,Floor 2 - Critical Core,Surgical ICU (SICU),ICU-117,Occupied,1,1,0,54
+BED-154,ICU,Floor 2 - Critical Core,Cardiac Care (CCU),ICU-118,Occupied,1,1,0,41
+BED-155,ICU,Floor 2 - Critical Core,Neuro ICU,ICU-119,Occupied,1,1,0,30
+BED-156,ICU,Floor 2 - Critical Core,Medical ICU (MICU),ICU-120,Available,1,1,0,42
+BED-157,ICU,Floor 2 - Critical Core,Surgical ICU (SICU),ICU-121,Occupied,1,1,0,14
+BED-158,ICU,Floor 2 - Critical Core,Cardiac Care (CCU),ICU-122,Occupied,1,1,0,38
+BED-159,ICU,Floor 2 - Critical Core,Neuro ICU,ICU-123,Occupied,1,1,0,40
+BED-160,ICU,Floor 2 - Critical Core,Medical ICU (MICU),ICU-124,Maintenance,1,1,0,46
+BED-161,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-101,Occupied,1,0,0,28
+BED-162,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-102,Occupied,1,0,0,38
+BED-163,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-103,Occupied,1,0,0,29
+BED-164,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-104,Occupied,1,0,0,40
+BED-165,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-105,Occupied,1,0,0,29
+BED-166,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-106,Available,1,0,0,34
+BED-167,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-107,Occupied,1,0,0,29
+BED-168,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-108,Available,1,0,0,43
+BED-169,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-109,Available,1,0,0,45
+BED-170,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-110,Occupied,1,0,0,35
+BED-171,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-111,Occupied,1,0,0,38
+BED-172,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-112,Occupied,1,0,0,24
+BED-173,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-113,Available,1,0,0,35
+BED-174,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-114,Occupied,1,0,0,37
+BED-175,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-115,Cleaning,1,0,0,61
+BED-176,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-116,Occupied,1,0,0,27
+BED-177,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-117,Occupied,1,0,0,51
+BED-178,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-118,Occupied,1,0,0,46
+BED-179,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-119,Occupied,1,0,0,40
+BED-180,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-120,Occupied,1,0,0,53
+BED-181,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-121,Occupied,1,0,0,41
+BED-182,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-122,Occupied,1,0,0,41
+BED-183,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-123,Occupied,1,0,0,37
+BED-184,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-124,Occupied,1,0,0,49
+BED-185,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-125,Occupied,1,0,0,47
+BED-186,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-126,Occupied,1,0,0,32
+BED-187,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-127,Occupied,1,0,0,26
+BED-188,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-128,Occupied,1,0,0,36
+BED-189,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-129,Available,1,0,0,30
+BED-190,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-130,Maintenance,1,0,0,37
+BED-191,Cardiology,Floor 3 - Heart Institute,Cardio Ward Bed,CAR-131,Occupied,1,0,0,49
+BED-192,Cardiology,Floor 3 - Heart Institute,Telemetry Step-Down,CAR-132,Occupied,1,0,0,33
+BED-193,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-101,Occupied,1,0,0,37
+BED-194,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-102,Occupied,1,0,0,38
+BED-195,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-103,Occupied,0,0,0,45
+BED-196,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-104,Occupied,0,0,0,17
+BED-197,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-105,Cleaning,1,0,0,32
+BED-198,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-106,Occupied,1,0,0,39
+BED-199,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-107,Cleaning,1,0,0,48
+BED-200,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-108,Occupied,1,0,0,33
+BED-201,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-109,Occupied,0,0,0,21
+BED-202,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-110,Occupied,1,0,0,43
+BED-203,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-111,Occupied,0,0,0,32
+BED-204,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-112,Occupied,1,0,0,27
+BED-205,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-113,Occupied,1,0,0,32
+BED-206,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-114,Occupied,0,0,0,36
+BED-207,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-115,Occupied,1,0,0,32
+BED-208,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-116,Occupied,1,0,0,18
+BED-209,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-117,Occupied,1,0,0,46
+BED-210,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-118,Available,1,0,0,49
+BED-211,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-119,Occupied,1,0,0,43
+BED-212,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-120,Occupied,1,0,0,27
+BED-213,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-121,Occupied,0,0,0,36
+BED-214,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-122,Available,1,0,0,37
+BED-215,Neurology,Floor 3 - Neuro Tower,Neuro Observation,NEU-123,Occupied,0,0,0,43
+BED-216,Neurology,Floor 3 - Neuro Tower,Stroke Unit,NEU-124,Occupied,1,0,0,44
+BED-217,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-101,Maintenance,0,0,0,31
+BED-218,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-102,Available,0,0,0,38
+BED-219,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-103,Available,0,0,0,42
+BED-220,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-104,Cleaning,0,0,0,51
+BED-221,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-105,Occupied,1,0,0,44
+BED-222,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-106,Occupied,1,0,0,45
+BED-223,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-107,Occupied,1,0,0,38
+BED-224,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-108,Cleaning,0,0,0,50
+BED-225,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-109,Occupied,1,0,0,41
+BED-226,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-110,Occupied,1,0,0,30
+BED-227,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-111,Occupied,1,0,0,50
+BED-228,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-112,Maintenance,0,0,0,44
+BED-229,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-113,Occupied,0,0,0,34
+BED-230,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-114,Occupied,1,0,0,33
+BED-231,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-115,Available,0,0,0,40
+BED-232,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-116,Available,1,0,0,42
+BED-233,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-117,Occupied,0,0,0,39
+BED-234,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-118,Occupied,1,0,0,40
+BED-235,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-119,Occupied,0,0,0,53
+BED-236,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-120,Occupied,1,0,0,47
+BED-237,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-121,Available,0,0,0,39
+BED-238,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-122,Occupied,1,0,0,46
+BED-239,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-123,Occupied,1,0,0,28
+BED-240,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-124,Occupied,0,0,0,41
+BED-241,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-125,Available,0,0,0,54
+BED-242,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-126,Occupied,0,0,0,36
+BED-243,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-127,Occupied,0,0,0,30
+BED-244,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-128,Occupied,1,0,0,32
+BED-245,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-129,Occupied,1,0,0,28
+BED-246,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-130,Occupied,0,0,0,30
+BED-247,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-131,Occupied,0,0,0,34
+BED-248,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-132,Cleaning,1,0,0,25
+BED-249,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-133,Cleaning,0,0,0,38
+BED-250,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-134,Maintenance,0,0,0,46
+BED-251,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-135,Occupied,1,0,0,29
+BED-252,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-136,Occupied,0,0,0,51
+BED-253,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-137,Occupied,1,0,0,42
+BED-254,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-138,Occupied,0,0,0,47
+BED-255,General Surgery,Floor 4 - Surgical Pavilion,Surgical Ward Bed,GEN-139,Occupied,1,0,0,32
+BED-256,General Surgery,Floor 4 - Surgical Pavilion,Post-Op Recovery,GEN-140,Occupied,1,0,0,45
+BED-257,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-101,Occupied,0,0,0,28
+BED-258,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-102,Occupied,1,0,1,46
+BED-259,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-103,Occupied,1,0,0,39
+BED-260,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-104,Occupied,1,0,1,42
+BED-261,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-105,Available,1,0,0,27
+BED-262,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-106,Occupied,1,0,1,29
+BED-263,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-107,Occupied,0,0,0,43
+BED-264,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-108,Occupied,1,0,1,29
+BED-265,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-109,Occupied,1,0,0,42
+BED-266,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-110,Occupied,0,0,1,25
+BED-267,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-111,Occupied,0,0,0,45
+BED-268,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-112,Maintenance,1,0,1,26
+BED-269,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-113,Available,1,0,0,42
+BED-270,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-114,Occupied,1,0,1,43
+BED-271,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-115,Occupied,0,0,0,31
+BED-272,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-116,Occupied,0,0,1,43
+BED-273,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-117,Occupied,0,0,0,40
+BED-274,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-118,Available,0,0,1,33
+BED-275,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-119,Occupied,1,0,0,28
+BED-276,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-120,Available,1,0,1,20
+BED-277,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-121,Occupied,1,0,0,41
+BED-278,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-122,Occupied,1,0,1,23
+BED-279,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-123,Occupied,1,0,0,38
+BED-280,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-124,Occupied,1,0,1,35
+BED-281,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-125,Occupied,1,0,0,44
+BED-282,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-126,Occupied,0,0,1,35
+BED-283,Pulmonology,Floor 4 - Thoracic Wing,Pulmonary Ward Bed,PUL-127,Occupied,0,0,0,35
+BED-284,Pulmonology,Floor 4 - Thoracic Wing,Respiratory Isolation,PUL-128,Occupied,1,0,1,44
+BED-285,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-101,Occupied,0,0,0,41
+BED-286,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-102,Available,1,0,0,40
+BED-287,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-103,Maintenance,1,0,0,42
+BED-288,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-104,Occupied,1,0,0,24
+BED-289,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-105,Occupied,1,0,0,44
+BED-290,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-106,Occupied,1,0,0,43
+BED-291,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-107,Available,0,0,0,28
+BED-292,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-108,Available,1,0,0,35
+BED-293,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-109,Occupied,1,0,0,37
+BED-294,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-110,Occupied,1,0,0,36
+BED-295,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-111,Occupied,1,0,0,41
+BED-296,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-112,Occupied,1,0,0,50
+BED-297,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-113,Occupied,1,0,0,47
+BED-298,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-114,Occupied,0,0,0,26
+BED-299,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-115,Occupied,0,0,0,43
+BED-300,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-116,Available,1,0,0,49
+BED-301,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-117,Occupied,1,0,0,41
+BED-302,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-118,Occupied,1,0,0,47
+BED-303,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-119,Occupied,1,0,0,56
+BED-304,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-120,Occupied,1,0,0,47
+BED-305,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-121,Occupied,1,0,0,40
+BED-306,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-122,Occupied,1,0,0,47
+BED-307,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-123,Available,1,0,0,39
+BED-308,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-124,Cleaning,1,0,0,38
+BED-309,Orthopedics,Floor 5 - Mobility Center,Ortho Ward Bed,ORT-125,Occupied,0,0,0,34
+BED-310,Orthopedics,Floor 5 - Mobility Center,Ortho Rehab Bed,ORT-126,Occupied,1,0,0,52
+BED-311,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-101,Occupied,0,0,0,30
+BED-312,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-102,Occupied,0,0,0,51
+BED-313,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-103,Occupied,0,0,0,42
+BED-314,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-104,Available,1,0,0,25
+BED-315,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-105,Occupied,1,0,0,41
+BED-316,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-106,Occupied,1,0,0,19
+BED-317,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-107,Occupied,1,0,0,43
+BED-318,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-108,Occupied,1,0,0,45
+BED-319,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-109,Available,0,0,0,32
+BED-320,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-110,Available,0,0,0,39
+BED-321,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-111,Occupied,1,0,0,55
+BED-322,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-112,Maintenance,1,0,0,33
+BED-323,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-113,Occupied,1,0,0,28
+BED-324,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-114,Occupied,1,0,0,51
+BED-325,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-115,Occupied,0,0,0,55
+BED-326,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-116,Occupied,1,0,0,38
+BED-327,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-117,Available,0,0,0,47
+BED-328,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-118,Occupied,0,0,0,50
+BED-329,Pediatrics,Floor 5 - Children's Wing,Pediatric Ward Bed,PED-119,Maintenance,1,0,0,31
+BED-330,Pediatrics,Floor 5 - Children's Wing,PICU Bed,PED-120,Occupied,0,0,0,33
