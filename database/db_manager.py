@@ -14,9 +14,7 @@ from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PATH = os.path.join(BASE_DIR, 'data', 'hospital_data.csv')
-SQLITE_DB_PATH = os.path.join(BASE_DIR, 'database', 'hospital_analytics.db')
-
-
+SQLITE_DB_PATH = '/tmp/hospital_analytics.db'
 class DatabaseManager:
     def __init__(self):
         self.mode = "sqlite"  # 'mysql' or 'sqlite'
