@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+
+{% block title %}Data Quality & Audit{% endblock %}
+{% block page_title %}Clinical Data Quality & Schema Integrity Audit{% endblock %}
+
+{% block content %}
+<!-- Overview Health Scorecard -->
+<div class="kpi-grid">
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Data Health Score</span>
+            <span class="kpi-icon">🛡️</span>
+        </div>
+        <div class="kpi-value" style="color: var(--brand-success);">{{ audit.overview.overall_health_score }}%</div>
+        <div class="kpi-subtitle">Composite integrity benchmark</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Total Records Profiled</span>
+            <span class="kpi-icon">📋</span>
+        </div>
+        <div class="kpi-value">{{ audit.overview.total_records }}</div>
+        <div class="kpi-subtitle">{{ audit.overview.total_columns }} Feature Attributes</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Duplicate Records</span>
+            <span class="kpi-icon">👥</span>
+        </div>
+        <div class="kpi-value">{{ audit.overview.exact_duplicates }}</div>
+        <div class="kpi-subtitle">Duplicate Admissions: {{ audit.overview.duplicate_admission_ids }}</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Unique Patient Cohort</span>
+            <span class="kpi-icon">🧑‍⚕️</span>
+        </div>
+        <div class="kpi-value">{{ audit.overview.unique_patients }}</div>
+        <div class="kpi-subtitle">Repeat Inpatients: {{ audit.overview.repeat_patient_cohort }}</div>
+    </div>
+</div>
+
+<!-- Rule Checks Table -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Clinical Business Rules & Domain Integrity Checks</h3>
+            <p class="card-desc">Deterministic boundary tests to catch corrupted, negative, or physiologically implausible observations</p>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Rule Name</th>
+                    <th>Expectation Criteria</th>
+                    <th>Violations Count</th>
+                    <th>Severity Level</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in audit.rule_checks %}
+                <tr>
+                    <td><strong>{{ r.rule }}</strong></td>
+                    <td><code>{{ r.expectation }}</code></td>
+                    <td>{{ r.violations }}</td>
+                    <td>
+                        <span class="badge {% if r.severity == 'Critical' %}badge-danger{% elif r.severity == 'High' %}badge-warning{% else %}badge-info{% endif %}">
+                            {{ r.severity }}
+                        </span>
+                    </td>
+                    <td>
+                        {% if r.passed %}
+                        <span class="badge badge-success">✓ Passed</span>
+                        {% else %}
+                        <span class="badge badge-danger">⚠ Failed</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Statistical Outlier Analysis (IQR Method) -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Statistical Outlier Detection (Tukey's IQR Fences)</h3>
+            <p class="card-desc">Evaluates skewness and tail distribution boundaries (Q1 - 1.5*IQR to Q3 + 1.5*IQR)</p>
+        </div>
+        <span class="badge badge-outline">Non-Parametric Audit</span>
+    </div>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Metric / Column</th>
+                    <th>25th Percentile (Q1)</th>
+                    <th>Median (Q2)</th>
+                    <th>75th Percentile (Q3)</th>
+                    <th>Lower Fence</th>
+                    <th>Upper Fence</th>
+                    <th>Outlier Count</th>
+                    <th>Outlier %</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for out in audit.outlier_summary %}
+                <tr>
+                    <td><strong>{{ out.column }}</strong></td>
+                    <td>{{ out.q25 }}</td>
+                    <td>{{ out.median }}</td>
+                    <td>{{ out.q75 }}</td>
+                    <td>{{ out.lower_fence }}</td>
+                    <td>{{ out.upper_fence }}</td>
+                    <td><span class="badge badge-warning">{{ out.outliers_count }}</span></td>
+                    <td>{{ out.outliers_pct }}%</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Column-by-Column Completeness Profile -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Column Completeness & Data Type Profiling</h3>
+            <p class="card-desc">Detailed schema dictionary and null-value audit</p>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Column Name</th>
+                    <th>Data Type</th>
+                    <th>Null Count</th>
+                    <th>Null %</th>
+                    <th>Distinct Values</th>
+                    <th>Sample Value</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for col in audit.column_profile %}
+                <tr>
+                    <td><code>{{ col.column }}</code></td>
+                    <td><span class="badge badge-outline">{{ col.data_type }}</span></td>
+                    <td>{{ col.null_count }}</td>
+                    <td>{{ col.null_pct }}%</td>
+                    <td>{{ col.unique_count }}</td>
+                    <td><span style="color: var(--text-secondary); font-family: monospace;">{{ col.sample_value }}</span></td>
+                    <td>
+                        <span class="badge {% if col.status == 'Clean' %}badge-success{% else %}badge-danger{% endif %}">
+                            {{ col.status }}
+                        </span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

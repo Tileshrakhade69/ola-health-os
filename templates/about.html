@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}About Project{% endblock %}
+{% block page_title %}About OLA Health OS & Technical Architecture{% endblock %}
+
+{% block content %}
+<!-- Executive Architecture Summary -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">System Overview & Placement Portfolio Focus</h3>
+            <p class="card-desc">Healthcare Operations Analytics, Predictive Modeling, and Business Intelligence System</p>
+        </div>
+        <span class="badge badge-info">B.Tech AI Placement Project</span>
+    </div>
+
+    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+        <strong>OLA Health OS</strong> is an enterprise-inspired healthcare data analytics and decision-support platform designed to model hospital operational throughput, inpatient bed utilization, emergency room surge dynamics, and clinical quality risk. Developed as a capstone portfolio project for Data Analyst, BI Analyst, and Data Analytics Engineer roles, the system bridges raw electronic health records (EHR) data with executive dashboards and scikit-learn machine learning pipelines.
+    </p>
+
+    <div class="grid-3" style="margin-top: 16px;">
+        <div style="padding: 16px; background-color: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-sm);">
+            <div style="font-size: 18px; margin-bottom: 6px;">🐍 Python & Pandas</div>
+            <div style="font-size: 12px; color: var(--text-secondary);">
+                Server-side data manipulation, missing value profiling, Pearson correlation, and statistical quantile binning.
+            </div>
+        </div>
+
+        <div style="padding: 16px; background-color: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-sm);">
+            <div style="font-size: 18px; margin-bottom: 6px;">🐬 SQL & MySQL / SQLite</div>
+            <div style="font-size: 12px; color: var(--text-secondary);">
+                Relational schema with foreign keys, indexes, and an analytical query suite utilizing CTEs, Window Functions (LAG, DENSE_RANK), and aggregations.
+            </div>
+        </div>
+
+        <div style="padding: 16px; background-color: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-sm);">
+            <div style="font-size: 18px; margin-bottom: 6px;">📊 Power BI & DAX</div>
+            <div style="font-size: 12px; color: var(--text-secondary);">
+                Star schema modeling (Dim_Patient, Dim_Department, Fact_Admissions) and 10+ production DAX measures for executive reporting.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Three Working Prediction Modules -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Machine Learning Engineering Pipelines</h3>
+            <p class="card-desc">Three specialized scikit-learn models serialized via Joblib with honest evaluation metrics</p>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="padding: 14px; border-left: 3px solid #0284c7; background-color: #f8fafc;">
+            <div style="font-weight: 700; font-size: 14px;">1. Emergency Room (ER) Patient Inflow Forecaster</div>
+            <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">
+                <strong>Algorithm:</strong> Ridge Regression with Calendar & Lag Features | <strong>Target:</strong> Daily ER arrivals count | <strong>Validation:</strong> Chronological 80/20 train/test split avoiding future data leakage | <strong>Metrics:</strong> MAE 0.85 patients/day, RMSE 1.06 patients/day.
+            </div>
+        </div>
+
+        <div style="padding: 14px; border-left: 3px solid #0d9488; background-color: #f8fafc;">
+            <div style="font-weight: 700; font-size: 14px;">2. Length of Stay (LOS) Clinical Predictor</div>
+            <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">
+                <strong>Algorithm:</strong> Gradient Boosting Regressor | <strong>Target:</strong> Hospital days (continuous) | <strong>Features:</strong> Age, Department, Admission Type, Triage Acuity, Diagnosis, Comorbidities, Vitals | <strong>Metrics:</strong> MAE 2.68 days, RMSE 3.74 days.
+            </div>
+        </div>
+
+        <div style="padding: 14px; border-left: 3px solid #dc2626; background-color: #f8fafc;">
+            <div style="font-weight: 700; font-size: 14px;">3. 30-Day Hospital Readmission Risk Classifier</div>
+            <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">
+                <strong>Algorithm:</strong> Random Forest Classifier (balanced weights) | <strong>Target:</strong> Binary readmitted within 30 days | <strong>Metrics:</strong> Accuracy 69.1%, ROC-AUC 0.724, F1-Score 0.586, Precision 56.0%, Recall 61.4% with full hold-out confusion matrix.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ethical & Clinical Safety Disclosures -->
+<div class="card" style="border: 1px solid #fed7aa; background-color: #fffaf5;">
+    <div class="card-header" style="border-bottom-color: #ffedd5;">
+        <div>
+            <h3 class="card-title" style="color: #9a3412;">Ethical, Privacy & Clinical Safety Disclosure</h3>
+            <p class="card-desc" style="color: #c2410c;">Mandatory compliance and governance standards</p>
+        </div>
+        <span class="badge badge-warning">Governance Notice</span>
+    </div>
+
+    <div style="font-size: 13px; color: #7c2d12; line-height: 1.6;">
+        <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+            <li><strong>Synthetic Data Disclosure:</strong> All 1,600 patient records in this project are synthetically generated for academic demonstration and interview evaluation. The data contains zero protected health information (PHI) and strictly complies with HIPAA privacy principles.</li>
+            <li><strong>No Medical Diagnosis Claims:</strong> OLA Health OS does not provide medical diagnoses, treatment prescriptions, or clinical triage determinations. All prediction models are non-diagnostic decision-support prototypes.</li>
+            <li><strong>Clinical Real-World Deployment Notice:</strong> Deployment in live clinical settings requires prospective multi-center clinical validation, algorithmic bias testing across protected demographic sub-populations, EHR HL7/FHIR interoperability, and review by an Institutional Review Board (IRB) or clinical safety oversight committee.</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

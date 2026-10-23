@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block title %}ER Inflow Analysis{% endblock %}
+{% block page_title %}Emergency Room (ER) Patient Inflow Analysis{% endblock %}
+
+{% block content %}
+<!-- ER Operational KPIs -->
+<div class="kpi-grid">
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Total ER Admissions</span>
+            <span class="kpi-icon">🚑</span>
+        </div>
+        <div class="kpi-value">{{ er_data.total_er_cases }}</div>
+        <div class="kpi-subtitle">Emergency & Trauma encounters</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Peak Arrival Window</span>
+            <span class="kpi-icon">⏰</span>
+        </div>
+        <div class="kpi-value">{{ er_data.peak_hour }}</div>
+        <div class="kpi-subtitle">Highest hourly patient registration volume</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Busiest Day of Week</span>
+            <span class="kpi-icon">📅</span>
+        </div>
+        <div class="kpi-value">{{ er_data.peak_day }}</div>
+        <div class="kpi-subtitle">Weekly surge staffing checkpoint</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Critical Acuity (Triage 1-2)</span>
+            <span class="kpi-icon">⚠️</span>
+        </div>
+        <div class="kpi-value">{{ er_data.triage_data.counts[0] + er_data.triage_data.counts[1] }}</div>
+        <div class="kpi-subtitle">Resuscitation & Emergent beds needed</div>
+    </div>
+</div>
+
+<!-- Charts -->
+<div class="grid-2">
+    <!-- Hourly Arrival Pattern -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">ER Hourly Patient Arrival Curve</h3>
+                <p class="card-desc">24-hour diurnal rhythm of emergency presentations</p>
+            </div>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="erHourlyChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Day of Week Distribution -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">ER Inflow by Day of Week</h3>
+                <p class="card-desc">Weekly emergency room demand patterns</p>
+            </div>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="erDailyChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="grid-2">
+    <!-- Triage Acuity Breakdown -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Triage Acuity Distribution</h3>
+                <p class="card-desc">Manchester / Canadian 5-Tier Triage Urgency Classification</p>
+            </div>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="erTriageChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Out-of-Time Forecasting Validation Curve -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Time-Aware ML Forecasting (Actual vs Predicted)</h3>
+                <p class="card-desc">Out-of-time chronological validation (Hold-out test period)</p>
+            </div>
+            <a href="{{ url_for('prediction_center') }}" class="btn btn-primary" style="font-size: 11px; height: 28px;">
+                Open Predictor
+            </a>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="erForecastPreviewChart"></canvas>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const erData = {{ er_data | tojson }};
+        const modelPreview = {{ model_preview | tojson }};
+
+        // 1. Hourly Chart
+        if (erData.hourly_labels) {
+            HealthcareCharts.createTrendChart(
+                'erHourlyChart',
+                erData.hourly_labels,
+                erData.hourly_counts,
+                'Hourly Arrivals',
+                '#0284c7'
+            );
+        }
+
+        // 2. Day of Week Chart
+        if (erData.daily_labels) {
+            HealthcareCharts.createBarChart(
+                'erDailyChart',
+                erData.daily_labels,
+                erData.daily_counts,
+                'Admissions Count',
+                '#0d9488'
+            );
+        }
+
+        // 3. Triage Doughnut
+        if (erData.triage_data) {
+            HealthcareCharts.createDoughnutChart(
+                'erTriageChart',
+                erData.triage_data.labels,
+                erData.triage_data.counts
+            );
+        }
+
+        // 4. Out-of-time Forecast Validation Chart
+        if (modelPreview && modelPreview.dates) {
+            const ctx = document.getElementById('erForecastPreviewChart');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: modelPreview.dates,
+                    datasets: [
+                        {
+                            label: 'Actual ER Inflow',
+                            data: modelPreview.actual,
+                            borderColor: '#0284c7',
+                            backgroundColor: 'transparent',
+                            borderWidth: 2,
+                            pointRadius: 2
+                        },
+                        {
+                            label: 'Model Forecast (Ridge)',
+                            data: modelPreview.predicted,
+                            borderColor: '#f59e0b',
+                            borderDash: [5, 5],
+                            backgroundColor: 'transparent',
+                            borderWidth: 2,
+                            pointRadius: 2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: '#f1f5f9' } },
+                        x: { grid: { display: false }, ticks: { maxRotation: 45, font: { size: 10 } } }
+                    }
+                }
+            });
+        }
+    });
+</script>
+{% endblock %}

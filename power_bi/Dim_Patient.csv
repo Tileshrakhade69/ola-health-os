@@ -1,0 +1,851 @@
+patient_id,age,gender,insurance_provider,age_group
+PAT-10002,92,Male,Medicare,80+
+PAT-10003,39,Female,Private Insurance,30-49
+PAT-10004,25,Female,Private Insurance,< 30
+PAT-10005,53,Female,Medicaid,50-64
+PAT-10006,30,Male,Medicare,30-49
+PAT-10007,76,Female,Medicare,65-79
+PAT-10008,73,Female,Medicare,65-79
+PAT-10009,40,Female,Private Insurance,30-49
+PAT-10010,35,Female,Private Insurance,30-49
+PAT-10011,63,Female,Medicare,50-64
+PAT-10012,68,Female,Medicare,65-79
+PAT-10013,60,Female,Medicaid,50-64
+PAT-10014,83,Female,Medicaid,80+
+PAT-10015,58,Male,Medicare,50-64
+PAT-10016,70,Male,Medicaid,65-79
+PAT-10017,24,Female,Private Insurance,< 30
+PAT-10018,37,Female,Medicare,30-49
+PAT-10019,72,Male,Medicare,65-79
+PAT-10020,54,Female,Medicare,50-64
+PAT-10021,57,Female,Private Insurance,50-64
+PAT-10022,36,Female,Medicare,30-49
+PAT-10023,39,Female,Medicare,30-49
+PAT-10024,58,Female,Private Insurance,50-64
+PAT-10025,66,Male,Medicaid,65-79
+PAT-10026,58,Female,Medicaid,50-64
+PAT-10027,83,Female,Self-Pay,80+
+PAT-10028,58,Male,Self-Pay,50-64
+PAT-10029,37,Female,Private Insurance,30-49
+PAT-10030,52,Male,Medicare,50-64
+PAT-10031,44,Male,Medicare,30-49
+PAT-10032,46,Female,Medicaid,30-49
+PAT-10033,80,Male,Medicare,80+
+PAT-10034,60,Female,Private Insurance,50-64
+PAT-10035,75,Male,Private Insurance,65-79
+PAT-10036,52,Male,Self-Pay,50-64
+PAT-10037,21,Male,Private Insurance,< 30
+PAT-10038,53,Female,Medicare,50-64
+PAT-10039,43,Male,Private Insurance,30-49
+PAT-10040,74,Male,Medicaid,65-79
+PAT-10041,36,Male,Medicare,30-49
+PAT-10042,79,Female,Medicare,65-79
+PAT-10043,43,Male,Private Insurance,30-49
+PAT-10044,87,Male,Private Insurance,80+
+PAT-10045,75,Female,Private Insurance,65-79
+PAT-10046,50,Female,Medicare,50-64
+PAT-10047,18,Female,Medicare,< 30
+PAT-10048,53,Female,Medicaid,50-64
+PAT-10049,69,Male,Medicare,65-79
+PAT-10050,53,Female,Medicare,50-64
+PAT-10051,75,Male,Medicare,65-79
+PAT-10052,84,Male,Medicare,80+
+PAT-10053,56,Male,Self-Pay,50-64
+PAT-10054,81,Male,Medicaid,80+
+PAT-10055,77,Female,Medicare,65-79
+PAT-10056,24,Male,Medicare,< 30
+PAT-10057,90,Male,Medicaid,80+
+PAT-10058,65,Male,Private Insurance,65-79
+PAT-10059,35,Male,Private Insurance,30-49
+PAT-10060,65,Female,Private Insurance,65-79
+PAT-10061,74,Male,Private Insurance,65-79
+PAT-10062,60,Female,Medicaid,50-64
+PAT-10063,24,Male,Medicaid,< 30
+PAT-10064,47,Female,Private Insurance,30-49
+PAT-10065,88,Male,Medicare,80+
+PAT-10066,28,Female,Medicare,< 30
+PAT-10067,60,Female,Medicaid,50-64
+PAT-10068,56,Female,Private Insurance,50-64
+PAT-10069,70,Male,Medicare,65-79
+PAT-10070,51,Female,Medicare,50-64
+PAT-10071,78,Female,Medicaid,65-79
+PAT-10072,63,Female,Self-Pay,50-64
+PAT-10073,41,Male,Private Insurance,30-49
+PAT-10074,37,Female,Private Insurance,30-49
+PAT-10075,58,Female,Medicare,50-64
+PAT-10076,64,Male,Medicare,50-64
+PAT-10077,34,Male,Medicaid,30-49
+PAT-10078,80,Male,Medicare,80+
+PAT-10079,73,Male,Private Insurance,65-79
+PAT-10080,48,Male,Private Insurance,30-49
+PAT-10081,46,Male,Private Insurance,30-49
+PAT-10082,86,Male,Medicare,80+
+PAT-10083,40,Female,Self-Pay,30-49
+PAT-10084,79,Female,Private Insurance,65-79
+PAT-10085,49,Female,Medicaid,30-49
+PAT-10086,44,Male,Private Insurance,30-49
+PAT-10087,52,Male,Medicaid,50-64
+PAT-10088,92,Male,Medicaid,80+
+PAT-10089,78,Male,Medicare,65-79
+PAT-10090,77,Male,Medicare,65-79
+PAT-10091,73,Male,Private Insurance,65-79
+PAT-10092,55,Male,Medicare,50-64
+PAT-10093,51,Female,Medicaid,50-64
+PAT-10094,48,Female,Medicare,30-49
+PAT-10095,75,Male,Medicaid,65-79
+PAT-10096,74,Female,Medicare,65-79
+PAT-10097,46,Female,Private Insurance,30-49
+PAT-10098,68,Female,Medicaid,65-79
+PAT-10099,18,Female,Medicare,< 30
+PAT-10100,45,Female,Medicare,30-49
+PAT-10101,72,Male,Medicare,65-79
+PAT-10102,74,Male,Medicare,65-79
+PAT-10103,54,Female,Medicare,50-64
+PAT-10104,76,Male,Medicare,65-79
+PAT-10105,56,Female,Medicare,50-64
+PAT-10106,50,Female,Private Insurance,50-64
+PAT-10107,39,Female,Medicare,30-49
+PAT-10108,70,Female,Medicare,65-79
+PAT-10109,40,Male,Medicaid,30-49
+PAT-10110,43,Female,Medicare,30-49
+PAT-10111,39,Female,Medicare,30-49
+PAT-10112,57,Male,Medicare,50-64
+PAT-10113,38,Female,Medicare,30-49
+PAT-10114,57,Male,Medicare,50-64
+PAT-10115,18,Female,Medicare,< 30
+PAT-10116,42,Female,Medicaid,30-49
+PAT-10117,43,Female,Medicaid,30-49
+PAT-10118,80,Female,Private Insurance,80+
+PAT-10119,41,Male,Private Insurance,30-49
+PAT-10120,18,Female,Private Insurance,< 30
+PAT-10121,42,Male,Private Insurance,30-49
+PAT-10122,75,Male,Private Insurance,65-79
+PAT-10123,67,Male,Private Insurance,65-79
+PAT-10124,49,Male,Private Insurance,30-49
+PAT-10125,71,Male,Medicare,65-79
+PAT-10126,58,Male,Medicaid,50-64
+PAT-10127,85,Female,Private Insurance,80+
+PAT-10128,62,Male,Medicare,50-64
+PAT-10129,67,Female,Medicare,65-79
+PAT-10130,80,Male,Medicare,80+
+PAT-10131,63,Female,Private Insurance,50-64
+PAT-10132,54,Male,Private Insurance,50-64
+PAT-10133,39,Female,Medicare,30-49
+PAT-10134,52,Female,Private Insurance,50-64
+PAT-10135,76,Female,Private Insurance,65-79
+PAT-10136,54,Male,Medicare,50-64
+PAT-10137,30,Female,Private Insurance,30-49
+PAT-10138,65,Male,Private Insurance,65-79
+PAT-10139,73,Male,Medicare,65-79
+PAT-10140,36,Female,Medicaid,30-49
+PAT-10141,56,Male,Medicare,50-64
+PAT-10142,36,Male,Medicare,30-49
+PAT-10143,61,Male,Medicare,50-64
+PAT-10144,69,Female,Medicare,65-79
+PAT-10145,92,Male,Private Insurance,80+
+PAT-10146,76,Male,Medicaid,65-79
+PAT-10147,49,Male,Private Insurance,30-49
+PAT-10148,51,Female,Self-Pay,50-64
+PAT-10149,60,Female,Medicaid,50-64
+PAT-10150,84,Female,Medicare,80+
+PAT-10151,37,Male,Medicare,30-49
+PAT-10152,58,Female,Private Insurance,50-64
+PAT-10153,43,Female,Private Insurance,30-49
+PAT-10154,42,Male,Self-Pay,30-49
+PAT-10155,38,Female,Medicare,30-49
+PAT-10156,52,Female,Medicare,50-64
+PAT-10157,91,Male,Private Insurance,80+
+PAT-10158,64,Male,Private Insurance,50-64
+PAT-10159,48,Male,Medicare,30-49
+PAT-10160,47,Female,Medicare,30-49
+PAT-10161,82,Male,Private Insurance,80+
+PAT-10162,25,Female,Medicaid,< 30
+PAT-10163,48,Male,Medicare,30-49
+PAT-10164,55,Female,Medicaid,50-64
+PAT-10165,92,Male,Medicaid,80+
+PAT-10166,51,Male,Private Insurance,50-64
+PAT-10167,42,Female,Private Insurance,30-49
+PAT-10168,49,Male,Private Insurance,30-49
+PAT-10169,48,Male,Medicaid,30-49
+PAT-10170,36,Female,Private Insurance,30-49
+PAT-10171,35,Male,Medicare,30-49
+PAT-10172,47,Female,Medicare,30-49
+PAT-10173,36,Male,Medicaid,30-49
+PAT-10174,65,Female,Medicare,65-79
+PAT-10175,54,Female,Self-Pay,50-64
+PAT-10176,76,Male,Medicaid,65-79
+PAT-10177,74,Female,Medicaid,65-79
+PAT-10178,52,Female,Private Insurance,50-64
+PAT-10179,63,Female,Private Insurance,50-64
+PAT-10180,54,Female,Medicare,50-64
+PAT-10181,18,Female,Self-Pay,< 30
+PAT-10182,66,Female,Medicaid,65-79
+PAT-10183,52,Female,Medicare,50-64
+PAT-10184,80,Male,Medicaid,80+
+PAT-10185,66,Male,Medicaid,65-79
+PAT-10186,58,Female,Medicare,50-64
+PAT-10187,66,Male,Medicare,65-79
+PAT-10188,18,Male,Medicare,< 30
+PAT-10189,60,Female,Medicaid,50-64
+PAT-10190,44,Male,Self-Pay,30-49
+PAT-10191,18,Female,Medicare,< 30
+PAT-10192,41,Female,Medicare,30-49
+PAT-10193,53,Male,Private Insurance,50-64
+PAT-10194,58,Male,Private Insurance,50-64
+PAT-10195,74,Female,Medicaid,65-79
+PAT-10196,70,Female,Self-Pay,65-79
+PAT-10197,43,Female,Medicare,30-49
+PAT-10198,19,Male,Medicare,< 30
+PAT-10199,28,Male,Self-Pay,< 30
+PAT-10200,83,Male,Medicare,80+
+PAT-10201,48,Female,Medicaid,30-49
+PAT-10202,92,Female,Medicare,80+
+PAT-10203,47,Male,Medicaid,30-49
+PAT-10204,29,Male,Medicaid,< 30
+PAT-10205,68,Male,Private Insurance,65-79
+PAT-10206,43,Male,Private Insurance,30-49
+PAT-10207,53,Male,Medicaid,50-64
+PAT-10208,49,Male,Private Insurance,30-49
+PAT-10209,40,Female,Medicare,30-49
+PAT-10210,83,Female,Medicaid,80+
+PAT-10211,34,Female,Medicare,30-49
+PAT-10212,46,Male,Medicaid,30-49
+PAT-10213,59,Female,Medicaid,50-64
+PAT-10214,39,Male,Medicare,30-49
+PAT-10215,42,Male,Private Insurance,30-49
+PAT-10216,64,Female,Self-Pay,50-64
+PAT-10217,78,Female,Medicaid,65-79
+PAT-10218,73,Male,Self-Pay,65-79
+PAT-10219,65,Female,Private Insurance,65-79
+PAT-10220,52,Male,Medicare,50-64
+PAT-10221,75,Male,Private Insurance,65-79
+PAT-10222,46,Male,Self-Pay,30-49
+PAT-10223,53,Female,Medicare,50-64
+PAT-10224,83,Female,Private Insurance,80+
+PAT-10225,33,Female,Private Insurance,30-49
+PAT-10226,47,Female,Private Insurance,30-49
+PAT-10227,18,Male,Medicaid,< 30
+PAT-10228,43,Female,Medicaid,30-49
+PAT-10229,49,Male,Medicare,30-49
+PAT-10230,40,Male,Private Insurance,30-49
+PAT-10231,49,Male,Medicaid,30-49
+PAT-10232,74,Male,Private Insurance,65-79
+PAT-10233,75,Male,Private Insurance,65-79
+PAT-10234,53,Male,Medicare,50-64
+PAT-10235,54,Female,Medicare,50-64
+PAT-10236,46,Male,Medicare,30-49
+PAT-10237,18,Female,Medicaid,< 30
+PAT-10238,67,Male,Private Insurance,65-79
+PAT-10239,21,Female,Private Insurance,< 30
+PAT-10240,92,Male,Private Insurance,80+
+PAT-10241,72,Male,Medicare,65-79
+PAT-10242,85,Male,Private Insurance,80+
+PAT-10243,49,Male,Private Insurance,30-49
+PAT-10244,81,Male,Private Insurance,80+
+PAT-10245,33,Male,Medicare,30-49
+PAT-10246,35,Male,Private Insurance,30-49
+PAT-10247,91,Male,Medicare,80+
+PAT-10248,51,Male,Private Insurance,50-64
+PAT-10249,44,Female,Medicare,30-49
+PAT-10250,72,Female,Self-Pay,65-79
+PAT-10251,47,Female,Medicaid,30-49
+PAT-10252,35,Female,Medicare,30-49
+PAT-10253,40,Female,Medicaid,30-49
+PAT-10254,27,Female,Private Insurance,< 30
+PAT-10255,47,Male,Self-Pay,30-49
+PAT-10256,72,Male,Private Insurance,65-79
+PAT-10257,47,Male,Private Insurance,30-49
+PAT-10258,73,Female,Medicare,65-79
+PAT-10259,78,Male,Private Insurance,65-79
+PAT-10260,42,Female,Medicare,30-49
+PAT-10261,56,Female,Private Insurance,50-64
+PAT-10262,64,Male,Private Insurance,50-64
+PAT-10263,65,Female,Medicare,65-79
+PAT-10264,35,Female,Medicare,30-49
+PAT-10265,63,Female,Private Insurance,50-64
+PAT-10266,62,Male,Medicare,50-64
+PAT-10267,82,Male,Private Insurance,80+
+PAT-10268,68,Male,Medicare,65-79
+PAT-10269,54,Male,Medicare,50-64
+PAT-10270,65,Male,Private Insurance,65-79
+PAT-10271,92,Female,Medicare,80+
+PAT-10272,66,Male,Medicare,65-79
+PAT-10273,80,Male,Medicare,80+
+PAT-10274,40,Male,Medicare,30-49
+PAT-10275,55,Female,Medicaid,50-64
+PAT-10276,40,Male,Medicare,30-49
+PAT-10277,65,Male,Medicare,65-79
+PAT-10278,57,Female,Medicare,50-64
+PAT-10279,42,Male,Medicare,30-49
+PAT-10280,45,Female,Private Insurance,30-49
+PAT-10281,86,Female,Medicaid,80+
+PAT-10282,35,Female,Medicare,30-49
+PAT-10283,65,Female,Self-Pay,65-79
+PAT-10284,64,Male,Self-Pay,50-64
+PAT-10285,39,Male,Medicare,30-49
+PAT-10286,72,Male,Medicare,65-79
+PAT-10287,33,Female,Medicare,30-49
+PAT-10288,84,Female,Medicare,80+
+PAT-10289,66,Female,Private Insurance,65-79
+PAT-10290,54,Male,Medicare,50-64
+PAT-10291,45,Female,Medicare,30-49
+PAT-10292,77,Male,Self-Pay,65-79
+PAT-10293,64,Female,Private Insurance,50-64
+PAT-10294,88,Male,Medicaid,80+
+PAT-10295,31,Male,Private Insurance,30-49
+PAT-10296,87,Male,Private Insurance,80+
+PAT-10297,64,Female,Private Insurance,50-64
+PAT-10298,41,Female,Medicaid,30-49
+PAT-10299,58,Male,Private Insurance,50-64
+PAT-10300,18,Female,Private Insurance,< 30
+PAT-10301,25,Male,Medicaid,< 30
+PAT-10302,83,Male,Medicare,80+
+PAT-10303,24,Male,Medicaid,< 30
+PAT-10304,59,Female,Medicare,50-64
+PAT-10305,72,Male,Private Insurance,65-79
+PAT-10306,80,Male,Private Insurance,80+
+PAT-10307,40,Male,Medicare,30-49
+PAT-10308,63,Male,Private Insurance,50-64
+PAT-10309,45,Male,Private Insurance,30-49
+PAT-10310,43,Male,Medicaid,30-49
+PAT-10311,64,Female,Medicaid,50-64
+PAT-10312,92,Female,Medicare,80+
+PAT-10313,36,Male,Medicaid,30-49
+PAT-10314,63,Female,Medicaid,50-64
+PAT-10315,63,Female,Private Insurance,50-64
+PAT-10316,73,Male,Medicare,65-79
+PAT-10317,53,Female,Medicaid,50-64
+PAT-10318,50,Male,Medicare,50-64
+PAT-10319,57,Female,Medicare,50-64
+PAT-10320,77,Female,Medicare,65-79
+PAT-10321,86,Female,Private Insurance,80+
+PAT-10322,40,Female,Medicare,30-49
+PAT-10323,18,Female,Medicaid,< 30
+PAT-10324,54,Female,Self-Pay,50-64
+PAT-10325,70,Male,Medicare,65-79
+PAT-10326,77,Female,Medicare,65-79
+PAT-10327,42,Male,Private Insurance,30-49
+PAT-10328,74,Female,Medicaid,65-79
+PAT-10329,57,Female,Medicare,50-64
+PAT-10330,44,Male,Self-Pay,30-49
+PAT-10331,77,Female,Medicare,65-79
+PAT-10332,60,Female,Medicaid,50-64
+PAT-10333,50,Female,Medicare,50-64
+PAT-10334,39,Male,Medicare,30-49
+PAT-10335,29,Male,Medicare,< 30
+PAT-10336,83,Male,Medicare,80+
+PAT-10337,66,Male,Self-Pay,65-79
+PAT-10338,61,Female,Medicare,50-64
+PAT-10339,72,Female,Private Insurance,65-79
+PAT-10340,47,Male,Medicare,30-49
+PAT-10341,49,Female,Private Insurance,30-49
+PAT-10342,66,Male,Self-Pay,65-79
+PAT-10343,55,Male,Medicare,50-64
+PAT-10344,48,Female,Medicaid,30-49
+PAT-10345,22,Male,Private Insurance,< 30
+PAT-10346,62,Male,Medicare,50-64
+PAT-10347,85,Male,Medicare,80+
+PAT-10348,46,Male,Private Insurance,30-49
+PAT-10349,55,Male,Private Insurance,50-64
+PAT-10350,32,Male,Medicare,30-49
+PAT-10351,63,Male,Private Insurance,50-64
+PAT-10352,77,Male,Medicare,65-79
+PAT-10353,33,Male,Private Insurance,30-49
+PAT-10354,88,Female,Private Insurance,80+
+PAT-10355,59,Female,Medicare,50-64
+PAT-10356,40,Male,Private Insurance,30-49
+PAT-10357,41,Female,Private Insurance,30-49
+PAT-10358,67,Female,Medicare,65-79
+PAT-10359,73,Female,Medicare,65-79
+PAT-10360,38,Male,Private Insurance,30-49
+PAT-10361,39,Female,Private Insurance,30-49
+PAT-10362,45,Male,Medicare,30-49
+PAT-10363,92,Male,Medicaid,80+
+PAT-10364,84,Female,Private Insurance,80+
+PAT-10365,59,Male,Private Insurance,50-64
+PAT-10366,55,Male,Private Insurance,50-64
+PAT-10367,39,Male,Medicare,30-49
+PAT-10368,92,Female,Medicare,80+
+PAT-10369,44,Female,Medicare,30-49
+PAT-10370,44,Female,Private Insurance,30-49
+PAT-10371,92,Female,Private Insurance,80+
+PAT-10372,57,Female,Medicare,50-64
+PAT-10373,51,Male,Private Insurance,50-64
+PAT-10374,57,Female,Medicaid,50-64
+PAT-10375,18,Female,Private Insurance,< 30
+PAT-10376,68,Female,Medicare,65-79
+PAT-10377,41,Female,Medicare,30-49
+PAT-10378,32,Female,Medicare,30-49
+PAT-10379,59,Female,Medicare,50-64
+PAT-10380,38,Female,Private Insurance,30-49
+PAT-10381,78,Male,Self-Pay,65-79
+PAT-10382,48,Female,Medicare,30-49
+PAT-10383,52,Male,Medicaid,50-64
+PAT-10384,49,Female,Medicaid,30-49
+PAT-10385,79,Male,Private Insurance,65-79
+PAT-10386,78,Male,Medicare,65-79
+PAT-10387,81,Male,Medicare,80+
+PAT-10388,67,Female,Private Insurance,65-79
+PAT-10389,50,Female,Private Insurance,50-64
+PAT-10390,70,Female,Medicare,65-79
+PAT-10391,31,Male,Medicare,30-49
+PAT-10392,75,Male,Self-Pay,65-79
+PAT-10393,46,Male,Medicare,30-49
+PAT-10394,55,Male,Medicare,50-64
+PAT-10395,57,Female,Self-Pay,50-64
+PAT-10396,45,Female,Medicare,30-49
+PAT-10397,47,Male,Medicare,30-49
+PAT-10398,39,Female,Medicare,30-49
+PAT-10399,28,Female,Medicare,< 30
+PAT-10400,79,Female,Medicare,65-79
+PAT-10401,62,Female,Medicare,50-64
+PAT-10402,47,Female,Medicare,30-49
+PAT-10403,46,Male,Private Insurance,30-49
+PAT-10404,66,Male,Medicaid,65-79
+PAT-10405,59,Female,Private Insurance,50-64
+PAT-10406,58,Male,Private Insurance,50-64
+PAT-10407,59,Female,Medicare,50-64
+PAT-10408,38,Male,Medicare,30-49
+PAT-10409,64,Male,Private Insurance,50-64
+PAT-10410,62,Female,Medicare,50-64
+PAT-10411,49,Male,Medicare,30-49
+PAT-10412,53,Male,Medicaid,50-64
+PAT-10413,65,Male,Private Insurance,65-79
+PAT-10414,60,Female,Private Insurance,50-64
+PAT-10415,70,Female,Medicare,65-79
+PAT-10416,42,Male,Private Insurance,30-49
+PAT-10417,59,Female,Private Insurance,50-64
+PAT-10418,89,Female,Private Insurance,80+
+PAT-10419,44,Male,Private Insurance,30-49
+PAT-10420,68,Male,Self-Pay,65-79
+PAT-10421,57,Female,Medicare,50-64
+PAT-10422,71,Male,Medicare,65-79
+PAT-10423,34,Female,Private Insurance,30-49
+PAT-10424,33,Female,Medicare,30-49
+PAT-10425,69,Male,Self-Pay,65-79
+PAT-10426,50,Male,Private Insurance,50-64
+PAT-10427,25,Female,Medicare,< 30
+PAT-10428,35,Female,Medicaid,30-49
+PAT-10429,18,Female,Medicaid,< 30
+PAT-10430,75,Male,Medicaid,65-79
+PAT-10431,58,Female,Private Insurance,50-64
+PAT-10432,61,Female,Private Insurance,50-64
+PAT-10433,84,Male,Medicaid,80+
+PAT-10434,79,Male,Private Insurance,65-79
+PAT-10435,69,Male,Medicare,65-79
+PAT-10436,36,Male,Private Insurance,30-49
+PAT-10437,58,Male,Self-Pay,50-64
+PAT-10438,59,Female,Self-Pay,50-64
+PAT-10439,48,Male,Medicare,30-49
+PAT-10440,77,Female,Medicare,65-79
+PAT-10441,28,Female,Medicare,< 30
+PAT-10442,63,Female,Medicare,50-64
+PAT-10443,57,Male,Medicaid,50-64
+PAT-10444,66,Female,Private Insurance,65-79
+PAT-10445,81,Female,Private Insurance,80+
+PAT-10446,20,Female,Private Insurance,< 30
+PAT-10447,55,Female,Medicare,50-64
+PAT-10448,92,Male,Private Insurance,80+
+PAT-10449,44,Female,Medicare,30-49
+PAT-10450,45,Male,Private Insurance,30-49
+PAT-10451,41,Female,Private Insurance,30-49
+PAT-10452,46,Male,Private Insurance,30-49
+PAT-10453,35,Male,Medicare,30-49
+PAT-10454,92,Male,Medicare,80+
+PAT-10455,55,Female,Private Insurance,50-64
+PAT-10456,41,Male,Medicare,30-49
+PAT-10457,64,Male,Private Insurance,50-64
+PAT-10458,46,Female,Medicare,30-49
+PAT-10459,47,Female,Private Insurance,30-49
+PAT-10460,51,Male,Private Insurance,50-64
+PAT-10461,55,Male,Medicare,50-64
+PAT-10462,64,Female,Medicaid,50-64
+PAT-10463,41,Male,Medicaid,30-49
+PAT-10464,66,Female,Medicaid,65-79
+PAT-10465,73,Male,Medicare,65-79
+PAT-10466,92,Male,Medicare,80+
+PAT-10467,56,Male,Medicare,50-64
+PAT-10468,63,Male,Medicaid,50-64
+PAT-10469,62,Male,Medicare,50-64
+PAT-10470,32,Male,Private Insurance,30-49
+PAT-10471,35,Female,Medicare,30-49
+PAT-10472,73,Female,Medicare,65-79
+PAT-10473,79,Female,Private Insurance,65-79
+PAT-10474,59,Male,Self-Pay,50-64
+PAT-10475,43,Male,Private Insurance,30-49
+PAT-10476,54,Female,Private Insurance,50-64
+PAT-10477,62,Female,Medicare,50-64
+PAT-10478,45,Male,Private Insurance,30-49
+PAT-10479,54,Male,Medicare,50-64
+PAT-10480,76,Male,Private Insurance,65-79
+PAT-10481,25,Male,Medicaid,< 30
+PAT-10482,58,Male,Medicare,50-64
+PAT-10483,75,Female,Private Insurance,65-79
+PAT-10484,42,Female,Medicaid,30-49
+PAT-10485,44,Female,Private Insurance,30-49
+PAT-10486,52,Male,Medicare,50-64
+PAT-10487,54,Female,Private Insurance,50-64
+PAT-10488,37,Male,Medicaid,30-49
+PAT-10489,48,Male,Medicaid,30-49
+PAT-10490,38,Male,Private Insurance,30-49
+PAT-10491,64,Female,Private Insurance,50-64
+PAT-10492,63,Male,Self-Pay,50-64
+PAT-10493,89,Male,Medicaid,80+
+PAT-10494,59,Female,Medicare,50-64
+PAT-10495,30,Male,Private Insurance,30-49
+PAT-10496,66,Male,Medicaid,65-79
+PAT-10497,64,Female,Medicare,50-64
+PAT-10498,24,Female,Private Insurance,< 30
+PAT-10499,71,Female,Private Insurance,65-79
+PAT-10500,41,Male,Medicare,30-49
+PAT-10501,52,Female,Medicare,50-64
+PAT-10502,66,Female,Medicaid,65-79
+PAT-10503,36,Female,Private Insurance,30-49
+PAT-10504,67,Male,Medicare,65-79
+PAT-10505,69,Male,Private Insurance,65-79
+PAT-10506,80,Female,Medicaid,80+
+PAT-10507,42,Female,Private Insurance,30-49
+PAT-10508,72,Female,Self-Pay,65-79
+PAT-10509,51,Female,Medicare,50-64
+PAT-10510,54,Female,Medicare,50-64
+PAT-10511,51,Female,Medicare,50-64
+PAT-10512,60,Female,Medicare,50-64
+PAT-10513,89,Male,Medicare,80+
+PAT-10514,36,Male,Medicare,30-49
+PAT-10515,51,Male,Medicare,50-64
+PAT-10516,58,Female,Medicare,50-64
+PAT-10517,18,Female,Medicare,< 30
+PAT-10518,42,Male,Medicare,30-49
+PAT-10519,92,Female,Medicare,80+
+PAT-10520,75,Female,Medicaid,65-79
+PAT-10521,58,Female,Medicare,50-64
+PAT-10522,51,Male,Medicaid,50-64
+PAT-10523,45,Female,Medicare,30-49
+PAT-10524,55,Male,Medicare,50-64
+PAT-10525,46,Male,Medicaid,30-49
+PAT-10526,74,Male,Medicare,65-79
+PAT-10527,44,Female,Medicare,30-49
+PAT-10528,70,Female,Medicaid,65-79
+PAT-10529,49,Female,Private Insurance,30-49
+PAT-10530,65,Male,Medicare,65-79
+PAT-10531,27,Female,Self-Pay,< 30
+PAT-10532,54,Male,Private Insurance,50-64
+PAT-10533,63,Female,Medicare,50-64
+PAT-10534,61,Female,Self-Pay,50-64
+PAT-10535,40,Female,Medicare,30-49
+PAT-10536,59,Female,Medicare,50-64
+PAT-10537,46,Male,Private Insurance,30-49
+PAT-10538,52,Male,Private Insurance,50-64
+PAT-10539,57,Female,Medicaid,50-64
+PAT-10540,63,Female,Medicaid,50-64
+PAT-10541,67,Male,Medicare,65-79
+PAT-10542,39,Male,Medicare,30-49
+PAT-10543,36,Female,Private Insurance,30-49
+PAT-10544,37,Female,Private Insurance,30-49
+PAT-10545,62,Male,Private Insurance,50-64
+PAT-10546,53,Female,Private Insurance,50-64
+PAT-10547,34,Female,Medicare,30-49
+PAT-10548,56,Male,Self-Pay,50-64
+PAT-10549,57,Male,Medicaid,50-64
+PAT-10550,76,Male,Medicare,65-79
+PAT-10551,50,Male,Medicare,50-64
+PAT-10552,48,Male,Medicaid,30-49
+PAT-10553,71,Male,Medicaid,65-79
+PAT-10554,44,Male,Medicaid,30-49
+PAT-10555,35,Male,Private Insurance,30-49
+PAT-10556,76,Female,Medicare,65-79
+PAT-10557,54,Female,Private Insurance,50-64
+PAT-10558,72,Female,Medicare,65-79
+PAT-10559,76,Male,Private Insurance,65-79
+PAT-10560,59,Male,Medicaid,50-64
+PAT-10561,31,Male,Private Insurance,30-49
+PAT-10562,44,Female,Private Insurance,30-49
+PAT-10563,54,Female,Private Insurance,50-64
+PAT-10564,54,Female,Medicaid,50-64
+PAT-10565,55,Male,Private Insurance,50-64
+PAT-10566,81,Male,Medicaid,80+
+PAT-10567,57,Male,Medicaid,50-64
+PAT-10568,48,Male,Medicaid,30-49
+PAT-10569,92,Male,Medicare,80+
+PAT-10570,65,Female,Private Insurance,65-79
+PAT-10571,61,Male,Medicaid,50-64
+PAT-10572,40,Female,Private Insurance,30-49
+PAT-10573,59,Female,Medicare,50-64
+PAT-10574,64,Male,Private Insurance,50-64
+PAT-10575,62,Female,Medicaid,50-64
+PAT-10576,53,Female,Self-Pay,50-64
+PAT-10577,40,Male,Medicare,30-49
+PAT-10578,79,Female,Medicare,65-79
+PAT-10579,46,Male,Medicare,30-49
+PAT-10580,67,Male,Private Insurance,65-79
+PAT-10581,48,Female,Private Insurance,30-49
+PAT-10582,71,Male,Private Insurance,65-79
+PAT-10583,38,Female,Medicare,30-49
+PAT-10584,65,Female,Private Insurance,65-79
+PAT-10585,72,Female,Medicare,65-79
+PAT-10586,71,Male,Medicare,65-79
+PAT-10587,43,Female,Medicare,30-49
+PAT-10588,18,Female,Medicaid,< 30
+PAT-10589,56,Female,Medicare,50-64
+PAT-10590,67,Male,Private Insurance,65-79
+PAT-10591,48,Female,Medicare,30-49
+PAT-10592,92,Female,Medicaid,80+
+PAT-10593,66,Male,Medicare,65-79
+PAT-10594,48,Male,Medicare,30-49
+PAT-10595,47,Male,Medicare,30-49
+PAT-10596,86,Female,Private Insurance,80+
+PAT-10597,54,Male,Medicare,50-64
+PAT-10598,36,Female,Self-Pay,30-49
+PAT-10599,55,Male,Medicare,50-64
+PAT-10600,52,Female,Private Insurance,50-64
+PAT-10601,69,Male,Medicare,65-79
+PAT-10602,49,Male,Medicaid,30-49
+PAT-10603,56,Male,Private Insurance,50-64
+PAT-10604,38,Female,Medicare,30-49
+PAT-10605,32,Male,Private Insurance,30-49
+PAT-10606,67,Male,Medicare,65-79
+PAT-10607,55,Male,Medicaid,50-64
+PAT-10608,31,Male,Self-Pay,30-49
+PAT-10609,49,Male,Medicare,30-49
+PAT-10610,48,Female,Medicare,30-49
+PAT-10611,41,Male,Private Insurance,30-49
+PAT-10612,45,Female,Private Insurance,30-49
+PAT-10613,73,Female,Self-Pay,65-79
+PAT-10614,41,Female,Medicare,30-49
+PAT-10615,25,Female,Medicaid,< 30
+PAT-10616,51,Female,Medicaid,50-64
+PAT-10617,84,Female,Medicare,80+
+PAT-10618,92,Male,Medicare,80+
+PAT-10619,66,Male,Private Insurance,65-79
+PAT-10620,22,Female,Medicare,< 30
+PAT-10621,63,Male,Private Insurance,50-64
+PAT-10622,49,Male,Medicare,30-49
+PAT-10623,89,Male,Self-Pay,80+
+PAT-10624,34,Female,Medicare,30-49
+PAT-10625,47,Female,Medicare,30-49
+PAT-10626,68,Male,Self-Pay,65-79
+PAT-10627,79,Male,Private Insurance,65-79
+PAT-10628,66,Female,Medicare,65-79
+PAT-10629,56,Male,Medicare,50-64
+PAT-10630,39,Male,Private Insurance,30-49
+PAT-10631,44,Female,Private Insurance,30-49
+PAT-10632,75,Female,Private Insurance,65-79
+PAT-10633,21,Male,Private Insurance,< 30
+PAT-10634,47,Male,Private Insurance,30-49
+PAT-10635,66,Female,Medicare,65-79
+PAT-10636,52,Female,Private Insurance,50-64
+PAT-10637,65,Female,Medicaid,65-79
+PAT-10638,59,Female,Self-Pay,50-64
+PAT-10639,52,Female,Medicaid,50-64
+PAT-10640,50,Female,Private Insurance,50-64
+PAT-10641,56,Female,Medicare,50-64
+PAT-10642,60,Female,Medicare,50-64
+PAT-10643,30,Male,Medicare,30-49
+PAT-10644,55,Male,Private Insurance,50-64
+PAT-10645,68,Female,Medicaid,65-79
+PAT-10646,38,Male,Medicare,30-49
+PAT-10647,32,Female,Medicare,30-49
+PAT-10648,31,Female,Medicare,30-49
+PAT-10649,47,Male,Medicare,30-49
+PAT-10650,51,Male,Medicaid,50-64
+PAT-10651,59,Female,Private Insurance,50-64
+PAT-10652,37,Male,Medicare,30-49
+PAT-10653,33,Female,Medicaid,30-49
+PAT-10654,36,Male,Self-Pay,30-49
+PAT-10655,60,Female,Private Insurance,50-64
+PAT-10656,54,Female,Private Insurance,50-64
+PAT-10657,38,Female,Private Insurance,30-49
+PAT-10658,51,Male,Private Insurance,50-64
+PAT-10659,50,Male,Medicaid,50-64
+PAT-10660,34,Female,Self-Pay,30-49
+PAT-10661,61,Female,Medicaid,50-64
+PAT-10662,71,Male,Medicare,65-79
+PAT-10663,27,Female,Private Insurance,< 30
+PAT-10664,46,Male,Private Insurance,30-49
+PAT-10665,61,Male,Medicare,50-64
+PAT-10666,53,Male,Medicare,50-64
+PAT-10667,71,Male,Private Insurance,65-79
+PAT-10668,81,Female,Medicare,80+
+PAT-10669,63,Male,Medicaid,50-64
+PAT-10670,63,Female,Self-Pay,50-64
+PAT-10671,54,Male,Medicare,50-64
+PAT-10672,59,Male,Private Insurance,50-64
+PAT-10673,18,Male,Medicare,< 30
+PAT-10674,30,Female,Medicaid,30-49
+PAT-10675,44,Male,Medicare,30-49
+PAT-10676,55,Male,Medicare,50-64
+PAT-10677,18,Female,Private Insurance,< 30
+PAT-10678,70,Female,Medicare,65-79
+PAT-10679,47,Female,Medicare,30-49
+PAT-10680,18,Female,Medicare,< 30
+PAT-10681,49,Female,Medicaid,30-49
+PAT-10682,68,Female,Medicaid,65-79
+PAT-10683,45,Male,Medicare,30-49
+PAT-10684,60,Female,Medicaid,50-64
+PAT-10685,57,Female,Medicaid,50-64
+PAT-10686,76,Male,Medicare,65-79
+PAT-10687,45,Male,Medicare,30-49
+PAT-10688,60,Male,Private Insurance,50-64
+PAT-10689,83,Male,Private Insurance,80+
+PAT-10690,49,Male,Medicare,30-49
+PAT-10691,44,Male,Medicare,30-49
+PAT-10692,61,Male,Medicare,50-64
+PAT-10693,61,Male,Medicare,50-64
+PAT-10694,72,Female,Self-Pay,65-79
+PAT-10695,24,Male,Medicare,< 30
+PAT-10696,35,Male,Medicare,30-49
+PAT-10697,70,Female,Private Insurance,65-79
+PAT-10698,60,Female,Medicaid,50-64
+PAT-10699,53,Male,Medicaid,50-64
+PAT-10700,40,Male,Medicare,30-49
+PAT-10701,60,Female,Private Insurance,50-64
+PAT-10702,77,Female,Medicare,65-79
+PAT-10703,73,Male,Private Insurance,65-79
+PAT-10704,42,Female,Self-Pay,30-49
+PAT-10705,66,Female,Medicare,65-79
+PAT-10706,69,Male,Medicaid,65-79
+PAT-10707,34,Female,Private Insurance,30-49
+PAT-10708,57,Male,Private Insurance,50-64
+PAT-10709,21,Female,Medicaid,< 30
+PAT-10710,18,Male,Self-Pay,< 30
+PAT-10711,78,Female,Medicare,65-79
+PAT-10712,50,Female,Private Insurance,50-64
+PAT-10713,90,Female,Medicare,80+
+PAT-10714,64,Male,Medicare,50-64
+PAT-10715,30,Male,Medicaid,30-49
+PAT-10716,47,Male,Medicaid,30-49
+PAT-10717,77,Female,Medicare,65-79
+PAT-10718,33,Male,Medicare,30-49
+PAT-10719,22,Female,Medicaid,< 30
+PAT-10720,70,Male,Medicare,65-79
+PAT-10721,75,Male,Self-Pay,65-79
+PAT-10722,62,Male,Medicare,50-64
+PAT-10723,48,Male,Medicaid,30-49
+PAT-10724,58,Female,Self-Pay,50-64
+PAT-10725,63,Male,Medicare,50-64
+PAT-10726,37,Male,Medicare,30-49
+PAT-10727,64,Female,Private Insurance,50-64
+PAT-10728,37,Female,Private Insurance,30-49
+PAT-10729,52,Female,Medicare,50-64
+PAT-10730,70,Female,Medicare,65-79
+PAT-10731,71,Female,Private Insurance,65-79
+PAT-10732,61,Male,Medicare,50-64
+PAT-10733,25,Male,Private Insurance,< 30
+PAT-10734,67,Female,Medicaid,65-79
+PAT-10735,79,Female,Private Insurance,65-79
+PAT-10736,82,Male,Medicare,80+
+PAT-10737,71,Female,Private Insurance,65-79
+PAT-10738,47,Female,Medicare,30-49
+PAT-10739,49,Male,Medicaid,30-49
+PAT-10740,34,Female,Medicare,30-49
+PAT-10741,54,Male,Medicare,50-64
+PAT-10742,66,Female,Medicaid,65-79
+PAT-10743,45,Female,Self-Pay,30-49
+PAT-10744,56,Male,Medicaid,50-64
+PAT-10745,68,Female,Medicaid,65-79
+PAT-10746,77,Female,Medicare,65-79
+PAT-10747,49,Female,Private Insurance,30-49
+PAT-10748,69,Male,Private Insurance,65-79
+PAT-10749,77,Female,Private Insurance,65-79
+PAT-10750,69,Male,Medicare,65-79
+PAT-10751,83,Female,Medicaid,80+
+PAT-10752,72,Male,Private Insurance,65-79
+PAT-10753,18,Male,Medicare,< 30
+PAT-10754,59,Female,Private Insurance,50-64
+PAT-10755,68,Female,Medicare,65-79
+PAT-10756,35,Female,Private Insurance,30-49
+PAT-10757,58,Male,Private Insurance,50-64
+PAT-10758,32,Female,Medicare,30-49
+PAT-10759,45,Male,Private Insurance,30-49
+PAT-10760,38,Female,Private Insurance,30-49
+PAT-10761,89,Female,Medicaid,80+
+PAT-10762,61,Male,Medicare,50-64
+PAT-10763,69,Male,Private Insurance,65-79
+PAT-10764,54,Female,Medicare,50-64
+PAT-10765,54,Female,Private Insurance,50-64
+PAT-10766,54,Male,Medicare,50-64
+PAT-10767,32,Male,Private Insurance,30-49
+PAT-10768,88,Female,Private Insurance,80+
+PAT-10769,60,Male,Medicaid,50-64
+PAT-10770,82,Male,Medicare,80+
+PAT-10771,36,Female,Medicare,30-49
+PAT-10772,77,Female,Medicare,65-79
+PAT-10773,41,Female,Self-Pay,30-49
+PAT-10774,61,Male,Medicare,50-64
+PAT-10775,74,Male,Self-Pay,65-79
+PAT-10776,65,Male,Medicare,65-79
+PAT-10777,55,Male,Private Insurance,50-64
+PAT-10778,69,Male,Medicare,65-79
+PAT-10779,49,Male,Medicare,30-49
+PAT-10780,48,Female,Medicare,30-49
+PAT-10781,51,Male,Private Insurance,50-64
+PAT-10782,18,Female,Private Insurance,< 30
+PAT-10783,45,Male,Private Insurance,30-49
+PAT-10784,80,Female,Private Insurance,80+
+PAT-10785,69,Male,Medicaid,65-79
+PAT-10786,47,Female,Medicaid,30-49
+PAT-10787,51,Male,Self-Pay,50-64
+PAT-10788,49,Female,Medicare,30-49
+PAT-10789,59,Female,Medicare,50-64
+PAT-10790,68,Male,Self-Pay,65-79
+PAT-10791,18,Male,Medicare,< 30
+PAT-10792,41,Male,Medicaid,30-49
+PAT-10793,35,Male,Medicare,30-49
+PAT-10794,58,Male,Medicaid,50-64
+PAT-10795,83,Female,Private Insurance,80+
+PAT-10796,64,Female,Private Insurance,50-64
+PAT-10797,57,Female,Private Insurance,50-64
+PAT-10798,43,Female,Private Insurance,30-49
+PAT-10799,38,Female,Medicare,30-49
+PAT-10800,74,Female,Medicare,65-79
+PAT-10801,46,Male,Medicaid,30-49
+PAT-10802,85,Female,Medicare,80+
+PAT-10803,34,Male,Medicaid,30-49
+PAT-10804,80,Male,Private Insurance,80+
+PAT-10805,32,Male,Medicare,30-49
+PAT-10806,57,Female,Medicaid,50-64
+PAT-10807,36,Male,Medicare,30-49
+PAT-10808,60,Female,Private Insurance,50-64
+PAT-10809,45,Male,Medicaid,30-49
+PAT-10810,39,Male,Private Insurance,30-49
+PAT-10811,55,Male,Private Insurance,50-64
+PAT-10812,76,Male,Private Insurance,65-79
+PAT-10813,60,Female,Private Insurance,50-64
+PAT-10814,92,Female,Medicare,80+
+PAT-10815,46,Female,Self-Pay,30-49
+PAT-10816,57,Male,Private Insurance,50-64
+PAT-10817,61,Male,Medicaid,50-64
+PAT-10818,76,Female,Self-Pay,65-79
+PAT-10819,90,Female,Medicaid,80+
+PAT-10820,59,Female,Medicaid,50-64
+PAT-10821,51,Male,Medicaid,50-64
+PAT-10822,92,Female,Private Insurance,80+
+PAT-10823,42,Male,Medicare,30-49
+PAT-10824,52,Male,Private Insurance,50-64
+PAT-10825,25,Female,Self-Pay,< 30
+PAT-10826,72,Male,Medicare,65-79
+PAT-10827,18,Female,Medicare,< 30
+PAT-10828,52,Male,Private Insurance,50-64
+PAT-10829,69,Male,Private Insurance,65-79
+PAT-10830,65,Male,Medicare,65-79
+PAT-10831,44,Female,Medicare,30-49
+PAT-10832,26,Female,Medicare,< 30
+PAT-10833,59,Female,Medicaid,50-64
+PAT-10834,90,Male,Private Insurance,80+
+PAT-10835,54,Female,Medicare,50-64
+PAT-10836,22,Female,Medicare,< 30
+PAT-10837,69,Female,Medicare,65-79
+PAT-10838,59,Male,Medicaid,50-64
+PAT-10839,75,Male,Private Insurance,65-79
+PAT-10840,40,Female,Medicaid,30-49
+PAT-10841,65,Female,Private Insurance,65-79
+PAT-10842,46,Female,Medicare,30-49
+PAT-10843,85,Female,Private Insurance,80+
+PAT-10844,50,Female,Medicare,50-64
+PAT-10845,70,Male,Medicare,65-79
+PAT-10846,43,Female,Medicare,30-49
+PAT-10847,47,Female,Medicaid,30-49
+PAT-10848,81,Female,Self-Pay,80+
+PAT-10849,43,Female,Medicaid,30-49
+PAT-10850,29,Female,Private Insurance,< 30
+PAT-10001,45,Male,Medicare,30-49

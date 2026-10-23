@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}OLA Health OS{% endblock %} - Healthcare Analytics Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Chart.js 4.4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="app-sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-icon">⚕</div>
+                <div class="brand-info">
+                    <h1>OLA Health OS</h1>
+                    <span>Clinical Analytics</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section-label">Operations & BI</div>
+                <a href="{{ url_for('overview') }}" class="nav-link {% if active_page == 'overview' %}active{% endif %}">
+                    <span class="nav-icon">📊</span> Executive Overview
+                </a>
+                <a href="{{ url_for('patient_analytics') }}" class="nav-link {% if active_page == 'patient_analytics' %}active{% endif %}">
+                    <span class="nav-icon">👥</span> Patient Analytics
+                </a>
+                <a href="{{ url_for('er_inflow') }}" class="nav-link {% if active_page == 'er_inflow' %}active{% endif %}">
+                    <span class="nav-icon">🚑</span> ER Inflow Analysis
+                </a>
+                <a href="{{ url_for('los_analysis') }}" class="nav-link {% if active_page == 'los_analysis' %}active{% endif %}">
+                    <span class="nav-icon">🛏️</span> Length of Stay (LOS)
+                </a>
+                <a href="{{ url_for('readmission_analysis') }}" class="nav-link {% if active_page == 'readmission' %}active{% endif %}">
+                    <span class="nav-icon">🔄</span> Readmission Risk
+                </a>
+
+                <div class="nav-section-label">Data & Intelligence</div>
+                <a href="{{ url_for('data_explorer') }}" class="nav-link {% if active_page == 'data_explorer' %}active{% endif %}">
+                    <span class="nav-icon">🔍</span> Data Explorer
+                </a>
+                <a href="{{ url_for('prediction_center') }}" class="nav-link {% if active_page == 'prediction_center' %}active{% endif %}">
+                    <span class="nav-icon">🧠</span> Prediction Center
+                </a>
+                <a href="{{ url_for('reports') }}" class="nav-link {% if active_page == 'reports' %}active{% endif %}">
+                    <span class="nav-icon">📑</span> Reports & Insights
+                </a>
+                <a href="{{ url_for('data_quality') }}" class="nav-link {% if active_page == 'data_quality' %}active{% endif %}">
+                    <span class="nav-icon">🛡️</span> Data Quality
+                </a>
+                <a href="{{ url_for('about') }}" class="nav-link {% if active_page == 'about' %}active{% endif %}">
+                    <span class="nav-icon">ℹ️</span> About Project
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="db-status-widget">
+                    <div class="status-indicator demo" id="db-indicator"></div>
+                    <div>
+                        <div style="font-weight: 600; color: #fff;">Database Engine</div>
+                        <div style="color: #94a3b8;" id="db-engine-label">Loading status...</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="app-main">
+            <!-- Topbar -->
+            <header class="app-topbar">
+                <div class="topbar-left">
+                    <button id="mobile-sidebar-toggle" class="btn btn-secondary" style="display:none; padding: 4px 8px;">☰</button>
+                    <h2 class="page-title">{% block page_title %}Dashboard{% endblock %}</h2>
+                </div>
+                <div class="topbar-right">
+                    <span id="db-status-badge" class="badge badge-info">Checking DB...</span>
+                    <a href="{{ url_for('data_explorer') }}" class="btn btn-secondary">
+                        📥 Export CSV
+                    </a>
+                </div>
+            </header>
+
+            <!-- Optional Global Filter Bar -->
+            {% block filter_bar %}{% endblock %}
+
+            <!-- Dynamic Content -->
+            <div class="page-content">
+                <!-- Educational Prototype Disclaimer -->
+                <div class="clinical-alert">
+                    <span class="alert-icon">⚠️</span>
+                    <div>
+                        <strong>Academic & Analytical Prototype:</strong> OLA Health OS is an educational portfolio project demonstrating healthcare data analytics, SQL queries, and machine learning workflows. Model predictions and statistical outputs are not intended for clinical diagnostic decisions or actual patient care.
+                    </div>
+                </div>
+
+                {% block content %}{% endblock %}
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-container"></div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

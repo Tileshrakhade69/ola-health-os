@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}Length of Stay Analysis{% endblock %}
+{% block page_title %}Inpatient Length of Stay (LOS) Analytics{% endblock %}
+
+{% block content %}
+<!-- Statistical Percentiles Scorecard -->
+<div class="kpi-grid">
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Mean Length of Stay</span>
+            <span class="kpi-icon">📊</span>
+        </div>
+        <div class="kpi-value">{{ los_data.stats.mean }} <span style="font-size: 14px; font-weight: normal;">Days</span></div>
+        <div class="kpi-subtitle">Average across all inpatient encounters</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Median Stay (50th %ile)</span>
+            <span class="kpi-icon">🎯</span>
+        </div>
+        <div class="kpi-value">{{ los_data.stats.median }} <span style="font-size: 14px; font-weight: normal;">Days</span></div>
+        <div class="kpi-subtitle">Robust central tendency benchmark</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Interquartile Range (IQR)</span>
+            <span class="kpi-icon">📐</span>
+        </div>
+        <div class="kpi-value">{{ los_data.stats.q25 }} - {{ los_data.stats.q75 }} <span style="font-size: 14px; font-weight: normal;">Days</span></div>
+        <div class="kpi-subtitle">25th to 75th percentile span</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">90th Percentile Threshold</span>
+            <span class="kpi-icon">⚠️</span>
+        </div>
+        <div class="kpi-value">{{ los_data.stats.q90 }} <span style="font-size: 14px; font-weight: normal;">Days</span></div>
+        <div class="kpi-subtitle">Boundary for complex extended stays</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Maximum Stay</span>
+            <span class="kpi-icon">🏥</span>
+        </div>
+        <div class="kpi-value">{{ los_data.stats.max }} <span style="font-size: 14px; font-weight: normal;">Days</span></div>
+        <div class="kpi-subtitle">Longest recorded inpatient episode</div>
+    </div>
+</div>
+
+<!-- Charts Grid -->
+<div class="grid-2">
+    <!-- Stay Duration Histogram -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Inpatient Length of Stay Distribution</h3>
+                <p class="card-desc">Right-skewed duration frequency across duration tiers</p>
+            </div>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="losHistogramChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Department Stay Benchmarks -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Average Length of Stay by Clinical Department</h3>
+                <p class="card-desc">Comparative bed utilization across service lines</p>
+            </div>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="deptLosChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- Outlier Admissions Table -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Extended Stay Inpatient Cohort (&gt; 14 Days)</h3>
+            <p class="card-desc">Clinical episodes requiring intensive utilization management and discharge planning review</p>
+        </div>
+        <span class="badge badge-warning">{{ outliers|length }} Outliers Identified</span>
+    </div>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Admission ID</th>
+                    <th>Patient ID</th>
+                    <th>Department</th>
+                    <th>Primary Diagnosis</th>
+                    <th>Length of Stay</th>
+                    <th>Triage Acuity</th>
+                    <th>Discharge Disposition</th>
+                    <th>Billed Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in outliers[:10] %}
+                <tr>
+                    <td><code>{{ row.admission_id }}</code></td>
+                    <td>{{ row.patient_id }}</td>
+                    <td><strong>{{ row.department }}</strong></td>
+                    <td>{{ row.primary_diagnosis }}</td>
+                    <td>
+                        <span class="badge badge-danger">{{ row.length_of_stay }} Days</span>
+                    </td>
+                    <td>Level {{ row.triage_acuity }}</td>
+                    <td>{{ row.discharge_disposition }}</td>
+                    <td>${{ "{:,.2f}".format(row.billing_amount) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const losData = {{ los_data | tojson }};
+        const deptBenchmarks = {{ department_benchmarks | tojson }};
+
+        // 1. LOS Histogram
+        if (losData.labels) {
+            HealthcareCharts.createBarChart(
+                'losHistogramChart',
+                losData.labels,
+                losData.counts,
+                'Admissions Count',
+                '#0284c7'
+            );
+        }
+
+        // 2. Department LOS Bar Chart
+        if (deptBenchmarks && deptBenchmarks.length > 0) {
+            const labels = deptBenchmarks.map(d => d.department);
+            const stays = deptBenchmarks.map(d => d.avg_los);
+            HealthcareCharts.createBarChart(
+                'deptLosChart',
+                labels,
+                stays,
+                'Avg Stay (Days)',
+                '#0d9488'
+            );
+        }
+    });
+</script>
+{% endblock %}

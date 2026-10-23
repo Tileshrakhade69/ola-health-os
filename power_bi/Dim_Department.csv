@@ -1,0 +1,9 @@
+department,service_line,standard_bed_capacity
+Cardiology,Cardiovascular Services,60
+Emergency,Emergency Services,45
+General Surgery,Surgical Services,55
+Internal Medicine,Internal Medicine,70
+Neurology,Neurosciences,35
+Oncology,Oncology Care,40
+Orthopedics,Musculoskeletal,50
+Pediatrics,Children Services,30

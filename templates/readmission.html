@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}Readmission Risk Analysis{% endblock %}
+{% block page_title %}30-Day Hospital Readmission Risk Analytics{% endblock %}
+
+{% block content %}
+<!-- Executive Context Card -->
+<div class="card" style="border-left: 4px solid var(--brand-primary);">
+    <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 6px;">Hospital Readmission Reduction Program (HRRP) Overview</h3>
+    <p style="color: var(--text-secondary); font-size: 13px; line-height: 1.6;">
+        Under healthcare value-based care frameworks (such as CMS HRRP), uncoordinated readmissions within 30 days of discharge incur significant financial penalties and reflect potential care transition gaps. Patients with multiple chronic conditions (comorbidities) and high acuity admission presentations represent the primary clinical cohorts for post-discharge intervention.
+    </p>
+</div>
+
+<!-- Charts Grid -->
+<div class="grid-2">
+    <!-- Readmission Rate by Comorbidity Index -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Readmission Probability by Charlson Comorbidity Index</h3>
+                <p class="card-desc">Multimorbidity severity curve directly tracking readmission likelihood</p>
+            </div>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="comorbidityChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Readmission Rate by Discharge Disposition -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Readmission Rate by Discharge Disposition</h3>
+                <p class="card-desc">Post-acute care destination (Home vs SNF vs Rehab vs Home Health)</p>
+            </div>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="dispositionChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- Diagnoses with Elevated Readmission Risk Table -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Clinical Diagnoses Ranked by 30-Day Readmission Frequency</h3>
+            <p class="card-desc">Target conditions for specialized care management pathways</p>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Primary Diagnosis</th>
+                    <th>Inpatient Encounters</th>
+                    <th>Readmission Rate (%)</th>
+                    <th>Risk Band</th>
+                    <th>Recommended Care Pathway</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in readmit_data.by_diagnosis %}
+                <tr>
+                    <td><strong>{{ row.primary_diagnosis }}</strong></td>
+                    <td>{{ row.admissions }}</td>
+                    <td>
+                        <span class="badge {% if row.rate > 40 %}badge-danger{% elif row.rate > 30 %}badge-warning{% else %}badge-success{% endif %}">
+                            {{ row.rate }}%
+                        </span>
+                    </td>
+                    <td>
+                        {% if row.rate > 40 %}High Readmission Risk{% elif row.rate > 30 %}Moderate Risk{% else %}Standard Risk{% endif %}
+                    </td>
+                    <td>
+                        {% if 'Heart' in row.primary_diagnosis or 'Cardio' in row.primary_diagnosis %}
+                        Daily weight monitoring & 7-day cardiology follow-up
+                        {% elif 'Sepsis' in row.primary_diagnosis or 'Pneumonia' in row.primary_diagnosis %}
+                        Oral antibiotic completion tracking & pulmonary consult
+                        {% else %}
+                        Standard post-discharge phone call within 48 hours
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const readmit = {{ readmit_data | tojson }};
+
+        // 1. Comorbidity Chart
+        if (readmit.by_comorbidity) {
+            HealthcareCharts.createTrendChart(
+                'comorbidityChart',
+                readmit.by_comorbidity.index_levels.map(l => `Index ${l}`),
+                readmit.by_comorbidity.rates,
+                'Readmission Rate (%)',
+                '#dc2626'
+            );
+        }
+
+        // 2. Disposition Chart
+        if (readmit.by_disposition) {
+            const labels = readmit.by_disposition.map(d => d.discharge_disposition);
+            const rates = readmit.by_disposition.map(d => d.rate);
+            HealthcareCharts.createBarChart(
+                'dispositionChart',
+                labels,
+                rates,
+                'Readmission Rate (%)',
+                '#0284c7'
+            );
+        }
+    });
+</script>
+{% endblock %}

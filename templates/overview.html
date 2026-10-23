@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+
+{% block title %}Executive Overview{% endblock %}
+{% block page_title %}Executive Analytics Dashboard{% endblock %}
+
+{% block filter_bar %}
+<form method="GET" action="{{ url_for('overview') }}" class="filter-bar">
+    <div class="filter-group">
+        <label class="filter-label">Department</label>
+        <select name="department" class="filter-select">
+            <option value="All">All Departments</option>
+            {% for d in filter_options.departments %}
+            <option value="{{ d }}" {% if selected_filters.department == d %}selected{% endif %}>{{ d }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label class="filter-label">Admission Type</label>
+        <select name="admission_type" class="filter-select">
+            <option value="All">All Types</option>
+            {% for a in filter_options.admission_types %}
+            <option value="{{ a }}" {% if selected_filters.admission_type == a %}selected{% endif %}>{{ a }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label class="filter-label">Date From</label>
+        <input type="date" name="date_from" value="{{ selected_filters.date_from }}" class="form-input">
+    </div>
+
+    <div class="filter-group">
+        <label class="filter-label">Date To</label>
+        <input type="date" name="date_to" value="{{ selected_filters.date_to }}" class="form-input">
+    </div>
+
+    <div class="filter-group" style="align-self: flex-end;">
+        <button type="submit" class="btn btn-primary">Apply Filters</button>
+        <a href="{{ url_for('overview') }}" class="btn btn-secondary">Reset</a>
+    </div>
+</form>
+{% endblock %}
+
+{% block content %}
+<!-- Executive KPI Scorecard -->
+<div class="kpi-grid">
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Total Admissions</span>
+            <span class="kpi-icon">🏥</span>
+        </div>
+        <div class="kpi-value">{{ kpis.total_admissions }}</div>
+        <div class="kpi-subtitle">Unique Patients: {{ kpis.unique_patients }}</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Avg Length of Stay</span>
+            <span class="kpi-icon">⏱️</span>
+        </div>
+        <div class="kpi-value">{{ kpis.avg_los }} <span style="font-size: 14px; font-weight: normal;">Days</span></div>
+        <div class="kpi-subtitle">Target Benchmark: &lt; 6.5 Days</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">30-Day Readmission Rate</span>
+            <span class="kpi-icon">🔄</span>
+        </div>
+        <div class="kpi-value">{{ kpis.readmission_rate_pct }}%</div>
+        <div class="kpi-subtitle">CMS National Benchmark: 20-35%</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">ER Urgent/Trauma Inflow</span>
+            <span class="kpi-icon">🚑</span>
+        </div>
+        <div class="kpi-value">{{ kpis.er_volume }}</div>
+        <div class="kpi-subtitle">Critical Triage: {{ kpis.critical_triage_pct }}%</div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-header">
+            <span class="kpi-title">Total Billed Revenue</span>
+            <span class="kpi-icon">💵</span>
+        </div>
+        <div class="kpi-value">${{ "{:,.0f}".format(kpis.total_billed) }}</div>
+        <div class="kpi-subtitle">Across active filtered stays</div>
+    </div>
+</div>
+
+<!-- Charts Grid -->
+<div class="grid-2">
+    <!-- Monthly Admissions Trend Chart -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Inpatient Admissions Volume Over Time</h3>
+                <p class="card-desc">Monthly intake trends and operational trajectory</p>
+            </div>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="monthlyAdmissionsChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Department Volume & Average Stay Chart -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Admissions by Department</h3>
+                <p class="card-desc">Patient volume distribution across clinical service lines</p>
+            </div>
+        </div>
+        <div style="height: 280px;">
+            <canvas id="deptVolumeChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- Department Benchmarks Table -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Department Operational Benchmarks</h3>
+            <p class="card-desc">Comprehensive comparative metrics computed directly from clinical records</p>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Total Admissions</th>
+                    <th>Avg Stay (Days)</th>
+                    <th>Readmission Rate</th>
+                    <th>Total Billing</th>
+                    <th>Avg Billing / Patient</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dept in department_benchmarks %}
+                <tr>
+                    <td><strong>{{ dept.department }}</strong></td>
+                    <td>{{ dept.total_admissions }}</td>
+                    <td>{{ dept.avg_los }} days</td>
+                    <td>
+                        <span class="badge {% if dept.readmission_rate > 38 %}badge-danger{% elif dept.readmission_rate > 30 %}badge-warning{% else %}badge-success{% endif %}">
+                            {{ dept.readmission_rate }}%
+                        </span>
+                    </td>
+                    <td>${{ "{:,.2f}".format(dept.total_billing) }}</td>
+                    <td>${{ "{:,.2f}".format(dept.avg_billing) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // 1. Monthly Admissions Trend
+        const trendData = {{ monthly_trends | tojson }};
+        if (trendData && trendData.months.length > 0) {
+            HealthcareCharts.createTrendChart(
+                'monthlyAdmissionsChart',
+                trendData.months,
+                trendData.admissions,
+                'Monthly Admissions',
+                '#0284c7'
+            );
+        }
+
+        // 2. Department Volume Bar Chart
+        const deptBenchmarks = {{ department_benchmarks | tojson }};
+        if (deptBenchmarks && deptBenchmarks.length > 0) {
+            const labels = deptBenchmarks.map(d => d.department);
+            const volumes = deptBenchmarks.map(d => d.total_admissions);
+            HealthcareCharts.createBarChart(
+                'deptVolumeChart',
+                labels,
+                volumes,
+                'Admissions Count',
+                '#0d9488'
+            );
+        }
+    });
+</script>
+{% endblock %}

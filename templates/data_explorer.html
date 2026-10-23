@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}Data Explorer{% endblock %}
+{% block page_title %}Clinical Data Explorer & Query Grid{% endblock %}
+
+{% block content %}
+<!-- Explorer Controls & Search Bar -->
+<div class="card">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+        <form method="GET" action="{{ url_for('data_explorer') }}" style="display: flex; gap: 10px; flex-wrap: wrap; flex: 1;">
+            <input type="text" name="search" value="{{ search_query }}" placeholder="Search patient ID, admission ID, diagnosis, or department..." class="form-input" style="flex: 1; min-width: 260px;">
+            <select name="department" class="filter-select">
+                <option value="All">All Departments</option>
+                {% for d in departments %}
+                <option value="{{ d }}" {% if selected_dept == d %}selected{% endif %}>{{ d }}</option>
+                {% endfor %}
+            </select>
+            <select name="readmitted" class="filter-select">
+                <option value="All">Readmission Status</option>
+                <option value="1" {% if selected_readmitted == '1' %}selected{% endif %}>Readmitted (Yes)</option>
+                <option value="0" {% if selected_readmitted == '0' %}selected{% endif %}>Not Readmitted (No)</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Search / Filter</button>
+            <a href="{{ url_for('data_explorer') }}" class="btn btn-secondary">Clear</a>
+        </form>
+
+        <a href="{{ url_for('export_csv', search=search_query, department=selected_dept, readmitted=selected_readmitted) }}" class="btn btn-success">
+            📥 Download Filtered CSV
+        </a>
+    </div>
+</div>
+
+<!-- Explorer Summary Strip -->
+<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; font-size: 13px; color: var(--text-secondary);">
+    <div>
+        Showing <strong>{{ records|length }}</strong> matching records (Page {{ current_page }} of {{ total_pages }} | Total: {{ total_count }} encounters)
+    </div>
+    <div>
+        <span class="badge badge-outline">22 Feature Attributes</span>
+    </div>
+</div>
+
+<!-- Data Table -->
+<div class="card" style="padding: 0; overflow: hidden;">
+    <div class="table-responsive" style="max-height: 600px;">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Admission ID</th>
+                    <th>Patient ID</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Type</th>
+                    <th>Triage</th>
+                    <th>Primary Diagnosis</th>
+                    <th>Comorbidity</th>
+                    <th>LOS (Days)</th>
+                    <th>Readmitted</th>
+                    <th>Disposition</th>
+                    <th>Billing ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in records %}
+                <tr>
+                    <td><code>{{ r.admission_id }}</code></td>
+                    <td>{{ r.patient_id }}</td>
+                    <td>{{ r.age }}</td>
+                    <td>{{ r.gender }}</td>
+                    <td><strong>{{ r.department }}</strong></td>
+                    <td>{{ r.admission_type }}</td>
+                    <td>Level {{ r.triage_acuity }}</td>
+                    <td>{{ r.primary_diagnosis }}</td>
+                    <td>{{ r.comorbidity_index }}</td>
+                    <td>{{ r.length_of_stay }}</td>
+                    <td>
+                        {% if r.readmitted_30d == 1 %}
+                        <span class="badge badge-danger">Yes</span>
+                        {% else %}
+                        <span class="badge badge-success">No</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ r.discharge_disposition }}</td>
+                    <td>${{ "{:,.2f}".format(r.billing_amount) }}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="13" style="text-align: center; padding: 32px; color: var(--text-muted);">
+                        No patient records matched the specified query parameters.
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    {% if total_pages > 1 %}
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; border-top: 1px solid var(--border-color); background-color: #f8fafc;">
+        <div>Page {{ current_page }} of {{ total_pages }}</div>
+        <div style="display: flex; gap: 8px;">
+            {% if current_page > 1 %}
+            <a href="{{ url_for('data_explorer', page=current_page - 1, search=search_query, department=selected_dept, readmitted=selected_readmitted) }}" class="btn btn-secondary" style="height: 28px; padding: 0 10px;">Previous</a>
+            {% endif %}
+
+            {% if current_page < total_pages %}
+            <a href="{{ url_for('data_explorer', page=current_page + 1, search=search_query, department=selected_dept, readmitted=selected_readmitted) }}" class="btn btn-secondary" style="height: 28px; padding: 0 10px;">Next</a>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

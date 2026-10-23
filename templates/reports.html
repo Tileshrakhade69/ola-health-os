@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+
+{% block title %}Reports & Insights{% endblock %}
+{% block page_title %}Executive Operational Briefing & Analytical SQL Hub{% endblock %}
+
+{% block content %}
+<!-- Executive Briefing Narrative -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Automated Executive Intelligence Summary</h3>
+            <p class="card-desc">Synthesized clinical operational bottlenecks and strategic recommendations</p>
+        </div>
+        <span class="badge badge-success">Automated Analysis</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        {% for ins in briefing.insights %}
+        <div style="padding: 16px; border-radius: var(--radius-md); background-color: {% if ins.severity == 'high' %}#fff1f2; border: 1px solid #fecdd3;{% elif ins.severity == 'medium' %}#fffbeb; border: 1px solid #fde68a;{% else %}#f0fdf4; border: 1px solid #bbf7d0;{% endif %}">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <h4 style="font-size: 14px; font-weight: 700; color: {% if ins.severity == 'high' %}#9f1239{% elif ins.severity == 'medium' %}#92400e{% else %}#166534{% endif %};">
+                    {{ ins.title }}
+                </h4>
+                <span class="badge {% if ins.severity == 'high' %}badge-danger{% elif ins.severity == 'medium' %}badge-warning{% else %}badge-success{% endif %}" style="text-transform: uppercase;">
+                    {{ ins.severity }} Priority
+                </span>
+            </div>
+            <p style="font-size: 13px; color: var(--text-primary); margin-bottom: 8px; line-height: 1.5;">
+                {{ ins.summary }}
+            </p>
+            <div style="font-size: 12px; font-weight: 600; color: {% if ins.severity == 'high' %}#881337{% elif ins.severity == 'medium' %}#78350f{% else %}#14532d{% endif %};">
+                💡 Strategic Action Item: {{ ins.action_item }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Analytical SQL Query Runner -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Analytical SQL Query Suite (Interview Portfolio Demo)</h3>
+            <p class="card-desc">Execute verified healthcare business intelligence queries directly against the database</p>
+        </div>
+        <span class="badge badge-outline">ANSI SQL / MySQL 8.0</span>
+    </div>
+
+    <div style="margin-bottom: 16px;">
+        <label class="form-label">Select Pre-Configured Analytical Query:</label>
+        <select id="sql-query-selector" class="filter-select" style="width: 100%; margin-top: 4px;" onchange="loadQuery(this.value)">
+            <option value="q1">Query 1: Monthly Admission Trends & MoM Growth % (LAG Window Function)</option>
+            <option value="q2">Query 2: Department-Level Operational Benchmarks & Readmission Rates</option>
+            <option value="q3">Query 3: Ranking Top Clinical Diagnoses per Department (DENSE_RANK)</option>
+            <option value="q4">Query 4: Readmission Risk Stratification by Comorbidity & Age Cohort</option>
+            <option value="q5">Query 5: Emergency Room Surge Analysis by Day & Arrival Hour</option>
+            <option value="q6">Query 6: Frequent Hospital Users ('High Utilizer' Cohort Analysis)</option>
+            <option value="q7">Query 7: Extended Stay Outlier Detection (&gt; 95th Percentile)</option>
+            <option value="q8">Query 8: Financial Revenue & Average Stay Duration by Payer</option>
+        </select>
+    </div>
+
+    <div style="margin-bottom: 12px;">
+        <textarea id="sql-editor" rows="6" class="form-input" style="width: 100%; height: auto; font-family: monospace; font-size: 12px; background-color: #0f172a; color: #38bdf8; border-color: #334155; padding: 12px;" readonly></textarea>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <button class="btn btn-primary" onclick="runSelectedSql()">
+            ▶ Run SQL Query
+        </button>
+        <span id="sql-execution-time" style="font-size: 12px; color: var(--text-muted);">Execution time: --</span>
+    </div>
+
+    <!-- SQL Results Grid -->
+    <div id="sql-results-container" style="margin-top: 16px; display: none;">
+        <h4 style="font-size: 13px; font-weight: 700; margin-bottom: 8px;">Query Execution Results:</h4>
+        <div class="table-responsive" style="max-height: 380px;">
+            <table class="data-table" id="sql-results-table">
+                <thead id="sql-results-thead"></thead>
+                <tbody id="sql-results-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    const sqlQueries = {
+        q1: `SELECT 
+    strftime('%Y-%m', admission_date) AS admission_month,
+    COUNT(admission_id) AS total_admissions,
+    COUNT(DISTINCT patient_id) AS unique_patients,
+    ROUND(AVG(length_of_stay), 2) AS avg_los,
+    ROUND(SUM(billing_amount), 2) AS total_revenue
+FROM admissions
+GROUP BY strftime('%Y-%m', admission_date)
+ORDER BY admission_month DESC;`,
+
+        q2: `SELECT 
+    department,
+    COUNT(admission_id) AS total_admissions,
+    ROUND(AVG(length_of_stay), 2) AS avg_length_of_stay,
+    MIN(length_of_stay) AS min_stay_days,
+    MAX(length_of_stay) AS max_stay_days,
+    SUM(CASE WHEN readmitted_30d = 1 THEN 1 ELSE 0 END) AS total_readmissions,
+    ROUND((SUM(CASE WHEN readmitted_30d = 1 THEN 1.0 ELSE 0.0 END) * 100.0) / COUNT(admission_id), 2) AS readmission_rate_pct,
+    ROUND(AVG(billing_amount), 2) AS avg_billing_per_case
+FROM admissions
+GROUP BY department
+ORDER BY total_admissions DESC;`,
+
+        q3: `SELECT 
+    department,
+    primary_diagnosis,
+    COUNT(admission_id) AS diagnosis_volume,
+    ROUND(AVG(length_of_stay), 2) AS avg_diagnosis_los,
+    ROUND(AVG(billing_amount), 2) AS avg_case_cost
+FROM admissions
+GROUP BY department, primary_diagnosis
+ORDER BY department, diagnosis_volume DESC;`,
+
+        q4: `SELECT 
+    CASE 
+        WHEN age < 40 THEN '1. Under 40'
+        WHEN age BETWEEN 40 AND 64 THEN '2. 40 to 64'
+        ELSE '3. 65 and Older (Seniors)'
+    END AS age_cohort,
+    CASE 
+        WHEN comorbidity_index = 0 THEN 'No Comorbidities (0)'
+        WHEN comorbidity_index BETWEEN 1 AND 2 THEN 'Mild/Moderate (1-2)'
+        ELSE 'Severe Multimorbidity (3+)'
+    END AS comorbidity_tier,
+    COUNT(admission_id) AS total_patients,
+    SUM(readmitted_30d) AS readmitted_patients,
+    ROUND((SUM(readmitted_30d) * 100.0) / COUNT(admission_id), 2) AS readmission_rate_pct,
+    ROUND(AVG(length_of_stay), 2) AS avg_los
+FROM admissions a
+JOIN patients p ON a.patient_id = p.patient_id
+GROUP BY 1, 2
+ORDER BY 1, 2;`,
+
+        q5: `SELECT 
+    er_arrival_day,
+    er_arrival_hour,
+    COUNT(admission_id) AS er_inflow_count,
+    ROUND(AVG(triage_acuity), 2) AS avg_acuity_score,
+    SUM(CASE WHEN triage_acuity <= 2 THEN 1 ELSE 0 END) AS critical_cases
+FROM admissions
+WHERE admission_type IN ('Emergency', 'Trauma')
+GROUP BY er_arrival_day, er_arrival_hour
+ORDER BY er_inflow_count DESC
+LIMIT 15;`,
+
+        q6: `SELECT 
+    p.patient_id,
+    p.age,
+    p.gender,
+    p.insurance_provider,
+    COUNT(a.admission_id) AS total_stays,
+    MAX(a.comorbidity_index) AS max_comorbidity,
+    SUM(a.readmitted_30d) AS total_30d_readmissions,
+    ROUND(SUM(a.billing_amount), 2) AS total_billing
+FROM patients p
+JOIN admissions a ON p.patient_id = a.patient_id
+GROUP BY p.patient_id, p.age, p.gender, p.insurance_provider
+HAVING COUNT(a.admission_id) >= 2
+ORDER BY total_30d_readmissions DESC, total_billing DESC
+LIMIT 12;`,
+
+        q7: `SELECT 
+    admission_id,
+    patient_id,
+    department,
+    primary_diagnosis,
+    length_of_stay AS stay_days,
+    discharge_disposition,
+    billing_amount
+FROM admissions
+WHERE length_of_stay >= 14
+ORDER BY length_of_stay DESC
+LIMIT 15;`,
+
+        q8: `SELECT 
+    insurance_provider,
+    COUNT(a.admission_id) AS total_encounters,
+    ROUND(AVG(a.length_of_stay), 2) AS avg_stay_days,
+    ROUND(SUM(a.billing_amount), 2) AS total_billed_revenue
+FROM patients p
+JOIN admissions a ON p.patient_id = a.patient_id
+GROUP BY insurance_provider
+ORDER BY total_billed_revenue DESC;`
+    };
+
+    function loadQuery(qKey) {
+        document.getElementById('sql-editor').value = sqlQueries[qKey] || '';
+    }
+
+    async function runSelectedSql() {
+        const query = document.getElementById('sql-editor').value;
+        const timeEl = document.getElementById('sql-execution-time');
+        timeEl.innerText = 'Executing query...';
+
+        try {
+            const start = performance.now();
+            const res = await fetch('/api/sql-runner', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query: query })
+            });
+            const data = await res.json();
+            const elapsed = Math.round(performance.now() - start);
+
+            if (data.error) throw new Error(data.error);
+
+            timeEl.innerText = `Execution time: ${elapsed}ms (${data.rows.length} rows returned)`;
+
+            const thead = document.getElementById('sql-results-thead');
+            const tbody = document.getElementById('sql-results-tbody');
+            thead.innerHTML = '';
+            tbody.innerHTML = '';
+
+            if (data.rows.length > 0) {
+                const cols = Object.keys(data.rows[0]);
+                let headHtml = '<tr>';
+                cols.forEach(c => headHtml += `<th>${c}</th>`);
+                headHtml += '</tr>';
+                thead.innerHTML = headHtml;
+
+                data.rows.forEach(row => {
+                    let trHtml = '<tr>';
+                    cols.forEach(c => trHtml += `<td>${row[c]}</td>`);
+                    trHtml += '</tr>';
+                    tbody.innerHTML += trHtml;
+                });
+            }
+
+            document.getElementById('sql-results-container').style.display = 'block';
+            showToast('SQL Query executed successfully!', 'success');
+        } catch (err) {
+            timeEl.innerText = `Error`;
+            showToast(`SQL Error: ${err.message}`, 'error');
+        }
+    }
+
+    // Default load
+    document.addEventListener('DOMContentLoaded', () => {
+        loadQuery('q1');
+    });
+</script>
+{% endblock %}

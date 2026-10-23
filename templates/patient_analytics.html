@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}Patient Analytics{% endblock %}
+{% block page_title %}Patient Demographics & Cohort Analytics{% endblock %}
+
+{% block content %}
+<div class="grid-2">
+    <!-- Age Group Distribution -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Patient Age Cohort Distribution</h3>
+                <p class="card-desc">Patient volume segmented by standard age brackets</p>
+            </div>
+        </div>
+        <div style="height: 270px;">
+            <canvas id="ageDistChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Gender Breakdown -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Gender Representation</h3>
+                <p class="card-desc">Patient demographic ratio across inpatient records</p>
+            </div>
+        </div>
+        <div style="height: 270px;">
+            <canvas id="genderDistChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="grid-2">
+    <!-- Insurance Payer Distribution -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Payer & Insurance Provider Mix</h3>
+                <p class="card-desc">Commercial versus Government (Medicare/Medicaid) coverage</p>
+            </div>
+        </div>
+        <div style="height: 270px;">
+            <canvas id="insuranceDistChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Admission Types Breakdown -->
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">Admission Category Breakdown</h3>
+                <p class="card-desc">Emergency, Urgent, Elective, and Trauma patient inflow</p>
+            </div>
+        </div>
+        <div style="height: 270px;">
+            <canvas id="admTypeChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- Correlation Matrix Table -->
+<div class="card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">Clinical & Operational Correlation Matrix (Pearson r)</h3>
+            <p class="card-desc">Identifies statistical associations between vitals, comorbidity, length of stay, and readmission</p>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="data-table" style="font-size: 12px; text-align: center;">
+            <thead>
+                <tr>
+                    <th style="text-align: left;">Variable</th>
+                    {% for col in correlation.columns %}
+                    <th>{{ col }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row_idx in range(correlation.columns|length) %}
+                <tr>
+                    <td style="text-align: left; font-weight: 600;">{{ correlation.columns[row_idx] }}</td>
+                    {% for col_idx in range(correlation.columns|length) %}
+                    {% set val = correlation.matrix[row_idx][col_idx] %}
+                    <td style="{% if val >= 0.4 %}background-color: #dbeafe; font-weight: bold; color: #1e40af;{% elif val <= -0.4 %}background-color: #fee2e2; font-weight: bold; color: #991b1b;{% endif %}">
+                        {{ val }}
+                    </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const demo = {{ demographics | tojson }};
+
+        // 1. Age Distribution
+        if (demo.age_labels) {
+            HealthcareCharts.createBarChart('ageDistChart', demo.age_labels, demo.age_counts, 'Patients', '#0284c7');
+        }
+
+        // 2. Gender Doughnut
+        if (demo.gender_labels) {
+            HealthcareCharts.createDoughnutChart('genderDistChart', demo.gender_labels, demo.gender_counts);
+        }
+
+        // 3. Insurance Provider Mix
+        if (demo.insurance_labels) {
+            HealthcareCharts.createBarChart('insuranceDistChart', demo.insurance_labels, demo.insurance_counts, 'Patients', '#0d9488');
+        }
+
+        // 4. Admission Type Doughnut
+        if (demo.admission_type_labels) {
+            HealthcareCharts.createDoughnutChart('admTypeChart', demo.admission_type_labels, demo.admission_type_counts);
+        }
+    });
+</script>
+{% endblock %}

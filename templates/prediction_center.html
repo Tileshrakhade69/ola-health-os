@@ -1,0 +1,519 @@
+{% extends "base.html" %}
+
+{% block title %}Prediction Center{% endblock %}
+{% block page_title %}Clinical Prediction Center & Machine Learning Studio{% endblock %}
+
+{% block content %}
+<!-- Module Tabs Navigation -->
+<div style="display: flex; gap: 8px; margin-bottom: 24px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px; overflow-x: auto;">
+    <button class="btn btn-primary tab-btn" onclick="switchTab('tab-er')">1. ER Inflow Forecaster</button>
+    <button class="btn btn-secondary tab-btn" onclick="switchTab('tab-los')">2. Length of Stay (LOS)</button>
+    <button class="btn btn-secondary tab-btn" onclick="switchTab('tab-readmission')">3. 30-Day Readmission Risk</button>
+</div>
+
+<!-- =======================================================================
+     TAB 1: ER PATIENT INFLOW FORECASTING
+     ======================================================================= -->
+<div id="tab-er" class="tab-pane">
+    <div class="grid-2">
+        <!-- Interactive Form -->
+        <div class="prediction-form-card">
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 4px;">Forecast Daily Emergency Room Demand</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 20px;">
+                Predicts daily patient arrival count based on calendar factors and rolling historical admissions.
+            </p>
+
+            <form id="er-prediction-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Day of Week</label>
+                        <select id="er-day" class="filter-select">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Day of Month (1-31)</label>
+                        <input type="number" id="er-month-day" min="1" max="31" value="15" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Month (1-12)</label>
+                        <select id="er-month" class="filter-select">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10" selected>October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Yesterday's Inflow (Lag 1)</label>
+                        <input type="number" id="er-lag1" step="1" min="0" value="4" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Last Week Same Day (Lag 7)</label>
+                        <input type="number" id="er-lag7" step="1" min="0" value="5" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Recent 7-Day Rolling Mean</label>
+                        <input type="number" id="er-rolling7" step="0.1" min="0" value="3.8" class="form-input">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; height: 38px; margin-top: 10px;">
+                    Run Inflow Forecast
+                </button>
+            </form>
+
+            <!-- Result Box -->
+            <div id="er-result-box" class="prediction-result-box">
+                <div style="font-size: 11px; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 6px;">
+                    Forecasted Daily Demand
+                </div>
+                <div id="er-predicted-val" style="font-size: 28px; font-weight: 800; color: var(--brand-primary); margin-bottom: 8px;">
+                    --
+                </div>
+                <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;" id="er-surge-status">--</div>
+                <div style="font-size: 12px; color: var(--text-secondary);" id="er-staffing-rec">--</div>
+            </div>
+        </div>
+
+        <!-- Model Card & Performance -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">Model Specifications: ER Inflow Predictor</h3>
+                    <p class="card-desc">Verified evaluation on out-of-time chronological test set</p>
+                </div>
+                <span class="badge badge-info">Scikit-Learn Pipeline</span>
+            </div>
+
+            <table class="data-table" style="font-size: 13px;">
+                <tr>
+                    <td><strong>Algorithm</strong></td>
+                    <td>{{ metadata.er_inflow.algorithm }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Target Variable</strong></td>
+                    <td><code>{{ metadata.er_inflow.target_variable }}</code></td>
+                </tr>
+                <tr>
+                    <td><strong>Validation Split</strong></td>
+                    <td>{{ metadata.er_inflow.validation_method }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Mean Absolute Error (MAE)</strong></td>
+                    <td><span class="badge badge-success">{{ metadata.er_inflow.metrics.mae }} Patients / Day</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Root Mean Squared Error (RMSE)</strong></td>
+                    <td>{{ metadata.er_inflow.metrics.rmse }} Patients / Day</td>
+                </tr>
+                <tr>
+                    <td><strong>Hold-out Test Days</strong></td>
+                    <td>{{ metadata.er_inflow.metrics.test_samples }} Days</td>
+                </tr>
+            </table>
+
+            <div style="margin-top: 16px; padding: 12px; background-color: #f8fafc; border-radius: var(--radius-sm); font-size: 12px; color: var(--text-muted);">
+                <strong>Methodology Note:</strong> This model aggregates daily emergency encounters chronologically to prevent future data leakage into training folds, adhering to time-aware clinical forecasting standards.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =======================================================================
+     TAB 2: LENGTH OF STAY (LOS) PREDICTION
+     ======================================================================= -->
+<div id="tab-los" class="tab-pane" style="display: none;">
+    <div class="grid-2">
+        <!-- Interactive Form -->
+        <div class="prediction-form-card">
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 4px;">Inpatient Stay Duration Calculator</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 20px;">
+                Estimates patient hospital days based on clinical acuity, comorbidity index, and vitals.
+            </p>
+
+            <form id="los-prediction-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Patient Age (Years)</label>
+                        <input type="number" id="los-age" min="18" max="100" value="62" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Gender</label>
+                        <select id="los-gender" class="filter-select">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Admitting Department</label>
+                        <select id="los-department" class="filter-select">
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="General Surgery" selected>General Surgery</option>
+                            <option value="Internal Medicine">Internal Medicine</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Oncology">Oncology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Admission Type</label>
+                        <select id="los-adm-type" class="filter-select">
+                            <option value="Emergency" selected>Emergency</option>
+                            <option value="Urgent">Urgent</option>
+                            <option value="Elective">Elective</option>
+                            <option value="Trauma">Trauma</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Triage Acuity Level</label>
+                        <select id="los-acuity" class="filter-select">
+                            <option value="1">Level 1 - Resuscitation</option>
+                            <option value="2">Level 2 - Emergent</option>
+                            <option value="3" selected>Level 3 - Urgent</option>
+                            <option value="4">Level 4 - Less Urgent</option>
+                            <option value="5">Level 5 - Non-Urgent</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Charlson Comorbidity (0-6)</label>
+                        <input type="number" id="los-comorbidity" min="0" max="6" value="3" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Primary Diagnosis</label>
+                        <select id="los-diagnosis" class="filter-select">
+                            <option value="Acute Myocardial Infarction">Acute Myocardial Infarction</option>
+                            <option value="Congestive Heart Failure">Congestive Heart Failure</option>
+                            <option value="Pneumonia" selected>Pneumonia</option>
+                            <option value="Severe Sepsis">Severe Sepsis</option>
+                            <option value="Acute Ischemic Stroke">Acute Ischemic Stroke</option>
+                            <option value="Femur Fracture">Femur Fracture</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Prior Admissions (Count)</label>
+                        <input type="number" id="los-prev-adm" min="0" max="10" value="1" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Systolic BP (mmHg)</label>
+                        <input type="number" id="los-sbp" min="70" max="220" value="138" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Heart Rate (bpm)</label>
+                        <input type="number" id="los-hr" min="40" max="180" value="84" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Blood Glucose (mg/dL)</label>
+                        <input type="number" id="los-glucose" min="50" max="400" value="142" class="form-input">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; height: 38px; margin-top: 10px;">
+                    Predict Length of Stay
+                </button>
+            </form>
+
+            <!-- Result Box -->
+            <div id="los-result-box" class="prediction-result-box">
+                <div style="font-size: 11px; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 6px;">
+                    Predicted Inpatient Duration
+                </div>
+                <div id="los-predicted-val" style="font-size: 28px; font-weight: 800; color: var(--brand-teal); margin-bottom: 8px;">
+                    --
+                </div>
+                <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;" id="los-stay-category">--</div>
+                <div style="font-size: 12px; color: var(--text-secondary);" id="los-turnover-impact">--</div>
+            </div>
+        </div>
+
+        <!-- Model Card & Performance -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">Model Specifications: LOS Regressor</h3>
+                    <p class="card-desc">Evaluated on 320 unseen patient admissions</p>
+                </div>
+                <span class="badge badge-info">Gradient Boosting</span>
+            </div>
+
+            <table class="data-table" style="font-size: 13px;">
+                <tr>
+                    <td><strong>Algorithm</strong></td>
+                    <td>{{ metadata.los.algorithm }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Target Variable</strong></td>
+                    <td><code>{{ metadata.los.target_variable }}</code></td>
+                </tr>
+                <tr>
+                    <td><strong>Mean Absolute Error (MAE)</strong></td>
+                    <td><span class="badge badge-success">{{ metadata.los.metrics.mae }} Days</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Root Mean Squared Error (RMSE)</strong></td>
+                    <td>{{ metadata.los.metrics.rmse }} Days</td>
+                </tr>
+                <tr>
+                    <td><strong>Mean Inpatient Duration (Actual)</strong></td>
+                    <td>{{ metadata.los.metrics.actual_mean_los }} Days</td>
+                </tr>
+                <tr>
+                    <td><strong>Mean Inpatient Duration (Predicted)</strong></td>
+                    <td>{{ metadata.los.metrics.predicted_mean_los }} Days</td>
+                </tr>
+            </table>
+
+            <h4 style="font-size: 13px; font-weight: 700; margin: 18px 0 8px;">Top Feature Importances (Gini Importance):</h4>
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+                {% for feat in metadata.los.top_features[:5] %}
+                <div style="display: flex; justify-content: space-between; font-size: 12px;">
+                    <span>{{ feat.feature }}</span>
+                    <strong>{{ "{:.1f}%".format(feat.importance * 100) }}</strong>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =======================================================================
+     TAB 3: 30-DAY HOSPITAL READMISSION RISK PREDICTION
+     ======================================================================= -->
+<div id="tab-readmission" class="tab-pane" style="display: none;">
+    <div class="grid-2">
+        <!-- Interactive Form -->
+        <div class="prediction-form-card">
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 4px;">30-Day Readmission Risk Stratifier</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 20px;">
+                Classifies post-discharge vulnerability to trigger transitional care protocols.
+            </p>
+
+            <form id="readmission-prediction-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Patient Age</label>
+                        <input type="number" id="readmit-age" min="18" max="100" value="68" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Gender</label>
+                        <select id="readmit-gender" class="filter-select">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Department</label>
+                        <select id="readmit-department" class="filter-select">
+                            <option value="Cardiology" selected>Cardiology</option>
+                            <option value="Internal Medicine">Internal Medicine</option>
+                            <option value="General Surgery">General Surgery</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Oncology">Oncology</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Admission Type</label>
+                        <select id="readmit-adm-type" class="filter-select">
+                            <option value="Emergency" selected>Emergency</option>
+                            <option value="Urgent">Urgent</option>
+                            <option value="Elective">Elective</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Triage Acuity</label>
+                        <select id="readmit-acuity" class="filter-select">
+                            <option value="1">Level 1 - Resuscitation</option>
+                            <option value="2" selected>Level 2 - Emergent</option>
+                            <option value="3">Level 3 - Urgent</option>
+                            <option value="4">Level 4 - Less Urgent</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Comorbidity Score (0-6)</label>
+                        <input type="number" id="readmit-comorbidity" min="0" max="6" value="4" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Primary Diagnosis</label>
+                        <select id="readmit-diagnosis" class="filter-select">
+                            <option value="Congestive Heart Failure" selected>Congestive Heart Failure</option>
+                            <option value="Acute Myocardial Infarction">Acute Myocardial Infarction</option>
+                            <option value="COPD Exacerbation">COPD Exacerbation</option>
+                            <option value="Severe Sepsis">Severe Sepsis</option>
+                            <option value="Pneumonia">Pneumonia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Hospital Stay (Days)</label>
+                        <input type="number" id="readmit-los" min="1" max="40" value="6" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Discharge Destination</label>
+                        <select id="readmit-disp" class="filter-select">
+                            <option value="Home">Home</option>
+                            <option value="Home Health Care" selected>Home Health Care</option>
+                            <option value="Skilled Nursing Facility">Skilled Nursing Facility</option>
+                            <option value="Rehabilitation">Rehabilitation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Prior Admissions (Count)</label>
+                        <input type="number" id="readmit-prev-adm" min="0" max="10" value="2" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Systolic BP (mmHg)</label>
+                        <input type="number" id="readmit-sbp" min="80" max="220" value="142" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Blood Glucose (mg/dL)</label>
+                        <input type="number" id="readmit-glucose" min="60" max="350" value="160" class="form-input">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; height: 38px; margin-top: 10px;">
+                    Assess Readmission Risk
+                </button>
+            </form>
+
+            <!-- Result Box -->
+            <div id="readmit-result-box" class="prediction-result-box">
+                <div style="font-size: 11px; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 6px;">
+                    30-Day Readmission Probability
+                </div>
+                <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px;">
+                    <span id="readmit-predicted-pct" style="font-size: 30px; font-weight: 800; color: var(--brand-danger);">--</span>
+                    <span id="readmit-risk-tier" class="badge">--</span>
+                </div>
+                <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;">Recommended Transitional Action:</div>
+                <div style="font-size: 12px; color: var(--text-secondary);" id="readmit-action-plan">--</div>
+            </div>
+        </div>
+
+        <!-- Model Card & Confusion Matrix -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">Model Specifications: Readmission Classifier</h3>
+                    <p class="card-desc">Balanced Random Forest with 80/20 Stratified Validation</p>
+                </div>
+                <span class="badge badge-info">Random Forest</span>
+            </div>
+
+            <table class="data-table" style="font-size: 13px;">
+                <tr>
+                    <td><strong>Algorithm</strong></td>
+                    <td>{{ metadata.readmission.algorithm }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Target Variable</strong></td>
+                    <td><code>{{ metadata.readmission.target_variable }}</code></td>
+                </tr>
+                <tr>
+                    <td><strong>Accuracy</strong></td>
+                    <td><span class="badge badge-success">{{ "{:.1f}%".format(metadata.readmission.metrics.accuracy * 100) }}</span></td>
+                </tr>
+                <tr>
+                    <td><strong>ROC-AUC Score</strong></td>
+                    <td><span class="badge badge-info">{{ metadata.readmission.metrics.roc_auc }}</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Precision (Positive Class)</strong></td>
+                    <td>{{ "{:.1f}%".format(metadata.readmission.metrics.precision * 100) }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Recall (Sensitivity)</strong></td>
+                    <td>{{ "{:.1f}%".format(metadata.readmission.metrics.recall * 100) }}</td>
+                </tr>
+                <tr>
+                    <td><strong>F1-Score</strong></td>
+                    <td>{{ metadata.readmission.metrics.f1_score }}</td>
+                </tr>
+            </table>
+
+            <!-- Confusion Matrix Display -->
+            <h4 style="font-size: 13px; font-weight: 700; margin: 18px 0 8px;">Hold-Out Confusion Matrix:</h4>
+            <div class="table-responsive">
+                <table class="data-table" style="text-align: center; font-size: 12px;">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Predicted: No Readmit</th>
+                            <th>Predicted: Readmitted</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight: 600; text-align: left;">Actual: No Readmit</td>
+                            <td style="background-color: #dcfce7; font-weight: bold; color: #15803d;">
+                                TN: {{ metadata.readmission.metrics.confusion_matrix.true_negative }}
+                            </td>
+                            <td style="background-color: #fee2e2; color: #b91c1c;">
+                                FP: {{ metadata.readmission.metrics.confusion_matrix.false_positive }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600; text-align: left;">Actual: Readmitted</td>
+                            <td style="background-color: #fee2e2; color: #b91c1c;">
+                                FN: {{ metadata.readmission.metrics.confusion_matrix.false_negative }}
+                            </td>
+                            <td style="background-color: #dcfce7; font-weight: bold; color: #15803d;">
+                                TP: {{ metadata.readmission.metrics.confusion_matrix.true_positive }}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/prediction.js') }}"></script>
+<script>
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab-pane').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.className = 'btn btn-secondary tab-btn';
+        });
+        document.getElementById(tabId).style.display = 'block';
+        event.target.className = 'btn btn-primary tab-btn';
+    }
+</script>
+{% endblock %}
