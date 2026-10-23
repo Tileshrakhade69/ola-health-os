@@ -1,0 +1,2501 @@
+patient_id,full_name,gender,age,blood_type,insurance_type,hypertension,diabetes,copd,coronary_artery_disease,charlson_comorbidity_index
+PAT-00001,James Novak,Male,63,O-,Medicaid,1,1,1,0,6
+PAT-00002,James Mercer,Male,51,AB+,Medicare,1,0,1,0,3
+PAT-00003,Victoria Chen,Female,66,A-,Uninsured / Self-Pay,0,1,0,0,3
+PAT-00004,Sophia Mercer,Female,82,O+,Private Commercial,1,1,0,1,6
+PAT-00005,Lucas Mercer,Male,49,A-,Private Commercial,0,0,0,0,0
+PAT-00006,Julian Nakamura,Male,49,AB+,Medicare,0,0,0,0,0
+PAT-00007,Elena Sinclair,Female,84,O-,Medicaid,1,0,0,0,2
+PAT-00008,William Nakamura,Male,68,A-,Private Commercial,1,0,0,0,2
+PAT-00009,Ethan Vance,Male,45,B-,Medicare,0,0,1,0,2
+PAT-00010,Isabella Zhang,Female,64,AB+,Private Commercial,1,1,0,0,4
+PAT-00011,Maya Nakamura,Female,45,O-,Medicare,0,1,0,0,2
+PAT-00012,Adrian Kim,Male,45,B+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00013,Julian Alvarez,Male,58,O-,Medicare,0,0,0,0,0
+PAT-00014,Noah Chen,Male,17,A+,Medicaid,0,0,0,0,0
+PAT-00015,Gabriel O'Connor,Male,21,A+,Medicaid,0,0,0,0,0
+PAT-00016,Benjamin Rossi,Male,43,B+,Medicare,0,1,0,0,2
+PAT-00017,Benjamin Mercer,Male,34,A+,Medicare,1,0,0,0,1
+PAT-00018,Chloe Kowalski,Female,59,A-,Private Commercial,1,0,0,0,1
+PAT-00019,Nora Sinclair,Female,36,B-,Medicare,0,0,0,0,0
+PAT-00020,Benjamin Nakamura,Male,27,O+,Private Commercial,1,0,0,0,1
+PAT-00021,William Nakamura,Male,81,AB-,Medicare,1,0,0,0,2
+PAT-00022,Victoria Kim,Female,49,AB-,Private Commercial,1,1,0,0,3
+PAT-00023,Julian Alvarez,Male,55,A-,Medicare,1,0,0,1,3
+PAT-00024,Elena Kim,Female,26,O-,Medicare,0,0,0,0,0
+PAT-00025,Alexander Nakamura,Male,43,O+,Medicare,1,0,0,0,1
+PAT-00026,Lucas Novak,Male,56,AB-,Medicare,0,0,0,0,0
+PAT-00027,Olivia Vance,Female,32,AB-,Medicaid,0,0,0,1,2
+PAT-00028,James Mercer,Male,61,AB+,Medicare,0,1,1,0,5
+PAT-00029,Benjamin Vance,Male,42,B+,Medicare,0,0,0,0,0
+PAT-00030,Olivia Novak,Female,48,O-,Medicare,0,0,0,0,0
+PAT-00031,Alexander Patel,Male,42,A-,Medicare,0,1,0,1,4
+PAT-00032,Noah O'Connor,Male,89,B+,Private Commercial,0,0,0,1,3
+PAT-00033,Marcus Novak,Male,53,A-,Private Commercial,1,1,0,0,3
+PAT-00034,Julian Novak,Male,33,AB+,Private Commercial,0,0,0,1,2
+PAT-00035,James Rossi,Male,69,AB+,Medicaid,0,0,0,0,1
+PAT-00036,Alexander Sterling,Male,30,A+,Medicare,0,0,0,0,0
+PAT-00037,Victoria Vance,Female,57,AB+,Uninsured / Self-Pay,0,1,0,1,4
+PAT-00038,Ethan Kowalski,Male,16,B-,Private Commercial,0,0,0,1,2
+PAT-00039,Victoria Nakamura,Female,28,AB-,Medicare,0,0,0,0,0
+PAT-00040,Maya O'Connor,Female,57,AB+,Medicare,0,0,0,0,0
+PAT-00041,Adrian Novak,Male,68,B-,Private Commercial,1,0,0,0,2
+PAT-00042,David Kowalski,Male,57,B-,Private Commercial,0,0,1,0,2
+PAT-00043,Isabella Alvarez,Female,51,O+,Medicaid,0,0,0,0,0
+PAT-00044,Leo Kim,Male,48,O-,Private Commercial,1,0,0,0,1
+PAT-00045,Chloe O'Connor,Female,25,A-,Medicaid,0,0,0,0,0
+PAT-00046,Nora Kowalski,Female,40,B+,Medicare,0,0,0,1,2
+PAT-00047,Clara Zhang,Female,45,A+,Private Commercial,0,0,0,0,0
+PAT-00048,Chloe Rossi,Female,74,A-,Medicare,1,0,0,0,2
+PAT-00049,Ethan Gupta,Male,60,A-,Private Commercial,0,0,0,0,0
+PAT-00050,Clara Holloway,Female,20,O-,Private Commercial,0,0,1,0,2
+PAT-00051,Marcus Zhang,Male,60,AB-,Private Commercial,1,1,0,0,3
+PAT-00052,Victoria Zhang,Female,46,AB-,Private Commercial,0,0,0,0,0
+PAT-00053,Clara Novak,Female,41,AB-,Medicaid,0,0,0,0,0
+PAT-00054,Clara Mercer,Female,65,O-,Medicare,0,1,0,0,3
+PAT-00055,Lucas Sterling,Male,73,AB+,Medicare,0,1,0,0,3
+PAT-00056,Isabella Chen,Female,71,B-,Medicare,0,0,0,1,3
+PAT-00057,Hazel Kim,Female,38,AB-,Medicare,0,0,0,0,0
+PAT-00058,Clara Chen,Female,48,AB-,Private Commercial,0,0,0,0,0
+PAT-00059,Lucas Chen,Male,60,B+,Medicare,1,0,0,1,3
+PAT-00060,Noah Rossi,Male,72,AB+,Medicare,1,0,0,0,2
+PAT-00061,Noah Chen,Male,44,O-,Private Commercial,0,1,0,0,2
+PAT-00062,Adrian Chen,Male,50,A+,Medicaid,0,1,1,1,6
+PAT-00063,Benjamin Patel,Male,32,O-,Private Commercial,0,0,0,0,0
+PAT-00064,David Alvarez,Male,31,AB+,Medicare,0,0,0,0,0
+PAT-00065,Alexander Nakamura,Male,69,O-,Private Commercial,1,0,0,0,2
+PAT-00066,Leo Kim,Male,79,AB+,Private Commercial,0,1,0,1,5
+PAT-00067,Lucas Sinclair,Male,52,B+,Medicaid,0,0,0,0,0
+PAT-00068,Clara Kim,Female,73,O-,Medicare,0,0,0,1,3
+PAT-00069,Olivia Zhang,Female,60,B-,Medicare,0,0,0,0,0
+PAT-00070,Leo Novak,Male,41,O+,Medicaid,0,0,0,0,0
+PAT-00071,Alexander Nakamura,Male,60,AB-,Medicaid,0,0,0,0,0
+PAT-00072,Alexander O'Connor,Male,83,AB-,Medicaid,1,0,0,0,2
+PAT-00073,Isabella Rossi,Female,53,A-,Medicare,0,0,0,0,0
+PAT-00074,Ethan Patel,Male,83,B+,Uninsured / Self-Pay,0,1,0,0,3
+PAT-00075,David Nakamura,Male,4,O+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00076,Aria Sterling,Female,69,B+,Medicaid,0,0,1,1,5
+PAT-00077,Maya Kowalski,Female,55,O-,Medicare,0,0,0,1,2
+PAT-00078,Benjamin Vance,Male,48,A-,Medicare,1,0,0,1,3
+PAT-00079,Zoe Nakamura,Female,55,AB+,Medicare,0,0,0,0,0
+PAT-00080,Benjamin Alvarez,Male,16,A+,Medicare,0,0,0,0,0
+PAT-00081,Marcus Chen,Male,49,B+,Private Commercial,0,0,0,1,2
+PAT-00082,Sophia Nakamura,Female,60,A-,Medicaid,0,0,0,0,0
+PAT-00083,Julian Sterling,Male,82,B+,Medicaid,0,0,1,1,5
+PAT-00084,Clara Alvarez,Female,44,AB-,Medicaid,0,0,0,0,0
+PAT-00085,Lucas Rossi,Male,38,O+,Uninsured / Self-Pay,0,1,0,0,2
+PAT-00086,Zoe Vance,Female,44,B+,Medicare,0,0,0,0,0
+PAT-00087,Nora Gupta,Female,71,O-,Private Commercial,0,0,0,0,1
+PAT-00088,Isabella Gupta,Female,60,AB-,Medicare,1,0,0,0,1
+PAT-00089,Maya Alvarez,Female,43,AB-,Medicare,0,0,0,0,0
+PAT-00090,William Sinclair,Male,63,B+,Medicaid,0,0,0,1,3
+PAT-00091,Clara Gupta,Female,55,A+,Medicare,1,0,0,0,1
+PAT-00092,William Kim,Male,72,O-,Private Commercial,1,0,0,0,2
+PAT-00093,Noah O'Connor,Male,40,A-,Medicaid,0,0,0,0,0
+PAT-00094,Lucas Patel,Male,47,B+,Private Commercial,0,0,0,0,0
+PAT-00095,Maya Novak,Female,46,AB-,Private Commercial,0,0,0,0,0
+PAT-00096,Chloe Gupta,Female,26,B-,Private Commercial,0,0,0,0,0
+PAT-00097,Benjamin Holloway,Male,59,AB+,Medicare,1,0,1,0,3
+PAT-00098,Noah Vance,Male,58,AB-,Medicare,1,0,0,1,3
+PAT-00099,Emma Sterling,Female,54,B+,Medicare,0,0,0,0,0
+PAT-00100,Nora Mercer,Female,49,B-,Medicaid,0,0,0,0,0
+PAT-00101,Hazel Vance,Female,27,A-,Private Commercial,0,0,0,0,0
+PAT-00102,Sophia Alvarez,Female,46,O+,Medicare,0,0,0,1,2
+PAT-00103,Isabella Sterling,Female,47,A+,Medicare,1,0,0,0,1
+PAT-00104,Zoe Nakamura,Female,38,AB-,Medicare,0,0,0,0,0
+PAT-00105,Adrian Zhang,Male,50,B-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00106,Nora Kim,Female,61,AB-,Medicare,0,0,0,0,1
+PAT-00107,Zoe Sinclair,Female,89,AB+,Medicare,1,0,0,0,2
+PAT-00108,Benjamin Gupta,Male,57,B-,Medicare,0,0,0,0,0
+PAT-00109,Benjamin Novak,Male,58,O-,Private Commercial,0,0,0,0,0
+PAT-00110,David Zhang,Male,52,B-,Private Commercial,1,0,0,0,1
+PAT-00111,Ethan Sterling,Male,17,B+,Private Commercial,0,0,0,0,0
+PAT-00112,Hazel Gupta,Female,53,AB-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00113,Adrian Nakamura,Male,55,B-,Medicare,0,0,0,0,0
+PAT-00114,Emma Novak,Female,95,AB+,Private Commercial,1,0,0,0,2
+PAT-00115,Sophia Nakamura,Female,50,A-,Private Commercial,0,0,0,0,0
+PAT-00116,Aria O'Connor,Female,59,AB-,Medicare,0,1,1,1,6
+PAT-00117,William Sterling,Male,53,AB+,Medicaid,0,0,0,0,0
+PAT-00118,Lucas Alvarez,Male,31,B-,Medicare,0,0,0,0,0
+PAT-00119,Olivia Sinclair,Female,75,B-,Medicare,1,0,0,0,2
+PAT-00120,Olivia Alvarez,Female,68,O+,Medicare,0,0,1,1,5
+PAT-00121,Olivia Sterling,Female,69,A-,Private Commercial,0,1,0,0,3
+PAT-00122,Leo Sterling,Male,36,A+,Medicaid,0,0,0,0,0
+PAT-00123,Alexander Chen,Male,80,O+,Medicare,1,1,0,0,4
+PAT-00124,Marcus Kim,Male,27,O-,Medicaid,0,0,0,0,0
+PAT-00125,Benjamin Vance,Male,65,O+,Medicare,0,0,0,0,1
+PAT-00126,Hazel Holloway,Female,95,O-,Medicare,1,1,0,0,4
+PAT-00127,Alexander Sterling,Male,35,B+,Medicaid,0,0,0,0,0
+PAT-00128,Sophia Alvarez,Female,43,A-,Medicaid,0,0,0,0,0
+PAT-00129,Lucas Rossi,Male,55,B-,Private Commercial,0,0,0,0,0
+PAT-00130,Elena Gupta,Female,44,B-,Private Commercial,1,0,1,1,5
+PAT-00131,Benjamin Rossi,Male,24,AB+,Private Commercial,0,0,0,0,0
+PAT-00132,David O'Connor,Male,55,A-,Private Commercial,0,0,0,0,0
+PAT-00133,Hazel Sinclair,Female,33,O+,Medicaid,1,0,0,0,1
+PAT-00134,Emma Kowalski,Female,62,A+,Private Commercial,1,0,0,0,2
+PAT-00135,Sophia Sterling,Female,36,AB+,Medicare,0,0,0,0,0
+PAT-00136,Elena Sinclair,Female,83,O+,Medicare,1,1,0,0,4
+PAT-00137,Julian Mercer,Male,39,B+,Medicare,0,0,0,0,0
+PAT-00138,Leo Kim,Male,47,B+,Medicare,1,0,0,0,1
+PAT-00139,Zoe Vance,Female,69,B+,Medicare,1,1,0,1,6
+PAT-00140,James Gupta,Male,30,B-,Medicare,0,0,0,0,0
+PAT-00141,Lucas Chen,Male,58,AB+,Private Commercial,0,1,0,0,2
+PAT-00142,Amelia Alvarez,Female,78,AB-,Private Commercial,1,0,1,0,4
+PAT-00143,Sophia Kim,Female,23,AB+,Private Commercial,0,0,0,0,0
+PAT-00144,Olivia Rossi,Female,57,A-,Private Commercial,0,1,0,0,2
+PAT-00145,Maya Sterling,Female,58,O-,Medicare,1,1,0,0,3
+PAT-00146,Clara Zhang,Female,68,B-,Private Commercial,0,0,0,0,1
+PAT-00147,Elena Zhang,Female,30,O+,Medicare,1,0,0,0,1
+PAT-00148,David Zhang,Male,28,O-,Medicaid,0,0,0,0,0
+PAT-00149,Clara Vance,Female,63,AB-,Medicaid,0,0,0,0,1
+PAT-00150,Noah Alvarez,Male,59,A+,Medicare,0,0,0,1,2
+PAT-00151,Clara Kowalski,Female,58,O+,Private Commercial,0,0,0,0,0
+PAT-00152,Sophia Rossi,Female,60,A+,Medicare,1,0,0,0,1
+PAT-00153,Leo O'Connor,Male,41,O-,Medicare,0,0,0,0,0
+PAT-00154,Nora Rossi,Female,58,O-,Private Commercial,0,0,0,0,0
+PAT-00155,Chloe Sinclair,Female,59,AB-,Medicare,1,0,0,0,1
+PAT-00156,Marcus Mercer,Male,40,O+,Private Commercial,0,0,0,0,0
+PAT-00157,Benjamin Holloway,Male,89,A+,Private Commercial,1,1,0,0,4
+PAT-00158,Lucas Sinclair,Male,63,AB-,Medicare,0,1,0,0,3
+PAT-00159,David Gupta,Male,31,AB-,Medicaid,0,0,0,0,0
+PAT-00160,Victoria Holloway,Female,66,A+,Private Commercial,0,0,1,1,5
+PAT-00161,Julian Gupta,Male,35,O-,Medicare,0,0,0,0,0
+PAT-00162,David Zhang,Male,68,A-,Private Commercial,0,1,0,0,3
+PAT-00163,Emma Kim,Female,76,B-,Medicare,1,0,0,0,2
+PAT-00164,Sophia Rossi,Female,38,A+,Private Commercial,0,0,0,0,0
+PAT-00165,Clara Chen,Female,72,AB+,Medicare,0,1,0,1,5
+PAT-00166,Olivia O'Connor,Female,61,O-,Medicare,1,1,0,0,4
+PAT-00167,Zoe Chen,Female,69,O+,Medicaid,0,0,0,0,1
+PAT-00168,Benjamin Kim,Male,90,O+,Medicare,1,0,0,0,2
+PAT-00169,Emma Holloway,Female,49,B-,Medicare,0,0,1,0,2
+PAT-00170,Adrian Rossi,Male,39,AB-,Uninsured / Self-Pay,1,0,0,0,1
+PAT-00171,Nora Kowalski,Female,37,B+,Medicare,0,1,0,0,2
+PAT-00172,James Rossi,Male,38,B+,Medicare,0,0,0,0,0
+PAT-00173,David Sinclair,Male,52,B-,Medicaid,0,1,0,0,2
+PAT-00174,Aria Zhang,Female,60,AB-,Medicare,0,0,0,0,0
+PAT-00175,Victoria Mercer,Female,59,B+,Medicare,0,1,0,0,2
+PAT-00176,Leo O'Connor,Male,69,B-,Medicaid,1,0,0,0,2
+PAT-00177,Zoe Kim,Female,54,AB+,Medicare,1,0,0,1,3
+PAT-00178,James Sterling,Male,81,A-,Private Commercial,0,0,0,1,3
+PAT-00179,Maya Holloway,Female,48,B-,Medicare,0,1,0,0,2
+PAT-00180,Benjamin Sterling,Male,95,O-,Medicare,1,1,0,1,6
+PAT-00181,Noah Holloway,Male,65,A-,Uninsured / Self-Pay,0,1,0,0,3
+PAT-00182,Aria Gupta,Female,37,AB-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00183,Nora Sinclair,Female,33,A+,Private Commercial,0,0,0,0,0
+PAT-00184,Adrian Sinclair,Male,63,AB-,Medicare,0,1,0,1,5
+PAT-00185,Clara Sterling,Female,49,AB-,Medicaid,0,1,0,0,2
+PAT-00186,Hazel Mercer,Female,67,B-,Medicare,1,0,1,0,4
+PAT-00187,Adrian Sterling,Male,62,A+,Medicare,0,0,1,1,5
+PAT-00188,Leo Nakamura,Male,52,B+,Medicare,0,0,0,0,0
+PAT-00189,Elena O'Connor,Female,37,A+,Medicare,0,1,0,0,2
+PAT-00190,Hazel Vance,Female,25,B+,Private Commercial,0,1,0,0,2
+PAT-00191,Zoe Chen,Female,45,AB-,Medicare,0,0,0,0,0
+PAT-00192,Amelia Zhang,Female,70,A-,Medicare,1,1,0,0,4
+PAT-00193,Leo Rossi,Male,58,B-,Medicaid,0,0,0,1,2
+PAT-00194,Leo Nakamura,Male,30,B+,Private Commercial,0,0,0,0,0
+PAT-00195,Olivia Kowalski,Female,57,A+,Medicaid,0,0,0,1,2
+PAT-00196,Clara O'Connor,Female,61,A-,Medicare,0,1,0,0,3
+PAT-00197,Emma Vance,Female,37,B+,Medicaid,0,0,0,0,0
+PAT-00198,Lucas Sterling,Male,56,AB+,Medicare,0,0,0,0,0
+PAT-00199,Leo O'Connor,Male,55,O-,Medicare,1,0,0,0,1
+PAT-00200,Lucas Sinclair,Male,32,A-,Medicaid,0,0,0,0,0
+PAT-00201,Chloe Vance,Female,60,AB-,Medicare,1,1,0,0,3
+PAT-00202,Leo Rossi,Male,64,B-,Medicaid,1,0,0,0,2
+PAT-00203,Aria O'Connor,Female,74,AB+,Medicaid,1,1,0,1,6
+PAT-00204,Benjamin Gupta,Male,74,A-,Private Commercial,1,0,0,0,2
+PAT-00205,Elena Holloway,Female,27,O-,Medicare,0,0,0,0,0
+PAT-00206,Maya Kim,Female,36,AB-,Private Commercial,0,0,0,0,0
+PAT-00207,Oliver Sterling,Male,63,AB+,Medicare,0,0,0,0,1
+PAT-00208,Noah Rossi,Male,63,B+,Medicaid,0,0,0,0,1
+PAT-00209,Ethan Novak,Male,63,B+,Private Commercial,0,1,0,0,3
+PAT-00210,Maya Gupta,Female,95,O-,Medicaid,1,0,0,1,4
+PAT-00211,Isabella Sinclair,Female,64,O-,Medicare,0,0,0,0,1
+PAT-00212,Nora Novak,Female,75,B+,Medicare,0,1,0,1,5
+PAT-00213,Ethan Vance,Male,72,AB+,Medicare,0,0,0,1,3
+PAT-00214,Sophia Sterling,Female,66,AB-,Medicaid,1,0,0,0,2
+PAT-00215,Adrian O'Connor,Male,48,A-,Medicaid,0,0,0,1,2
+PAT-00216,Marcus Kim,Male,68,AB+,Private Commercial,0,1,0,0,3
+PAT-00217,Oliver O'Connor,Male,39,B-,Medicare,0,1,0,0,2
+PAT-00218,Elena Zhang,Female,49,B+,Private Commercial,0,0,0,0,0
+PAT-00219,Oliver Rossi,Male,44,AB+,Private Commercial,0,0,0,0,0
+PAT-00220,Sophia Holloway,Female,55,A-,Medicare,0,1,0,0,2
+PAT-00221,Olivia Zhang,Female,95,O+,Medicare,0,0,0,0,1
+PAT-00222,Aria Nakamura,Female,18,B+,Private Commercial,1,0,0,0,1
+PAT-00223,Maya Nakamura,Female,67,B-,Medicare,1,1,1,0,6
+PAT-00224,Victoria Patel,Female,23,AB-,Medicaid,0,0,0,0,0
+PAT-00225,Sophia Alvarez,Female,45,A+,Medicare,1,0,0,0,1
+PAT-00226,Sophia Patel,Female,74,O+,Medicaid,0,0,0,0,1
+PAT-00227,Clara Vance,Female,55,B+,Private Commercial,0,0,0,1,2
+PAT-00228,Benjamin Mercer,Male,33,O-,Uninsured / Self-Pay,1,0,0,0,1
+PAT-00229,Emma O'Connor,Female,40,AB+,Medicare,0,0,0,0,0
+PAT-00230,Clara Holloway,Female,66,B-,Medicare,1,0,0,0,2
+PAT-00231,Chloe Sterling,Female,40,B+,Medicaid,0,0,1,1,4
+PAT-00232,Chloe Holloway,Female,58,O-,Medicare,0,1,0,0,2
+PAT-00233,Zoe Chen,Female,54,O+,Medicare,1,1,0,0,3
+PAT-00234,Lucas Zhang,Male,41,B+,Medicare,0,0,0,1,2
+PAT-00235,Zoe Rossi,Female,94,AB+,Medicare,1,0,0,0,2
+PAT-00236,William Kowalski,Male,66,AB+,Private Commercial,0,0,0,0,1
+PAT-00237,Aria Kim,Female,15,A-,Private Commercial,0,0,0,0,0
+PAT-00238,Hazel Sterling,Female,57,A+,Medicare,0,0,0,0,0
+PAT-00239,Olivia Rossi,Female,41,A-,Medicare,0,0,0,1,2
+PAT-00240,Nora Vance,Female,70,A-,Medicaid,0,1,0,0,3
+PAT-00241,Amelia Chen,Female,38,AB-,Private Commercial,0,0,0,0,0
+PAT-00242,Lucas Nakamura,Male,51,B-,Medicare,0,0,0,0,0
+PAT-00243,Chloe Gupta,Female,63,B-,Private Commercial,0,0,0,0,1
+PAT-00244,Maya Kim,Female,70,AB+,Medicare,1,0,0,1,4
+PAT-00245,Leo Nakamura,Male,31,B-,Medicare,0,0,0,0,0
+PAT-00246,Aria Gupta,Female,47,AB-,Medicare,0,0,0,1,2
+PAT-00247,William Vance,Male,44,O+,Medicare,0,1,0,1,4
+PAT-00248,Alexander Sterling,Male,41,AB-,Private Commercial,1,0,0,0,1
+PAT-00249,James Kim,Male,87,O+,Medicaid,1,0,0,0,2
+PAT-00250,Victoria Kowalski,Female,61,B+,Private Commercial,1,1,1,1,8
+PAT-00251,Victoria Holloway,Female,30,A-,Medicare,1,0,0,0,1
+PAT-00252,Julian Vance,Male,71,O+,Private Commercial,1,0,0,1,4
+PAT-00253,Noah Kim,Male,94,O+,Medicare,0,1,0,0,3
+PAT-00254,Amelia Vance,Female,73,O+,Medicare,0,0,0,0,1
+PAT-00255,Emma Patel,Female,25,O-,Medicare,0,0,0,0,0
+PAT-00256,Benjamin Holloway,Male,44,O-,Medicaid,0,0,0,0,0
+PAT-00257,Emma Alvarez,Female,78,AB+,Uninsured / Self-Pay,1,0,0,0,2
+PAT-00258,Emma Novak,Female,40,AB+,Medicaid,0,0,0,0,0
+PAT-00259,Sophia O'Connor,Female,62,A+,Private Commercial,0,0,1,1,5
+PAT-00260,Maya Alvarez,Female,68,O-,Medicare,1,0,0,0,2
+PAT-00261,Lucas Zhang,Male,36,O-,Medicaid,0,0,0,0,0
+PAT-00262,Hazel Holloway,Female,52,A-,Medicaid,1,0,0,0,1
+PAT-00263,Julian Holloway,Male,1,A+,Medicaid,0,0,0,0,0
+PAT-00264,Amelia Gupta,Female,34,AB-,Medicaid,0,0,0,0,0
+PAT-00265,Noah Alvarez,Male,49,AB+,Private Commercial,1,1,0,0,3
+PAT-00266,Clara Rossi,Female,30,B+,Medicare,0,0,0,0,0
+PAT-00267,Noah Rossi,Male,85,AB-,Uninsured / Self-Pay,1,1,0,0,4
+PAT-00268,Leo Holloway,Male,26,A-,Medicaid,0,0,0,0,0
+PAT-00269,Julian Chen,Male,45,B+,Private Commercial,0,0,0,0,0
+PAT-00270,Gabriel Kim,Male,56,A+,Private Commercial,0,1,0,0,2
+PAT-00271,Sophia Zhang,Female,81,AB+,Medicaid,0,0,0,0,1
+PAT-00272,Aria Mercer,Female,26,O+,Medicaid,0,0,0,0,0
+PAT-00273,Victoria Rossi,Female,76,A-,Medicaid,0,0,1,1,5
+PAT-00274,Clara Sterling,Female,54,O-,Medicare,0,1,1,0,4
+PAT-00275,Leo O'Connor,Male,35,O-,Medicaid,0,0,0,0,0
+PAT-00276,Maya Mercer,Female,62,O-,Private Commercial,1,0,1,0,4
+PAT-00277,Oliver Nakamura,Male,57,AB-,Medicare,0,0,0,0,0
+PAT-00278,Nora Kowalski,Female,42,A-,Medicaid,1,0,0,0,1
+PAT-00279,Isabella Chen,Female,55,O-,Medicaid,0,1,0,0,2
+PAT-00280,Leo Rossi,Male,46,B-,Medicaid,1,1,0,0,3
+PAT-00281,Zoe Alvarez,Female,56,B+,Private Commercial,0,0,0,0,0
+PAT-00282,Julian Sterling,Male,66,A+,Medicaid,1,1,1,0,6
+PAT-00283,Zoe Sterling,Female,84,A+,Medicaid,1,1,0,0,4
+PAT-00284,Amelia Sterling,Female,30,O+,Medicaid,0,0,0,0,0
+PAT-00285,Gabriel Holloway,Male,94,AB+,Private Commercial,0,0,0,0,1
+PAT-00286,Clara Kowalski,Female,16,B+,Medicare,0,1,0,0,2
+PAT-00287,Elena Zhang,Female,51,O-,Medicare,0,0,0,0,0
+PAT-00288,Chloe Vance,Female,65,A-,Medicare,0,0,0,0,1
+PAT-00289,Noah Novak,Male,59,A-,Medicare,1,0,0,0,1
+PAT-00290,Hazel Kim,Female,42,O+,Medicaid,1,1,0,0,3
+PAT-00291,Zoe Kowalski,Female,50,O-,Medicare,0,0,0,0,0
+PAT-00292,Emma Novak,Female,44,B-,Private Commercial,0,1,0,0,2
+PAT-00293,Clara Sterling,Female,42,O-,Medicare,0,0,0,0,0
+PAT-00294,Aria Sinclair,Female,70,O-,Private Commercial,1,0,0,0,2
+PAT-00295,Nora Sinclair,Female,60,A-,Medicaid,0,0,0,0,0
+PAT-00296,Hazel O'Connor,Female,40,B-,Private Commercial,0,0,0,0,0
+PAT-00297,James Alvarez,Male,71,A+,Medicaid,0,0,1,0,3
+PAT-00298,Lucas Patel,Male,59,B+,Medicare,0,0,0,0,0
+PAT-00299,Amelia Mercer,Female,69,B+,Private Commercial,1,0,1,0,4
+PAT-00300,Lucas Mercer,Male,65,A-,Medicaid,0,1,0,1,5
+PAT-00301,Emma Chen,Female,38,A+,Medicaid,0,0,0,0,0
+PAT-00302,Lucas Mercer,Male,43,A+,Medicare,0,1,0,0,2
+PAT-00303,Julian Sterling,Male,68,B-,Private Commercial,1,0,0,1,4
+PAT-00304,Lucas Zhang,Male,65,AB+,Medicare,0,1,1,0,5
+PAT-00305,Maya Sterling,Female,53,B+,Private Commercial,1,0,0,0,1
+PAT-00306,Gabriel O'Connor,Male,56,O+,Private Commercial,1,0,0,0,1
+PAT-00307,Noah Holloway,Male,78,O+,Uninsured / Self-Pay,1,0,0,0,2
+PAT-00308,Elena Holloway,Female,42,AB-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00309,James Mercer,Male,64,AB+,Medicaid,1,1,0,0,4
+PAT-00310,Isabella Holloway,Female,50,B+,Medicare,1,0,0,0,1
+PAT-00311,Adrian Sterling,Male,49,O-,Medicare,0,0,0,0,0
+PAT-00312,Aria Nakamura,Female,74,O+,Medicare,1,1,0,0,4
+PAT-00313,Alexander Chen,Male,69,B+,Medicare,0,0,1,0,3
+PAT-00314,Oliver Novak,Male,69,AB+,Medicare,0,1,0,0,3
+PAT-00315,David Mercer,Male,78,A+,Medicare,1,0,1,0,4
+PAT-00316,Victoria Alvarez,Female,54,O+,Medicare,0,0,1,0,2
+PAT-00317,Ethan Vance,Male,66,O+,Medicaid,0,0,1,0,3
+PAT-00318,Olivia Rossi,Female,48,B-,Medicare,1,0,0,0,1
+PAT-00319,Marcus Nakamura,Male,60,AB-,Private Commercial,0,0,0,1,2
+PAT-00320,Maya Mercer,Female,51,B+,Private Commercial,0,1,0,0,2
+PAT-00321,Noah Sinclair,Male,55,A-,Medicare,0,0,0,0,0
+PAT-00322,Emma Nakamura,Female,65,B-,Medicare,0,0,0,1,3
+PAT-00323,Hazel O'Connor,Female,38,O+,Uninsured / Self-Pay,1,0,0,0,1
+PAT-00324,Oliver Novak,Male,93,B-,Medicaid,1,0,0,0,2
+PAT-00325,Benjamin Alvarez,Male,34,O+,Medicaid,0,0,0,0,0
+PAT-00326,Ethan O'Connor,Male,30,B-,Medicare,0,0,0,0,0
+PAT-00327,Olivia Mercer,Female,76,O-,Medicare,0,1,0,1,5
+PAT-00328,Maya Kim,Female,69,AB-,Medicare,1,0,0,0,2
+PAT-00329,Alexander Kowalski,Male,65,A-,Private Commercial,0,0,0,0,1
+PAT-00330,Elena Mercer,Female,65,B+,Medicare,0,0,0,1,3
+PAT-00331,James Holloway,Male,53,O-,Private Commercial,0,0,0,1,2
+PAT-00332,Alexander Chen,Male,36,AB+,Medicare,1,0,0,0,1
+PAT-00333,Benjamin Novak,Male,55,AB-,Private Commercial,0,1,0,0,2
+PAT-00334,Gabriel Rossi,Male,41,AB+,Private Commercial,1,0,1,0,3
+PAT-00335,Clara Chen,Female,72,B+,Medicare,1,0,0,0,2
+PAT-00336,James Nakamura,Male,51,O-,Medicare,0,0,0,0,0
+PAT-00337,Lucas Patel,Male,38,O+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00338,Clara Gupta,Female,47,O+,Medicare,0,0,0,0,0
+PAT-00339,James Novak,Male,61,A-,Uninsured / Self-Pay,1,0,0,0,2
+PAT-00340,Ethan Nakamura,Male,43,A-,Medicaid,0,0,0,1,2
+PAT-00341,Maya Kowalski,Female,38,O+,Private Commercial,0,0,0,0,0
+PAT-00342,Zoe Sterling,Female,58,AB-,Medicaid,0,1,0,0,2
+PAT-00343,Noah Vance,Male,58,O+,Medicare,1,1,0,0,3
+PAT-00344,Adrian Sterling,Male,44,O+,Medicare,0,0,0,0,0
+PAT-00345,Adrian Alvarez,Male,45,AB+,Medicaid,0,0,0,0,0
+PAT-00346,Amelia Rossi,Female,58,AB-,Private Commercial,1,1,0,0,3
+PAT-00347,Oliver Sinclair,Male,26,B+,Medicare,0,0,0,0,0
+PAT-00348,Oliver Holloway,Male,27,B-,Private Commercial,0,0,0,0,0
+PAT-00349,Julian Alvarez,Male,40,B-,Medicare,0,0,0,0,0
+PAT-00350,Gabriel Rossi,Male,49,B+,Private Commercial,0,0,0,1,2
+PAT-00351,James Holloway,Male,59,AB+,Medicare,0,0,0,0,0
+PAT-00352,Sophia Gupta,Female,82,AB-,Medicare,0,0,0,1,3
+PAT-00353,David Chen,Male,70,AB+,Medicare,1,0,1,1,6
+PAT-00354,William Mercer,Male,50,AB+,Private Commercial,0,0,0,0,0
+PAT-00355,Benjamin Kim,Male,53,B+,Private Commercial,1,1,0,0,3
+PAT-00356,Olivia Alvarez,Female,34,B-,Medicare,1,0,0,0,1
+PAT-00357,David Gupta,Male,53,O-,Medicaid,1,1,0,0,3
+PAT-00358,David Holloway,Male,48,AB+,Medicare,0,0,0,0,0
+PAT-00359,Maya Kowalski,Female,60,B+,Medicaid,0,1,0,0,2
+PAT-00360,Adrian Alvarez,Male,38,A-,Medicaid,1,0,0,0,1
+PAT-00361,Hazel Kim,Female,63,A-,Medicaid,0,0,0,0,1
+PAT-00362,Lucas Vance,Male,83,A+,Medicare,1,0,0,0,2
+PAT-00363,Elena Kowalski,Female,51,AB+,Medicare,0,0,0,0,0
+PAT-00364,Gabriel Novak,Male,61,AB+,Medicaid,1,0,0,1,4
+PAT-00365,Chloe Zhang,Female,67,AB+,Medicare,0,1,0,0,3
+PAT-00366,Marcus Alvarez,Male,46,B-,Private Commercial,0,0,1,0,2
+PAT-00367,Isabella Gupta,Female,58,AB+,Medicare,0,0,0,0,0
+PAT-00368,Aria Nakamura,Female,54,B-,Private Commercial,1,0,0,0,1
+PAT-00369,Amelia Novak,Female,55,A-,Medicare,0,0,0,0,0
+PAT-00370,Victoria Rossi,Female,39,A-,Private Commercial,0,0,0,0,0
+PAT-00371,Aria Gupta,Female,54,A+,Medicare,0,0,0,0,0
+PAT-00372,Elena Chen,Female,63,O+,Medicaid,1,0,0,1,4
+PAT-00373,Aria Patel,Female,81,O-,Private Commercial,1,0,0,0,2
+PAT-00374,Leo Gupta,Male,72,B-,Medicare,0,1,0,0,3
+PAT-00375,Aria Mercer,Female,94,A-,Private Commercial,1,1,1,0,6
+PAT-00376,Julian Patel,Male,39,O+,Medicaid,0,0,1,0,2
+PAT-00377,Julian Kowalski,Male,70,B+,Private Commercial,0,1,0,0,3
+PAT-00378,Isabella Holloway,Female,57,AB+,Medicaid,0,0,0,0,0
+PAT-00379,William Sinclair,Male,95,AB-,Medicare,1,0,0,0,2
+PAT-00380,Nora Rossi,Female,38,B+,Medicare,0,0,0,0,0
+PAT-00381,James Holloway,Male,38,B+,Medicare,0,0,0,0,0
+PAT-00382,Isabella Holloway,Female,42,B-,Private Commercial,0,0,0,0,0
+PAT-00383,Julian Gupta,Male,13,A+,Medicare,0,0,0,0,0
+PAT-00384,Elena Novak,Female,44,B-,Private Commercial,0,0,0,0,0
+PAT-00385,Leo Nakamura,Male,39,B+,Medicaid,0,0,0,0,0
+PAT-00386,Hazel Alvarez,Female,56,O-,Medicaid,0,0,0,0,0
+PAT-00387,William Alvarez,Male,60,A+,Medicare,0,0,0,1,2
+PAT-00388,Leo Kim,Male,89,A+,Private Commercial,0,0,0,1,3
+PAT-00389,Maya Kowalski,Female,72,A+,Medicaid,1,1,0,1,6
+PAT-00390,Noah Mercer,Male,43,AB-,Medicare,1,0,0,0,1
+PAT-00391,William Patel,Male,36,A-,Medicare,0,0,0,0,0
+PAT-00392,Julian Nakamura,Male,63,B+,Medicare,1,0,0,1,4
+PAT-00393,David O'Connor,Male,28,A+,Medicare,0,0,0,0,0
+PAT-00394,Maya Patel,Female,88,A-,Private Commercial,1,0,0,1,4
+PAT-00395,Ethan Chen,Male,76,O+,Medicare,0,1,0,0,3
+PAT-00396,Victoria Vance,Female,45,O+,Private Commercial,0,1,0,0,2
+PAT-00397,Clara Holloway,Female,21,O+,Medicare,0,0,0,0,0
+PAT-00398,Julian Novak,Male,79,O-,Medicare,0,0,0,0,1
+PAT-00399,Noah Patel,Male,51,B-,Private Commercial,0,0,0,0,0
+PAT-00400,Elena Vance,Female,77,A-,Medicare,0,0,0,0,1
+PAT-00401,Alexander Gupta,Male,23,O-,Private Commercial,0,0,0,0,0
+PAT-00402,Noah O'Connor,Male,42,B+,Medicare,0,1,0,0,2
+PAT-00403,Isabella Alvarez,Female,54,A+,Medicare,1,0,1,0,3
+PAT-00404,Zoe Novak,Female,54,AB+,Medicare,0,1,0,0,2
+PAT-00405,Amelia Holloway,Female,45,A+,Medicare,0,0,0,0,0
+PAT-00406,Gabriel Kowalski,Male,65,AB-,Medicare,1,0,0,0,2
+PAT-00407,Victoria Sinclair,Female,33,A+,Medicaid,0,0,0,0,0
+PAT-00408,Sophia Kim,Female,51,A-,Uninsured / Self-Pay,0,1,0,1,4
+PAT-00409,Chloe Alvarez,Female,56,AB+,Medicare,0,0,0,0,0
+PAT-00410,James Kowalski,Male,63,AB-,Medicare,0,0,0,1,3
+PAT-00411,Amelia Vance,Female,67,O-,Medicaid,0,0,0,0,1
+PAT-00412,Sophia Gupta,Female,32,O-,Medicare,0,0,0,0,0
+PAT-00413,William Chen,Male,24,A-,Private Commercial,0,0,0,0,0
+PAT-00414,Maya Sinclair,Female,78,AB-,Private Commercial,0,0,0,0,1
+PAT-00415,Aria Zhang,Female,60,B+,Medicaid,1,0,0,0,1
+PAT-00416,Aria Alvarez,Female,39,AB+,Medicare,1,0,0,0,1
+PAT-00417,Ethan Alvarez,Male,83,B-,Medicare,0,1,0,0,3
+PAT-00418,Emma Alvarez,Female,56,A+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00419,William Vance,Male,76,A+,Private Commercial,0,0,0,0,1
+PAT-00420,Oliver Sterling,Male,55,AB+,Medicare,1,0,0,0,1
+PAT-00421,David Holloway,Male,93,AB+,Medicaid,0,0,0,1,3
+PAT-00422,Hazel Rossi,Female,87,B+,Private Commercial,0,0,0,1,3
+PAT-00423,Oliver Kowalski,Male,49,B-,Medicaid,0,0,0,1,2
+PAT-00424,Nora O'Connor,Female,72,AB+,Medicare,0,0,1,1,5
+PAT-00425,Ethan Novak,Male,66,O+,Private Commercial,0,1,0,0,3
+PAT-00426,Olivia Vance,Female,80,A-,Private Commercial,1,0,0,0,2
+PAT-00427,Olivia O'Connor,Female,35,B-,Uninsured / Self-Pay,0,1,0,0,2
+PAT-00428,James Novak,Male,67,A-,Private Commercial,1,0,0,0,2
+PAT-00429,Victoria Patel,Female,74,O-,Medicare,0,0,0,1,3
+PAT-00430,Oliver Alvarez,Male,20,B+,Medicare,0,0,0,0,0
+PAT-00431,Aria Sterling,Female,31,B+,Medicaid,1,0,0,0,1
+PAT-00432,Sophia Rossi,Female,15,A+,Medicare,0,0,0,0,0
+PAT-00433,Sophia Sinclair,Female,48,A-,Uninsured / Self-Pay,1,0,0,0,1
+PAT-00434,Chloe Chen,Female,67,A-,Uninsured / Self-Pay,1,0,0,0,2
+PAT-00435,Isabella Alvarez,Female,82,B-,Medicaid,1,0,0,0,2
+PAT-00436,Clara Vance,Female,55,O-,Medicare,1,0,0,1,3
+PAT-00437,Julian Mercer,Male,84,O-,Medicare,1,0,1,0,4
+PAT-00438,Nora Mercer,Female,27,O-,Medicare,0,0,0,0,0
+PAT-00439,Adrian Novak,Male,21,AB+,Medicaid,0,0,0,0,0
+PAT-00440,Isabella Rossi,Female,52,O-,Private Commercial,1,0,0,0,1
+PAT-00441,Oliver Mercer,Male,61,O-,Medicare,1,0,0,0,2
+PAT-00442,Isabella Holloway,Female,53,AB+,Private Commercial,0,1,0,0,2
+PAT-00443,Nora Sterling,Female,14,B-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00444,William Sterling,Male,52,O-,Medicare,1,1,0,0,3
+PAT-00445,Olivia Kim,Female,29,B+,Medicare,0,0,0,0,0
+PAT-00446,Julian Vance,Male,66,O-,Medicare,0,0,0,0,1
+PAT-00447,David Alvarez,Male,60,A-,Medicare,1,0,0,0,1
+PAT-00448,Ethan Rossi,Male,36,A+,Medicaid,0,0,0,0,0
+PAT-00449,Victoria Rossi,Female,44,AB+,Medicare,0,0,0,0,0
+PAT-00450,Elena Rossi,Female,33,O-,Medicare,0,0,0,0,0
+PAT-00451,Gabriel Novak,Male,52,O-,Private Commercial,0,1,0,0,2
+PAT-00452,Gabriel Chen,Male,72,O+,Medicaid,0,0,0,1,3
+PAT-00453,Nora Sterling,Female,35,B+,Medicare,0,0,0,0,0
+PAT-00454,Lucas Sinclair,Male,63,A+,Private Commercial,0,0,0,0,1
+PAT-00455,Noah Kowalski,Male,43,AB-,Private Commercial,1,0,0,0,1
+PAT-00456,Ethan Gupta,Male,38,B-,Medicare,0,0,0,0,0
+PAT-00457,Emma Vance,Female,51,B+,Private Commercial,0,0,0,0,0
+PAT-00458,Zoe Kowalski,Female,34,O-,Medicaid,0,0,0,0,0
+PAT-00459,Olivia Holloway,Female,43,O+,Medicaid,0,0,0,0,0
+PAT-00460,Noah Kowalski,Male,31,A+,Medicare,0,0,0,0,0
+PAT-00461,Julian Nakamura,Male,91,AB-,Medicare,1,1,1,0,6
+PAT-00462,Julian Kim,Male,54,O+,Private Commercial,1,1,0,1,5
+PAT-00463,James Kowalski,Male,40,O+,Private Commercial,0,0,0,0,0
+PAT-00464,Sophia Patel,Female,58,AB+,Medicaid,0,0,0,1,2
+PAT-00465,Benjamin Novak,Male,51,O-,Medicare,1,0,0,0,1
+PAT-00466,Elena Alvarez,Female,49,A+,Medicaid,1,0,0,0,1
+PAT-00467,Noah Vance,Male,65,A+,Private Commercial,0,0,0,1,3
+PAT-00468,Adrian Kim,Male,68,A-,Private Commercial,0,0,1,0,3
+PAT-00469,Victoria Holloway,Female,43,O-,Medicaid,0,0,0,0,0
+PAT-00470,Clara Nakamura,Female,43,B+,Medicare,0,1,0,0,2
+PAT-00471,Benjamin Alvarez,Male,48,AB+,Medicare,0,0,0,0,0
+PAT-00472,Lucas Novak,Male,10,AB+,Private Commercial,0,0,0,0,0
+PAT-00473,Chloe Gupta,Female,25,B-,Private Commercial,0,0,0,0,0
+PAT-00474,Aria Sterling,Female,79,A+,Medicare,0,0,0,0,1
+PAT-00475,Victoria Rossi,Female,85,AB+,Uninsured / Self-Pay,0,0,0,1,3
+PAT-00476,Adrian Mercer,Male,49,B+,Medicare,0,0,0,1,2
+PAT-00477,Benjamin Vance,Male,64,B+,Private Commercial,0,0,0,0,1
+PAT-00478,Adrian Kowalski,Male,59,B+,Medicare,0,0,0,0,0
+PAT-00479,Benjamin Kowalski,Male,95,O-,Uninsured / Self-Pay,0,1,0,0,3
+PAT-00480,Maya Holloway,Female,75,O-,Medicaid,1,1,1,0,6
+PAT-00481,Maya Novak,Female,51,O+,Medicare,1,0,0,0,1
+PAT-00482,Chloe Alvarez,Female,35,B+,Private Commercial,0,0,0,0,0
+PAT-00483,Aria Zhang,Female,23,AB-,Private Commercial,0,0,0,0,0
+PAT-00484,Noah Alvarez,Male,57,A-,Private Commercial,1,0,0,0,1
+PAT-00485,Maya Chen,Female,39,B-,Medicare,0,0,0,0,0
+PAT-00486,Noah Rossi,Male,26,A-,Medicaid,0,0,0,0,0
+PAT-00487,Ethan Nakamura,Male,41,B-,Medicare,0,0,0,0,0
+PAT-00488,Alexander Mercer,Male,33,O+,Private Commercial,0,0,0,0,0
+PAT-00489,Zoe Rossi,Female,86,AB-,Medicare,1,0,0,0,2
+PAT-00490,Isabella Nakamura,Female,70,O+,Medicaid,0,1,0,0,3
+PAT-00491,Hazel Kowalski,Female,53,O+,Medicare,0,1,0,0,2
+PAT-00492,Lucas Alvarez,Male,82,A-,Medicare,1,0,0,0,2
+PAT-00493,Maya Kowalski,Female,55,AB+,Medicare,0,1,0,0,2
+PAT-00494,Benjamin Sterling,Male,37,A-,Medicaid,0,0,0,0,0
+PAT-00495,Olivia Sterling,Female,82,AB+,Medicaid,0,0,0,1,3
+PAT-00496,Victoria Gupta,Female,64,A+,Medicare,1,0,0,0,2
+PAT-00497,Clara Alvarez,Female,34,B+,Medicare,0,0,0,0,0
+PAT-00498,Sophia Sinclair,Female,50,A+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00499,Maya Rossi,Female,37,AB+,Medicaid,0,0,0,0,0
+PAT-00500,Nora Sterling,Female,27,AB+,Private Commercial,0,0,0,0,0
+PAT-00501,Alexander Kowalski,Male,71,AB+,Medicare,1,1,0,0,4
+PAT-00502,Victoria Sinclair,Female,90,O+,Medicare,0,0,0,1,3
+PAT-00503,Julian Novak,Male,27,O-,Medicare,0,0,0,0,0
+PAT-00504,Chloe Vance,Female,64,B+,Medicaid,1,0,0,1,4
+PAT-00505,Julian Holloway,Male,41,A+,Medicaid,0,0,0,0,0
+PAT-00506,James Vance,Male,44,B+,Medicaid,0,0,0,0,0
+PAT-00507,Oliver Kowalski,Male,42,AB+,Medicaid,0,0,0,0,0
+PAT-00508,Maya Gupta,Female,37,B+,Medicare,0,0,0,0,0
+PAT-00509,James Sterling,Male,54,AB-,Medicare,0,0,1,0,2
+PAT-00510,Victoria O'Connor,Female,38,AB+,Medicare,0,0,0,0,0
+PAT-00511,Oliver Holloway,Male,59,B+,Medicare,0,1,1,0,4
+PAT-00512,Isabella Patel,Female,53,AB-,Medicare,0,1,0,0,2
+PAT-00513,Olivia Rossi,Female,49,O-,Medicare,1,1,0,0,3
+PAT-00514,Oliver Zhang,Male,36,B-,Medicaid,0,0,0,0,0
+PAT-00515,Maya Zhang,Female,43,A+,Medicare,0,1,1,0,4
+PAT-00516,Sophia Gupta,Female,68,O+,Medicare,1,0,0,0,2
+PAT-00517,Lucas Zhang,Male,63,O-,Medicaid,1,0,0,0,2
+PAT-00518,Noah Holloway,Male,35,O+,Private Commercial,0,0,0,0,0
+PAT-00519,David Gupta,Male,55,A-,Uninsured / Self-Pay,0,1,0,0,2
+PAT-00520,Julian Kim,Male,68,A-,Medicare,1,1,0,1,6
+PAT-00521,Benjamin Gupta,Male,22,AB-,Medicare,0,0,0,0,0
+PAT-00522,Victoria Vance,Female,64,A+,Medicaid,1,0,0,0,2
+PAT-00523,Chloe Sinclair,Female,41,B-,Private Commercial,0,0,0,0,0
+PAT-00524,Emma Gupta,Female,64,A+,Medicaid,0,0,0,0,1
+PAT-00525,Aria Zhang,Female,39,O-,Medicaid,0,0,0,0,0
+PAT-00526,Amelia Novak,Female,19,A+,Private Commercial,0,0,0,0,0
+PAT-00527,Victoria Nakamura,Female,23,A-,Medicaid,0,0,0,0,0
+PAT-00528,Victoria Sterling,Female,54,O-,Medicare,0,0,0,1,2
+PAT-00529,Marcus Vance,Male,58,AB+,Private Commercial,1,0,1,0,3
+PAT-00530,Emma Sinclair,Female,36,AB-,Private Commercial,0,0,1,0,2
+PAT-00531,Noah Vance,Male,66,O+,Private Commercial,1,0,0,0,2
+PAT-00532,Chloe Vance,Female,22,O-,Medicare,0,0,0,0,0
+PAT-00533,William Holloway,Male,52,A+,Medicaid,1,0,0,0,1
+PAT-00534,Aria Alvarez,Female,30,AB+,Private Commercial,0,0,0,0,0
+PAT-00535,Adrian Kowalski,Male,41,AB-,Private Commercial,0,0,0,0,0
+PAT-00536,Chloe Rossi,Female,54,B-,Medicaid,0,0,0,0,0
+PAT-00537,Lucas Novak,Male,37,O+,Uninsured / Self-Pay,0,0,0,1,2
+PAT-00538,William Sterling,Male,46,B-,Medicare,0,0,0,0,0
+PAT-00539,Chloe Sterling,Female,73,A-,Medicare,1,0,1,1,6
+PAT-00540,Sophia Holloway,Female,43,AB-,Medicare,0,0,1,0,2
+PAT-00541,Benjamin O'Connor,Male,69,B-,Medicare,1,0,0,0,2
+PAT-00542,Isabella Alvarez,Female,32,O+,Medicaid,0,0,0,0,0
+PAT-00543,Emma O'Connor,Female,64,A-,Medicare,0,0,0,0,1
+PAT-00544,Clara Mercer,Female,81,O-,Medicaid,1,1,0,1,6
+PAT-00545,William Holloway,Male,7,A+,Medicaid,0,0,0,0,0
+PAT-00546,Noah Holloway,Male,38,A-,Medicare,0,0,0,0,0
+PAT-00547,Victoria Kim,Female,64,AB+,Medicare,1,0,1,0,4
+PAT-00548,Leo Sinclair,Male,50,AB-,Medicaid,0,1,0,0,2
+PAT-00549,Emma Nakamura,Female,61,O-,Private Commercial,1,0,0,0,2
+PAT-00550,Benjamin Sterling,Male,42,O-,Medicare,0,0,1,0,2
+PAT-00551,Emma Rossi,Female,55,B+,Medicaid,1,0,0,0,1
+PAT-00552,Oliver Chen,Male,51,O+,Medicare,0,0,0,0,0
+PAT-00553,Emma Zhang,Female,76,B-,Private Commercial,0,1,0,1,5
+PAT-00554,David Holloway,Male,58,B-,Medicaid,1,0,0,1,3
+PAT-00555,Marcus Patel,Male,60,A-,Private Commercial,0,0,0,1,2
+PAT-00556,Maya Gupta,Female,46,B+,Medicare,0,1,0,0,2
+PAT-00557,Victoria Vance,Female,44,O+,Private Commercial,0,0,0,0,0
+PAT-00558,Olivia Sterling,Female,45,A-,Medicare,0,0,0,0,0
+PAT-00559,Lucas O'Connor,Male,61,A+,Medicaid,0,0,0,1,3
+PAT-00560,Gabriel Sterling,Male,46,A+,Private Commercial,0,0,0,1,2
+PAT-00561,Leo Mercer,Male,59,A+,Private Commercial,0,0,1,0,2
+PAT-00562,Isabella Kim,Female,93,B+,Medicare,1,0,0,0,2
+PAT-00563,Alexander Sterling,Male,70,A-,Medicaid,1,0,0,0,2
+PAT-00564,Julian Chen,Male,47,AB-,Private Commercial,0,0,0,0,0
+PAT-00565,Elena Holloway,Female,76,O+,Private Commercial,1,1,1,1,8
+PAT-00566,Olivia Patel,Female,46,AB-,Private Commercial,0,1,0,0,2
+PAT-00567,Olivia Kim,Female,15,B-,Medicare,0,1,0,0,2
+PAT-00568,William Alvarez,Male,34,AB+,Uninsured / Self-Pay,0,0,1,0,2
+PAT-00569,William Holloway,Male,18,AB+,Private Commercial,0,0,0,0,0
+PAT-00570,Clara Kowalski,Female,47,A+,Medicaid,0,0,1,0,2
+PAT-00571,Sophia Alvarez,Female,54,AB+,Medicare,1,0,0,0,1
+PAT-00572,Emma Kowalski,Female,85,O-,Medicare,1,0,0,0,2
+PAT-00573,Oliver Alvarez,Male,60,AB+,Private Commercial,1,0,0,1,3
+PAT-00574,Lucas Holloway,Male,49,A+,Medicare,1,1,0,0,3
+PAT-00575,Marcus Vance,Male,69,A+,Medicare,1,1,0,0,4
+PAT-00576,Ethan Chen,Male,11,O+,Medicaid,0,0,0,0,0
+PAT-00577,Olivia Patel,Female,58,O+,Medicare,0,0,0,1,2
+PAT-00578,Zoe Patel,Female,68,O+,Private Commercial,1,1,0,1,6
+PAT-00579,Maya Mercer,Female,25,A+,Uninsured / Self-Pay,1,0,0,0,1
+PAT-00580,Emma Mercer,Female,75,AB+,Private Commercial,0,1,0,0,3
+PAT-00581,David Gupta,Male,60,A-,Private Commercial,1,0,0,0,1
+PAT-00582,Alexander Mercer,Male,46,B+,Medicaid,0,0,0,0,0
+PAT-00583,Amelia Sinclair,Female,66,AB-,Medicaid,0,0,0,0,1
+PAT-00584,Benjamin Nakamura,Male,95,O-,Private Commercial,0,0,1,1,5
+PAT-00585,Adrian Kim,Male,57,O+,Private Commercial,0,0,0,0,0
+PAT-00586,Amelia Mercer,Female,58,B-,Medicare,1,0,0,1,3
+PAT-00587,Gabriel Kowalski,Male,45,AB-,Private Commercial,1,0,0,0,1
+PAT-00588,Noah Sterling,Male,37,AB+,Private Commercial,0,0,0,0,0
+PAT-00589,Gabriel O'Connor,Male,69,B-,Private Commercial,0,0,0,1,3
+PAT-00590,Sophia Sterling,Female,37,A+,Medicaid,0,1,0,0,2
+PAT-00591,Elena Alvarez,Female,55,O+,Medicare,0,0,0,0,0
+PAT-00592,Noah Nakamura,Male,44,A+,Medicare,0,0,0,0,0
+PAT-00593,Adrian Patel,Male,63,A+,Medicare,0,0,1,0,3
+PAT-00594,Aria O'Connor,Female,60,A+,Medicare,0,1,0,0,2
+PAT-00595,Noah Holloway,Male,73,O-,Medicare,0,0,1,0,3
+PAT-00596,Alexander O'Connor,Male,44,A-,Medicare,1,0,0,0,1
+PAT-00597,Chloe Rossi,Female,48,O-,Medicare,0,0,0,0,0
+PAT-00598,Ethan Sinclair,Male,35,A-,Medicare,0,0,0,0,0
+PAT-00599,Zoe Rossi,Female,45,O+,Medicare,0,1,1,0,4
+PAT-00600,Alexander Kim,Male,61,AB-,Medicaid,0,0,0,0,1
+PAT-00601,Maya Patel,Female,68,AB-,Medicaid,0,0,0,0,1
+PAT-00602,Gabriel Zhang,Male,36,AB-,Medicare,1,0,0,0,1
+PAT-00603,Marcus Novak,Male,70,B-,Medicaid,0,0,0,0,1
+PAT-00604,Alexander Gupta,Male,79,B-,Medicaid,1,0,0,1,4
+PAT-00605,William Alvarez,Male,61,O-,Private Commercial,0,0,1,0,3
+PAT-00606,Isabella Kim,Female,89,O-,Medicare,1,1,1,0,6
+PAT-00607,Victoria Kim,Female,39,O-,Private Commercial,0,0,0,0,0
+PAT-00608,Sophia Zhang,Female,30,AB+,Medicare,0,0,0,0,0
+PAT-00609,Julian Holloway,Male,20,A+,Private Commercial,0,0,0,0,0
+PAT-00610,Adrian Sterling,Male,82,AB-,Medicare,0,0,0,0,1
+PAT-00611,Amelia O'Connor,Female,66,O-,Medicaid,0,0,0,0,1
+PAT-00612,Hazel Sterling,Female,52,O+,Private Commercial,0,1,0,0,2
+PAT-00613,Sophia O'Connor,Female,59,B-,Private Commercial,0,1,0,0,2
+PAT-00614,Isabella Kim,Female,32,AB+,Private Commercial,0,0,0,0,0
+PAT-00615,Hazel Kim,Female,95,O-,Private Commercial,1,0,0,1,4
+PAT-00616,Oliver Gupta,Male,56,AB+,Private Commercial,0,0,1,1,4
+PAT-00617,Zoe Kowalski,Female,56,A-,Medicare,0,0,0,0,0
+PAT-00618,Benjamin Gupta,Male,67,B-,Medicare,0,1,0,0,3
+PAT-00619,Benjamin Gupta,Male,63,A+,Private Commercial,0,1,0,0,3
+PAT-00620,Clara Mercer,Female,58,O-,Private Commercial,0,0,0,0,0
+PAT-00621,Zoe Vance,Female,38,AB-,Medicaid,0,0,1,0,2
+PAT-00622,Isabella Sinclair,Female,62,B+,Private Commercial,0,0,0,1,3
+PAT-00623,Emma Gupta,Female,89,O+,Medicare,1,0,0,1,4
+PAT-00624,Marcus Mercer,Male,79,B+,Medicare,0,1,1,1,7
+PAT-00625,Benjamin Kowalski,Male,84,A+,Medicare,0,0,0,0,1
+PAT-00626,Noah Kowalski,Male,44,A+,Medicaid,0,0,0,1,2
+PAT-00627,Gabriel Gupta,Male,35,A+,Medicare,0,0,0,0,0
+PAT-00628,Emma Novak,Female,51,B+,Medicaid,0,1,0,0,2
+PAT-00629,Lucas Holloway,Male,55,AB-,Medicare,0,1,0,1,4
+PAT-00630,Chloe Vance,Female,74,B+,Medicare,1,0,0,0,2
+PAT-00631,Victoria Alvarez,Female,21,A-,Private Commercial,0,0,0,0,0
+PAT-00632,William Rossi,Male,83,O+,Private Commercial,0,0,0,1,3
+PAT-00633,Lucas Alvarez,Male,50,B+,Medicare,0,0,0,0,0
+PAT-00634,Benjamin Mercer,Male,45,O-,Private Commercial,1,0,0,0,1
+PAT-00635,Alexander Sterling,Male,34,A+,Private Commercial,0,0,0,0,0
+PAT-00636,David O'Connor,Male,22,B+,Private Commercial,0,0,0,0,0
+PAT-00637,Amelia Kowalski,Female,69,O+,Medicare,0,1,1,0,5
+PAT-00638,Elena Zhang,Female,55,AB-,Medicare,1,0,0,0,1
+PAT-00639,Olivia Alvarez,Female,29,B+,Private Commercial,0,0,0,0,0
+PAT-00640,Noah Sterling,Male,29,A+,Private Commercial,0,1,0,0,2
+PAT-00641,Zoe Chen,Female,47,O-,Medicaid,0,0,0,0,0
+PAT-00642,Lucas Gupta,Male,85,B+,Medicare,1,0,0,1,4
+PAT-00643,Leo Rossi,Male,49,A+,Medicaid,1,0,0,0,1
+PAT-00644,Nora Patel,Female,25,AB-,Medicare,0,0,0,0,0
+PAT-00645,Aria Patel,Female,49,AB-,Medicare,1,1,0,0,3
+PAT-00646,Clara Zhang,Female,48,O+,Medicare,0,1,0,0,2
+PAT-00647,Adrian Zhang,Male,2,A-,Private Commercial,0,0,0,0,0
+PAT-00648,Oliver Sterling,Male,52,A-,Private Commercial,0,1,0,0,2
+PAT-00649,James Kowalski,Male,49,A+,Private Commercial,0,0,0,1,2
+PAT-00650,Gabriel Alvarez,Male,67,A-,Medicaid,1,0,0,1,4
+PAT-00651,Maya Alvarez,Female,89,A-,Private Commercial,0,0,1,0,3
+PAT-00652,Leo Mercer,Male,75,A+,Medicaid,1,1,0,0,4
+PAT-00653,Marcus Alvarez,Male,48,AB-,Medicare,0,0,0,0,0
+PAT-00654,Marcus Mercer,Male,32,AB-,Private Commercial,0,0,0,0,0
+PAT-00655,Marcus Novak,Male,95,O+,Medicaid,1,1,0,0,4
+PAT-00656,Zoe Mercer,Female,55,A-,Medicare,0,0,0,1,2
+PAT-00657,Benjamin Sinclair,Male,54,A-,Medicare,0,0,0,0,0
+PAT-00658,Alexander Sterling,Male,53,O+,Medicare,0,0,0,0,0
+PAT-00659,Amelia Patel,Female,57,O+,Medicare,0,0,0,0,0
+PAT-00660,William Kowalski,Male,51,A-,Private Commercial,1,1,0,1,5
+PAT-00661,Isabella Patel,Female,43,A-,Medicare,0,0,0,1,2
+PAT-00662,Hazel Patel,Female,43,AB+,Medicare,0,0,0,0,0
+PAT-00663,Elena Holloway,Female,53,B+,Medicare,0,0,0,0,0
+PAT-00664,James Vance,Male,43,B-,Medicare,0,1,0,0,2
+PAT-00665,Zoe Kowalski,Female,40,A-,Medicare,0,0,0,0,0
+PAT-00666,Hazel Patel,Female,56,A-,Medicare,0,0,0,0,0
+PAT-00667,Zoe Nakamura,Female,49,O+,Medicare,0,0,0,0,0
+PAT-00668,James Gupta,Male,82,O-,Medicaid,0,0,0,0,1
+PAT-00669,Alexander Chen,Male,3,A-,Private Commercial,0,0,0,0,0
+PAT-00670,James Gupta,Male,74,O+,Uninsured / Self-Pay,0,1,0,0,3
+PAT-00671,Victoria Sterling,Female,77,AB-,Private Commercial,0,0,0,0,1
+PAT-00672,Gabriel Mercer,Male,14,B+,Private Commercial,0,0,0,0,0
+PAT-00673,Adrian Mercer,Male,47,B-,Private Commercial,0,0,0,0,0
+PAT-00674,Lucas Sinclair,Male,46,O-,Medicaid,0,1,0,0,2
+PAT-00675,Marcus Rossi,Male,27,A-,Private Commercial,0,0,0,0,0
+PAT-00676,Leo Sinclair,Male,39,B-,Medicare,0,0,0,1,2
+PAT-00677,Chloe Alvarez,Female,32,AB-,Medicaid,0,0,0,0,0
+PAT-00678,Ethan Zhang,Male,87,O-,Medicare,1,1,1,0,6
+PAT-00679,Sophia Sterling,Female,71,B+,Medicare,0,0,0,0,1
+PAT-00680,Noah Sinclair,Male,78,O+,Private Commercial,1,0,1,1,6
+PAT-00681,Gabriel Rossi,Male,67,AB-,Medicaid,1,0,0,0,2
+PAT-00682,Adrian O'Connor,Male,32,O+,Medicare,0,0,0,0,0
+PAT-00683,Clara Kowalski,Female,44,A+,Private Commercial,0,0,0,0,0
+PAT-00684,Marcus Nakamura,Male,63,B-,Medicare,1,0,0,0,2
+PAT-00685,Julian Rossi,Male,30,B+,Medicare,0,0,0,0,0
+PAT-00686,Lucas Gupta,Male,67,B-,Private Commercial,0,0,0,1,3
+PAT-00687,Clara O'Connor,Female,49,AB-,Medicare,0,0,0,0,0
+PAT-00688,Oliver Gupta,Male,46,AB+,Medicaid,0,1,0,0,2
+PAT-00689,Noah Sinclair,Male,67,A-,Private Commercial,1,1,0,0,4
+PAT-00690,Olivia Chen,Female,62,AB+,Medicare,1,0,0,0,2
+PAT-00691,Zoe Vance,Female,47,B-,Medicare,0,0,0,0,0
+PAT-00692,David Sinclair,Male,76,AB-,Private Commercial,1,0,0,1,4
+PAT-00693,Victoria Zhang,Female,33,AB+,Medicare,0,0,0,0,0
+PAT-00694,Marcus Patel,Male,65,AB+,Medicare,1,0,0,0,2
+PAT-00695,Nora Novak,Female,65,A+,Medicare,1,0,0,0,2
+PAT-00696,Amelia Gupta,Female,48,AB-,Medicare,1,0,0,0,1
+PAT-00697,Marcus Novak,Male,60,B+,Medicare,1,0,0,1,3
+PAT-00698,Aria Nakamura,Female,30,B-,Medicaid,1,0,0,0,1
+PAT-00699,Hazel Novak,Female,71,O+,Private Commercial,0,0,0,1,3
+PAT-00700,Benjamin Vance,Male,50,O+,Medicare,1,0,0,0,1
+PAT-00701,Nora Sinclair,Female,44,A-,Private Commercial,1,0,0,1,3
+PAT-00702,Adrian Alvarez,Male,73,B+,Medicare,0,1,0,0,3
+PAT-00703,Sophia Sinclair,Female,40,AB-,Medicare,0,1,0,0,2
+PAT-00704,Alexander Patel,Male,27,O-,Medicare,0,0,0,0,0
+PAT-00705,Alexander Sterling,Male,24,AB-,Private Commercial,0,0,0,0,0
+PAT-00706,Elena O'Connor,Female,65,A+,Private Commercial,1,0,0,0,2
+PAT-00707,Elena Patel,Female,29,O-,Medicare,0,0,0,0,0
+PAT-00708,Victoria Kim,Female,87,O+,Medicaid,1,1,0,0,4
+PAT-00709,Emma Mercer,Female,14,A-,Medicaid,0,1,0,0,2
+PAT-00710,Marcus Sinclair,Male,86,B-,Medicare,1,1,0,1,6
+PAT-00711,William Mercer,Male,58,A-,Uninsured / Self-Pay,1,0,1,0,3
+PAT-00712,Adrian Chen,Male,52,AB-,Medicare,0,1,0,0,2
+PAT-00713,Noah Alvarez,Male,43,A-,Medicare,1,0,0,0,1
+PAT-00714,Sophia Zhang,Female,61,O+,Medicare,1,1,0,0,4
+PAT-00715,Sophia Holloway,Female,53,AB-,Medicare,1,0,0,0,1
+PAT-00716,Amelia Kim,Female,74,B-,Medicare,1,1,0,0,4
+PAT-00717,Nora Alvarez,Female,56,AB+,Medicare,0,0,0,1,2
+PAT-00718,Oliver Kowalski,Male,56,AB+,Medicare,1,0,0,0,1
+PAT-00719,Aria Gupta,Female,47,AB+,Medicare,0,0,0,0,0
+PAT-00720,Clara Novak,Female,52,A-,Medicaid,1,0,1,0,3
+PAT-00721,James Alvarez,Male,59,A+,Medicare,0,0,0,1,2
+PAT-00722,Elena O'Connor,Female,21,AB-,Private Commercial,0,0,0,0,0
+PAT-00723,David Gupta,Male,28,O+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00724,Lucas Alvarez,Male,68,O+,Medicare,1,1,0,0,4
+PAT-00725,Aria Kowalski,Female,57,O-,Medicaid,0,1,0,0,2
+PAT-00726,Nora Gupta,Female,50,AB-,Medicaid,0,0,0,0,0
+PAT-00727,Zoe Sinclair,Female,54,A+,Private Commercial,0,0,1,0,2
+PAT-00728,Victoria Chen,Female,60,B-,Medicare,0,0,0,0,0
+PAT-00729,Julian Nakamura,Male,43,O-,Private Commercial,0,0,0,0,0
+PAT-00730,Leo Kowalski,Male,39,AB+,Medicare,1,0,0,0,1
+PAT-00731,Zoe Chen,Female,57,AB-,Medicare,0,0,0,0,0
+PAT-00732,Leo Gupta,Male,35,B-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00733,Noah Mercer,Male,61,AB+,Private Commercial,0,0,0,1,3
+PAT-00734,Oliver Alvarez,Male,21,AB+,Medicare,0,0,0,0,0
+PAT-00735,Julian O'Connor,Male,73,AB+,Medicare,0,1,0,0,3
+PAT-00736,Nora Kowalski,Female,62,AB-,Medicare,0,0,0,1,3
+PAT-00737,Amelia Kim,Female,58,AB-,Medicare,0,0,1,1,4
+PAT-00738,Oliver O'Connor,Male,72,A-,Private Commercial,0,0,0,0,1
+PAT-00739,Hazel O'Connor,Female,85,O-,Medicare,0,1,0,0,3
+PAT-00740,Ethan O'Connor,Male,73,O+,Medicare,1,0,0,0,2
+PAT-00741,Elena Chen,Female,19,O+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00742,Victoria Chen,Female,29,O-,Private Commercial,1,0,0,0,1
+PAT-00743,Maya Mercer,Female,42,O-,Medicaid,0,0,0,0,0
+PAT-00744,Clara Mercer,Female,54,AB+,Private Commercial,1,1,0,0,3
+PAT-00745,Lucas Patel,Male,63,B+,Private Commercial,1,1,0,0,4
+PAT-00746,Noah Sinclair,Male,40,A-,Uninsured / Self-Pay,0,1,0,0,2
+PAT-00747,Leo Gupta,Male,57,O+,Private Commercial,0,0,1,0,2
+PAT-00748,Oliver Nakamura,Male,39,O-,Medicaid,0,0,0,0,0
+PAT-00749,Gabriel Zhang,Male,42,B+,Medicare,0,0,0,0,0
+PAT-00750,David Patel,Male,27,AB+,Private Commercial,0,0,0,0,0
+PAT-00751,Hazel Mercer,Female,36,B-,Private Commercial,0,0,0,0,0
+PAT-00752,Gabriel Kowalski,Male,28,B-,Medicaid,0,0,0,0,0
+PAT-00753,Adrian Vance,Male,35,O+,Medicare,0,0,0,0,0
+PAT-00754,Maya Mercer,Female,74,A+,Private Commercial,1,1,0,0,4
+PAT-00755,Victoria Rossi,Female,35,B-,Private Commercial,0,0,0,0,0
+PAT-00756,Alexander Kim,Male,95,A-,Medicare,1,1,0,0,4
+PAT-00757,William Nakamura,Male,63,A+,Medicare,0,0,0,0,1
+PAT-00758,Zoe Novak,Female,57,O+,Private Commercial,1,0,0,0,1
+PAT-00759,Victoria Zhang,Female,37,B+,Medicare,0,0,0,0,0
+PAT-00760,Isabella Sterling,Female,67,A-,Medicare,1,1,0,0,4
+PAT-00761,Victoria Sterling,Female,43,A-,Medicare,1,0,0,0,1
+PAT-00762,Sophia Chen,Female,56,A-,Private Commercial,0,0,0,0,0
+PAT-00763,Aria Novak,Female,95,AB-,Private Commercial,1,0,1,0,4
+PAT-00764,James Novak,Male,52,A+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00765,Benjamin Kowalski,Male,75,A+,Medicare,1,0,0,0,2
+PAT-00766,Elena Novak,Female,40,B+,Private Commercial,1,1,0,0,3
+PAT-00767,Amelia Novak,Female,53,A+,Medicare,0,0,0,0,0
+PAT-00768,Victoria Sterling,Female,87,A-,Medicare,1,0,0,0,2
+PAT-00769,Marcus Vance,Male,42,AB-,Medicare,0,0,0,1,2
+PAT-00770,Aria Gupta,Female,88,B-,Medicare,1,1,0,1,6
+PAT-00771,Elena Kowalski,Female,67,A-,Medicaid,0,0,0,0,1
+PAT-00772,William Kowalski,Male,43,B-,Medicare,0,1,0,0,2
+PAT-00773,Lucas Sinclair,Male,66,O-,Medicaid,0,0,0,1,3
+PAT-00774,Clara Novak,Female,72,AB-,Medicare,0,1,0,0,3
+PAT-00775,Ethan Vance,Male,65,AB+,Medicare,0,1,0,0,3
+PAT-00776,Elena Nakamura,Female,24,A+,Medicare,0,0,0,0,0
+PAT-00777,Amelia Sterling,Female,40,B+,Private Commercial,1,0,0,0,1
+PAT-00778,Leo Alvarez,Male,49,AB-,Medicare,0,0,0,0,0
+PAT-00779,Sophia Kim,Female,52,O+,Medicaid,0,0,0,0,0
+PAT-00780,Nora Nakamura,Female,65,O-,Medicare,0,0,0,0,1
+PAT-00781,Sophia Gupta,Female,57,A-,Medicaid,1,0,0,0,1
+PAT-00782,Zoe Vance,Female,28,AB+,Medicare,0,0,0,0,0
+PAT-00783,Maya Novak,Female,61,AB-,Medicare,0,0,1,0,3
+PAT-00784,Gabriel Holloway,Male,65,AB-,Private Commercial,1,0,0,0,2
+PAT-00785,Zoe Novak,Female,64,O-,Private Commercial,1,0,0,1,4
+PAT-00786,Hazel Alvarez,Female,74,AB-,Medicaid,1,1,0,1,6
+PAT-00787,Hazel Gupta,Female,69,AB+,Private Commercial,1,0,0,0,2
+PAT-00788,Marcus Sterling,Male,62,O+,Medicare,1,1,1,0,6
+PAT-00789,Julian Nakamura,Male,52,B+,Private Commercial,0,0,0,0,0
+PAT-00790,Noah Kim,Male,22,AB-,Medicaid,1,0,0,0,1
+PAT-00791,Zoe Nakamura,Female,62,O+,Medicare,1,0,0,1,4
+PAT-00792,Isabella Gupta,Female,57,AB-,Medicare,0,0,0,0,0
+PAT-00793,Olivia Vance,Female,59,AB+,Private Commercial,0,0,0,1,2
+PAT-00794,Noah Sinclair,Male,29,AB-,Medicare,0,0,0,0,0
+PAT-00795,William Nakamura,Male,33,AB-,Medicare,0,0,0,0,0
+PAT-00796,Aria Holloway,Female,74,AB-,Private Commercial,0,0,0,0,1
+PAT-00797,Benjamin Patel,Male,53,A-,Medicare,1,0,0,1,3
+PAT-00798,Sophia Kim,Female,66,O+,Medicare,0,0,0,0,1
+PAT-00799,Maya Kowalski,Female,54,B-,Medicaid,1,0,0,0,1
+PAT-00800,Alexander Nakamura,Male,54,B+,Private Commercial,0,0,0,0,0
+PAT-00801,Oliver Vance,Male,71,O-,Uninsured / Self-Pay,0,0,0,0,1
+PAT-00802,Gabriel Vance,Male,44,B-,Medicare,0,0,0,0,0
+PAT-00803,Aria Zhang,Female,55,B-,Medicare,0,0,0,1,2
+PAT-00804,Alexander Patel,Male,45,AB-,Medicare,0,0,0,0,0
+PAT-00805,Alexander Novak,Male,45,A+,Private Commercial,0,0,0,0,0
+PAT-00806,Victoria Nakamura,Female,48,B-,Private Commercial,1,0,0,0,1
+PAT-00807,Elena Chen,Female,58,AB+,Uninsured / Self-Pay,0,0,1,0,2
+PAT-00808,Lucas Vance,Male,44,O+,Uninsured / Self-Pay,0,1,0,0,2
+PAT-00809,Isabella Holloway,Female,77,B-,Private Commercial,0,0,0,0,1
+PAT-00810,Gabriel Novak,Male,37,A-,Private Commercial,0,0,0,0,0
+PAT-00811,Aria Sinclair,Female,50,B+,Medicare,0,0,0,0,0
+PAT-00812,Isabella Sterling,Female,45,B+,Medicaid,0,0,0,0,0
+PAT-00813,James Chen,Male,81,B+,Private Commercial,0,0,0,0,1
+PAT-00814,Oliver Vance,Male,57,O-,Medicaid,0,0,0,1,2
+PAT-00815,Noah Rossi,Male,73,A-,Medicare,0,0,0,0,1
+PAT-00816,Nora Sterling,Female,25,A-,Private Commercial,0,0,0,0,0
+PAT-00817,Clara Alvarez,Female,59,AB+,Private Commercial,1,0,0,1,3
+PAT-00818,Olivia Zhang,Female,70,AB+,Private Commercial,1,0,0,0,2
+PAT-00819,Nora Kim,Female,55,AB+,Private Commercial,0,0,0,0,0
+PAT-00820,William Sterling,Male,74,O-,Private Commercial,1,0,0,0,2
+PAT-00821,Clara Vance,Female,44,AB+,Medicare,0,0,0,0,0
+PAT-00822,Zoe O'Connor,Female,80,B+,Medicare,1,1,0,0,4
+PAT-00823,Adrian Sterling,Male,95,B+,Medicare,1,0,1,0,4
+PAT-00824,Emma Alvarez,Female,47,B+,Medicaid,0,1,1,0,4
+PAT-00825,Victoria Holloway,Female,45,AB-,Private Commercial,0,0,0,0,0
+PAT-00826,Elena Rossi,Female,81,AB+,Medicare,1,0,0,0,2
+PAT-00827,Julian Zhang,Male,84,B+,Medicaid,0,0,0,0,1
+PAT-00828,Julian Mercer,Male,44,A-,Private Commercial,1,0,0,1,3
+PAT-00829,Alexander Kowalski,Male,46,AB-,Medicare,0,0,0,0,0
+PAT-00830,Isabella Vance,Female,48,O+,Private Commercial,0,0,0,0,0
+PAT-00831,Isabella Novak,Female,28,A+,Medicare,0,0,0,0,0
+PAT-00832,Marcus O'Connor,Male,36,A+,Medicare,0,0,1,0,2
+PAT-00833,David Holloway,Male,34,O-,Medicare,1,0,0,0,1
+PAT-00834,Adrian Nakamura,Male,39,O+,Medicare,0,0,0,0,0
+PAT-00835,Sophia Gupta,Female,53,O-,Medicare,1,0,0,1,3
+PAT-00836,David Kim,Male,58,A+,Medicare,0,0,0,0,0
+PAT-00837,Adrian Nakamura,Male,83,O+,Private Commercial,1,0,0,0,2
+PAT-00838,Nora Kowalski,Female,35,AB+,Uninsured / Self-Pay,1,0,0,0,1
+PAT-00839,Benjamin O'Connor,Male,72,AB+,Private Commercial,1,0,0,0,2
+PAT-00840,Oliver Novak,Male,49,B-,Medicaid,0,0,0,0,0
+PAT-00841,Amelia Nakamura,Female,53,B-,Medicare,0,0,0,0,0
+PAT-00842,Julian Chen,Male,66,AB-,Private Commercial,0,1,1,1,7
+PAT-00843,Adrian Mercer,Male,32,O-,Medicare,0,0,0,0,0
+PAT-00844,Hazel Sinclair,Female,61,O-,Medicaid,0,0,0,0,1
+PAT-00845,Noah Chen,Male,57,B-,Medicare,1,1,0,0,3
+PAT-00846,Victoria Nakamura,Female,63,A-,Medicare,1,0,0,0,2
+PAT-00847,Sophia Novak,Female,59,A+,Medicare,0,0,0,0,0
+PAT-00848,Oliver Mercer,Male,95,B+,Medicare,1,0,0,0,2
+PAT-00849,Oliver Novak,Male,41,O+,Private Commercial,0,0,1,0,2
+PAT-00850,Isabella Kim,Female,43,O+,Private Commercial,0,0,0,0,0
+PAT-00851,James Novak,Male,42,B-,Medicare,0,0,0,0,0
+PAT-00852,Oliver Nakamura,Male,43,A+,Medicare,0,0,1,0,2
+PAT-00853,Julian Alvarez,Male,41,B-,Private Commercial,1,0,1,0,3
+PAT-00854,Alexander Gupta,Male,76,A-,Private Commercial,1,1,1,0,6
+PAT-00855,Victoria Alvarez,Female,80,O+,Medicare,0,0,1,1,5
+PAT-00856,Adrian Sterling,Male,43,AB+,Medicare,1,0,1,0,3
+PAT-00857,William Vance,Male,38,A-,Private Commercial,0,0,0,0,0
+PAT-00858,Noah Holloway,Male,62,O+,Medicaid,0,0,0,1,3
+PAT-00859,Zoe Patel,Female,43,A-,Private Commercial,1,1,0,0,3
+PAT-00860,Julian Novak,Male,66,A+,Private Commercial,1,0,0,1,4
+PAT-00861,Marcus O'Connor,Male,57,A+,Medicare,0,0,0,0,0
+PAT-00862,Zoe Rossi,Female,25,A+,Medicare,0,0,0,0,0
+PAT-00863,Lucas Sinclair,Male,83,B-,Medicare,1,1,0,0,4
+PAT-00864,Aria Zhang,Female,88,B+,Medicare,0,1,0,0,3
+PAT-00865,Alexander Zhang,Male,42,A-,Private Commercial,0,0,0,0,0
+PAT-00866,Zoe Patel,Female,46,AB+,Medicare,1,0,0,0,1
+PAT-00867,Gabriel Chen,Male,59,B+,Medicaid,1,1,1,1,7
+PAT-00868,Emma Chen,Female,60,A+,Medicare,1,0,0,0,1
+PAT-00869,Marcus Patel,Male,66,A+,Medicare,1,0,0,1,4
+PAT-00870,Leo Patel,Male,92,AB+,Private Commercial,1,1,0,0,4
+PAT-00871,Alexander Sterling,Male,50,B-,Medicare,0,1,0,0,2
+PAT-00872,Nora Nakamura,Female,38,B+,Private Commercial,0,0,0,0,0
+PAT-00873,Olivia Vance,Female,27,AB-,Medicare,0,0,0,0,0
+PAT-00874,Adrian Gupta,Male,40,B-,Medicaid,0,0,0,0,0
+PAT-00875,Elena Rossi,Female,53,AB-,Medicare,0,0,0,0,0
+PAT-00876,Nora Vance,Female,88,A-,Medicare,1,0,0,1,4
+PAT-00877,Zoe Kowalski,Female,44,O-,Medicare,0,0,0,0,0
+PAT-00878,Olivia Vance,Female,58,AB+,Medicare,0,0,0,0,0
+PAT-00879,Maya Novak,Female,53,B-,Private Commercial,0,1,0,0,2
+PAT-00880,Hazel Mercer,Female,76,O+,Medicaid,0,0,1,1,5
+PAT-00881,Olivia Rossi,Female,95,A-,Private Commercial,1,0,0,0,2
+PAT-00882,Gabriel Novak,Male,43,AB+,Private Commercial,1,0,0,0,1
+PAT-00883,Noah Sterling,Male,44,A-,Medicaid,0,0,0,0,0
+PAT-00884,Aria Zhang,Female,73,AB+,Medicare,1,1,0,0,4
+PAT-00885,Hazel Chen,Female,66,O+,Medicaid,1,0,1,0,4
+PAT-00886,Maya Nakamura,Female,89,B+,Medicare,1,0,0,0,2
+PAT-00887,Benjamin Vance,Male,65,AB+,Uninsured / Self-Pay,0,1,0,0,3
+PAT-00888,Lucas Mercer,Male,47,AB-,Medicaid,0,0,0,0,0
+PAT-00889,Sophia Kowalski,Female,65,AB-,Medicare,1,0,1,0,4
+PAT-00890,Alexander Holloway,Male,75,O+,Medicare,1,1,0,1,6
+PAT-00891,Marcus Rossi,Male,69,AB+,Medicaid,0,0,1,1,5
+PAT-00892,Lucas Patel,Male,63,AB-,Medicare,1,1,0,0,4
+PAT-00893,Zoe Patel,Female,74,A+,Medicaid,1,0,0,1,4
+PAT-00894,Zoe Nakamura,Female,76,O+,Private Commercial,0,0,0,0,1
+PAT-00895,Nora Zhang,Female,80,A+,Medicare,1,0,0,0,2
+PAT-00896,Benjamin Kim,Male,66,AB+,Private Commercial,0,0,1,0,3
+PAT-00897,Ethan Kowalski,Male,50,A-,Private Commercial,1,0,0,0,1
+PAT-00898,Victoria Alvarez,Female,56,B-,Medicare,0,1,1,0,4
+PAT-00899,David Patel,Male,76,AB-,Medicare,1,0,1,0,4
+PAT-00900,Hazel Patel,Female,38,B-,Private Commercial,0,1,0,0,2
+PAT-00901,Clara Zhang,Female,61,A+,Medicaid,1,0,0,0,2
+PAT-00902,Hazel Kowalski,Female,46,AB+,Medicare,1,1,1,0,5
+PAT-00903,Julian Novak,Male,54,A-,Medicaid,1,0,0,1,3
+PAT-00904,Gabriel Alvarez,Male,78,AB+,Private Commercial,1,1,1,1,8
+PAT-00905,Leo Nakamura,Male,57,A-,Private Commercial,1,1,1,1,7
+PAT-00906,Ethan Alvarez,Male,54,AB+,Medicaid,0,0,0,1,2
+PAT-00907,Maya Patel,Female,28,A-,Medicare,0,0,0,0,0
+PAT-00908,Maya Kowalski,Female,68,A-,Medicare,1,0,1,1,6
+PAT-00909,Nora Sinclair,Female,66,AB-,Uninsured / Self-Pay,1,0,0,0,2
+PAT-00910,Oliver Kowalski,Male,95,AB+,Private Commercial,1,1,0,0,4
+PAT-00911,Leo Kowalski,Male,48,AB-,Medicare,0,0,0,0,0
+PAT-00912,Benjamin Zhang,Male,58,O+,Medicare,0,0,0,0,0
+PAT-00913,David Nakamura,Male,58,B-,Medicaid,0,0,0,1,2
+PAT-00914,Marcus Holloway,Male,83,AB-,Private Commercial,1,1,0,0,4
+PAT-00915,Elena Novak,Female,52,AB+,Private Commercial,0,0,1,0,2
+PAT-00916,Victoria Chen,Female,59,O+,Private Commercial,1,0,0,1,3
+PAT-00917,Adrian Nakamura,Male,65,O+,Medicare,0,0,0,0,1
+PAT-00918,Sophia Patel,Female,57,A+,Medicaid,1,0,0,1,3
+PAT-00919,Ethan Mercer,Male,45,AB+,Medicare,0,0,0,0,0
+PAT-00920,David O'Connor,Male,57,AB-,Medicare,0,0,0,0,0
+PAT-00921,Isabella Holloway,Female,74,A+,Private Commercial,1,0,0,0,2
+PAT-00922,Emma Holloway,Female,34,A+,Medicaid,0,1,0,0,2
+PAT-00923,David Holloway,Male,56,O-,Medicare,0,0,0,0,0
+PAT-00924,Olivia Sterling,Female,40,B-,Medicaid,0,1,0,0,2
+PAT-00925,Isabella Sinclair,Female,76,O+,Uninsured / Self-Pay,1,1,0,1,6
+PAT-00926,Lucas Kowalski,Male,25,B-,Medicaid,0,0,0,0,0
+PAT-00927,Nora Sinclair,Female,43,A-,Medicaid,0,0,0,0,0
+PAT-00928,Nora Chen,Female,61,A+,Medicare,0,0,0,0,1
+PAT-00929,James Alvarez,Male,83,O-,Medicaid,0,0,0,0,1
+PAT-00930,Lucas Kowalski,Male,52,AB+,Medicaid,0,0,0,0,0
+PAT-00931,Victoria Mercer,Female,43,B+,Private Commercial,1,0,0,0,1
+PAT-00932,Aria O'Connor,Female,89,AB+,Medicaid,1,1,0,1,6
+PAT-00933,Aria Kim,Female,26,A+,Medicaid,0,0,0,0,0
+PAT-00934,Noah Patel,Male,12,B+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00935,Clara Alvarez,Female,62,B+,Medicare,0,1,0,0,3
+PAT-00936,Benjamin Nakamura,Male,44,O+,Private Commercial,0,0,0,1,2
+PAT-00937,Alexander Patel,Male,34,B+,Private Commercial,0,1,0,0,2
+PAT-00938,Victoria Rossi,Female,67,B-,Private Commercial,0,0,0,0,1
+PAT-00939,Nora Holloway,Female,58,O-,Medicare,0,1,0,0,2
+PAT-00940,Aria Sterling,Female,43,A-,Medicare,1,1,0,0,3
+PAT-00941,Chloe Kim,Female,29,B-,Medicare,0,1,0,0,2
+PAT-00942,Hazel Vance,Female,70,AB-,Medicare,0,0,0,1,3
+PAT-00943,Leo Kim,Male,66,O-,Private Commercial,0,0,0,0,1
+PAT-00944,Zoe Patel,Female,52,O+,Medicare,0,0,0,0,0
+PAT-00945,David Zhang,Male,89,A-,Medicare,1,0,1,0,4
+PAT-00946,Adrian Mercer,Male,33,B-,Private Commercial,1,0,1,0,3
+PAT-00947,Olivia Novak,Female,25,AB-,Medicare,0,0,0,0,0
+PAT-00948,Hazel Nakamura,Female,40,AB+,Private Commercial,0,0,0,0,0
+PAT-00949,Nora Kim,Female,53,O-,Medicare,0,0,1,1,4
+PAT-00950,Oliver Alvarez,Male,58,O+,Medicare,0,1,0,0,2
+PAT-00951,Gabriel Holloway,Male,49,A+,Medicaid,0,0,0,0,0
+PAT-00952,Alexander Holloway,Male,60,B+,Private Commercial,1,0,0,0,1
+PAT-00953,Nora Zhang,Female,30,O+,Medicaid,0,0,0,0,0
+PAT-00954,Chloe Alvarez,Female,81,A-,Medicaid,1,0,0,0,2
+PAT-00955,Emma Rossi,Female,52,A-,Private Commercial,1,0,0,0,1
+PAT-00956,Gabriel Kowalski,Male,75,A+,Uninsured / Self-Pay,0,0,0,0,1
+PAT-00957,Maya Kim,Female,60,B+,Medicare,0,0,0,0,0
+PAT-00958,Oliver Holloway,Male,62,O+,Private Commercial,1,0,0,0,2
+PAT-00959,Clara Kowalski,Female,64,A-,Medicare,0,0,0,0,1
+PAT-00960,Oliver Chen,Male,62,A+,Medicare,1,0,1,0,4
+PAT-00961,Nora Kowalski,Female,66,O+,Medicare,0,1,0,1,5
+PAT-00962,Zoe Kim,Female,79,A-,Medicare,0,0,0,1,3
+PAT-00963,Aria Kowalski,Female,57,O-,Private Commercial,0,0,0,0,0
+PAT-00964,Amelia Zhang,Female,67,A-,Medicare,1,1,1,0,6
+PAT-00965,Amelia Alvarez,Female,52,AB+,Medicare,0,1,0,0,2
+PAT-00966,Alexander Rossi,Male,81,O+,Medicare,1,0,0,1,4
+PAT-00967,Sophia Alvarez,Female,41,A+,Medicare,0,0,0,0,0
+PAT-00968,Victoria Rossi,Female,88,B+,Private Commercial,1,1,1,1,8
+PAT-00969,Alexander Alvarez,Male,53,O+,Medicare,0,0,0,0,0
+PAT-00970,William O'Connor,Male,26,B-,Medicaid,0,0,0,0,0
+PAT-00971,Oliver Alvarez,Male,56,A-,Uninsured / Self-Pay,0,1,1,1,6
+PAT-00972,Benjamin Sinclair,Male,41,B+,Medicare,0,0,0,0,0
+PAT-00973,Lucas Zhang,Male,69,A-,Medicare,1,1,0,0,4
+PAT-00974,Nora Patel,Female,41,A+,Medicare,0,0,0,0,0
+PAT-00975,Leo Kim,Male,45,O-,Private Commercial,0,0,0,0,0
+PAT-00976,Sophia Rossi,Female,18,A-,Medicare,0,0,0,0,0
+PAT-00977,Lucas Nakamura,Male,45,B+,Medicaid,0,1,0,0,2
+PAT-00978,Sophia Sinclair,Female,7,O+,Medicare,0,0,0,0,0
+PAT-00979,Elena Sinclair,Female,23,AB+,Medicaid,0,0,0,0,0
+PAT-00980,David Chen,Male,68,B+,Medicare,0,0,0,1,3
+PAT-00981,Aria Nakamura,Female,68,B-,Private Commercial,0,0,0,0,1
+PAT-00982,Amelia Kim,Female,62,O-,Private Commercial,0,0,0,0,1
+PAT-00983,Victoria Rossi,Female,35,O-,Medicare,0,0,0,0,0
+PAT-00984,Alexander O'Connor,Male,53,AB+,Private Commercial,0,0,0,0,0
+PAT-00985,Noah Gupta,Male,53,AB+,Medicare,0,0,0,0,0
+PAT-00986,Gabriel Chen,Male,31,O+,Medicaid,0,0,0,0,0
+PAT-00987,Julian Nakamura,Male,82,O+,Medicaid,1,1,1,0,6
+PAT-00988,Elena Sinclair,Female,70,O-,Medicare,0,0,0,0,1
+PAT-00989,Amelia Novak,Female,49,B+,Private Commercial,1,0,0,0,1
+PAT-00990,Noah Gupta,Male,54,O-,Medicare,1,1,0,0,3
+PAT-00991,Lucas Sinclair,Male,57,A+,Medicare,1,0,0,0,1
+PAT-00992,Emma Sterling,Female,15,B-,Medicaid,0,0,0,0,0
+PAT-00993,William Novak,Male,49,B-,Private Commercial,1,0,0,0,1
+PAT-00994,Leo Patel,Male,41,B-,Private Commercial,1,0,0,0,1
+PAT-00995,Julian Patel,Male,34,AB-,Medicaid,0,0,0,0,0
+PAT-00996,Leo Holloway,Male,48,O-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-00997,Marcus Sterling,Male,88,B-,Medicaid,1,1,0,1,6
+PAT-00998,Lucas Gupta,Male,66,A+,Private Commercial,1,0,0,0,2
+PAT-00999,Ethan Novak,Male,43,AB+,Medicare,0,0,0,0,0
+PAT-01000,Oliver Kowalski,Male,64,O-,Medicare,1,0,0,1,4
+PAT-01001,David Patel,Male,80,O+,Medicare,0,0,0,1,3
+PAT-01002,Aria Nakamura,Female,71,O+,Medicare,1,0,1,0,4
+PAT-01003,Maya Novak,Female,55,A+,Medicare,0,0,0,0,0
+PAT-01004,Julian Rossi,Male,41,A+,Medicare,0,0,0,1,2
+PAT-01005,Maya Rossi,Female,67,A+,Medicare,1,1,1,0,6
+PAT-01006,Aria Sinclair,Female,61,O-,Medicare,1,0,0,1,4
+PAT-01007,James Patel,Male,71,B-,Medicare,1,0,1,0,4
+PAT-01008,Victoria Patel,Female,66,B+,Private Commercial,0,1,1,0,5
+PAT-01009,Maya Zhang,Female,73,O+,Medicare,0,1,0,0,3
+PAT-01010,Aria Sterling,Female,43,A-,Private Commercial,0,0,1,0,2
+PAT-01011,Clara Mercer,Female,79,AB+,Medicaid,1,0,0,0,2
+PAT-01012,Marcus Chen,Male,57,AB-,Medicaid,1,1,0,0,3
+PAT-01013,Amelia Nakamura,Female,93,A-,Medicare,1,1,1,1,8
+PAT-01014,David Sterling,Male,40,A-,Medicaid,0,0,0,0,0
+PAT-01015,Julian Sinclair,Male,86,B+,Private Commercial,0,0,0,0,1
+PAT-01016,Zoe O'Connor,Female,57,A-,Private Commercial,1,1,0,0,3
+PAT-01017,Elena Novak,Female,41,O-,Private Commercial,0,0,0,0,0
+PAT-01018,Nora Novak,Female,44,A-,Medicare,0,0,0,0,0
+PAT-01019,Benjamin Holloway,Male,47,AB-,Medicare,1,0,0,0,1
+PAT-01020,Noah Kowalski,Male,62,A+,Private Commercial,0,1,0,0,3
+PAT-01021,David Kowalski,Male,63,A+,Medicare,0,0,0,1,3
+PAT-01022,Noah Holloway,Male,43,O-,Medicare,1,0,0,0,1
+PAT-01023,Alexander Chen,Male,53,O-,Medicare,0,0,1,0,2
+PAT-01024,Adrian Chen,Male,94,O-,Medicare,0,1,0,1,5
+PAT-01025,Victoria Zhang,Female,86,B+,Medicaid,0,1,0,1,5
+PAT-01026,James Vance,Male,62,A+,Medicare,1,0,0,0,2
+PAT-01027,James Nakamura,Male,54,AB+,Private Commercial,0,1,0,0,2
+PAT-01028,Noah Kowalski,Male,56,O-,Medicaid,0,1,0,0,2
+PAT-01029,Leo Mercer,Male,65,A+,Private Commercial,0,0,1,0,3
+PAT-01030,Julian O'Connor,Male,34,AB-,Private Commercial,0,0,0,0,0
+PAT-01031,Victoria Mercer,Female,49,A+,Medicare,0,0,0,0,0
+PAT-01032,Clara Gupta,Female,22,A+,Medicare,0,0,0,0,0
+PAT-01033,Marcus Holloway,Male,61,B-,Medicare,1,0,0,0,2
+PAT-01034,Lucas Kim,Male,66,A-,Medicare,0,0,0,0,1
+PAT-01035,Chloe Nakamura,Female,44,O+,Medicare,0,0,1,0,2
+PAT-01036,Elena Alvarez,Female,83,A+,Medicare,1,1,0,0,4
+PAT-01037,Gabriel Kim,Male,30,A+,Medicare,0,0,0,0,0
+PAT-01038,Oliver Kim,Male,26,A+,Medicare,0,0,0,0,0
+PAT-01039,Elena Mercer,Female,58,A+,Medicaid,1,1,0,0,3
+PAT-01040,Oliver O'Connor,Male,73,O+,Medicare,1,0,0,0,2
+PAT-01041,James Vance,Male,85,AB+,Private Commercial,0,1,1,0,5
+PAT-01042,Chloe Novak,Female,45,A+,Medicare,0,0,0,0,0
+PAT-01043,William Holloway,Male,74,A-,Medicare,0,1,1,0,5
+PAT-01044,Gabriel Zhang,Male,53,O+,Private Commercial,0,0,0,0,0
+PAT-01045,Olivia Novak,Female,50,O+,Medicare,1,1,0,0,3
+PAT-01046,William Alvarez,Male,70,A-,Medicaid,1,0,0,0,2
+PAT-01047,Ethan Novak,Male,66,AB-,Medicare,1,0,1,0,4
+PAT-01048,Sophia O'Connor,Female,24,A-,Medicare,1,0,0,0,1
+PAT-01049,Aria Sinclair,Female,82,O-,Medicaid,0,0,1,0,3
+PAT-01050,James Holloway,Male,80,AB-,Medicare,1,0,1,1,6
+PAT-01051,Oliver Nakamura,Male,42,A+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01052,Clara Sterling,Female,61,AB+,Medicare,1,0,0,0,2
+PAT-01053,Marcus Gupta,Male,63,O-,Medicaid,1,1,0,0,4
+PAT-01054,Maya Kowalski,Female,58,O-,Medicare,0,1,0,0,2
+PAT-01055,Amelia Gupta,Female,43,O-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01056,Emma Sinclair,Female,41,A+,Medicaid,0,0,0,0,0
+PAT-01057,Maya Mercer,Female,53,O+,Medicaid,0,0,0,0,0
+PAT-01058,Oliver Nakamura,Male,76,AB+,Medicare,0,0,1,1,5
+PAT-01059,Hazel Mercer,Female,64,AB-,Private Commercial,1,0,0,0,2
+PAT-01060,Sophia Mercer,Female,46,AB+,Medicare,1,1,0,0,3
+PAT-01061,Sophia Rossi,Female,68,O-,Medicare,1,0,0,0,2
+PAT-01062,William Sterling,Male,1,AB+,Medicare,0,0,0,0,0
+PAT-01063,Victoria Kim,Female,75,AB+,Medicare,0,1,1,1,7
+PAT-01064,Alexander Sterling,Male,20,AB+,Medicaid,1,0,0,0,1
+PAT-01065,Elena Vance,Female,47,A+,Medicare,1,0,0,0,1
+PAT-01066,Clara Gupta,Female,32,AB+,Private Commercial,0,0,0,0,0
+PAT-01067,Alexander Sterling,Male,29,B-,Medicare,0,0,0,0,0
+PAT-01068,Elena Gupta,Female,76,O+,Uninsured / Self-Pay,0,1,0,0,3
+PAT-01069,Julian Zhang,Male,45,A-,Medicaid,0,0,1,0,2
+PAT-01070,Benjamin Holloway,Male,60,O+,Medicare,1,1,0,0,3
+PAT-01071,Emma O'Connor,Female,53,AB-,Medicare,0,0,0,0,0
+PAT-01072,Maya Kim,Female,63,AB+,Medicare,0,0,1,1,5
+PAT-01073,William Kim,Male,55,B+,Private Commercial,0,0,0,0,0
+PAT-01074,Alexander Alvarez,Male,29,O-,Medicaid,0,1,0,0,2
+PAT-01075,Julian O'Connor,Male,72,O-,Medicare,0,1,0,0,3
+PAT-01076,Sophia Sinclair,Female,44,AB+,Medicare,0,0,0,0,0
+PAT-01077,Victoria Nakamura,Female,24,AB+,Private Commercial,0,0,0,0,0
+PAT-01078,Lucas Vance,Male,45,B-,Medicare,1,1,0,0,3
+PAT-01079,Olivia Holloway,Female,82,AB+,Medicare,1,0,0,0,2
+PAT-01080,Aria Kowalski,Female,70,A+,Medicaid,1,1,1,1,8
+PAT-01081,Hazel Novak,Female,47,O+,Medicaid,0,1,0,1,4
+PAT-01082,James Mercer,Male,47,B-,Medicare,0,1,0,0,2
+PAT-01083,David Patel,Male,47,B+,Private Commercial,0,0,0,0,0
+PAT-01084,Sophia Sterling,Female,93,AB-,Private Commercial,0,0,0,1,3
+PAT-01085,Alexander Sterling,Male,61,B-,Private Commercial,1,0,1,0,4
+PAT-01086,Lucas Alvarez,Male,62,O-,Medicare,0,1,1,0,5
+PAT-01087,Isabella Rossi,Female,73,A+,Private Commercial,0,0,1,0,3
+PAT-01088,Alexander Rossi,Male,58,A+,Medicaid,0,0,0,0,0
+PAT-01089,Sophia Patel,Female,49,A-,Private Commercial,0,0,0,0,0
+PAT-01090,Ethan Chen,Male,50,B+,Medicare,0,0,0,0,0
+PAT-01091,Alexander Sinclair,Male,52,AB+,Medicaid,0,0,0,0,0
+PAT-01092,Olivia Novak,Female,53,AB+,Medicare,1,0,0,0,1
+PAT-01093,Elena Patel,Female,67,B+,Private Commercial,0,0,0,0,1
+PAT-01094,Benjamin Holloway,Male,54,O-,Medicaid,0,0,0,0,0
+PAT-01095,William Novak,Male,67,B-,Medicare,0,1,0,0,3
+PAT-01096,Marcus Rossi,Male,52,B-,Medicare,0,1,0,0,2
+PAT-01097,Sophia Chen,Female,55,B-,Private Commercial,1,1,0,0,3
+PAT-01098,Lucas O'Connor,Male,16,O-,Medicaid,0,0,0,0,0
+PAT-01099,Nora Kim,Female,71,AB-,Medicare,1,1,1,0,6
+PAT-01100,Isabella Alvarez,Female,60,O+,Medicare,1,1,0,0,3
+PAT-01101,Noah O'Connor,Male,72,O+,Medicare,1,0,1,0,4
+PAT-01102,Alexander Gupta,Male,1,B-,Medicare,0,0,0,0,0
+PAT-01103,Clara Vance,Female,93,O-,Private Commercial,1,0,0,0,2
+PAT-01104,James Nakamura,Male,51,AB+,Medicare,1,1,1,0,5
+PAT-01105,Ethan Sinclair,Male,75,O+,Medicare,0,0,1,0,3
+PAT-01106,Alexander Vance,Male,34,AB+,Medicare,0,1,0,0,2
+PAT-01107,Marcus Zhang,Male,65,AB+,Medicaid,1,0,1,0,4
+PAT-01108,William Nakamura,Male,33,AB-,Medicare,0,0,0,0,0
+PAT-01109,Victoria O'Connor,Female,42,A-,Private Commercial,0,0,0,0,0
+PAT-01110,Noah Vance,Male,90,AB-,Medicare,1,0,0,0,2
+PAT-01111,Gabriel Rossi,Male,50,O-,Private Commercial,0,0,0,1,2
+PAT-01112,Leo Holloway,Male,58,A-,Medicare,0,0,0,0,0
+PAT-01113,Elena O'Connor,Female,70,O-,Private Commercial,0,0,1,0,3
+PAT-01114,James Zhang,Male,63,B+,Medicare,1,1,0,0,4
+PAT-01115,Leo Kim,Male,56,AB-,Medicare,1,0,0,0,1
+PAT-01116,James Holloway,Male,60,B+,Medicaid,0,0,0,0,0
+PAT-01117,Chloe Kim,Female,95,O-,Medicare,1,1,1,1,8
+PAT-01118,Benjamin Novak,Male,52,AB+,Medicare,1,0,0,0,1
+PAT-01119,Ethan Novak,Male,57,B+,Private Commercial,0,1,0,0,2
+PAT-01120,Marcus Gupta,Male,73,O-,Medicare,0,0,0,1,3
+PAT-01121,Clara Sterling,Female,75,B+,Private Commercial,0,0,0,1,3
+PAT-01122,Julian Chen,Male,76,A-,Medicaid,0,0,0,0,1
+PAT-01123,Gabriel Chen,Male,66,A+,Private Commercial,0,0,0,0,1
+PAT-01124,Alexander O'Connor,Male,32,B+,Private Commercial,0,0,0,0,0
+PAT-01125,Maya Zhang,Female,85,AB-,Medicare,1,1,0,0,4
+PAT-01126,Marcus Kim,Male,32,A-,Medicaid,0,0,0,0,0
+PAT-01127,Maya Patel,Female,59,B+,Private Commercial,0,1,0,0,2
+PAT-01128,Chloe Kowalski,Female,39,AB+,Private Commercial,0,0,0,0,0
+PAT-01129,Amelia Patel,Female,52,AB+,Private Commercial,1,0,0,0,1
+PAT-01130,Amelia Alvarez,Female,60,A+,Medicaid,0,0,0,0,0
+PAT-01131,Zoe Kowalski,Female,60,O+,Medicare,1,0,0,1,3
+PAT-01132,James Gupta,Male,62,B+,Medicare,1,0,0,1,4
+PAT-01133,Victoria Sterling,Female,84,AB+,Medicaid,0,0,1,0,3
+PAT-01134,David Nakamura,Male,62,AB+,Medicaid,1,0,0,0,2
+PAT-01135,David O'Connor,Male,49,A+,Private Commercial,0,1,0,0,2
+PAT-01136,David Sterling,Male,72,AB-,Medicaid,1,1,0,0,4
+PAT-01137,Victoria Kim,Female,76,B-,Medicaid,1,0,0,0,2
+PAT-01138,Clara Kim,Female,30,AB+,Medicare,0,0,0,1,2
+PAT-01139,Benjamin O'Connor,Male,65,B+,Medicare,0,0,0,0,1
+PAT-01140,Elena Holloway,Female,67,O+,Medicare,0,0,0,0,1
+PAT-01141,Hazel Alvarez,Female,48,B-,Private Commercial,0,1,0,0,2
+PAT-01142,Oliver Vance,Male,80,A+,Medicare,0,0,0,0,1
+PAT-01143,David O'Connor,Male,51,A-,Medicare,0,0,0,0,0
+PAT-01144,Marcus Alvarez,Male,56,AB-,Medicare,0,0,1,1,4
+PAT-01145,David Holloway,Male,50,B+,Private Commercial,0,1,0,0,2
+PAT-01146,Hazel Alvarez,Female,54,A-,Medicare,0,0,0,0,0
+PAT-01147,Noah Gupta,Male,33,B+,Medicare,0,0,0,0,0
+PAT-01148,Noah Kim,Male,26,AB+,Medicare,0,0,0,0,0
+PAT-01149,Emma Zhang,Female,84,AB-,Medicare,1,0,0,0,2
+PAT-01150,Leo Patel,Male,37,A+,Medicare,0,0,0,1,2
+PAT-01151,Clara Sterling,Female,35,AB-,Medicare,0,0,0,0,0
+PAT-01152,Zoe Kowalski,Female,13,A+,Private Commercial,0,0,0,0,0
+PAT-01153,Zoe Holloway,Female,41,O-,Medicaid,1,1,0,0,3
+PAT-01154,Maya Nakamura,Female,28,A+,Private Commercial,0,0,0,0,0
+PAT-01155,Victoria Kim,Female,85,O-,Medicaid,0,1,1,1,7
+PAT-01156,Zoe Chen,Female,73,A-,Medicare,0,1,0,0,3
+PAT-01157,Clara O'Connor,Female,40,A-,Medicare,0,0,0,0,0
+PAT-01158,Julian Alvarez,Male,95,AB+,Medicaid,1,0,0,0,2
+PAT-01159,Leo Kowalski,Male,72,A-,Private Commercial,0,0,0,0,1
+PAT-01160,Chloe Sinclair,Female,47,AB-,Medicaid,0,0,0,0,0
+PAT-01161,Hazel Mercer,Female,6,AB-,Medicare,0,0,0,0,0
+PAT-01162,Emma Nakamura,Female,95,B-,Medicare,0,1,0,0,3
+PAT-01163,David Mercer,Male,27,B+,Medicare,0,0,0,0,0
+PAT-01164,William Alvarez,Male,22,O+,Medicare,0,0,0,0,0
+PAT-01165,Olivia Rossi,Female,73,B-,Private Commercial,0,1,1,0,5
+PAT-01166,Ethan Gupta,Male,95,O+,Medicare,1,0,0,0,2
+PAT-01167,Lucas Mercer,Male,80,O-,Medicare,0,0,1,0,3
+PAT-01168,Julian Sinclair,Male,64,O+,Private Commercial,0,0,0,0,1
+PAT-01169,Adrian Patel,Male,65,AB-,Medicare,0,0,0,0,1
+PAT-01170,Aria Sterling,Female,70,B-,Medicare,1,0,1,0,4
+PAT-01171,Isabella Vance,Female,68,O+,Uninsured / Self-Pay,1,1,1,0,6
+PAT-01172,Gabriel Nakamura,Male,59,O+,Medicare,0,1,1,1,6
+PAT-01173,David Sterling,Male,55,B+,Private Commercial,0,0,1,1,4
+PAT-01174,Noah Sinclair,Male,52,B-,Private Commercial,0,0,0,0,0
+PAT-01175,Hazel Nakamura,Female,39,O+,Medicare,0,0,0,0,0
+PAT-01176,Aria Gupta,Female,48,A-,Medicare,0,0,0,0,0
+PAT-01177,Alexander Sinclair,Male,21,AB-,Private Commercial,0,0,0,0,0
+PAT-01178,Sophia Chen,Female,52,O-,Medicare,0,1,0,0,2
+PAT-01179,Clara Chen,Female,35,A+,Private Commercial,0,0,1,0,2
+PAT-01180,Julian O'Connor,Male,33,B-,Private Commercial,1,0,0,0,1
+PAT-01181,Victoria Patel,Female,57,AB+,Private Commercial,0,0,0,0,0
+PAT-01182,Adrian Alvarez,Male,80,AB-,Medicaid,1,0,0,1,4
+PAT-01183,Elena Holloway,Female,71,B+,Private Commercial,1,0,0,0,2
+PAT-01184,Sophia Nakamura,Female,24,B+,Medicare,0,0,0,1,2
+PAT-01185,Victoria Chen,Female,35,A+,Medicaid,1,0,0,0,1
+PAT-01186,Noah Chen,Male,71,A-,Medicare,1,0,0,0,2
+PAT-01187,David Rossi,Male,35,B+,Private Commercial,0,0,0,0,0
+PAT-01188,Ethan Kowalski,Male,49,O+,Medicare,1,0,1,1,5
+PAT-01189,Zoe Rossi,Female,64,B+,Uninsured / Self-Pay,1,0,1,0,4
+PAT-01190,Julian Sinclair,Male,35,AB-,Medicare,0,1,0,0,2
+PAT-01191,Ethan Patel,Male,56,AB+,Private Commercial,1,0,0,0,1
+PAT-01192,James Rossi,Male,28,B-,Medicaid,0,0,0,0,0
+PAT-01193,Zoe Chen,Female,42,O+,Medicare,1,1,0,0,3
+PAT-01194,Adrian Rossi,Male,60,B-,Private Commercial,0,0,0,0,0
+PAT-01195,Hazel Vance,Female,23,O-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01196,Benjamin Kim,Male,62,AB-,Private Commercial,0,1,0,0,3
+PAT-01197,Maya Novak,Female,53,B-,Medicare,1,0,0,0,1
+PAT-01198,Aria Alvarez,Female,64,O-,Medicare,0,0,0,0,1
+PAT-01199,Leo Gupta,Male,58,A+,Private Commercial,0,0,0,0,0
+PAT-01200,Adrian Kim,Male,79,B-,Medicare,0,0,0,0,1
+PAT-01201,Lucas Kim,Male,56,A-,Private Commercial,0,1,0,0,2
+PAT-01202,Emma Kowalski,Female,45,O-,Medicare,1,0,0,0,1
+PAT-01203,Gabriel Kim,Male,56,AB+,Private Commercial,1,1,1,0,5
+PAT-01204,Elena Holloway,Female,64,B-,Medicaid,0,1,0,0,3
+PAT-01205,Oliver Vance,Male,54,AB-,Private Commercial,1,0,0,0,1
+PAT-01206,Amelia Gupta,Female,54,O-,Medicare,0,0,0,0,0
+PAT-01207,Benjamin Sinclair,Male,40,B+,Private Commercial,0,0,0,0,0
+PAT-01208,Ethan O'Connor,Male,41,AB+,Medicare,0,1,0,0,2
+PAT-01209,Maya Kowalski,Female,27,A-,Medicaid,0,1,0,0,2
+PAT-01210,Zoe Rossi,Female,87,AB-,Medicare,1,1,1,1,8
+PAT-01211,David Novak,Male,30,A+,Medicare,0,0,0,0,0
+PAT-01212,James Vance,Male,40,O+,Medicare,0,0,0,1,2
+PAT-01213,Zoe Kim,Female,40,O-,Private Commercial,0,0,0,0,0
+PAT-01214,Noah Kim,Male,71,O-,Uninsured / Self-Pay,0,1,1,0,5
+PAT-01215,Oliver Nakamura,Male,48,O-,Private Commercial,0,0,0,0,0
+PAT-01216,Emma Kim,Female,77,O+,Private Commercial,1,0,0,1,4
+PAT-01217,Ethan Sterling,Male,41,AB-,Medicare,0,0,0,0,0
+PAT-01218,Oliver Gupta,Male,59,A-,Medicare,1,1,0,0,3
+PAT-01219,Noah Patel,Male,38,A-,Medicaid,0,1,0,0,2
+PAT-01220,Chloe Kowalski,Female,94,AB-,Private Commercial,0,0,0,0,1
+PAT-01221,Zoe Sinclair,Female,31,B+,Medicare,0,0,0,0,0
+PAT-01222,Maya Nakamura,Female,59,O-,Medicare,0,1,0,0,2
+PAT-01223,Aria Sterling,Female,66,AB+,Private Commercial,0,0,0,0,1
+PAT-01224,David Novak,Male,61,B-,Medicare,0,0,0,1,3
+PAT-01225,Isabella Holloway,Female,50,AB-,Private Commercial,0,0,0,1,2
+PAT-01226,Nora Vance,Female,51,A-,Private Commercial,0,0,0,0,0
+PAT-01227,Benjamin Rossi,Male,54,AB+,Medicare,1,0,0,1,3
+PAT-01228,Maya Mercer,Female,51,A+,Private Commercial,0,0,0,0,0
+PAT-01229,Hazel Nakamura,Female,72,A-,Private Commercial,1,1,0,0,4
+PAT-01230,Gabriel Chen,Male,95,O+,Medicare,0,0,0,0,1
+PAT-01231,Emma Nakamura,Female,43,AB+,Private Commercial,0,0,1,0,2
+PAT-01232,Gabriel Novak,Male,27,AB+,Medicare,0,0,0,0,0
+PAT-01233,Alexander Holloway,Male,52,O+,Medicare,1,0,0,0,1
+PAT-01234,Olivia Alvarez,Female,95,O-,Medicare,1,0,0,1,4
+PAT-01235,Chloe Novak,Female,38,O+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01236,Maya Alvarez,Female,85,AB-,Medicare,1,0,1,0,4
+PAT-01237,Julian O'Connor,Male,85,A+,Medicare,1,0,0,1,4
+PAT-01238,Zoe Nakamura,Female,43,A-,Medicare,1,0,0,0,1
+PAT-01239,Amelia Kim,Female,64,AB+,Private Commercial,1,0,1,0,4
+PAT-01240,Aria Patel,Female,84,A-,Medicare,0,0,0,1,3
+PAT-01241,Chloe Mercer,Female,46,O+,Medicare,0,0,1,1,4
+PAT-01242,Marcus Patel,Male,50,A+,Medicaid,0,0,1,0,2
+PAT-01243,Elena Kim,Female,42,B+,Medicaid,0,0,0,0,0
+PAT-01244,Zoe Kowalski,Female,34,B-,Medicaid,0,0,0,0,0
+PAT-01245,Clara Zhang,Female,41,A+,Medicare,0,0,0,0,0
+PAT-01246,Emma Rossi,Female,30,B+,Private Commercial,0,0,0,0,0
+PAT-01247,Oliver Alvarez,Male,54,A+,Medicare,0,0,1,0,2
+PAT-01248,Leo Chen,Male,39,B+,Medicare,0,0,0,0,0
+PAT-01249,Amelia Patel,Female,58,B+,Medicaid,1,1,0,0,3
+PAT-01250,Adrian Holloway,Male,24,AB-,Medicare,0,0,0,0,0
+PAT-01251,Adrian Nakamura,Male,60,A+,Medicaid,0,1,0,1,4
+PAT-01252,Leo Mercer,Male,69,AB-,Medicare,0,1,0,0,3
+PAT-01253,Ethan Holloway,Male,16,B-,Medicaid,0,0,0,0,0
+PAT-01254,Marcus Novak,Male,61,B+,Private Commercial,0,0,0,0,1
+PAT-01255,Nora Sinclair,Female,77,B-,Private Commercial,1,0,0,0,2
+PAT-01256,Benjamin Patel,Male,31,AB-,Medicare,0,0,0,1,2
+PAT-01257,James O'Connor,Male,85,O+,Medicaid,1,0,0,0,2
+PAT-01258,Julian Novak,Male,61,B+,Medicaid,0,0,0,0,1
+PAT-01259,Gabriel Gupta,Male,40,O-,Medicare,0,0,0,0,0
+PAT-01260,Benjamin Sterling,Male,52,O-,Medicare,0,1,0,1,4
+PAT-01261,Leo Alvarez,Male,64,O+,Medicare,0,1,0,0,3
+PAT-01262,Aria Kowalski,Female,55,AB+,Medicare,0,0,0,0,0
+PAT-01263,Alexander Patel,Male,64,AB-,Medicare,0,0,0,1,3
+PAT-01264,Oliver Kim,Male,36,B+,Medicaid,0,0,0,1,2
+PAT-01265,Leo Zhang,Male,57,O-,Private Commercial,0,0,0,0,0
+PAT-01266,Oliver Mercer,Male,27,O+,Medicare,0,0,0,0,0
+PAT-01267,Clara Mercer,Female,51,A-,Private Commercial,0,0,0,0,0
+PAT-01268,David Vance,Male,36,AB+,Medicare,0,0,0,0,0
+PAT-01269,David Patel,Male,40,AB-,Medicare,1,0,0,0,1
+PAT-01270,Maya Zhang,Female,77,AB+,Medicare,0,0,1,0,3
+PAT-01271,Oliver Kim,Male,74,B+,Medicare,1,0,0,1,4
+PAT-01272,David Patel,Male,65,A+,Medicaid,0,1,1,0,5
+PAT-01273,Zoe Rossi,Female,33,O-,Medicaid,0,0,0,1,2
+PAT-01274,Marcus Kim,Male,47,B-,Medicare,0,0,0,0,0
+PAT-01275,Chloe Kowalski,Female,77,AB+,Private Commercial,0,0,0,0,1
+PAT-01276,Hazel Nakamura,Female,56,B+,Medicare,1,0,0,0,1
+PAT-01277,Adrian Alvarez,Male,95,O+,Medicare,1,0,0,0,2
+PAT-01278,David Patel,Male,61,O+,Uninsured / Self-Pay,0,0,1,0,3
+PAT-01279,Victoria Sterling,Female,57,A+,Medicare,0,0,0,1,2
+PAT-01280,David O'Connor,Male,48,A-,Medicare,1,0,0,1,3
+PAT-01281,Emma Gupta,Female,56,A-,Private Commercial,1,1,0,0,3
+PAT-01282,Hazel Zhang,Female,51,A+,Medicare,0,0,1,1,4
+PAT-01283,Amelia Kim,Female,67,O+,Medicare,0,0,0,0,1
+PAT-01284,Adrian Nakamura,Male,72,AB+,Private Commercial,1,1,0,0,4
+PAT-01285,Marcus Gupta,Male,39,A+,Medicaid,0,0,0,0,0
+PAT-01286,Amelia Holloway,Female,28,A+,Medicare,0,0,0,0,0
+PAT-01287,Noah Mercer,Male,19,O+,Medicare,0,0,0,0,0
+PAT-01288,Benjamin Holloway,Male,63,AB+,Private Commercial,0,1,0,0,3
+PAT-01289,Isabella Novak,Female,33,B-,Private Commercial,0,0,0,0,0
+PAT-01290,Hazel Sinclair,Female,13,O-,Medicare,0,0,0,0,0
+PAT-01291,Aria Novak,Female,61,O+,Medicaid,1,0,0,0,2
+PAT-01292,Alexander Gupta,Male,95,AB+,Medicare,1,1,0,0,4
+PAT-01293,Victoria Chen,Female,53,B-,Medicare,0,1,0,1,4
+PAT-01294,Benjamin Alvarez,Male,69,O-,Medicaid,1,1,0,1,6
+PAT-01295,Oliver Sterling,Male,55,A-,Private Commercial,0,0,0,0,0
+PAT-01296,Emma Mercer,Female,52,O-,Medicare,0,1,0,0,2
+PAT-01297,Leo O'Connor,Male,71,O-,Private Commercial,1,1,0,1,6
+PAT-01298,Sophia Patel,Female,48,A-,Private Commercial,0,0,0,0,0
+PAT-01299,Leo Gupta,Male,59,A+,Medicare,1,0,0,0,1
+PAT-01300,Benjamin Holloway,Male,60,O+,Private Commercial,0,0,0,0,0
+PAT-01301,David Novak,Male,41,A-,Medicare,0,0,0,1,2
+PAT-01302,Olivia Mercer,Female,72,AB+,Medicaid,0,0,0,0,1
+PAT-01303,Chloe Holloway,Female,50,AB-,Medicare,0,0,0,0,0
+PAT-01304,Olivia Kowalski,Female,39,O-,Medicaid,0,0,1,0,2
+PAT-01305,Sophia Patel,Female,64,AB-,Private Commercial,0,0,0,0,1
+PAT-01306,Marcus Kowalski,Male,36,B+,Medicaid,0,0,0,0,0
+PAT-01307,Olivia Holloway,Female,54,O-,Medicare,0,1,0,0,2
+PAT-01308,Alexander O'Connor,Male,53,AB+,Medicaid,1,1,0,0,3
+PAT-01309,Victoria Patel,Female,74,O-,Private Commercial,1,0,0,0,2
+PAT-01310,Chloe Holloway,Female,63,AB-,Medicare,1,0,0,0,2
+PAT-01311,Lucas O'Connor,Male,53,O-,Medicare,1,0,0,0,1
+PAT-01312,Isabella Kim,Female,69,O-,Medicaid,1,1,0,0,4
+PAT-01313,Emma Rossi,Female,80,B-,Medicare,0,1,0,0,3
+PAT-01314,Chloe Patel,Female,64,A+,Medicaid,0,1,0,0,3
+PAT-01315,Leo Sterling,Male,54,A-,Private Commercial,1,0,0,0,1
+PAT-01316,Olivia Kowalski,Female,29,B-,Private Commercial,0,0,0,0,0
+PAT-01317,Ethan Zhang,Male,33,AB+,Private Commercial,0,1,0,0,2
+PAT-01318,Hazel Holloway,Female,48,O-,Private Commercial,1,0,0,0,1
+PAT-01319,Noah Gupta,Male,42,O+,Medicare,0,1,0,0,2
+PAT-01320,Isabella Alvarez,Female,50,O-,Private Commercial,1,0,0,0,1
+PAT-01321,Isabella Rossi,Female,55,B-,Private Commercial,1,0,0,0,1
+PAT-01322,Noah Gupta,Male,64,B-,Private Commercial,0,0,0,0,1
+PAT-01323,Zoe Novak,Female,52,A-,Private Commercial,0,0,0,0,0
+PAT-01324,Aria O'Connor,Female,63,AB-,Private Commercial,1,0,0,0,2
+PAT-01325,Oliver Sterling,Male,55,O+,Private Commercial,1,0,0,0,1
+PAT-01326,Elena Chen,Female,16,AB+,Medicaid,0,0,0,0,0
+PAT-01327,Leo Sterling,Male,36,AB-,Private Commercial,0,0,0,0,0
+PAT-01328,Elena Gupta,Female,51,B+,Medicare,0,1,0,0,2
+PAT-01329,David Alvarez,Male,31,O+,Private Commercial,0,0,0,0,0
+PAT-01330,Oliver Patel,Male,65,O-,Medicare,1,1,0,0,4
+PAT-01331,Adrian Vance,Male,83,A+,Private Commercial,1,0,1,0,4
+PAT-01332,Ethan Zhang,Male,77,A-,Private Commercial,1,0,0,1,4
+PAT-01333,Marcus O'Connor,Male,49,AB-,Medicare,1,0,0,0,1
+PAT-01334,Leo Mercer,Male,82,A-,Medicaid,1,1,1,1,8
+PAT-01335,Zoe Chen,Female,56,A-,Medicaid,0,0,1,0,2
+PAT-01336,Emma Novak,Female,47,AB-,Medicaid,0,0,0,0,0
+PAT-01337,Amelia Nakamura,Female,42,O-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01338,Noah Chen,Male,48,O-,Private Commercial,0,0,0,0,0
+PAT-01339,Sophia Zhang,Female,46,O-,Private Commercial,0,0,0,0,0
+PAT-01340,David O'Connor,Male,57,A-,Medicaid,1,0,1,0,3
+PAT-01341,Leo Kowalski,Male,57,A+,Medicare,1,0,0,1,3
+PAT-01342,Nora Kim,Female,54,B+,Medicare,0,0,0,0,0
+PAT-01343,Maya Sinclair,Female,62,AB+,Medicare,0,0,0,0,1
+PAT-01344,Emma Kim,Female,76,O+,Private Commercial,1,0,0,0,2
+PAT-01345,Ethan Novak,Male,72,B-,Medicaid,1,0,0,0,2
+PAT-01346,Adrian Patel,Male,25,A+,Medicare,0,0,0,0,0
+PAT-01347,Aria Gupta,Female,5,AB-,Medicare,0,0,0,0,0
+PAT-01348,Emma Alvarez,Female,71,B+,Medicare,1,0,0,0,2
+PAT-01349,Oliver Mercer,Male,28,A+,Medicaid,0,0,0,0,0
+PAT-01350,William Mercer,Male,49,B+,Private Commercial,0,0,0,0,0
+PAT-01351,Adrian Mercer,Male,31,B-,Private Commercial,0,0,0,0,0
+PAT-01352,Aria Patel,Female,19,B+,Medicare,0,0,0,0,0
+PAT-01353,Marcus Alvarez,Male,64,O+,Private Commercial,0,0,0,0,1
+PAT-01354,Emma Kim,Female,68,AB-,Medicare,0,0,0,0,1
+PAT-01355,Nora Mercer,Female,43,A+,Private Commercial,0,0,0,0,0
+PAT-01356,Benjamin Zhang,Male,4,AB+,Private Commercial,0,0,0,0,0
+PAT-01357,Clara Sterling,Female,43,AB+,Private Commercial,0,1,0,0,2
+PAT-01358,Zoe O'Connor,Female,61,AB+,Medicare,1,0,1,0,4
+PAT-01359,Benjamin Rossi,Male,25,B-,Private Commercial,0,0,0,0,0
+PAT-01360,Ethan Sterling,Male,57,O+,Private Commercial,1,1,1,0,5
+PAT-01361,Sophia Rossi,Female,53,A+,Medicaid,0,0,0,0,0
+PAT-01362,Olivia Patel,Female,65,O-,Private Commercial,0,1,0,0,3
+PAT-01363,Emma Zhang,Female,56,AB-,Medicare,0,0,0,1,2
+PAT-01364,Adrian Holloway,Male,35,O-,Medicare,0,0,0,0,0
+PAT-01365,Alexander Gupta,Male,76,A-,Uninsured / Self-Pay,0,1,0,0,3
+PAT-01366,Clara Novak,Female,50,AB+,Medicare,0,0,1,0,2
+PAT-01367,Leo Sinclair,Male,53,B+,Medicare,0,0,0,0,0
+PAT-01368,Julian Holloway,Male,36,B-,Medicare,0,1,0,0,2
+PAT-01369,Marcus Chen,Male,45,O+,Medicaid,1,1,0,0,3
+PAT-01370,Gabriel O'Connor,Male,37,A+,Private Commercial,0,0,0,0,0
+PAT-01371,Leo Alvarez,Male,50,B-,Private Commercial,0,1,0,0,2
+PAT-01372,Zoe Rossi,Female,86,A+,Private Commercial,1,1,1,0,6
+PAT-01373,William Holloway,Male,27,B-,Private Commercial,0,0,0,0,0
+PAT-01374,Lucas Mercer,Male,23,AB-,Medicare,0,0,0,0,0
+PAT-01375,David Gupta,Male,81,B-,Uninsured / Self-Pay,1,0,1,0,4
+PAT-01376,Noah Gupta,Male,50,A+,Private Commercial,0,0,0,0,0
+PAT-01377,Ethan Mercer,Male,41,A-,Medicare,0,0,0,0,0
+PAT-01378,Oliver O'Connor,Male,73,B+,Private Commercial,1,0,0,0,2
+PAT-01379,Leo Kim,Male,42,AB+,Medicaid,0,1,0,0,2
+PAT-01380,Marcus Chen,Male,88,B-,Medicare,1,1,0,1,6
+PAT-01381,Clara Sinclair,Female,66,A-,Medicaid,1,0,0,0,2
+PAT-01382,Chloe Zhang,Female,44,B-,Uninsured / Self-Pay,1,0,0,0,1
+PAT-01383,David Rossi,Male,94,B-,Private Commercial,0,0,0,0,1
+PAT-01384,Sophia Sinclair,Female,42,AB-,Private Commercial,0,1,0,1,4
+PAT-01385,William O'Connor,Male,68,O-,Uninsured / Self-Pay,1,0,0,0,2
+PAT-01386,Lucas Patel,Male,59,B-,Medicaid,1,0,0,1,3
+PAT-01387,Benjamin Vance,Male,78,A+,Medicare,0,1,1,0,5
+PAT-01388,Julian Kowalski,Male,83,A+,Medicaid,0,0,1,0,3
+PAT-01389,Hazel Patel,Female,54,AB+,Private Commercial,1,0,0,0,1
+PAT-01390,Maya Sterling,Female,39,B+,Medicare,0,0,1,0,2
+PAT-01391,James Kim,Male,62,A-,Medicare,1,0,1,0,4
+PAT-01392,Julian Kim,Male,41,B+,Medicare,0,0,0,1,2
+PAT-01393,Sophia Sterling,Female,92,O-,Medicaid,1,1,0,1,6
+PAT-01394,Adrian Gupta,Male,56,AB-,Medicare,1,0,0,0,1
+PAT-01395,Amelia Vance,Female,47,A+,Private Commercial,0,0,0,0,0
+PAT-01396,Victoria O'Connor,Female,57,B-,Medicare,1,1,0,0,3
+PAT-01397,Hazel Kim,Female,28,B+,Private Commercial,0,0,0,0,0
+PAT-01398,Isabella Novak,Female,35,A-,Medicaid,0,1,0,0,2
+PAT-01399,Benjamin Kim,Male,76,AB+,Medicaid,0,1,0,0,3
+PAT-01400,Emma Alvarez,Female,41,O-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01401,Leo Kim,Male,34,AB-,Private Commercial,0,0,1,0,2
+PAT-01402,Lucas Kim,Male,64,B-,Medicare,0,1,0,1,5
+PAT-01403,Victoria Chen,Female,76,B-,Medicare,0,0,0,0,1
+PAT-01404,David Zhang,Male,67,A+,Medicare,0,0,0,0,1
+PAT-01405,Aria Holloway,Female,72,O-,Medicare,0,0,1,0,3
+PAT-01406,Leo O'Connor,Male,39,AB-,Medicaid,1,0,0,0,1
+PAT-01407,Olivia Novak,Female,26,B-,Private Commercial,0,0,0,0,0
+PAT-01408,Leo Chen,Male,82,B+,Private Commercial,1,0,0,0,2
+PAT-01409,Lucas Mercer,Male,47,AB+,Private Commercial,1,1,0,0,3
+PAT-01410,Oliver Rossi,Male,49,B+,Medicaid,0,0,0,1,2
+PAT-01411,Leo Nakamura,Male,79,B+,Medicare,1,1,0,0,4
+PAT-01412,Gabriel Nakamura,Male,64,O+,Medicare,1,1,0,1,6
+PAT-01413,Gabriel Gupta,Male,62,AB+,Medicare,0,0,0,0,1
+PAT-01414,Nora Holloway,Female,95,B+,Medicaid,0,0,0,0,1
+PAT-01415,Olivia Rossi,Female,41,A-,Private Commercial,0,1,0,0,2
+PAT-01416,Alexander Gupta,Male,71,B-,Private Commercial,0,1,0,1,5
+PAT-01417,Noah Novak,Male,55,AB+,Medicare,0,1,0,0,2
+PAT-01418,James Zhang,Male,59,A+,Medicare,0,1,0,0,2
+PAT-01419,Sophia Novak,Female,83,AB-,Medicaid,1,0,0,0,2
+PAT-01420,Lucas Patel,Male,63,A-,Medicaid,0,0,0,0,1
+PAT-01421,Elena Rossi,Female,64,O-,Private Commercial,0,0,1,0,3
+PAT-01422,Benjamin Mercer,Male,74,A+,Private Commercial,0,0,0,1,3
+PAT-01423,Julian Gupta,Male,47,AB+,Private Commercial,0,0,1,0,2
+PAT-01424,Aria Gupta,Female,38,AB+,Private Commercial,1,0,0,0,1
+PAT-01425,Sophia Kowalski,Female,34,O-,Medicare,0,0,0,0,0
+PAT-01426,William Novak,Male,16,B-,Medicare,1,0,0,0,1
+PAT-01427,William Chen,Male,93,B-,Private Commercial,1,1,1,0,6
+PAT-01428,Ethan Gupta,Male,33,A+,Medicaid,0,0,0,0,0
+PAT-01429,Noah Kowalski,Male,49,O-,Private Commercial,0,0,0,0,0
+PAT-01430,Amelia Alvarez,Female,48,AB-,Medicare,0,1,0,0,2
+PAT-01431,Benjamin Rossi,Male,59,AB-,Private Commercial,0,0,0,0,0
+PAT-01432,Leo Nakamura,Male,69,AB+,Medicare,1,1,0,1,6
+PAT-01433,Noah Alvarez,Male,70,AB+,Private Commercial,0,1,0,0,3
+PAT-01434,David Rossi,Male,42,AB+,Medicaid,1,0,0,0,1
+PAT-01435,Noah Chen,Male,50,AB-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01436,Victoria Vance,Female,59,A+,Private Commercial,0,1,0,0,2
+PAT-01437,William Chen,Male,49,O+,Private Commercial,1,0,0,0,1
+PAT-01438,Aria Kowalski,Female,84,AB-,Private Commercial,1,0,1,1,6
+PAT-01439,Oliver Rossi,Male,63,O+,Medicare,1,1,0,0,4
+PAT-01440,Olivia Alvarez,Female,67,B-,Uninsured / Self-Pay,0,1,0,0,3
+PAT-01441,Hazel Nakamura,Female,66,A-,Medicaid,1,0,1,1,6
+PAT-01442,Isabella O'Connor,Female,76,O+,Medicare,1,0,0,1,4
+PAT-01443,Isabella Novak,Female,57,O+,Medicaid,0,1,0,0,2
+PAT-01444,Emma Zhang,Female,29,A+,Private Commercial,0,0,0,0,0
+PAT-01445,Sophia Kowalski,Female,61,AB+,Medicare,0,1,0,0,3
+PAT-01446,Amelia Novak,Female,41,O-,Medicaid,1,1,0,0,3
+PAT-01447,Olivia Sterling,Female,43,O+,Private Commercial,0,1,0,1,4
+PAT-01448,Alexander Mercer,Male,65,O+,Private Commercial,1,0,0,1,4
+PAT-01449,Adrian Patel,Male,77,B+,Private Commercial,0,1,1,1,7
+PAT-01450,Clara Patel,Female,54,O-,Medicare,0,1,0,0,2
+PAT-01451,Leo Zhang,Male,59,B+,Medicaid,1,0,0,0,1
+PAT-01452,William Rossi,Male,86,A+,Private Commercial,1,0,0,0,2
+PAT-01453,Maya Vance,Female,58,O+,Private Commercial,1,1,0,0,3
+PAT-01454,Gabriel Nakamura,Male,95,AB-,Private Commercial,0,1,0,1,5
+PAT-01455,Amelia Holloway,Female,64,B-,Uninsured / Self-Pay,0,0,0,0,1
+PAT-01456,Clara Sterling,Female,20,A+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01457,Amelia Kowalski,Female,68,AB-,Medicare,1,1,0,1,6
+PAT-01458,Lucas Sterling,Male,61,AB+,Medicaid,0,0,0,0,1
+PAT-01459,Clara Holloway,Female,78,A-,Medicare,1,1,0,1,6
+PAT-01460,Benjamin Patel,Male,66,AB-,Medicaid,0,0,0,0,1
+PAT-01461,Maya O'Connor,Female,51,B+,Private Commercial,1,1,1,0,5
+PAT-01462,Emma Patel,Female,30,AB+,Medicare,0,0,0,0,0
+PAT-01463,Emma Patel,Female,50,A+,Private Commercial,0,0,0,0,0
+PAT-01464,Marcus Kim,Male,37,AB-,Medicare,0,0,0,0,0
+PAT-01465,Julian Alvarez,Male,42,O+,Medicare,0,1,1,0,4
+PAT-01466,Leo Sinclair,Male,65,B-,Medicaid,1,1,0,0,4
+PAT-01467,Zoe Zhang,Female,85,A+,Private Commercial,1,0,0,1,4
+PAT-01468,Marcus Kim,Male,61,AB-,Private Commercial,1,0,0,0,2
+PAT-01469,Aria Nakamura,Female,31,O+,Medicare,0,0,0,0,0
+PAT-01470,Clara Holloway,Female,62,B-,Private Commercial,0,0,0,0,1
+PAT-01471,Noah Chen,Male,76,O-,Private Commercial,0,0,0,0,1
+PAT-01472,Marcus Sterling,Male,42,A-,Uninsured / Self-Pay,0,0,0,1,2
+PAT-01473,Amelia Mercer,Female,51,AB+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01474,Hazel Novak,Female,54,AB-,Medicare,1,0,0,0,1
+PAT-01475,James Nakamura,Male,39,B+,Private Commercial,0,0,0,0,0
+PAT-01476,Nora Mercer,Female,66,O+,Private Commercial,1,1,0,0,4
+PAT-01477,David Holloway,Male,51,B+,Private Commercial,1,0,0,0,1
+PAT-01478,Maya Kim,Female,61,A-,Medicaid,0,0,0,0,1
+PAT-01479,Sophia Zhang,Female,37,O-,Medicare,0,1,0,0,2
+PAT-01480,Adrian Alvarez,Male,45,A-,Private Commercial,0,0,1,0,2
+PAT-01481,James Chen,Male,67,AB-,Medicaid,0,0,0,1,3
+PAT-01482,Victoria Alvarez,Female,46,O-,Medicare,0,1,0,0,2
+PAT-01483,James Kim,Male,86,B-,Medicaid,0,1,1,1,7
+PAT-01484,Noah Patel,Male,46,O+,Medicaid,0,0,0,0,0
+PAT-01485,Alexander Kowalski,Male,58,A-,Private Commercial,0,0,0,0,0
+PAT-01486,Ethan Kowalski,Male,71,B+,Medicaid,0,0,0,0,1
+PAT-01487,Olivia Kim,Female,27,B+,Medicare,0,0,0,1,2
+PAT-01488,Alexander Vance,Male,20,AB+,Medicare,1,0,0,0,1
+PAT-01489,Emma Mercer,Female,25,O-,Medicaid,0,0,0,0,0
+PAT-01490,Clara Sinclair,Female,77,B-,Medicaid,0,0,0,0,1
+PAT-01491,Ethan Kowalski,Male,43,AB+,Medicaid,1,0,0,0,1
+PAT-01492,Clara Sterling,Female,95,A+,Private Commercial,1,0,0,1,4
+PAT-01493,Hazel Sterling,Female,43,A+,Medicare,0,1,0,0,2
+PAT-01494,Ethan Alvarez,Male,57,AB-,Medicare,1,0,0,0,1
+PAT-01495,Hazel Novak,Female,83,A+,Medicaid,1,0,0,0,2
+PAT-01496,Leo Alvarez,Male,92,A-,Medicaid,1,1,0,1,6
+PAT-01497,Victoria Patel,Female,93,B+,Private Commercial,1,1,0,1,6
+PAT-01498,Zoe Alvarez,Female,76,A+,Medicare,0,0,0,0,1
+PAT-01499,Sophia Chen,Female,73,A-,Private Commercial,1,0,1,0,4
+PAT-01500,Nora Gupta,Female,65,A-,Private Commercial,0,0,0,0,1
+PAT-01501,Victoria Nakamura,Female,68,AB-,Private Commercial,0,0,0,1,3
+PAT-01502,Chloe Alvarez,Female,43,AB-,Medicaid,0,1,0,0,2
+PAT-01503,Sophia Zhang,Female,38,B-,Private Commercial,0,0,0,0,0
+PAT-01504,Noah Nakamura,Male,53,A+,Private Commercial,1,1,0,0,3
+PAT-01505,Clara Rossi,Female,50,O-,Medicare,0,0,0,0,0
+PAT-01506,Oliver Patel,Male,45,O+,Medicare,0,0,0,0,0
+PAT-01507,Marcus O'Connor,Male,67,AB-,Private Commercial,1,0,0,1,4
+PAT-01508,Noah Holloway,Male,72,B+,Medicaid,0,0,0,1,3
+PAT-01509,Oliver Zhang,Male,55,O+,Private Commercial,1,0,0,1,3
+PAT-01510,Maya Sterling,Female,82,B-,Medicare,1,0,0,0,2
+PAT-01511,Zoe Vance,Female,32,O+,Private Commercial,0,0,0,1,2
+PAT-01512,Noah Mercer,Male,50,A-,Medicare,0,1,1,0,4
+PAT-01513,Maya Rossi,Female,40,O+,Medicaid,1,0,1,0,3
+PAT-01514,Aria Sterling,Female,18,B+,Medicare,0,0,0,0,0
+PAT-01515,Julian Chen,Male,52,A-,Private Commercial,1,0,0,1,3
+PAT-01516,Gabriel Sterling,Male,51,O+,Medicaid,0,0,0,0,0
+PAT-01517,Clara Chen,Female,82,O+,Medicare,0,0,0,1,3
+PAT-01518,Emma Sinclair,Female,65,A+,Medicare,0,0,0,0,1
+PAT-01519,William Chen,Male,34,AB+,Medicare,0,0,0,0,0
+PAT-01520,Adrian Novak,Male,89,B+,Medicaid,1,1,0,1,6
+PAT-01521,Zoe Holloway,Female,77,A-,Medicare,1,1,0,1,6
+PAT-01522,Hazel Patel,Female,65,A-,Medicaid,0,0,0,1,3
+PAT-01523,Olivia Chen,Female,49,AB-,Private Commercial,0,0,0,0,0
+PAT-01524,Aria Rossi,Female,35,AB-,Medicaid,0,0,0,0,0
+PAT-01525,Victoria Nakamura,Female,46,O+,Private Commercial,1,1,1,1,7
+PAT-01526,Emma O'Connor,Female,74,B-,Medicare,1,0,0,1,4
+PAT-01527,Lucas Sinclair,Male,89,O-,Medicare,1,1,1,0,6
+PAT-01528,Clara Patel,Female,83,AB-,Medicare,1,0,0,0,2
+PAT-01529,Alexander Nakamura,Male,44,O+,Private Commercial,0,0,0,0,0
+PAT-01530,Sophia Sterling,Female,32,AB+,Private Commercial,0,0,0,1,2
+PAT-01531,Elena Chen,Female,56,B+,Private Commercial,0,1,1,0,4
+PAT-01532,Olivia Novak,Female,20,AB-,Private Commercial,1,0,0,0,1
+PAT-01533,Gabriel Kim,Male,60,O+,Medicare,0,0,0,0,0
+PAT-01534,Benjamin Sinclair,Male,51,B-,Private Commercial,0,0,0,0,0
+PAT-01535,Leo Sinclair,Male,45,B+,Medicare,0,0,0,0,0
+PAT-01536,Nora Kim,Female,23,B-,Private Commercial,0,0,0,0,0
+PAT-01537,Clara Kowalski,Female,63,A+,Medicaid,0,0,0,0,1
+PAT-01538,Gabriel Sterling,Male,43,AB+,Private Commercial,0,0,0,0,0
+PAT-01539,William Alvarez,Male,31,A-,Private Commercial,0,0,0,0,0
+PAT-01540,Clara Alvarez,Female,1,AB+,Medicare,0,0,0,0,0
+PAT-01541,Aria Kim,Female,53,A+,Private Commercial,0,0,0,0,0
+PAT-01542,Oliver Chen,Male,87,O-,Private Commercial,0,0,0,0,1
+PAT-01543,Olivia Holloway,Female,85,A-,Medicare,1,1,0,0,4
+PAT-01544,David Alvarez,Male,45,AB-,Uninsured / Self-Pay,1,0,0,1,3
+PAT-01545,Maya Holloway,Female,42,B+,Medicaid,1,0,0,0,1
+PAT-01546,Nora Vance,Female,62,B+,Private Commercial,0,0,0,0,1
+PAT-01547,Victoria Alvarez,Female,35,AB-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01548,Emma Gupta,Female,59,A-,Private Commercial,0,1,0,1,4
+PAT-01549,Noah Holloway,Male,68,B+,Medicaid,0,1,0,1,5
+PAT-01550,Olivia Kim,Female,77,O+,Private Commercial,1,0,0,0,2
+PAT-01551,Sophia Kowalski,Female,52,O+,Medicare,0,0,0,0,0
+PAT-01552,Oliver Gupta,Male,50,B-,Medicaid,1,0,0,1,3
+PAT-01553,Gabriel Mercer,Male,37,A+,Private Commercial,0,0,1,0,2
+PAT-01554,David Kowalski,Male,38,AB-,Private Commercial,0,0,0,0,0
+PAT-01555,Alexander Kowalski,Male,49,AB-,Medicaid,1,0,0,0,1
+PAT-01556,Emma Sinclair,Female,60,AB+,Medicare,0,1,0,0,2
+PAT-01557,David Sinclair,Male,71,A+,Medicare,1,0,0,0,2
+PAT-01558,Alexander Kowalski,Male,38,B+,Medicaid,0,0,0,0,0
+PAT-01559,Benjamin Kim,Male,82,AB+,Medicare,1,1,1,1,8
+PAT-01560,William Chen,Male,48,A+,Medicare,1,0,0,1,3
+PAT-01561,Gabriel Gupta,Male,53,O-,Medicare,0,1,0,0,2
+PAT-01562,Marcus Sterling,Male,39,O-,Medicaid,0,0,0,0,0
+PAT-01563,Julian Kim,Male,7,O+,Private Commercial,0,0,0,0,0
+PAT-01564,Gabriel Rossi,Male,70,AB+,Medicaid,0,1,0,0,3
+PAT-01565,Oliver Sterling,Male,68,A+,Medicare,0,0,0,0,1
+PAT-01566,Clara Mercer,Female,48,A+,Private Commercial,0,1,1,1,6
+PAT-01567,Leo Novak,Male,55,B+,Private Commercial,0,0,0,0,0
+PAT-01568,Amelia Gupta,Female,63,A+,Medicaid,0,0,0,0,1
+PAT-01569,Oliver Gupta,Male,24,B+,Private Commercial,0,0,0,0,0
+PAT-01570,Zoe Nakamura,Female,43,B-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01571,Gabriel Rossi,Male,69,A-,Private Commercial,0,0,0,0,1
+PAT-01572,Adrian O'Connor,Male,30,A-,Private Commercial,0,0,0,0,0
+PAT-01573,Alexander O'Connor,Male,59,A+,Private Commercial,0,1,0,0,2
+PAT-01574,Maya Nakamura,Female,28,B-,Medicare,0,0,0,0,0
+PAT-01575,David Alvarez,Male,62,A-,Private Commercial,0,0,0,1,3
+PAT-01576,Clara Zhang,Female,53,AB+,Medicare,0,0,0,0,0
+PAT-01577,Lucas Gupta,Male,23,A+,Medicare,0,0,0,0,0
+PAT-01578,James Mercer,Male,76,AB+,Medicare,1,0,0,0,2
+PAT-01579,James Alvarez,Male,40,A-,Medicare,0,0,0,0,0
+PAT-01580,Chloe Sinclair,Female,38,A-,Medicare,0,0,0,0,0
+PAT-01581,Olivia Chen,Female,57,B+,Private Commercial,0,1,0,0,2
+PAT-01582,Alexander Nakamura,Male,75,A+,Private Commercial,0,1,0,1,5
+PAT-01583,Sophia Chen,Female,34,AB+,Medicaid,0,0,0,0,0
+PAT-01584,Alexander Mercer,Male,55,AB+,Medicare,0,0,0,0,0
+PAT-01585,Olivia Gupta,Female,62,AB+,Private Commercial,0,0,0,1,3
+PAT-01586,Leo Sterling,Male,67,AB+,Medicare,0,0,0,0,1
+PAT-01587,Maya Holloway,Female,57,AB-,Uninsured / Self-Pay,1,0,0,0,1
+PAT-01588,Julian Mercer,Male,47,AB+,Medicare,0,0,0,0,0
+PAT-01589,Aria Zhang,Female,38,B-,Private Commercial,0,1,0,0,2
+PAT-01590,Clara Kowalski,Female,55,A-,Private Commercial,1,0,0,0,1
+PAT-01591,Maya Vance,Female,33,O+,Medicare,0,0,0,0,0
+PAT-01592,Clara Sterling,Female,1,A-,Medicare,0,0,0,0,0
+PAT-01593,William Mercer,Male,62,A+,Medicare,1,1,1,0,6
+PAT-01594,Isabella Kowalski,Female,71,O-,Private Commercial,1,0,1,0,4
+PAT-01595,Hazel Kowalski,Female,9,A+,Medicare,0,0,0,0,0
+PAT-01596,Ethan Chen,Male,34,O+,Medicare,0,0,0,0,0
+PAT-01597,James Gupta,Male,65,B+,Medicaid,1,1,0,0,4
+PAT-01598,Elena Alvarez,Female,93,AB+,Medicare,0,1,0,1,5
+PAT-01599,Clara Gupta,Female,54,AB-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01600,Victoria Holloway,Female,40,AB-,Medicare,0,0,0,0,0
+PAT-01601,Ethan Mercer,Male,50,AB+,Medicare,0,0,0,0,0
+PAT-01602,Maya Chen,Female,80,A+,Medicaid,1,1,1,0,6
+PAT-01603,Julian O'Connor,Male,41,B+,Medicaid,0,0,0,0,0
+PAT-01604,Aria Zhang,Female,38,A-,Private Commercial,0,0,0,0,0
+PAT-01605,David Sinclair,Male,44,AB+,Medicare,1,0,0,0,1
+PAT-01606,Maya Gupta,Female,35,B-,Medicare,1,0,0,1,3
+PAT-01607,James Alvarez,Male,56,A-,Medicaid,1,0,0,1,3
+PAT-01608,Emma Zhang,Female,84,B+,Medicare,1,0,0,0,2
+PAT-01609,Noah Gupta,Male,60,O-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01610,Gabriel Holloway,Male,49,A+,Medicare,0,0,0,0,0
+PAT-01611,Alexander Holloway,Male,48,A+,Medicare,0,0,1,1,4
+PAT-01612,Lucas Sterling,Male,24,O-,Medicare,0,0,0,0,0
+PAT-01613,David Gupta,Male,70,AB-,Medicare,0,1,0,1,5
+PAT-01614,Victoria Rossi,Female,52,B+,Medicaid,0,0,0,0,0
+PAT-01615,Nora Rossi,Female,50,B+,Private Commercial,0,0,0,0,0
+PAT-01616,Ethan Chen,Male,95,AB+,Medicare,1,1,0,1,6
+PAT-01617,Victoria Novak,Female,59,A-,Medicaid,1,1,0,0,3
+PAT-01618,Alexander Sinclair,Male,39,A-,Medicare,0,0,0,0,0
+PAT-01619,Nora Mercer,Female,45,AB+,Medicare,0,0,1,0,2
+PAT-01620,Emma Rossi,Female,75,AB-,Private Commercial,0,1,0,0,3
+PAT-01621,Zoe Patel,Female,56,A+,Medicare,0,0,0,0,0
+PAT-01622,Zoe Holloway,Female,26,A+,Medicaid,0,0,0,0,0
+PAT-01623,Sophia Sterling,Female,71,B-,Private Commercial,0,1,1,1,7
+PAT-01624,Nora Mercer,Female,41,O-,Uninsured / Self-Pay,1,0,0,1,3
+PAT-01625,Gabriel Patel,Male,89,B+,Medicaid,0,0,0,0,1
+PAT-01626,Gabriel O'Connor,Male,74,O-,Medicaid,1,0,0,1,4
+PAT-01627,Oliver O'Connor,Male,45,AB-,Medicare,1,0,0,0,1
+PAT-01628,Amelia Holloway,Female,78,B-,Medicare,1,0,0,0,2
+PAT-01629,Elena Sterling,Female,55,AB-,Medicare,1,1,0,1,5
+PAT-01630,David Rossi,Male,70,O-,Private Commercial,0,0,0,0,1
+PAT-01631,Aria Patel,Female,63,B-,Medicare,0,0,0,0,1
+PAT-01632,Gabriel Novak,Male,37,B-,Medicaid,0,0,0,0,0
+PAT-01633,Aria Kim,Female,41,A+,Medicare,0,0,0,0,0
+PAT-01634,David Kim,Male,73,A+,Medicare,1,0,0,1,4
+PAT-01635,Amelia Patel,Female,47,B-,Private Commercial,0,0,0,0,0
+PAT-01636,Maya Chen,Female,46,A+,Medicare,1,0,0,0,1
+PAT-01637,Chloe Holloway,Female,35,AB+,Private Commercial,0,0,0,0,0
+PAT-01638,Noah O'Connor,Male,62,AB+,Medicaid,0,0,1,0,3
+PAT-01639,Noah Kim,Male,93,B-,Private Commercial,0,0,0,1,3
+PAT-01640,Noah Novak,Male,33,B+,Medicare,0,0,1,0,2
+PAT-01641,William Nakamura,Male,54,AB+,Medicare,1,0,0,0,1
+PAT-01642,Adrian Novak,Male,80,B+,Private Commercial,1,0,0,1,4
+PAT-01643,Noah Patel,Male,52,AB+,Medicaid,0,0,0,0,0
+PAT-01644,Elena Patel,Female,62,AB-,Medicare,1,0,0,0,2
+PAT-01645,Oliver Novak,Male,33,AB+,Medicare,0,0,0,0,0
+PAT-01646,Leo Alvarez,Male,62,O-,Medicare,0,0,0,0,1
+PAT-01647,Gabriel Alvarez,Male,50,B+,Uninsured / Self-Pay,0,1,0,0,2
+PAT-01648,Adrian Zhang,Male,72,O-,Medicaid,1,0,0,0,2
+PAT-01649,Victoria Mercer,Female,76,B+,Private Commercial,1,1,1,0,6
+PAT-01650,Alexander Kowalski,Male,95,AB-,Uninsured / Self-Pay,1,1,0,0,4
+PAT-01651,Emma Rossi,Female,65,AB+,Medicare,0,0,0,0,1
+PAT-01652,Benjamin Gupta,Male,60,A-,Private Commercial,0,0,1,0,2
+PAT-01653,Chloe Zhang,Female,57,AB-,Medicare,0,0,0,1,2
+PAT-01654,Emma Sinclair,Female,47,AB-,Medicare,0,0,0,0,0
+PAT-01655,Benjamin Alvarez,Male,60,B-,Medicare,0,0,0,0,0
+PAT-01656,Adrian Rossi,Male,48,O-,Medicare,1,0,0,1,3
+PAT-01657,Nora Sterling,Female,57,AB+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01658,Sophia Gupta,Female,79,B-,Medicare,1,1,1,0,6
+PAT-01659,Gabriel Sterling,Male,34,O-,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01660,Maya Alvarez,Female,75,B+,Medicare,1,1,0,1,6
+PAT-01661,Adrian O'Connor,Male,79,O+,Medicare,0,0,1,0,3
+PAT-01662,Sophia Rossi,Female,51,O+,Medicare,1,1,1,0,5
+PAT-01663,Emma Gupta,Female,13,A-,Medicare,0,0,0,0,0
+PAT-01664,Marcus Alvarez,Male,42,A+,Private Commercial,0,1,0,0,2
+PAT-01665,Lucas Chen,Male,78,A-,Medicaid,0,0,0,0,1
+PAT-01666,James Kim,Male,53,B-,Medicare,1,0,0,0,1
+PAT-01667,Zoe O'Connor,Female,35,B+,Private Commercial,0,0,0,0,0
+PAT-01668,Emma Alvarez,Female,44,A+,Private Commercial,0,0,0,0,0
+PAT-01669,Julian Nakamura,Male,69,O-,Private Commercial,1,1,0,0,4
+PAT-01670,Ethan Novak,Male,64,O+,Medicare,0,0,0,0,1
+PAT-01671,Olivia Zhang,Female,49,B-,Uninsured / Self-Pay,1,0,0,0,1
+PAT-01672,Nora Novak,Female,47,B-,Medicare,0,0,0,0,0
+PAT-01673,Noah Gupta,Male,46,A+,Medicare,0,0,0,0,0
+PAT-01674,Oliver Zhang,Male,36,B+,Medicare,0,0,0,0,0
+PAT-01675,Victoria Chen,Female,84,B+,Private Commercial,1,0,1,0,4
+PAT-01676,Olivia Novak,Female,47,AB-,Private Commercial,0,0,0,0,0
+PAT-01677,Adrian Nakamura,Male,77,A+,Medicare,0,0,0,0,1
+PAT-01678,Chloe Novak,Female,82,AB+,Medicare,0,1,0,0,3
+PAT-01679,Ethan O'Connor,Male,72,A+,Medicaid,1,1,0,0,4
+PAT-01680,Marcus Chen,Male,45,O+,Medicaid,0,0,0,0,0
+PAT-01681,Alexander O'Connor,Male,61,A-,Medicaid,0,0,0,0,1
+PAT-01682,Sophia Holloway,Female,53,B-,Medicare,0,1,0,1,4
+PAT-01683,William Rossi,Male,36,O-,Medicaid,0,0,0,0,0
+PAT-01684,Ethan Kim,Male,60,O-,Medicare,0,1,0,0,2
+PAT-01685,Aria Sterling,Female,31,O+,Private Commercial,0,0,0,1,2
+PAT-01686,Sophia Novak,Female,76,A-,Medicaid,0,0,0,1,3
+PAT-01687,Adrian Novak,Male,45,O+,Medicaid,0,0,0,0,0
+PAT-01688,Chloe Kowalski,Female,57,A-,Private Commercial,0,0,1,0,2
+PAT-01689,Sophia Mercer,Female,59,B-,Private Commercial,0,1,0,1,4
+PAT-01690,Chloe Kowalski,Female,49,B+,Medicare,1,1,0,1,5
+PAT-01691,Ethan Vance,Male,65,AB-,Medicare,0,1,0,1,5
+PAT-01692,Olivia Sterling,Female,44,B+,Private Commercial,1,0,0,0,1
+PAT-01693,Elena Mercer,Female,70,O+,Medicaid,0,1,0,1,5
+PAT-01694,Sophia Mercer,Female,28,A-,Private Commercial,0,0,0,0,0
+PAT-01695,David Rossi,Male,56,A-,Uninsured / Self-Pay,0,1,0,0,2
+PAT-01696,Elena Zhang,Female,90,O+,Medicare,1,1,1,0,6
+PAT-01697,Isabella Zhang,Female,34,O+,Medicare,0,0,0,0,0
+PAT-01698,William Gupta,Male,41,O+,Medicaid,0,0,0,0,0
+PAT-01699,Adrian Sterling,Male,63,O-,Medicare,1,1,0,0,4
+PAT-01700,Leo Mercer,Male,57,AB+,Medicaid,1,0,1,1,5
+PAT-01701,Marcus Nakamura,Male,60,AB+,Private Commercial,0,1,1,0,4
+PAT-01702,Oliver Rossi,Male,63,O+,Private Commercial,0,0,0,0,1
+PAT-01703,Adrian Chen,Male,66,O-,Medicare,0,0,1,1,5
+PAT-01704,Noah Alvarez,Male,75,O+,Private Commercial,1,0,0,1,4
+PAT-01705,Maya Holloway,Female,61,B+,Medicare,0,0,0,0,1
+PAT-01706,William Sterling,Male,49,O-,Medicare,0,0,0,0,0
+PAT-01707,Chloe Vance,Female,66,O+,Medicaid,1,0,0,0,2
+PAT-01708,Julian Novak,Male,90,B+,Medicaid,0,1,0,1,5
+PAT-01709,Isabella Alvarez,Female,51,B-,Medicare,1,1,0,0,3
+PAT-01710,Leo O'Connor,Male,35,O+,Medicaid,0,0,0,1,2
+PAT-01711,Lucas Patel,Male,75,B-,Private Commercial,1,0,0,0,2
+PAT-01712,Adrian Kowalski,Male,51,AB+,Medicare,1,1,0,0,3
+PAT-01713,William Chen,Male,12,AB-,Medicaid,0,0,0,0,0
+PAT-01714,William Patel,Male,70,B+,Medicare,1,0,0,1,4
+PAT-01715,Marcus Holloway,Male,43,B+,Medicare,0,0,0,0,0
+PAT-01716,James Nakamura,Male,52,AB+,Medicare,0,0,0,0,0
+PAT-01717,Victoria Novak,Female,60,AB+,Medicare,1,0,0,0,1
+PAT-01718,Victoria O'Connor,Female,57,B-,Medicare,0,1,0,0,2
+PAT-01719,David Patel,Male,67,AB+,Medicare,0,0,1,1,5
+PAT-01720,Hazel O'Connor,Female,45,O+,Private Commercial,0,0,0,0,0
+PAT-01721,Leo Nakamura,Male,63,B-,Private Commercial,0,0,0,0,1
+PAT-01722,Noah Vance,Male,49,B+,Medicare,0,0,0,0,0
+PAT-01723,Ethan Sinclair,Male,68,O-,Medicare,1,0,0,0,2
+PAT-01724,Adrian Sterling,Male,65,AB-,Private Commercial,0,1,0,0,3
+PAT-01725,William Vance,Male,36,A-,Medicaid,0,0,0,0,0
+PAT-01726,Lucas Rossi,Male,74,O-,Uninsured / Self-Pay,0,1,0,1,5
+PAT-01727,Victoria Rossi,Female,43,O+,Medicare,0,1,0,0,2
+PAT-01728,Ethan Chen,Male,69,O-,Medicaid,0,1,1,0,5
+PAT-01729,Ethan Holloway,Male,60,O-,Uninsured / Self-Pay,1,0,0,0,1
+PAT-01730,Emma Patel,Female,88,O-,Medicare,1,0,0,0,2
+PAT-01731,Adrian Alvarez,Male,49,B+,Medicare,0,0,0,1,2
+PAT-01732,Chloe Gupta,Female,47,A-,Medicare,0,1,0,0,2
+PAT-01733,Ethan Sterling,Male,53,O-,Medicare,1,0,0,0,1
+PAT-01734,Oliver O'Connor,Male,48,B-,Medicaid,1,0,0,1,3
+PAT-01735,Olivia Gupta,Female,69,O-,Medicare,0,0,0,0,1
+PAT-01736,Lucas Chen,Male,23,A-,Medicare,0,0,0,0,0
+PAT-01737,Zoe Mercer,Female,33,O-,Medicare,0,0,0,0,0
+PAT-01738,Alexander Kowalski,Male,33,AB+,Medicaid,0,0,0,1,2
+PAT-01739,Lucas Alvarez,Male,72,A+,Medicaid,0,0,0,0,1
+PAT-01740,Amelia Vance,Female,86,AB-,Private Commercial,1,1,0,0,4
+PAT-01741,Amelia Nakamura,Female,52,A+,Medicare,0,0,0,0,0
+PAT-01742,Ethan Sinclair,Male,50,O+,Medicaid,0,1,1,0,4
+PAT-01743,William Sinclair,Male,55,A+,Private Commercial,0,0,1,0,2
+PAT-01744,Amelia Kowalski,Female,76,AB+,Private Commercial,1,0,0,0,2
+PAT-01745,Hazel O'Connor,Female,36,AB-,Medicare,0,0,0,0,0
+PAT-01746,Elena Sinclair,Female,58,O-,Medicare,0,0,0,1,2
+PAT-01747,Zoe Patel,Female,72,A-,Medicare,0,0,1,0,3
+PAT-01748,Adrian Kim,Male,63,O+,Uninsured / Self-Pay,0,0,0,0,1
+PAT-01749,Elena Holloway,Female,57,AB-,Medicare,0,0,0,0,0
+PAT-01750,David Nakamura,Male,73,B-,Private Commercial,0,1,0,0,3
+PAT-01751,Julian Chen,Male,2,AB+,Private Commercial,0,0,0,0,0
+PAT-01752,Marcus Kim,Male,66,B-,Medicaid,1,0,0,1,4
+PAT-01753,Lucas Novak,Male,41,O-,Private Commercial,1,0,0,0,1
+PAT-01754,James Gupta,Male,19,A-,Private Commercial,0,0,0,0,0
+PAT-01755,Zoe Rossi,Female,63,B+,Medicare,0,0,0,1,3
+PAT-01756,Ethan O'Connor,Male,80,A+,Medicaid,0,1,0,0,3
+PAT-01757,James Chen,Male,51,AB+,Medicare,0,0,0,0,0
+PAT-01758,Alexander Holloway,Male,72,B-,Private Commercial,0,1,0,0,3
+PAT-01759,James Mercer,Male,84,O-,Private Commercial,1,1,0,1,6
+PAT-01760,Emma Zhang,Female,78,AB-,Private Commercial,1,1,0,1,6
+PAT-01761,James Sinclair,Male,85,AB-,Medicaid,1,1,1,0,6
+PAT-01762,Elena Vance,Female,68,AB+,Private Commercial,0,0,1,0,3
+PAT-01763,Leo Chen,Male,55,AB-,Private Commercial,0,1,0,0,2
+PAT-01764,Marcus Mercer,Male,23,B+,Medicare,0,0,0,0,0
+PAT-01765,Ethan Patel,Male,49,B-,Private Commercial,0,1,0,0,2
+PAT-01766,Ethan Sinclair,Male,37,AB-,Medicare,0,0,0,0,0
+PAT-01767,Julian Alvarez,Male,95,AB+,Medicare,1,1,0,1,6
+PAT-01768,Elena Zhang,Female,50,A-,Medicaid,0,0,0,1,2
+PAT-01769,Amelia Novak,Female,56,O+,Medicare,0,0,0,0,0
+PAT-01770,Amelia Vance,Female,64,A-,Medicaid,0,1,0,0,3
+PAT-01771,Hazel Alvarez,Female,54,AB-,Private Commercial,0,0,0,0,0
+PAT-01772,Marcus Mercer,Male,86,A+,Medicare,1,1,1,0,6
+PAT-01773,David Kim,Male,42,AB-,Medicare,1,0,0,0,1
+PAT-01774,Hazel Nakamura,Female,57,A+,Medicaid,0,0,0,0,0
+PAT-01775,Isabella Chen,Female,39,AB-,Private Commercial,0,0,0,0,0
+PAT-01776,Isabella Alvarez,Female,28,A-,Private Commercial,0,0,0,0,0
+PAT-01777,Gabriel Chen,Male,42,A+,Medicare,0,1,0,1,4
+PAT-01778,Maya Kowalski,Female,53,B-,Medicaid,1,0,0,0,1
+PAT-01779,Sophia Novak,Female,45,A+,Medicare,0,1,1,0,4
+PAT-01780,Leo Holloway,Male,40,B+,Medicare,0,0,0,0,0
+PAT-01781,Victoria Chen,Female,27,O+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01782,Julian Kim,Male,52,B+,Private Commercial,0,0,0,0,0
+PAT-01783,Zoe Rossi,Female,25,O-,Medicare,0,0,0,0,0
+PAT-01784,Nora Zhang,Female,68,O-,Medicare,0,0,1,0,3
+PAT-01785,Ethan Holloway,Male,55,A+,Medicare,0,0,0,0,0
+PAT-01786,Amelia Holloway,Female,26,AB-,Medicaid,0,0,0,0,0
+PAT-01787,Isabella Sterling,Female,48,A+,Private Commercial,0,0,0,0,0
+PAT-01788,Leo Patel,Male,39,O+,Medicare,0,0,0,0,0
+PAT-01789,Julian Nakamura,Male,60,B-,Private Commercial,1,0,0,0,1
+PAT-01790,Isabella Rossi,Female,79,B+,Private Commercial,0,0,1,1,5
+PAT-01791,Adrian Rossi,Male,18,AB-,Medicaid,0,0,0,0,0
+PAT-01792,Marcus Sinclair,Male,56,A+,Private Commercial,0,0,0,0,0
+PAT-01793,Victoria Holloway,Female,50,O-,Medicare,0,0,0,0,0
+PAT-01794,David Mercer,Male,66,AB-,Medicare,0,0,0,0,1
+PAT-01795,Isabella Kowalski,Female,58,A-,Medicare,0,1,0,0,2
+PAT-01796,Sophia Nakamura,Female,39,B-,Medicare,0,0,0,0,0
+PAT-01797,Chloe Novak,Female,47,B-,Private Commercial,0,0,0,1,2
+PAT-01798,Hazel Novak,Female,38,O-,Private Commercial,0,0,0,0,0
+PAT-01799,Noah Gupta,Male,74,A-,Medicare,1,1,0,0,4
+PAT-01800,Alexander Sinclair,Male,54,B-,Private Commercial,1,0,0,0,1
+PAT-01801,Alexander Patel,Male,90,AB-,Private Commercial,0,1,0,0,3
+PAT-01802,Ethan Kim,Male,52,A+,Private Commercial,0,0,1,0,2
+PAT-01803,David Mercer,Male,40,O-,Private Commercial,1,0,0,0,1
+PAT-01804,Chloe Vance,Female,25,B-,Medicare,0,0,0,1,2
+PAT-01805,Isabella Kowalski,Female,19,AB+,Medicare,0,0,0,0,0
+PAT-01806,Hazel Kim,Female,23,A+,Medicare,0,0,0,0,0
+PAT-01807,Chloe Rossi,Female,59,AB+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01808,Victoria O'Connor,Female,63,O-,Private Commercial,1,1,0,0,4
+PAT-01809,Maya Chen,Female,23,B+,Medicare,0,0,0,0,0
+PAT-01810,Benjamin Nakamura,Male,71,O-,Private Commercial,1,1,0,0,4
+PAT-01811,Sophia Patel,Female,44,AB+,Medicaid,1,0,1,0,3
+PAT-01812,Julian Alvarez,Male,56,AB+,Medicaid,1,0,0,0,1
+PAT-01813,Elena Gupta,Female,84,AB-,Private Commercial,0,0,0,0,1
+PAT-01814,Nora Kim,Female,71,A+,Private Commercial,1,1,0,0,4
+PAT-01815,Olivia Mercer,Female,48,O-,Private Commercial,0,0,0,0,0
+PAT-01816,Gabriel Mercer,Male,37,B+,Medicaid,1,0,0,0,1
+PAT-01817,Lucas Chen,Male,13,A-,Private Commercial,0,0,0,0,0
+PAT-01818,Maya Chen,Female,40,AB-,Medicare,0,0,0,0,0
+PAT-01819,Leo Gupta,Male,49,B+,Medicaid,0,0,0,0,0
+PAT-01820,Elena Vance,Female,35,AB-,Medicare,0,0,0,0,0
+PAT-01821,Oliver Alvarez,Male,51,O-,Private Commercial,0,0,0,0,0
+PAT-01822,Alexander Zhang,Male,55,A+,Uninsured / Self-Pay,0,1,0,0,2
+PAT-01823,Leo Kowalski,Male,49,AB+,Private Commercial,1,0,0,0,1
+PAT-01824,Oliver Kim,Male,41,A-,Medicaid,0,0,0,0,0
+PAT-01825,Ethan Kowalski,Male,57,A-,Medicare,1,0,0,0,1
+PAT-01826,Amelia Kim,Female,62,AB-,Medicare,1,0,0,0,2
+PAT-01827,Amelia Nakamura,Female,33,AB-,Medicaid,0,0,0,0,0
+PAT-01828,Marcus Zhang,Male,80,A+,Medicaid,0,0,0,1,3
+PAT-01829,James Rossi,Male,52,AB-,Private Commercial,1,0,0,0,1
+PAT-01830,Noah Rossi,Male,54,A+,Medicare,1,0,0,0,1
+PAT-01831,Marcus Sinclair,Male,67,A+,Medicare,1,0,0,0,2
+PAT-01832,David Gupta,Male,58,AB-,Medicare,0,0,0,0,0
+PAT-01833,Oliver Sinclair,Male,72,O+,Private Commercial,0,0,0,0,1
+PAT-01834,Ethan Chen,Male,59,B-,Medicare,1,0,0,0,1
+PAT-01835,Leo Kowalski,Male,42,O-,Medicare,0,0,0,0,0
+PAT-01836,Julian Kowalski,Male,60,O+,Medicare,0,0,0,0,0
+PAT-01837,Noah Novak,Male,32,A-,Private Commercial,0,0,0,0,0
+PAT-01838,Clara Mercer,Female,56,A+,Medicare,1,0,1,0,3
+PAT-01839,Oliver Sterling,Male,53,AB-,Medicare,1,1,0,0,3
+PAT-01840,James Alvarez,Male,50,AB+,Medicare,0,0,1,1,4
+PAT-01841,James Alvarez,Male,51,AB-,Private Commercial,0,1,0,0,2
+PAT-01842,Benjamin Patel,Male,18,O+,Private Commercial,1,0,0,0,1
+PAT-01843,Nora O'Connor,Female,43,O-,Medicare,0,1,0,0,2
+PAT-01844,Adrian Holloway,Male,55,B-,Uninsured / Self-Pay,0,1,0,1,4
+PAT-01845,Benjamin O'Connor,Male,57,B-,Uninsured / Self-Pay,0,1,0,1,4
+PAT-01846,Aria Holloway,Female,34,A-,Private Commercial,0,1,0,0,2
+PAT-01847,Elena Gupta,Female,78,A+,Medicare,0,0,1,0,3
+PAT-01848,Maya Rossi,Female,37,O+,Medicare,0,0,0,0,0
+PAT-01849,Oliver Sterling,Male,72,B-,Medicaid,1,0,0,0,2
+PAT-01850,Olivia Gupta,Female,62,O-,Medicaid,1,1,0,0,4
+PAT-01851,Lucas Nakamura,Male,41,O-,Medicare,1,0,0,0,1
+PAT-01852,Hazel Kowalski,Female,87,B+,Medicare,0,0,0,1,3
+PAT-01853,Alexander Chen,Male,31,AB-,Medicare,0,0,0,0,0
+PAT-01854,Zoe Mercer,Female,71,B+,Medicaid,1,0,0,0,2
+PAT-01855,Ethan Novak,Male,73,AB+,Medicare,1,1,0,1,6
+PAT-01856,William Vance,Male,41,O+,Private Commercial,0,0,0,1,2
+PAT-01857,Chloe Nakamura,Female,80,A+,Medicaid,1,1,0,1,6
+PAT-01858,William Chen,Male,49,A+,Medicaid,0,0,0,0,0
+PAT-01859,Leo Vance,Male,59,A-,Medicare,0,1,1,0,4
+PAT-01860,Leo Mercer,Male,58,B+,Medicaid,0,0,0,0,0
+PAT-01861,Adrian Holloway,Male,51,A+,Medicare,1,0,1,0,3
+PAT-01862,Clara Kim,Female,69,O+,Medicare,0,0,0,1,3
+PAT-01863,Benjamin Holloway,Male,69,AB+,Private Commercial,1,0,0,0,2
+PAT-01864,Hazel Sterling,Female,20,AB-,Medicare,0,0,0,0,0
+PAT-01865,David Holloway,Male,78,O+,Private Commercial,1,1,0,0,4
+PAT-01866,James Zhang,Male,22,O+,Private Commercial,0,0,0,0,0
+PAT-01867,Zoe Nakamura,Female,73,B+,Medicaid,0,0,1,0,3
+PAT-01868,Olivia Mercer,Female,75,O+,Private Commercial,1,1,0,0,4
+PAT-01869,Nora Gupta,Female,33,A-,Private Commercial,0,0,0,0,0
+PAT-01870,Noah Zhang,Male,46,B+,Medicare,0,0,0,0,0
+PAT-01871,Sophia Sterling,Female,32,B+,Medicare,0,0,0,0,0
+PAT-01872,Adrian Rossi,Male,49,B+,Medicaid,0,0,0,0,0
+PAT-01873,Benjamin Zhang,Male,48,AB+,Private Commercial,0,1,0,0,2
+PAT-01874,James Patel,Male,68,A+,Medicare,0,0,0,0,1
+PAT-01875,Emma Kowalski,Female,78,B+,Medicare,0,0,0,0,1
+PAT-01876,Ethan Sinclair,Male,80,AB-,Private Commercial,0,0,0,0,1
+PAT-01877,Alexander Zhang,Male,43,B+,Private Commercial,0,0,0,0,0
+PAT-01878,Gabriel Mercer,Male,50,A+,Medicare,0,0,0,0,0
+PAT-01879,Noah Sinclair,Male,22,B-,Medicaid,0,0,0,0,0
+PAT-01880,William Kowalski,Male,38,B-,Medicaid,1,1,0,0,3
+PAT-01881,Gabriel Kowalski,Male,72,O-,Private Commercial,0,0,1,0,3
+PAT-01882,Marcus Gupta,Male,84,AB+,Medicaid,0,0,0,0,1
+PAT-01883,Noah Holloway,Male,30,O+,Medicare,0,0,0,0,0
+PAT-01884,Olivia Alvarez,Female,42,B-,Medicaid,0,0,0,0,0
+PAT-01885,Chloe Nakamura,Female,53,A-,Medicare,1,0,0,0,1
+PAT-01886,Maya Alvarez,Female,59,AB+,Medicare,0,0,0,0,0
+PAT-01887,Benjamin Kim,Male,38,A-,Private Commercial,0,0,0,0,0
+PAT-01888,Emma Novak,Female,62,B-,Medicare,0,0,1,1,5
+PAT-01889,Marcus Sinclair,Male,44,A+,Medicare,0,0,0,0,0
+PAT-01890,David Holloway,Male,53,A+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01891,Clara Sterling,Female,64,AB+,Medicare,0,0,0,0,1
+PAT-01892,Alexander O'Connor,Male,54,A-,Medicare,1,0,1,0,3
+PAT-01893,Gabriel Patel,Male,45,O+,Medicare,0,1,0,0,2
+PAT-01894,James Novak,Male,51,O+,Private Commercial,0,0,0,0,0
+PAT-01895,Amelia O'Connor,Female,52,O+,Private Commercial,0,0,0,0,0
+PAT-01896,Amelia Chen,Female,46,AB-,Private Commercial,0,0,0,0,0
+PAT-01897,Adrian Sterling,Male,49,O+,Medicaid,0,0,0,0,0
+PAT-01898,Gabriel Holloway,Male,84,B+,Medicare,1,0,1,1,6
+PAT-01899,Adrian Nakamura,Male,64,B+,Medicaid,0,0,0,0,1
+PAT-01900,Oliver Holloway,Male,48,B+,Private Commercial,0,0,0,0,0
+PAT-01901,Leo Rossi,Male,67,O-,Medicaid,0,0,0,1,3
+PAT-01902,James Gupta,Male,47,O+,Medicare,0,0,0,0,0
+PAT-01903,Noah Mercer,Male,76,AB+,Medicare,1,0,0,0,2
+PAT-01904,Olivia Kim,Female,61,B-,Medicare,0,0,1,0,3
+PAT-01905,Lucas Gupta,Male,51,A+,Medicare,1,1,0,0,3
+PAT-01906,Elena Vance,Female,62,AB+,Medicaid,1,0,0,0,2
+PAT-01907,Emma Rossi,Female,24,B+,Medicare,0,0,1,0,2
+PAT-01908,Clara Zhang,Female,32,B+,Private Commercial,0,0,0,0,0
+PAT-01909,Ethan Chen,Male,31,AB+,Private Commercial,0,0,0,0,0
+PAT-01910,Gabriel Kowalski,Male,56,B-,Medicaid,0,0,0,1,2
+PAT-01911,Olivia Vance,Female,86,O-,Medicare,1,0,0,0,2
+PAT-01912,Elena Zhang,Female,95,AB+,Medicare,1,0,0,0,2
+PAT-01913,Zoe Mercer,Female,66,O-,Medicare,1,1,1,0,6
+PAT-01914,Chloe Holloway,Female,63,O-,Medicaid,0,1,0,0,3
+PAT-01915,Clara Gupta,Female,19,B-,Medicaid,0,0,0,0,0
+PAT-01916,Adrian Novak,Male,43,A+,Medicaid,0,0,0,0,0
+PAT-01917,Sophia Sterling,Female,39,A-,Private Commercial,0,0,1,0,2
+PAT-01918,Maya Nakamura,Female,42,O+,Medicaid,0,0,0,0,0
+PAT-01919,Hazel Kowalski,Female,50,O-,Private Commercial,0,0,0,0,0
+PAT-01920,William Rossi,Male,45,O+,Medicare,0,0,0,0,0
+PAT-01921,Amelia O'Connor,Female,16,A-,Private Commercial,0,0,0,0,0
+PAT-01922,Alexander Sterling,Male,68,AB-,Private Commercial,0,1,0,0,3
+PAT-01923,Noah Zhang,Male,33,A+,Medicaid,0,0,0,0,0
+PAT-01924,Ethan Holloway,Male,58,O+,Private Commercial,0,0,0,0,0
+PAT-01925,Adrian Mercer,Male,93,B-,Private Commercial,0,1,1,1,7
+PAT-01926,James Holloway,Male,36,A+,Medicare,0,0,0,0,0
+PAT-01927,Leo Nakamura,Male,5,O-,Medicaid,0,1,0,0,2
+PAT-01928,Clara Gupta,Female,48,A+,Medicare,0,0,1,0,2
+PAT-01929,Nora Sinclair,Female,74,B-,Private Commercial,1,0,0,1,4
+PAT-01930,Zoe Patel,Female,91,B-,Medicare,1,0,1,0,4
+PAT-01931,Marcus Zhang,Male,30,AB+,Private Commercial,0,0,0,0,0
+PAT-01932,Zoe Sterling,Female,63,B-,Medicaid,0,0,0,0,1
+PAT-01933,Gabriel Gupta,Male,45,A-,Medicare,1,0,0,0,1
+PAT-01934,Gabriel Holloway,Male,51,A-,Medicaid,0,1,0,0,2
+PAT-01935,William Nakamura,Male,95,AB-,Medicare,1,0,1,1,6
+PAT-01936,Benjamin Patel,Male,25,A-,Medicare,0,0,0,0,0
+PAT-01937,James Alvarez,Male,58,AB+,Medicaid,1,1,0,1,5
+PAT-01938,Sophia Vance,Female,62,AB-,Private Commercial,0,0,0,0,1
+PAT-01939,James Mercer,Male,74,O+,Private Commercial,0,1,0,1,5
+PAT-01940,William O'Connor,Male,55,O+,Private Commercial,0,0,0,1,2
+PAT-01941,Isabella Sterling,Female,59,O-,Medicare,1,0,0,0,1
+PAT-01942,Oliver Chen,Male,46,B+,Private Commercial,0,0,0,1,2
+PAT-01943,Clara Mercer,Female,59,AB+,Medicaid,1,0,1,0,3
+PAT-01944,Alexander Chen,Male,47,O-,Private Commercial,0,0,0,0,0
+PAT-01945,David Chen,Male,65,B+,Private Commercial,0,0,1,0,3
+PAT-01946,Emma Chen,Female,46,A-,Medicare,0,0,0,0,0
+PAT-01947,Lucas Holloway,Male,61,AB+,Medicaid,1,0,0,0,2
+PAT-01948,Noah Gupta,Male,53,AB+,Medicare,0,1,1,0,4
+PAT-01949,Hazel Mercer,Female,75,A+,Medicare,0,0,1,0,3
+PAT-01950,Marcus Kim,Male,53,A+,Medicare,0,0,0,0,0
+PAT-01951,Sophia Chen,Female,20,O-,Private Commercial,0,0,0,0,0
+PAT-01952,Maya Rossi,Female,77,O-,Private Commercial,0,1,0,1,5
+PAT-01953,Noah O'Connor,Male,36,A+,Medicare,0,0,0,0,0
+PAT-01954,Elena Kim,Female,41,O-,Medicaid,0,0,0,0,0
+PAT-01955,Aria Sinclair,Female,42,B+,Medicare,0,1,0,0,2
+PAT-01956,Leo Kim,Male,80,B-,Medicaid,0,1,0,1,5
+PAT-01957,Oliver Chen,Male,13,B-,Medicare,0,1,0,0,2
+PAT-01958,Noah Kowalski,Male,95,A+,Medicaid,1,1,0,0,4
+PAT-01959,Aria Novak,Female,74,A+,Medicare,1,1,0,0,4
+PAT-01960,Aria Zhang,Female,58,B-,Medicare,1,1,0,0,3
+PAT-01961,James Sinclair,Male,52,O-,Medicaid,0,0,0,1,2
+PAT-01962,Benjamin Kowalski,Male,59,O-,Medicare,0,0,1,0,2
+PAT-01963,Sophia Vance,Female,63,O+,Private Commercial,0,1,0,0,3
+PAT-01964,Ethan Vance,Male,66,O+,Medicare,1,1,0,0,4
+PAT-01965,Amelia Mercer,Female,64,B+,Medicare,0,0,0,0,1
+PAT-01966,Adrian Zhang,Male,55,B-,Medicare,0,0,0,0,0
+PAT-01967,Amelia Gupta,Female,50,A+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01968,Adrian O'Connor,Male,51,O-,Medicare,0,1,0,0,2
+PAT-01969,Emma Sterling,Female,50,A+,Medicare,0,0,0,0,0
+PAT-01970,Olivia Sinclair,Female,75,A+,Medicaid,1,0,0,1,4
+PAT-01971,Lucas Novak,Male,65,A-,Uninsured / Self-Pay,0,0,0,0,1
+PAT-01972,Amelia Patel,Female,1,B+,Medicare,0,0,0,0,0
+PAT-01973,William Vance,Male,66,O+,Medicare,1,1,0,0,4
+PAT-01974,Zoe Rossi,Female,57,A+,Private Commercial,0,0,0,0,0
+PAT-01975,Benjamin Vance,Male,53,AB-,Medicaid,0,0,0,1,2
+PAT-01976,Aria Chen,Female,46,O-,Uninsured / Self-Pay,0,0,0,1,2
+PAT-01977,Victoria Holloway,Female,75,B+,Private Commercial,1,0,1,0,4
+PAT-01978,Nora Holloway,Female,72,B-,Private Commercial,1,0,1,1,6
+PAT-01979,Hazel Novak,Female,39,O-,Private Commercial,0,1,0,1,4
+PAT-01980,Noah Rossi,Male,61,O+,Medicare,0,0,0,0,1
+PAT-01981,Victoria Vance,Female,35,A+,Private Commercial,1,0,0,0,1
+PAT-01982,Victoria Novak,Female,27,O+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-01983,Sophia Zhang,Female,42,B-,Private Commercial,0,0,0,0,0
+PAT-01984,Nora Chen,Female,70,AB+,Medicare,0,0,0,1,3
+PAT-01985,David Chen,Male,72,A+,Private Commercial,1,0,1,0,4
+PAT-01986,Lucas Vance,Male,63,B+,Medicaid,0,0,0,1,3
+PAT-01987,Ethan Rossi,Male,67,B-,Private Commercial,0,0,1,0,3
+PAT-01988,Leo Rossi,Male,63,AB-,Medicaid,1,0,1,1,6
+PAT-01989,Julian Chen,Male,41,O+,Medicare,0,0,0,0,0
+PAT-01990,Aria Zhang,Female,62,AB-,Medicaid,0,1,0,0,3
+PAT-01991,Oliver Patel,Male,69,B-,Private Commercial,0,0,0,0,1
+PAT-01992,James Holloway,Male,68,B-,Medicare,0,0,0,1,3
+PAT-01993,Julian Sinclair,Male,76,B+,Medicare,0,1,1,0,5
+PAT-01994,Elena O'Connor,Female,67,A+,Private Commercial,1,0,1,1,6
+PAT-01995,Ethan Nakamura,Male,60,O+,Medicaid,1,0,1,0,3
+PAT-01996,Hazel Vance,Female,74,AB+,Medicaid,1,1,0,0,4
+PAT-01997,James Sterling,Male,53,A+,Medicaid,0,1,0,0,2
+PAT-01998,David Rossi,Male,37,AB-,Medicare,0,0,0,0,0
+PAT-01999,Alexander Kowalski,Male,50,O+,Medicare,0,0,0,0,0
+PAT-02000,Lucas Kowalski,Male,39,A+,Medicare,0,0,0,0,0
+PAT-02001,Clara Chen,Female,41,B-,Private Commercial,0,1,0,0,2
+PAT-02002,Oliver Chen,Male,51,A+,Medicare,1,0,0,1,3
+PAT-02003,William Gupta,Male,38,O-,Medicaid,0,0,0,0,0
+PAT-02004,William Sinclair,Male,48,AB-,Private Commercial,0,0,0,0,0
+PAT-02005,Elena Alvarez,Female,18,B-,Private Commercial,0,0,0,0,0
+PAT-02006,Chloe Patel,Female,58,AB-,Private Commercial,1,0,0,1,3
+PAT-02007,Maya O'Connor,Female,54,AB-,Medicare,0,0,0,1,2
+PAT-02008,Marcus Patel,Male,38,A-,Medicare,0,0,0,0,0
+PAT-02009,James Novak,Male,66,A+,Private Commercial,1,1,0,0,4
+PAT-02010,Alexander Kim,Male,71,O+,Private Commercial,0,0,0,0,1
+PAT-02011,Marcus Vance,Male,23,A+,Medicare,0,0,0,0,0
+PAT-02012,Marcus Zhang,Male,39,A-,Medicare,0,0,0,0,0
+PAT-02013,James Sterling,Male,39,AB+,Medicare,0,0,0,0,0
+PAT-02014,Leo Nakamura,Male,36,O-,Medicaid,0,0,0,0,0
+PAT-02015,Marcus Mercer,Male,69,O-,Medicaid,0,0,0,1,3
+PAT-02016,Hazel Vance,Female,50,O-,Private Commercial,0,1,0,0,2
+PAT-02017,David Nakamura,Male,48,AB+,Medicare,0,0,0,1,2
+PAT-02018,Benjamin Mercer,Male,15,O+,Medicare,0,0,0,0,0
+PAT-02019,Hazel Kim,Female,66,O+,Medicare,0,0,0,0,1
+PAT-02020,Elena Mercer,Female,30,B+,Private Commercial,0,0,0,0,0
+PAT-02021,Amelia Vance,Female,55,A-,Private Commercial,0,0,0,0,0
+PAT-02022,Maya Chen,Female,59,A+,Medicare,1,0,0,1,3
+PAT-02023,Hazel Alvarez,Female,79,A+,Private Commercial,1,0,0,0,2
+PAT-02024,Nora Rossi,Female,29,O+,Medicaid,0,0,0,0,0
+PAT-02025,Zoe Alvarez,Female,1,B+,Private Commercial,0,0,0,0,0
+PAT-02026,Julian Holloway,Male,57,A+,Private Commercial,1,1,0,0,3
+PAT-02027,Clara Kowalski,Female,88,A-,Medicare,0,0,0,1,3
+PAT-02028,Gabriel Vance,Male,77,AB-,Medicare,0,1,1,0,5
+PAT-02029,Aria Novak,Female,57,B+,Medicaid,0,0,0,0,0
+PAT-02030,Isabella Novak,Female,44,A-,Medicare,0,0,0,0,0
+PAT-02031,Lucas Sinclair,Male,69,AB+,Uninsured / Self-Pay,0,0,0,0,1
+PAT-02032,Lucas Patel,Male,35,O+,Medicaid,0,0,0,0,0
+PAT-02033,Benjamin Rossi,Male,63,O-,Private Commercial,0,0,0,0,1
+PAT-02034,Adrian Holloway,Male,63,AB+,Medicare,0,0,0,0,1
+PAT-02035,Elena Alvarez,Female,74,A+,Medicare,0,1,0,0,3
+PAT-02036,David Kowalski,Male,95,B+,Private Commercial,1,0,0,0,2
+PAT-02037,Ethan Kowalski,Male,61,B+,Medicare,0,0,0,0,1
+PAT-02038,Noah Kim,Male,44,O+,Medicare,1,0,0,0,1
+PAT-02039,Noah Sinclair,Male,53,AB-,Medicare,0,1,1,0,4
+PAT-02040,Maya Kowalski,Female,20,A+,Medicaid,0,0,0,0,0
+PAT-02041,Amelia Novak,Female,40,AB-,Medicare,0,0,0,1,2
+PAT-02042,Gabriel Chen,Male,46,A+,Medicare,0,0,0,0,0
+PAT-02043,Clara Zhang,Female,44,A-,Medicaid,1,0,0,0,1
+PAT-02044,David Vance,Male,56,A+,Private Commercial,0,1,0,0,2
+PAT-02045,James Sinclair,Male,38,A+,Medicaid,0,0,0,1,2
+PAT-02046,Oliver Sterling,Male,75,A-,Medicare,1,1,0,0,4
+PAT-02047,Benjamin O'Connor,Male,54,A-,Private Commercial,1,0,0,0,1
+PAT-02048,Noah Kowalski,Male,53,B-,Private Commercial,0,1,0,0,2
+PAT-02049,Elena Chen,Female,47,A-,Medicare,0,0,0,0,0
+PAT-02050,Zoe Sinclair,Female,56,A+,Medicare,0,0,0,0,0
+PAT-02051,Olivia Patel,Female,69,AB-,Private Commercial,0,0,1,0,3
+PAT-02052,Adrian Sinclair,Male,37,O+,Medicaid,0,0,0,0,0
+PAT-02053,James Zhang,Male,41,O-,Private Commercial,1,0,0,0,1
+PAT-02054,Gabriel Patel,Male,48,O-,Medicare,0,1,0,0,2
+PAT-02055,William Kowalski,Male,28,AB+,Private Commercial,0,0,0,0,0
+PAT-02056,Chloe Novak,Female,38,A+,Medicare,0,0,0,0,0
+PAT-02057,Oliver Sterling,Male,44,O-,Private Commercial,1,0,0,1,3
+PAT-02058,Amelia Sterling,Female,70,A+,Medicare,1,0,0,0,2
+PAT-02059,Isabella Vance,Female,58,A-,Medicare,0,0,0,0,0
+PAT-02060,Lucas Nakamura,Male,57,A-,Medicare,0,0,0,0,0
+PAT-02061,William Vance,Male,70,A-,Medicare,1,0,0,1,4
+PAT-02062,Olivia O'Connor,Female,51,O-,Medicare,0,0,0,1,2
+PAT-02063,Elena Holloway,Female,61,AB-,Private Commercial,0,0,0,0,1
+PAT-02064,Sophia Rossi,Female,52,O-,Private Commercial,0,0,1,0,2
+PAT-02065,Leo Mercer,Male,59,B-,Medicare,0,0,1,0,2
+PAT-02066,Emma Mercer,Female,42,AB-,Medicaid,0,0,0,0,0
+PAT-02067,Victoria Kowalski,Female,7,A+,Medicaid,1,0,0,1,3
+PAT-02068,Julian Chen,Male,51,O-,Medicare,1,0,0,1,3
+PAT-02069,Ethan Nakamura,Male,81,AB-,Medicare,0,0,0,0,1
+PAT-02070,Olivia Mercer,Female,71,A+,Medicare,1,0,0,1,4
+PAT-02071,Nora Chen,Female,72,AB-,Private Commercial,1,1,0,0,4
+PAT-02072,Maya Nakamura,Female,77,B+,Medicare,0,0,0,0,1
+PAT-02073,Julian Holloway,Male,55,B-,Medicare,0,1,0,0,2
+PAT-02074,Marcus Vance,Male,57,B-,Medicaid,1,0,0,1,3
+PAT-02075,Amelia O'Connor,Female,42,O+,Medicare,0,0,0,0,0
+PAT-02076,Chloe Zhang,Female,47,AB+,Medicare,0,0,0,0,0
+PAT-02077,Zoe Zhang,Female,65,AB+,Private Commercial,0,0,1,0,3
+PAT-02078,Aria Vance,Female,76,B-,Private Commercial,1,1,1,1,8
+PAT-02079,Olivia Vance,Female,51,A+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-02080,Sophia Alvarez,Female,45,AB+,Medicare,0,0,0,0,0
+PAT-02081,James Sinclair,Male,54,A+,Medicaid,0,0,0,0,0
+PAT-02082,Isabella Patel,Female,65,B+,Private Commercial,0,1,1,0,5
+PAT-02083,Zoe Holloway,Female,26,B-,Private Commercial,0,0,0,0,0
+PAT-02084,Aria Nakamura,Female,10,O-,Medicare,0,0,0,0,0
+PAT-02085,Adrian Nakamura,Male,43,B+,Medicare,0,0,0,0,0
+PAT-02086,Isabella Novak,Female,30,A+,Medicare,1,0,0,0,1
+PAT-02087,Benjamin Rossi,Male,44,A-,Uninsured / Self-Pay,0,1,0,0,2
+PAT-02088,Sophia Nakamura,Female,51,AB-,Medicare,1,0,0,0,1
+PAT-02089,Alexander Gupta,Male,45,B-,Medicare,0,0,0,0,0
+PAT-02090,Maya Rossi,Female,81,A-,Medicare,1,0,0,1,4
+PAT-02091,Amelia Kim,Female,60,A-,Medicaid,0,0,1,0,2
+PAT-02092,Marcus Sinclair,Male,59,B-,Private Commercial,1,0,0,0,1
+PAT-02093,Chloe Holloway,Female,65,O+,Medicaid,1,0,0,0,2
+PAT-02094,Victoria Mercer,Female,32,B-,Medicaid,0,0,0,0,0
+PAT-02095,David Rossi,Male,73,B-,Medicare,1,1,1,0,6
+PAT-02096,David Kowalski,Male,52,O+,Private Commercial,1,0,0,0,1
+PAT-02097,David Zhang,Male,66,B+,Medicare,1,1,0,1,6
+PAT-02098,Aria Kim,Female,33,O+,Medicare,0,0,0,0,0
+PAT-02099,Aria Sterling,Female,24,A+,Private Commercial,0,0,0,0,0
+PAT-02100,Julian Gupta,Male,69,O+,Medicare,1,1,0,1,6
+PAT-02101,Emma Sterling,Female,61,A+,Medicare,1,0,0,0,2
+PAT-02102,Isabella Holloway,Female,36,A+,Medicare,0,0,0,0,0
+PAT-02103,William Sterling,Male,37,AB+,Medicaid,0,0,0,0,0
+PAT-02104,Ethan Patel,Male,75,AB-,Medicaid,0,1,1,1,7
+PAT-02105,Julian Kim,Male,31,AB+,Medicare,0,0,0,0,0
+PAT-02106,Zoe Sinclair,Female,85,B+,Private Commercial,0,1,0,1,5
+PAT-02107,James Mercer,Male,36,B+,Private Commercial,0,0,0,0,0
+PAT-02108,Ethan Chen,Male,66,A+,Medicaid,1,0,0,1,4
+PAT-02109,Sophia Chen,Female,47,A+,Medicare,1,0,0,0,1
+PAT-02110,Emma Zhang,Female,65,AB-,Private Commercial,0,0,0,0,1
+PAT-02111,Gabriel Gupta,Male,43,O-,Medicaid,0,0,0,0,0
+PAT-02112,David Vance,Male,50,AB-,Medicare,0,0,0,0,0
+PAT-02113,Nora Sterling,Female,54,O+,Private Commercial,0,0,1,1,4
+PAT-02114,Isabella Holloway,Female,34,A+,Private Commercial,0,0,0,0,0
+PAT-02115,Olivia Patel,Female,68,A+,Medicare,0,0,1,1,5
+PAT-02116,Alexander Zhang,Male,44,AB+,Private Commercial,0,1,0,0,2
+PAT-02117,Julian Mercer,Male,49,O+,Private Commercial,0,1,0,0,2
+PAT-02118,Benjamin Sterling,Male,35,B-,Medicare,0,0,0,0,0
+PAT-02119,Aria Alvarez,Female,5,AB+,Private Commercial,0,0,0,0,0
+PAT-02120,Ethan Zhang,Male,50,O-,Medicare,1,1,0,1,5
+PAT-02121,Nora Rossi,Female,95,A-,Private Commercial,0,1,0,0,3
+PAT-02122,Oliver Patel,Male,68,O+,Medicare,1,1,0,0,4
+PAT-02123,Chloe Rossi,Female,53,B-,Medicaid,1,0,0,1,3
+PAT-02124,Victoria Sinclair,Female,49,AB-,Medicaid,1,0,0,0,1
+PAT-02125,Lucas Kim,Male,54,B-,Medicare,0,1,0,0,2
+PAT-02126,Elena Zhang,Female,64,B-,Medicaid,0,0,0,1,3
+PAT-02127,Lucas Mercer,Male,31,A+,Medicare,0,0,0,0,0
+PAT-02128,Zoe Kowalski,Female,75,AB+,Medicare,1,1,1,0,6
+PAT-02129,Benjamin Rossi,Male,67,A-,Medicaid,1,0,0,1,4
+PAT-02130,Julian Kim,Male,67,A+,Medicare,1,0,0,0,2
+PAT-02131,Sophia Rossi,Female,62,B-,Medicare,0,0,1,0,3
+PAT-02132,Oliver Alvarez,Male,54,A-,Private Commercial,1,0,0,1,3
+PAT-02133,Alexander Mercer,Male,66,O-,Medicare,1,1,0,1,6
+PAT-02134,Chloe Alvarez,Female,65,AB-,Uninsured / Self-Pay,0,0,0,0,1
+PAT-02135,Emma Alvarez,Female,47,O+,Medicare,0,1,0,0,2
+PAT-02136,Victoria Sterling,Female,43,AB-,Medicaid,0,0,1,0,2
+PAT-02137,Olivia Rossi,Female,55,B+,Private Commercial,0,0,0,0,0
+PAT-02138,Aria O'Connor,Female,83,B+,Private Commercial,0,1,0,1,5
+PAT-02139,Benjamin Sterling,Male,30,A+,Medicare,0,0,0,0,0
+PAT-02140,James O'Connor,Male,26,B+,Private Commercial,0,0,0,0,0
+PAT-02141,Alexander Gupta,Male,57,B+,Medicaid,0,0,0,0,0
+PAT-02142,Julian Kowalski,Male,54,A-,Private Commercial,0,1,0,1,4
+PAT-02143,Isabella Chen,Female,57,B-,Private Commercial,0,0,0,1,2
+PAT-02144,William Rossi,Male,58,O+,Medicare,1,0,0,1,3
+PAT-02145,David Nakamura,Male,49,B-,Medicaid,0,0,0,1,2
+PAT-02146,Lucas Kowalski,Male,82,AB+,Medicaid,0,0,0,1,3
+PAT-02147,Elena Zhang,Female,23,A-,Private Commercial,0,0,0,0,0
+PAT-02148,Nora Patel,Female,38,B-,Medicaid,0,0,0,1,2
+PAT-02149,Elena Holloway,Female,52,O-,Medicare,0,0,0,0,0
+PAT-02150,Ethan Sterling,Male,22,A+,Medicare,0,0,0,0,0
+PAT-02151,Leo Kowalski,Male,50,B-,Private Commercial,0,0,0,0,0
+PAT-02152,Lucas Gupta,Male,85,B-,Private Commercial,1,1,1,0,6
+PAT-02153,James Alvarez,Male,54,A+,Medicaid,0,0,0,1,2
+PAT-02154,Isabella Alvarez,Female,58,AB+,Medicaid,0,0,1,0,2
+PAT-02155,William O'Connor,Male,30,A+,Private Commercial,0,0,0,1,2
+PAT-02156,Maya Holloway,Female,42,O-,Medicare,0,0,0,0,0
+PAT-02157,Olivia O'Connor,Female,46,B-,Medicare,0,0,0,0,0
+PAT-02158,Nora Kim,Female,47,A+,Medicaid,0,1,0,0,2
+PAT-02159,Noah Novak,Male,78,B+,Medicare,0,1,0,0,3
+PAT-02160,Zoe Holloway,Female,64,B+,Private Commercial,0,0,0,0,1
+PAT-02161,Amelia Sinclair,Female,32,A-,Private Commercial,0,0,0,0,0
+PAT-02162,Sophia Kim,Female,58,B-,Medicare,0,0,0,0,0
+PAT-02163,Lucas O'Connor,Male,63,A+,Private Commercial,0,0,0,0,1
+PAT-02164,Emma Rossi,Female,75,AB+,Medicare,0,1,0,1,5
+PAT-02165,Emma Holloway,Female,84,A+,Medicare,1,0,0,1,4
+PAT-02166,Maya Alvarez,Female,34,A-,Private Commercial,0,1,0,0,2
+PAT-02167,Leo Gupta,Male,38,AB-,Medicare,0,0,0,0,0
+PAT-02168,William Sinclair,Male,30,AB-,Private Commercial,0,0,1,0,2
+PAT-02169,James Chen,Male,49,AB+,Medicare,1,0,0,0,1
+PAT-02170,Nora Patel,Female,62,B+,Private Commercial,1,0,0,0,2
+PAT-02171,Gabriel Zhang,Male,72,AB-,Medicaid,0,0,0,0,1
+PAT-02172,Aria Chen,Female,52,O+,Medicare,0,0,0,0,0
+PAT-02173,Lucas Sinclair,Male,47,B+,Private Commercial,0,1,0,0,2
+PAT-02174,Elena Vance,Female,56,AB+,Private Commercial,0,0,0,0,0
+PAT-02175,Elena O'Connor,Female,38,B-,Private Commercial,0,0,0,0,0
+PAT-02176,Hazel Gupta,Female,93,A+,Medicare,1,0,0,1,4
+PAT-02177,Leo Nakamura,Male,23,O+,Medicare,0,0,0,0,0
+PAT-02178,Clara Holloway,Female,57,A-,Medicaid,1,0,0,0,1
+PAT-02179,Elena Alvarez,Female,92,AB-,Private Commercial,0,0,0,1,3
+PAT-02180,David Rossi,Male,54,O+,Medicare,0,1,0,0,2
+PAT-02181,Lucas Sterling,Male,50,AB-,Medicare,0,0,0,1,2
+PAT-02182,Julian Zhang,Male,47,A-,Medicaid,0,0,0,0,0
+PAT-02183,Aria Rossi,Female,50,B-,Medicare,0,1,0,0,2
+PAT-02184,Sophia Holloway,Female,80,AB-,Medicare,1,0,0,0,2
+PAT-02185,Emma Vance,Female,11,B+,Medicaid,0,0,0,0,0
+PAT-02186,Nora Patel,Female,83,B+,Medicare,1,1,0,0,4
+PAT-02187,Sophia Sinclair,Female,26,B+,Medicare,0,0,0,0,0
+PAT-02188,James Rossi,Male,48,A-,Medicaid,1,0,1,0,3
+PAT-02189,Oliver Patel,Male,45,AB+,Private Commercial,0,0,0,0,0
+PAT-02190,Chloe Kowalski,Female,65,AB-,Medicare,0,0,0,1,3
+PAT-02191,Hazel Kim,Female,23,B+,Medicare,0,0,0,0,0
+PAT-02192,Leo Nakamura,Male,62,O-,Medicare,0,0,0,1,3
+PAT-02193,Olivia O'Connor,Female,92,AB+,Private Commercial,1,1,1,0,6
+PAT-02194,Zoe Mercer,Female,28,B+,Private Commercial,0,0,0,0,0
+PAT-02195,Amelia Rossi,Female,57,O+,Medicare,1,0,0,1,3
+PAT-02196,Clara Nakamura,Female,41,B-,Medicare,0,0,0,0,0
+PAT-02197,William Kim,Male,62,AB+,Medicare,0,0,0,0,1
+PAT-02198,Zoe Zhang,Female,54,AB-,Medicare,0,0,0,0,0
+PAT-02199,Victoria Sterling,Female,41,A+,Medicare,0,0,0,1,2
+PAT-02200,Aria Mercer,Female,63,AB-,Private Commercial,0,0,0,0,1
+PAT-02201,Emma Rossi,Female,88,B-,Private Commercial,0,0,0,1,3
+PAT-02202,Victoria Patel,Female,50,O-,Medicare,0,0,0,0,0
+PAT-02203,Julian Chen,Male,67,O-,Private Commercial,1,0,0,0,2
+PAT-02204,Benjamin Gupta,Male,29,O+,Private Commercial,0,0,0,0,0
+PAT-02205,Oliver Kowalski,Male,35,A+,Medicaid,0,0,0,0,0
+PAT-02206,Isabella Patel,Female,62,B-,Private Commercial,1,0,1,0,4
+PAT-02207,Adrian Zhang,Male,82,A+,Private Commercial,0,1,0,1,5
+PAT-02208,Oliver Alvarez,Male,60,A+,Private Commercial,1,1,0,1,5
+PAT-02209,Amelia Sterling,Female,48,O+,Medicaid,0,0,0,0,0
+PAT-02210,Hazel Alvarez,Female,53,A+,Medicare,0,0,1,0,2
+PAT-02211,Olivia Holloway,Female,30,AB-,Medicare,1,0,0,0,1
+PAT-02212,Elena Zhang,Female,65,A-,Medicare,1,0,0,0,2
+PAT-02213,Adrian Vance,Male,70,AB+,Medicare,0,0,0,0,1
+PAT-02214,Clara Nakamura,Female,45,AB-,Medicaid,1,0,0,0,1
+PAT-02215,Maya Alvarez,Female,45,O+,Private Commercial,1,0,0,0,1
+PAT-02216,Noah Gupta,Male,59,AB+,Medicare,1,1,0,0,3
+PAT-02217,Olivia O'Connor,Female,45,AB+,Medicare,1,1,0,0,3
+PAT-02218,Benjamin Zhang,Male,52,B+,Medicare,0,0,0,0,0
+PAT-02219,Emma Sinclair,Female,93,A+,Medicaid,0,1,0,0,3
+PAT-02220,James Novak,Male,49,O-,Medicare,1,0,0,0,1
+PAT-02221,Nora Novak,Female,47,A-,Private Commercial,0,0,0,0,0
+PAT-02222,Zoe Vance,Female,41,O+,Medicaid,0,0,0,0,0
+PAT-02223,William Novak,Male,68,B-,Medicare,0,0,0,0,1
+PAT-02224,Gabriel Rossi,Male,50,AB-,Medicare,0,0,0,0,0
+PAT-02225,James Kim,Male,41,AB+,Private Commercial,0,0,0,0,0
+PAT-02226,Victoria Vance,Female,79,O-,Medicaid,1,0,0,0,2
+PAT-02227,William Gupta,Male,80,A-,Medicare,1,0,0,1,4
+PAT-02228,Victoria Gupta,Female,42,O+,Medicaid,0,0,0,0,0
+PAT-02229,Leo Patel,Male,18,A+,Medicare,0,0,0,1,2
+PAT-02230,Amelia Kowalski,Female,73,A-,Private Commercial,0,0,1,0,3
+PAT-02231,Oliver Sinclair,Male,40,O+,Medicare,0,0,0,0,0
+PAT-02232,Aria Novak,Female,69,A-,Private Commercial,1,1,0,0,4
+PAT-02233,James Gupta,Male,16,A+,Private Commercial,0,0,0,0,0
+PAT-02234,Emma Gupta,Female,70,AB+,Medicare,1,0,0,0,2
+PAT-02235,Leo Mercer,Male,30,O+,Medicare,0,0,0,0,0
+PAT-02236,Marcus Kim,Male,67,B+,Medicare,1,0,0,1,4
+PAT-02237,Sophia Holloway,Female,54,A+,Medicare,1,0,0,0,1
+PAT-02238,Adrian Vance,Male,35,AB+,Private Commercial,1,0,0,0,1
+PAT-02239,Benjamin Sinclair,Male,46,AB-,Medicaid,1,0,0,1,3
+PAT-02240,Emma Vance,Female,67,O+,Medicare,1,1,0,0,4
+PAT-02241,Olivia Zhang,Female,56,A+,Medicare,1,0,1,0,3
+PAT-02242,William Holloway,Male,65,AB+,Medicaid,0,0,0,1,3
+PAT-02243,Alexander Chen,Male,91,B+,Private Commercial,0,1,0,0,3
+PAT-02244,Noah Alvarez,Male,24,O+,Medicaid,0,0,0,0,0
+PAT-02245,Olivia Kim,Female,84,B+,Private Commercial,1,0,0,0,2
+PAT-02246,Marcus Sinclair,Male,55,A-,Private Commercial,1,0,1,0,3
+PAT-02247,Victoria Mercer,Female,36,B+,Medicare,1,0,0,0,1
+PAT-02248,Victoria Gupta,Female,28,AB+,Private Commercial,0,0,1,0,2
+PAT-02249,Maya Alvarez,Female,50,B+,Private Commercial,1,1,0,0,3
+PAT-02250,Julian Sterling,Male,71,B-,Medicare,1,0,0,0,2
+PAT-02251,Marcus Alvarez,Male,51,O-,Medicare,1,0,0,0,1
+PAT-02252,Chloe Holloway,Female,82,AB+,Medicare,0,0,0,0,1
+PAT-02253,Victoria Kim,Female,26,B+,Medicare,0,0,0,0,0
+PAT-02254,Emma Nakamura,Female,53,O-,Medicaid,0,0,0,0,0
+PAT-02255,Amelia Sterling,Female,30,A-,Medicare,1,0,0,0,1
+PAT-02256,Gabriel Patel,Male,60,AB+,Medicare,0,0,0,0,0
+PAT-02257,William Kowalski,Male,70,AB+,Medicare,1,0,0,0,2
+PAT-02258,Marcus Mercer,Male,46,A+,Private Commercial,0,0,0,0,0
+PAT-02259,Maya Chen,Female,4,AB+,Medicare,0,0,1,1,4
+PAT-02260,Aria Holloway,Female,57,O-,Medicare,0,0,0,1,2
+PAT-02261,Lucas Chen,Male,62,A+,Private Commercial,1,0,0,0,2
+PAT-02262,Julian Gupta,Male,61,AB-,Private Commercial,1,0,0,0,2
+PAT-02263,Lucas Chen,Male,77,O-,Private Commercial,0,0,0,0,1
+PAT-02264,Clara Novak,Female,33,B+,Private Commercial,0,1,1,0,4
+PAT-02265,Lucas Alvarez,Male,66,O-,Medicaid,0,0,0,0,1
+PAT-02266,Leo Mercer,Male,76,A+,Private Commercial,0,0,0,1,3
+PAT-02267,Elena Chen,Female,20,B-,Medicare,0,0,0,1,2
+PAT-02268,David Kim,Male,60,B+,Medicare,0,0,0,0,0
+PAT-02269,Hazel Holloway,Female,44,A+,Medicare,0,1,1,1,6
+PAT-02270,Adrian Sterling,Male,52,A+,Private Commercial,0,0,1,0,2
+PAT-02271,Zoe O'Connor,Female,60,B-,Medicaid,0,1,0,1,4
+PAT-02272,Noah Novak,Male,44,B-,Medicaid,0,0,0,0,0
+PAT-02273,Lucas O'Connor,Male,41,O+,Medicare,1,0,0,0,1
+PAT-02274,Benjamin Alvarez,Male,54,O-,Medicaid,0,0,0,0,0
+PAT-02275,Sophia Kowalski,Female,33,AB+,Medicare,0,0,0,1,2
+PAT-02276,James Zhang,Male,33,O+,Medicare,0,0,0,0,0
+PAT-02277,William Sterling,Male,66,A+,Medicare,0,1,0,0,3
+PAT-02278,Benjamin Kim,Male,32,B-,Medicare,1,0,1,0,3
+PAT-02279,Isabella Rossi,Female,66,B+,Medicare,1,0,0,0,2
+PAT-02280,David Kowalski,Male,62,B+,Medicare,0,0,0,1,3
+PAT-02281,Alexander Mercer,Male,21,A-,Uninsured / Self-Pay,0,1,0,0,2
+PAT-02282,Clara Sterling,Female,41,AB+,Medicaid,0,0,0,1,2
+PAT-02283,Leo Alvarez,Male,76,AB+,Medicaid,0,1,0,0,3
+PAT-02284,William Holloway,Male,35,AB+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-02285,David Mercer,Male,45,AB-,Medicaid,0,0,0,0,0
+PAT-02286,Victoria O'Connor,Female,62,A-,Medicare,0,0,0,0,1
+PAT-02287,Lucas Alvarez,Male,68,A+,Medicare,0,1,0,0,3
+PAT-02288,Hazel Novak,Female,49,AB+,Medicaid,0,0,0,0,0
+PAT-02289,Marcus Mercer,Male,42,B-,Medicare,0,0,0,0,0
+PAT-02290,Zoe Kowalski,Female,81,O-,Private Commercial,1,1,0,0,4
+PAT-02291,Julian Gupta,Male,87,A-,Medicare,0,0,1,1,5
+PAT-02292,Olivia O'Connor,Female,72,A+,Private Commercial,1,0,0,0,2
+PAT-02293,Zoe Kim,Female,55,O+,Medicare,0,0,0,0,0
+PAT-02294,Gabriel Alvarez,Male,38,B+,Medicare,0,0,0,0,0
+PAT-02295,Sophia Kowalski,Female,38,AB+,Medicare,0,1,0,1,4
+PAT-02296,Noah Sterling,Male,63,O+,Medicare,1,0,0,0,2
+PAT-02297,Oliver Patel,Male,61,O+,Medicare,1,0,0,0,2
+PAT-02298,Emma Chen,Female,80,O-,Private Commercial,1,0,0,1,4
+PAT-02299,Aria Alvarez,Female,66,O-,Private Commercial,0,0,0,0,1
+PAT-02300,Elena Sinclair,Female,25,B+,Medicare,0,0,0,0,0
+PAT-02301,Hazel Zhang,Female,73,O-,Medicare,0,1,0,1,5
+PAT-02302,Maya Nakamura,Female,35,A+,Medicaid,0,0,0,0,0
+PAT-02303,Chloe Chen,Female,46,A-,Medicaid,0,0,0,1,2
+PAT-02304,Sophia Kim,Female,58,A+,Medicare,1,0,1,0,3
+PAT-02305,Julian Holloway,Male,91,B-,Private Commercial,1,0,1,1,6
+PAT-02306,Noah Kim,Male,95,B+,Medicaid,1,1,0,1,6
+PAT-02307,Victoria Sinclair,Female,65,B+,Private Commercial,0,0,1,1,5
+PAT-02308,Olivia Sterling,Female,50,O-,Medicare,1,0,0,0,1
+PAT-02309,Adrian Holloway,Male,64,B+,Medicare,0,0,0,0,1
+PAT-02310,Emma Holloway,Female,70,O-,Medicare,0,0,0,0,1
+PAT-02311,Aria Sterling,Female,47,B+,Private Commercial,1,1,0,0,3
+PAT-02312,Sophia Chen,Female,88,B+,Private Commercial,1,1,1,1,8
+PAT-02313,David Patel,Male,58,A+,Medicare,0,0,0,0,0
+PAT-02314,Chloe Mercer,Female,63,O-,Private Commercial,1,1,0,0,4
+PAT-02315,Hazel Nakamura,Female,66,B-,Private Commercial,1,1,0,0,4
+PAT-02316,Aria O'Connor,Female,62,B-,Medicare,0,0,0,0,1
+PAT-02317,Alexander Chen,Male,69,AB-,Medicaid,1,0,0,0,2
+PAT-02318,Noah Kim,Male,42,B-,Private Commercial,0,1,0,0,2
+PAT-02319,Marcus Mercer,Male,43,A-,Medicaid,0,0,0,1,2
+PAT-02320,Chloe Alvarez,Female,33,O+,Private Commercial,0,0,0,0,0
+PAT-02321,Elena Nakamura,Female,62,B-,Private Commercial,0,1,0,0,3
+PAT-02322,Victoria Zhang,Female,68,AB-,Medicare,0,1,1,1,7
+PAT-02323,Sophia Sinclair,Female,62,A-,Medicaid,1,1,0,0,4
+PAT-02324,Ethan Alvarez,Male,85,A+,Private Commercial,1,1,1,1,8
+PAT-02325,Hazel Mercer,Female,53,A+,Medicare,0,0,0,0,0
+PAT-02326,Benjamin Kowalski,Male,66,A+,Private Commercial,1,0,0,0,2
+PAT-02327,William O'Connor,Male,33,AB-,Private Commercial,0,0,0,0,0
+PAT-02328,Nora Patel,Female,46,B-,Medicare,1,0,0,0,1
+PAT-02329,Clara Kim,Female,67,AB+,Private Commercial,0,0,1,0,3
+PAT-02330,Zoe Vance,Female,70,AB+,Medicaid,1,0,1,1,6
+PAT-02331,Marcus Vance,Male,48,B-,Private Commercial,0,0,0,0,0
+PAT-02332,Noah Patel,Male,52,AB-,Medicaid,0,0,0,0,0
+PAT-02333,Victoria Chen,Female,25,O+,Private Commercial,0,0,0,0,0
+PAT-02334,Clara Rossi,Female,47,O+,Medicare,0,1,0,0,2
+PAT-02335,Elena Kowalski,Female,70,A-,Medicare,0,0,0,1,3
+PAT-02336,Marcus Sterling,Male,64,B-,Private Commercial,0,1,1,0,5
+PAT-02337,Isabella Alvarez,Female,63,A+,Medicaid,0,1,1,0,5
+PAT-02338,Sophia O'Connor,Female,54,B-,Medicare,1,0,0,0,1
+PAT-02339,Gabriel Kim,Male,54,A+,Medicare,0,1,0,0,2
+PAT-02340,Oliver Kim,Male,41,B+,Medicare,0,0,0,1,2
+PAT-02341,Amelia Gupta,Female,67,AB-,Medicaid,0,1,0,0,3
+PAT-02342,Ethan Mercer,Male,61,B-,Private Commercial,0,1,0,1,5
+PAT-02343,David Patel,Male,63,B+,Medicare,1,0,0,0,2
+PAT-02344,Gabriel Alvarez,Male,44,AB+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-02345,William Nakamura,Male,13,B+,Medicare,0,1,0,0,2
+PAT-02346,Zoe Rossi,Female,74,AB-,Private Commercial,1,0,0,1,4
+PAT-02347,Elena Mercer,Female,44,O+,Medicare,1,0,0,0,1
+PAT-02348,Emma Sterling,Female,37,A+,Medicaid,0,0,0,0,0
+PAT-02349,William O'Connor,Male,67,B-,Medicare,1,1,0,0,4
+PAT-02350,William Kim,Male,46,AB+,Private Commercial,0,1,0,0,2
+PAT-02351,Marcus Vance,Male,74,A+,Medicaid,0,0,0,0,1
+PAT-02352,Marcus Mercer,Male,65,A-,Medicaid,0,0,0,0,1
+PAT-02353,Amelia Vance,Female,66,A-,Medicare,0,1,1,0,5
+PAT-02354,Marcus Nakamura,Male,28,B-,Medicare,0,1,0,0,2
+PAT-02355,Alexander Nakamura,Male,77,O+,Medicare,0,1,0,0,3
+PAT-02356,Zoe O'Connor,Female,58,A-,Private Commercial,0,1,0,0,2
+PAT-02357,Hazel Nakamura,Female,46,O+,Medicare,0,1,0,1,4
+PAT-02358,Alexander Sterling,Male,56,O+,Medicaid,0,0,0,1,2
+PAT-02359,Victoria Holloway,Female,20,O+,Medicare,0,0,0,0,0
+PAT-02360,Noah Holloway,Male,61,A+,Medicare,1,0,0,0,2
+PAT-02361,Lucas Kowalski,Male,34,AB-,Medicare,0,0,0,0,0
+PAT-02362,Benjamin Sterling,Male,28,B-,Medicare,0,0,0,0,0
+PAT-02363,Elena Kim,Female,25,AB+,Medicare,0,0,0,0,0
+PAT-02364,Marcus Chen,Male,75,O+,Medicare,0,0,0,0,1
+PAT-02365,Julian Novak,Male,42,O-,Medicare,0,1,1,0,4
+PAT-02366,Gabriel Rossi,Male,83,A+,Medicare,1,1,0,0,4
+PAT-02367,David Nakamura,Male,43,AB-,Medicaid,0,1,0,0,2
+PAT-02368,Clara Sterling,Female,21,O-,Medicaid,0,0,0,0,0
+PAT-02369,Oliver Novak,Male,32,O-,Medicaid,0,0,0,0,0
+PAT-02370,David Gupta,Male,77,A-,Uninsured / Self-Pay,1,0,0,0,2
+PAT-02371,Adrian Kowalski,Male,51,O+,Medicare,0,0,0,1,2
+PAT-02372,Aria O'Connor,Female,43,B-,Private Commercial,0,0,0,0,0
+PAT-02373,Gabriel Kowalski,Male,57,A+,Medicare,0,0,0,0,0
+PAT-02374,James Novak,Male,63,B+,Private Commercial,1,1,0,1,6
+PAT-02375,Aria Sinclair,Female,75,A+,Private Commercial,1,0,1,1,6
+PAT-02376,Adrian Alvarez,Male,81,AB+,Medicare,1,1,0,0,4
+PAT-02377,Clara Kowalski,Female,47,O+,Medicare,0,0,0,0,0
+PAT-02378,Adrian Kowalski,Male,28,O+,Private Commercial,0,0,0,0,0
+PAT-02379,Isabella Kowalski,Female,46,B+,Private Commercial,0,0,0,0,0
+PAT-02380,Hazel Vance,Female,58,B+,Private Commercial,0,0,0,1,2
+PAT-02381,Oliver Nakamura,Male,35,A-,Medicare,0,1,0,0,2
+PAT-02382,William Kowalski,Male,35,A-,Medicare,1,0,0,0,1
+PAT-02383,Oliver Vance,Male,60,O+,Medicare,0,1,0,0,2
+PAT-02384,Isabella Alvarez,Female,53,AB+,Private Commercial,0,0,0,1,2
+PAT-02385,Amelia Patel,Female,54,B-,Medicare,0,0,0,1,2
+PAT-02386,Ethan Novak,Male,39,A-,Private Commercial,0,0,0,0,0
+PAT-02387,Gabriel Patel,Male,49,B+,Medicare,0,1,0,0,2
+PAT-02388,Lucas O'Connor,Male,36,B+,Medicare,1,0,0,0,1
+PAT-02389,Noah Kowalski,Male,70,AB+,Private Commercial,1,0,0,0,2
+PAT-02390,Lucas Patel,Male,73,B+,Private Commercial,0,0,1,0,3
+PAT-02391,Noah Rossi,Male,18,O-,Private Commercial,0,0,0,1,2
+PAT-02392,Zoe Patel,Female,36,A-,Medicaid,0,0,1,0,2
+PAT-02393,Victoria Novak,Female,25,B-,Private Commercial,0,0,0,0,0
+PAT-02394,Zoe Novak,Female,41,B+,Private Commercial,0,0,1,0,2
+PAT-02395,Aria Nakamura,Female,52,B+,Private Commercial,0,0,0,0,0
+PAT-02396,Ethan Kim,Male,26,O+,Medicaid,0,0,0,0,0
+PAT-02397,William Rossi,Male,36,O-,Medicare,0,0,0,0,0
+PAT-02398,Olivia Rossi,Female,34,A-,Medicaid,0,0,0,1,2
+PAT-02399,David Kim,Male,57,O-,Medicare,1,0,0,0,1
+PAT-02400,Chloe Novak,Female,55,AB-,Private Commercial,1,0,0,0,1
+PAT-02401,Isabella Novak,Female,40,A-,Medicare,0,0,0,0,0
+PAT-02402,Leo O'Connor,Male,57,O+,Private Commercial,0,1,0,0,2
+PAT-02403,Noah Gupta,Male,43,B+,Medicare,0,0,0,1,2
+PAT-02404,Nora Holloway,Female,48,AB+,Medicare,1,0,0,0,1
+PAT-02405,Ethan Nakamura,Male,85,O+,Medicare,1,0,0,1,4
+PAT-02406,Nora Patel,Female,79,O-,Medicaid,1,0,0,0,2
+PAT-02407,Marcus Kowalski,Male,29,B+,Private Commercial,0,0,0,0,0
+PAT-02408,Adrian Zhang,Male,69,B-,Private Commercial,0,0,0,0,1
+PAT-02409,Lucas Gupta,Male,69,A+,Private Commercial,0,0,0,0,1
+PAT-02410,Isabella Chen,Female,32,O+,Private Commercial,0,0,0,0,0
+PAT-02411,Zoe Sterling,Female,69,AB+,Private Commercial,1,1,0,0,4
+PAT-02412,William Holloway,Male,83,O+,Private Commercial,0,0,0,1,3
+PAT-02413,Victoria Kowalski,Female,32,A-,Private Commercial,0,0,0,1,2
+PAT-02414,Adrian Mercer,Male,36,O-,Medicaid,0,0,0,0,0
+PAT-02415,Aria Rossi,Female,73,O-,Medicaid,0,0,0,1,3
+PAT-02416,William Kim,Male,59,B+,Medicare,0,0,0,0,0
+PAT-02417,Oliver Nakamura,Male,64,B+,Private Commercial,0,1,0,0,3
+PAT-02418,Alexander O'Connor,Male,60,AB+,Medicaid,1,0,0,0,1
+PAT-02419,Benjamin Rossi,Male,61,A+,Uninsured / Self-Pay,0,0,1,0,3
+PAT-02420,Olivia Novak,Female,28,O-,Medicaid,0,0,0,0,0
+PAT-02421,Lucas Gupta,Male,73,B+,Private Commercial,0,0,0,0,1
+PAT-02422,Leo Vance,Male,76,A+,Private Commercial,1,0,0,0,2
+PAT-02423,Leo Chen,Male,49,A+,Medicare,1,0,1,0,3
+PAT-02424,Emma Zhang,Female,53,O-,Medicaid,0,1,0,0,2
+PAT-02425,Elena Kowalski,Female,24,B+,Private Commercial,0,0,0,0,0
+PAT-02426,Victoria Chen,Female,63,B-,Uninsured / Self-Pay,0,1,1,0,5
+PAT-02427,Julian Zhang,Male,64,O-,Private Commercial,0,1,0,1,5
+PAT-02428,Hazel Alvarez,Female,52,O+,Medicaid,1,0,0,1,3
+PAT-02429,Ethan Alvarez,Male,75,AB+,Medicare,1,0,0,0,2
+PAT-02430,Amelia Novak,Female,47,B+,Medicare,1,0,0,0,1
+PAT-02431,Emma Mercer,Female,64,A+,Medicare,1,0,0,0,2
+PAT-02432,Olivia Kim,Female,34,A-,Medicaid,0,0,0,0,0
+PAT-02433,James Kowalski,Male,53,O+,Medicare,0,0,0,0,0
+PAT-02434,Nora Zhang,Female,50,A+,Private Commercial,1,0,0,0,1
+PAT-02435,Emma Sinclair,Female,58,O-,Private Commercial,0,0,0,0,0
+PAT-02436,Victoria Sinclair,Female,46,AB+,Private Commercial,0,0,1,0,2
+PAT-02437,Hazel Sterling,Female,51,A-,Medicaid,1,0,0,0,1
+PAT-02438,Aria Holloway,Female,69,O+,Medicare,1,0,0,1,4
+PAT-02439,Zoe Kim,Female,45,AB-,Uninsured / Self-Pay,0,1,0,0,2
+PAT-02440,Marcus Vance,Male,23,AB+,Medicaid,0,0,0,0,0
+PAT-02441,James Holloway,Male,87,AB+,Medicare,1,1,0,0,4
+PAT-02442,Isabella Sterling,Female,80,A-,Medicare,0,0,0,0,1
+PAT-02443,Hazel Holloway,Female,29,B-,Private Commercial,0,0,0,0,0
+PAT-02444,Emma O'Connor,Female,67,B+,Private Commercial,1,1,1,0,6
+PAT-02445,Alexander Rossi,Male,44,O-,Medicare,1,0,0,0,1
+PAT-02446,Lucas Chen,Male,59,AB-,Private Commercial,1,0,0,1,3
+PAT-02447,Gabriel Mercer,Male,59,O+,Private Commercial,0,0,0,0,0
+PAT-02448,Ethan O'Connor,Male,49,A+,Private Commercial,1,0,0,0,1
+PAT-02449,Elena Vance,Female,39,AB+,Medicare,0,0,0,0,0
+PAT-02450,David Chen,Male,40,A+,Medicare,0,0,0,1,2
+PAT-02451,James Gupta,Male,36,B+,Medicaid,0,0,0,0,0
+PAT-02452,Elena Vance,Female,38,O+,Medicare,0,0,0,0,0
+PAT-02453,Olivia Chen,Female,52,B-,Uninsured / Self-Pay,0,0,1,0,2
+PAT-02454,Adrian O'Connor,Male,40,AB-,Medicare,0,1,0,0,2
+PAT-02455,Leo Nakamura,Male,66,AB+,Medicare,0,0,0,0,1
+PAT-02456,Noah Gupta,Male,82,B-,Medicare,1,0,1,0,4
+PAT-02457,Sophia Kowalski,Female,42,O-,Medicaid,0,1,0,0,2
+PAT-02458,Olivia Patel,Female,58,B+,Medicare,0,1,0,0,2
+PAT-02459,Amelia Chen,Female,63,AB+,Private Commercial,0,0,1,0,3
+PAT-02460,Leo Mercer,Male,62,B-,Medicare,0,0,0,0,1
+PAT-02461,Adrian Gupta,Male,55,B-,Medicare,0,0,0,0,0
+PAT-02462,Julian Kowalski,Male,68,A-,Uninsured / Self-Pay,0,0,1,0,3
+PAT-02463,Benjamin Mercer,Male,63,O-,Private Commercial,0,0,1,0,3
+PAT-02464,Leo Zhang,Male,30,A-,Medicaid,0,0,0,0,0
+PAT-02465,Lucas Vance,Male,70,A-,Private Commercial,0,0,1,0,3
+PAT-02466,Oliver O'Connor,Male,70,A-,Medicaid,1,1,0,0,4
+PAT-02467,Marcus Mercer,Male,39,A+,Private Commercial,0,1,0,0,2
+PAT-02468,Ethan Sinclair,Male,54,O+,Private Commercial,0,0,0,0,0
+PAT-02469,Marcus Holloway,Male,66,AB+,Medicare,1,0,0,0,2
+PAT-02470,Aria Patel,Female,50,A-,Medicare,0,0,0,0,0
+PAT-02471,Benjamin Zhang,Male,74,O+,Private Commercial,1,0,0,0,2
+PAT-02472,Clara Vance,Female,95,O+,Medicaid,1,0,0,0,2
+PAT-02473,Julian Alvarez,Male,39,B+,Private Commercial,0,0,0,0,0
+PAT-02474,Alexander Patel,Male,27,O-,Medicare,0,0,0,0,0
+PAT-02475,Chloe Rossi,Female,59,O-,Medicare,0,0,0,0,0
+PAT-02476,Emma O'Connor,Female,67,O+,Medicare,0,0,0,1,3
+PAT-02477,Nora Chen,Female,49,AB-,Private Commercial,0,0,0,0,0
+PAT-02478,Gabriel Sterling,Male,81,B+,Medicare,0,0,1,0,3
+PAT-02479,Gabriel Rossi,Male,28,AB+,Uninsured / Self-Pay,0,0,0,0,0
+PAT-02480,Gabriel Kim,Male,67,O+,Medicare,1,0,0,0,2
+PAT-02481,Marcus Holloway,Male,42,AB-,Medicare,1,0,1,0,3
+PAT-02482,Chloe Holloway,Female,86,AB+,Medicare,1,0,1,1,6
+PAT-02483,Hazel Chen,Female,91,AB+,Medicare,1,1,0,0,4
+PAT-02484,Benjamin Alvarez,Male,39,A+,Medicare,1,0,1,0,3
+PAT-02485,Julian Chen,Male,43,A-,Private Commercial,1,1,0,0,3
+PAT-02486,Victoria Sinclair,Female,70,A+,Uninsured / Self-Pay,0,0,0,0,1
+PAT-02487,James Kim,Male,46,AB-,Private Commercial,1,0,0,0,1
+PAT-02488,Amelia Novak,Female,53,B+,Private Commercial,0,0,0,0,0
+PAT-02489,Olivia Mercer,Female,54,AB+,Medicare,1,1,0,0,3
+PAT-02490,Chloe Patel,Female,17,AB+,Medicare,0,0,0,0,0
+PAT-02491,Benjamin Sinclair,Male,53,AB+,Medicare,1,0,0,0,1
+PAT-02492,Adrian Kim,Male,40,O+,Medicaid,1,0,0,0,1
+PAT-02493,Clara Sterling,Female,44,B-,Private Commercial,0,0,0,0,0
+PAT-02494,Leo Sinclair,Male,81,AB-,Medicare,1,1,1,1,8
+PAT-02495,Lucas Gupta,Male,30,O+,Medicare,0,0,0,0,0
+PAT-02496,David O'Connor,Male,69,B+,Medicare,1,1,0,0,4
+PAT-02497,Amelia Sinclair,Female,48,AB-,Medicaid,1,0,0,0,1
+PAT-02498,Aria Zhang,Female,48,AB+,Medicaid,1,0,1,0,3
+PAT-02499,Hazel Holloway,Female,69,A-,Medicare,0,0,0,1,3
+PAT-02500,Aria Gupta,Female,60,O+,Medicare,1,0,0,0,1

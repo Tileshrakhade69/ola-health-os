@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="OLA Health OS - Hospital Operations & Patient Analytics Platform: Built around the OLA Command Center concept, integrating predictive machine learning, real-time IoT wearable telemetry, and dynamic bed allocation algorithms.">
+  <title>OLA Health OS // Hospital Operations & Patient Analytics – OLA Command Center</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+  <!-- Top Floating Command Bar -->
+  <header class="header-command" id="main-header">
+    <div class="brand-section">
+      <div class="brand-logo-container">
+        <div class="hologram-orb">
+          <i class="fa-solid fa-hospital"></i>
+        </div>
+        <div>
+          <h1 class="brand-title">OLA <span style="font-weight:700; color:var(--accent-cyan);">HEALTH OS</span></h1>
+        </div>
+      </div>
+      <span class="brand-subtitle"><i class="fa-solid fa-microchip"></i> OLA COMMAND CENTER</span>
+    </div>
+
+    <div class="header-status-ribbon">
+      <div class="live-badge">
+        <span class="live-dot"></span>
+        <span>IOT MESH: ONLINE</span>
+      </div>
+
+      <div class="surge-status-badge" id="surge-status-pill">
+        NOMINAL CAPACITY
+      </div>
+
+      <div class="scenario-buttons">
+        <button class="btn-scenario active-scenario" id="scenario-nominal"
+          title="Standard live hospital operational mode">
+          <i class="fa-solid fa-rotate"></i> Nominal
+        </button>
+        <button class="btn-scenario" id="scenario-casualty"
+          title="Simulate multi-vehicle accident / mass casualty event">
+          <i class="fa-solid fa-triangle-exclamation"></i> Mass Casualty
+        </button>
+        <button class="btn-scenario" id="scenario-flu" title="Simulate winter respiratory / flu epidemic surge">
+          <i class="fa-solid fa-virus-covid"></i> Flu Surge
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Secondary Navigation Tabs -->
+  <nav class="nav-tab-container" id="nav-tabs" aria-label="Dashboard views">
+    <button class="nav-tab active" data-target="tab-cockpit" id="tab-btn-cockpit">
+      <i class="fa-solid fa-gauge-high"></i> Command Cockpit
+    </button>
+    <button class="nav-tab" data-target="tab-flow" id="tab-btn-flow">
+      <i class="fa-solid fa-chart-line"></i> Patient Flow & Forecaster
+    </button>
+    <button class="nav-tab" data-target="tab-twin" id="tab-btn-twin">
+      <i class="fa-solid fa-bed"></i> Digital Twin Bed Matrix
+    </button>
+    <button class="nav-tab" data-target="tab-staff" id="tab-btn-staff">
+      <i class="fa-solid fa-user-doctor"></i> Staff Workload & Fatigue
+    </button>
+    <button class="nav-tab" data-target="tab-care" id="tab-btn-care">
+      <i class="fa-solid fa-heart-pulse"></i> Patient Care & Readmissions
+    </button>
+    <button class="nav-tab" data-target="tab-iot" id="tab-btn-iot">
+      <i class="fa-solid fa-satellite-dish"></i> Live IoT Wearables
+    </button>
+    <button class="nav-tab" data-target="tab-lab" id="tab-btn-lab">
+      <i class="fa-solid fa-robot"></i> Predictive AI Laboratory
+    </button>
+    <button class="nav-tab" data-target="tab-case-study" id="tab-btn-case-study">
+      <i class="fa-solid fa-book-medical"></i> Case Study & Benchmarks
+    </button>
+  </nav>
+
+  <!-- Main View Area -->
+  <main class="main-wrapper">
+
+    <!-- ==============================================================
+         TAB 1: COMMAND COCKPIT (EXECUTIVE OVERVIEW)
+         ============================================================== -->
+    <section class="tab-pane active" id="tab-cockpit">
+
+      <!-- Top KPI Grid -->
+      <div class="kpi-grid">
+        <div class="kpi-card" id="card-occupancy">
+          <div class="kpi-top">
+            <span class="kpi-label">Bed Occupancy Rate</span>
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-bed"></i></div>
+          </div>
+          <div class="kpi-value" id="kpi-occupancy">75.2%</div>
+          <div
+            style="height:4px; background:rgba(255,255,255,0.08); border-radius:2px; margin-bottom:0.4rem; overflow:hidden;">
+            <div id="kpi-occupancy-bar"
+              style="width:75.2%; height:100%; background:linear-gradient(90deg, #38bdf8, #00f0ff);"></div>
+          </div>
+          <div class="kpi-subtext">
+            <span class="trend-good"><i class="fa-solid fa-circle-check"></i> <span id="kpi-available-beds">35
+                Beds</span> Available</span>
+          </div>
+        </div>
+
+        <div class="kpi-card" id="card-inpatients">
+          <div class="kpi-top">
+            <span class="kpi-label">Active Inpatient Volume</span>
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-hospital-user"></i></div>
+          </div>
+          <div class="kpi-value" id="kpi-inpatients">3,551</div>
+          <div class="kpi-subtext">
+            <span><i class="fa-solid fa-users"></i> Across 8 Specialized Wards</span>
+          </div>
+        </div>
+
+        <div class="kpi-card" id="card-wait-time">
+          <div class="kpi-top">
+            <span class="kpi-label">Avg ER Wait Time</span>
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-stopwatch"></i></div>
+          </div>
+          <div class="kpi-value" id="kpi-wait-time" style="color:#38bdf8;">69.2m</div>
+          <div class="kpi-subtext">
+            <span class="trend-good"><i class="fa-solid fa-arrow-trend-down"></i> -34% vs Traditional Triage</span>
+          </div>
+        </div>
+
+        <div class="kpi-card" id="card-staff-load">
+          <div class="kpi-top">
+            <span class="kpi-label">Staff Workload Index</span>
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-clipboard-user"></i></div>
+          </div>
+          <div class="kpi-value" id="kpi-staff-load" style="color:#00f0ff;">77.7/100</div>
+          <div class="kpi-subtext">
+            <span><i class="fa-solid fa-shield-halved"></i> Active Staff Balance Nominal</span>
+          </div>
+        </div>
+
+        <div class="kpi-card" id="card-readmission">
+          <div class="kpi-top">
+            <span class="kpi-label">30-Day Readmit Rate</span>
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-stethoscope"></i></div>
+          </div>
+          <div class="kpi-value" id="kpi-readmission">19.1%</div>
+          <div class="kpi-subtext">
+            <span class="trend-good"><i class="fa-solid fa-arrow-trend-down"></i> -4.8% AI Proactive Alert Gain</span>
+          </div>
+        </div>
+
+        <div class="kpi-card" id="card-alerts">
+          <div class="kpi-top">
+            <span class="kpi-label">Active Critical Alerts</span>
+            <div class="kpi-icon-wrap"
+              style="color:var(--rose-critical); border-color:rgba(244,63,94,0.3); background:rgba(244,63,94,0.1);"><i
+                class="fa-solid fa-bell"></i></div>
+          </div>
+          <div class="kpi-value" id="kpi-critical-alerts" style="color:var(--rose-critical);">2</div>
+          <div class="kpi-subtext">
+            <span class="trend-up"><i class="fa-solid fa-satellite-dish"></i> Wearable IoT Telemetry Stream</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Electrocardiogram Waveform Display -->
+      <div class="ecg-box" id="cockpit-ecg-container">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+          <div
+            style="font-family:'JetBrains Mono', monospace; font-size:0.8rem; color:#10b981; display:flex; align-items:center; gap:0.5rem;">
+            <span class="live-dot" style="background:#10b981;"></span>
+            <span>OLA // QUANTUM WEARABLE TELEMETRY (LEAD II REAL-TIME ECG)</span>
+          </div>
+          <div class="ecg-meta">
+            <span>HR: <strong id="telemetry-hr-val" style="color:#00f0ff;">76</strong> BPM</span>
+            <span style="margin-left:1.5rem;">SpO2: <strong id="telemetry-spo2-val"
+                style="color:#38bdf8;">98%</strong></span>
+            <span style="margin-left:1.5rem;">SWEEP: <strong>25 mm/s</strong></span>
+          </div>
+        </div>
+        <canvas id="ecg-waveform-canvas" class="ecg-canvas"></canvas>
+      </div>
+
+      <!-- Mid Section Grid: Forecast vs Bed Capacity -->
+      <div class="dashboard-grid-2">
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h3 class="panel-title"><i class="fa-solid fa-chart-area"></i> 48-Hour Inflow Forecast & Emergency Surge
+              Detection</h3>
+            <span class="panel-badge">Gradient Boosting ML</span>
+          </div>
+          <div style="height: 290px;">
+            <canvas id="forecast-chart-cockpit"></canvas>
+          </div>
+        </div>
+
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h3 class="panel-title"><i class="fa-solid fa-layer-group"></i> Bed Capacity by Ward</h3>
+            <span class="panel-badge">Real-Time Sync</span>
+          </div>
+          <div style="height: 290px;">
+            <canvas id="bed-capacity-chart-cockpit"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Section Grid: Staff Load & Recent IoT Alarms -->
+      <div class="dashboard-grid-2">
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h3 class="panel-title"><i class="fa-solid fa-user-nurse"></i> Ward Staff Workload & Patient Ratio</h3>
+            <span class="panel-badge">Burnout Guard</span>
+          </div>
+          <div style="height: 260px;">
+            <canvas id="staff-workload-chart-cockpit"></canvas>
+          </div>
+        </div>
+
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h3 class="panel-title"><i class="fa-solid fa-triangle-exclamation"></i> Live IoT Wearable Alerts</h3>
+            <span class="panel-badge" style="color:#f43f5e; border-color:rgba(244,63,94,0.3);">High Priority</span>
+          </div>
+          <div style="max-height:260px; overflow-y:auto;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Patient</th>
+                  <th>Bed</th>
+                  <th>Metric</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="iot-alerts-tbody">
+                <!-- Injected via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==============================================================
+         TAB 2: PATIENT FLOW PREDICTION & ER FORECASTER
+         ============================================================== -->
+    <section class="tab-pane" id="tab-flow">
+      <div class="glass-panel" style="margin-bottom:2rem;">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title" style="font-size:1.35rem;"><i class="fa-solid fa-chart-line"></i> Machine Learning
+              Patient Inflow & ER Surge Forecaster</h2>
+            <p style="font-size:0.84rem; color:var(--text-secondary); margin-top:0.25rem;">
+              Ensemble time-series regression model predicting hourly ER arrivals with weather, day-of-week, diurnal
+              patterns, and confidence intervals.
+            </p>
+          </div>
+          <div style="display:flex; gap:0.5rem;">
+            <span class="panel-badge">Horizon: 48 Hours</span>
+            <span class="panel-badge" style="color:#10b981; border-color:rgba(16,185,129,0.3);">Model Accuracy R² =
+              0.972</span>
+          </div>
+        </div>
+        <div style="height: 380px;">
+          <canvas id="forecast-chart-flow-full"></canvas>
+        </div>
+      </div>
+
+      <div class="dashboard-grid-3">
+        <div class="glass-panel">
+          <h4 class="panel-title"><i class="fa-solid fa-clock"></i> Diurnal Surge Drivers</h4>
+          <p style="font-size:0.82rem; color:var(--text-secondary); margin:0.75rem 0;">
+            Peak arrival windows occur between <strong>11:00 - 14:00</strong> and <strong>18:00 - 21:00</strong> daily.
+            Emergency staffing automatically scales up 45 minutes prior to peak curves.
+          </p>
+          <div style="font-family:'JetBrains Mono'; font-size:0.78rem; color:#00f0ff;">
+            &bull; Peak Hour Volume: ~4.8 arrivals/hr<br>
+            &bull; Trough Hour Volume: ~0.8 arrivals/hr
+          </div>
+        </div>
+
+        <div class="glass-panel">
+          <h4 class="panel-title"><i class="fa-solid fa-cloud-bolt"></i> Meteorological Correlation</h4>
+          <p style="font-size:0.82rem; color:var(--text-secondary); margin:0.75rem 0;">
+            Adverse weather conditions (Rain/Storms, Freezing snow) increase multi-trauma ER inflow by
+            <strong>+35%</strong> and respiratory exacerbations by <strong>+20%</strong>.
+          </p>
+          <div style="font-family:'JetBrains Mono'; font-size:0.78rem; color:#38bdf8;">
+            &bull; High Smog / AQI: +20% Pulmonology Admissions<br>
+            &bull; Winter Icy Conditions: +28% Orthopedic Surges
+          </div>
+        </div>
+
+        <div class="glass-panel">
+          <h4 class="panel-title"><i class="fa-solid fa-shield-virus"></i> Automated Surge Protocol</h4>
+          <p style="font-size:0.82rem; color:var(--text-secondary); margin:0.75rem 0;">
+            When predicted arrivals exceed <strong>4.2 patients/2h</strong>, OLA Health OS triggers automated notifications to
+            step-down wards, prepping beds and calling reserve RNs.
+          </p>
+          <div style="font-family:'JetBrains Mono'; font-size:0.78rem; color:#10b981;">
+            &bull; Automated Bed Buffer: 8 Beds Cleared<br>
+            &bull; Fast-Track Triage Channel: Activated
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         TAB 3: DIGITAL TWIN BED MATRIX & AI OPTIMIZER
+         ============================================================== -->
+    <section class="tab-pane" id="tab-twin">
+
+      <!-- AI Optimizer Trigger Banner -->
+      <div class="optimizer-banner">
+        <div class="optimizer-info">
+          <div class="optimizer-icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <div class="optimizer-text">
+            <h4>Dynamic Bed Allocation & Turnaround Optimizer</h4>
+            <p>Matches incoming & pending admissions with optimal beds based on clinical acuity (ESI 1-5), equipment
+              needs, and nurse-to-patient workload balancing.</p>
+          </div>
+        </div>
+        <button class="btn-primary-neon" id="run-ai-optimizer-btn">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Run AI Bed Allocation Optimizer
+        </button>
+      </div>
+
+      <!-- Optimization Results Container (Populated when triggered) -->
+      <div id="optimizer-results-container" style="display:none; margin-bottom:2rem;">
+        <div class="glass-panel" style="border-color:var(--cyan-neon);">
+          <div class="panel-header">
+            <div>
+              <h3 class="panel-title"><i class="fa-solid fa-bolt"></i> AI Bed Optimization Output Plan</h3>
+              <p style="font-size:0.8rem; color:var(--text-secondary);">Optimal clinical assignments executed with
+                minimal ER boarding delays.</p>
+            </div>
+            <div style="display:flex; gap:1rem;">
+              <span class="live-badge" id="opt-assigned-count-val">12 Patients Matched</span>
+              <span class="live-badge" style="color:#00f0ff; border-color:rgba(0,240,255,0.4);"
+                id="opt-wait-savings-val">1,427 mins Saved</span>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns: 2fr 1fr; gap:1.5rem;">
+            <div>
+              <h5 style="color:#94a3b8; font-size:0.8rem; text-transform:uppercase; margin-bottom:0.75rem;">Recommended
+                Patient &rarr; Bed Matches</h5>
+              <div id="optimizer-assignments-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+            <div>
+              <h5 style="color:#94a3b8; font-size:0.8rem; text-transform:uppercase; margin-bottom:0.75rem;">Dynamic
+                Surge Rebalancing Directives</h5>
+              <div id="rebalancing-actions-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ward Filtering -->
+      <div class="ward-filter-bar">
+        <button class="ward-filter-btn active" data-ward="All">All Departments (230 Beds)</button>
+        <button class="ward-filter-btn" data-ward="Emergency">Emergency (36 Beds)</button>
+        <button class="ward-filter-btn" data-ward="ICU">Critical Core ICU (24 Beds)</button>
+        <button class="ward-filter-btn" data-ward="Cardiology">Heart Institute (32 Beds)</button>
+        <button class="ward-filter-btn" data-ward="Neurology">Neuro Tower (24 Beds)</button>
+        <button class="ward-filter-btn" data-ward="General Surgery">Surgical Pavilion (40 Beds)</button>
+        <button class="ward-filter-btn" data-ward="Pulmonology">Thoracic Wing (28 Beds)</button>
+        <button class="ward-filter-btn" data-ward="Orthopedics">Mobility Center (26 Beds)</button>
+        <button class="ward-filter-btn" data-ward="Pediatrics">Children's Wing (20 Beds)</button>
+      </div>
+
+      <!-- Bed Matrix Grid -->
+      <div class="glass-panel">
+        <div class="panel-header">
+          <h3 class="panel-title"><i class="fa-solid fa-network-wired"></i> Hospital Ward Digital Twin Map</h3>
+          <div style="display:flex; gap:1rem; font-size:0.75rem; align-items:center;">
+            <span><span
+                style="display:inline-block; width:10px; height:10px; background:#f43f5e; border-radius:2px; margin-right:4px;"></span>
+              Occupied</span>
+            <span><span
+                style="display:inline-block; width:10px; height:10px; background:#10b981; border-radius:2px; margin-right:4px;"></span>
+              Available</span>
+            <span><span
+                style="display:inline-block; width:10px; height:10px; background:#f59e0b; border-radius:2px; margin-right:4px;"></span>
+              Cleaning</span>
+            <span><span
+                style="display:inline-block; width:10px; height:10px; background:#64748b; border-radius:2px; margin-right:4px;"></span>
+              Maintenance</span>
+          </div>
+        </div>
+        <div class="bed-matrix-grid" id="digital-twin-grid">
+          <!-- Populated dynamically via twin.js -->
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==============================================================
+         TAB 4: STAFF WORKLOAD & FATIGUE RADAR
+         ============================================================== -->
+    <section class="tab-pane" id="tab-staff">
+      <div class="dashboard-grid-2">
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h3 class="panel-title"><i class="fa-solid fa-user-doctor"></i> Medical Provider Workload by Ward</h3>
+            <span class="panel-badge">296 Staff Tracked</span>
+          </div>
+          <div style="height: 340px;">
+            <canvas id="staff-workload-chart-full"></canvas>
+          </div>
+        </div>
+
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h3 class="panel-title"><i class="fa-solid fa-heart-crack"></i> Burnout Mitigation Radar</h3>
+            <span class="panel-badge" style="color:#f59e0b; border-color:rgba(245,158,11,0.3);">Fatigue Guard
+              Active</span>
+          </div>
+          <p style="font-size:0.84rem; color:var(--text-secondary); margin-bottom:1.25rem;">
+            OLA Health OS continuously evaluates nurse-to-patient ratios, continuous hours worked, and high-acuity exposure to
+            trigger automated rest breaks and workload rebalancing.
+          </p>
+
+          <div class="rebalance-card">
+            <div class="rebalance-meta">
+              <span class="rebalance-badge high">URGENT</span>
+              <div>
+                <strong style="color:#fff; font-size:0.85rem;">ICU Night Shift Nursing Strain</strong>
+                <div style="font-size:0.75rem; color:#94a3b8;">Average patient ratio at 1:2.4; 6 nurses in burnout
+                  warning threshold.</div>
+              </div>
+            </div>
+            <button class="btn-scenario"
+              onclick="alert('Relief float nurse STF-0104 automatically dispatched to Critical Core.')">Auto-Relieve</button>
+          </div>
+
+          <div class="rebalance-card">
+            <div class="rebalance-meta">
+              <span class="rebalance-badge medium">ADVISORY</span>
+              <div>
+                <strong style="color:#fff; font-size:0.85rem;">Emergency Department Evening Shift</strong>
+                <div style="font-size:0.75rem; color:#94a3b8;">Surge anticipated at 18:00; recommend staggering meal
+                  breaks before 17:30.</div>
+              </div>
+            </div>
+            <button class="btn-scenario" onclick="alert('Notification sent to ER Shift Supervisor.')">Notify</button>
+          </div>
+
+          <div class="rebalance-card">
+            <div class="rebalance-meta">
+              <span class="rebalance-badge medium">EFFICIENCY</span>
+              <div>
+                <strong style="color:#fff; font-size:0.85rem;">Orthopedics Underutilization</strong>
+                <div style="font-size:0.75rem; color:#94a3b8;">Ward workload index at 54/100; 2 nurses eligible for
+                  float redeployment.</div>
+              </div>
+            </div>
+            <button class="btn-scenario" onclick="alert('Float pool updated.')">Redeploy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         TAB 5: PATIENT CARE & READMISSION ANALYTICS
+         ============================================================== -->
+    <section class="tab-pane" id="tab-care">
+      <div class="dashboard-grid-2">
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h3 class="panel-title"><i class="fa-solid fa-heart-pulse"></i> Length of Stay vs Patient Satisfaction by
+              Diagnosis</h3>
+            <span class="panel-badge">Clinical Outcomes</span>
+          </div>
+          <div style="height: 340px;">
+            <canvas id="outcomes-chart-care"></canvas>
+          </div>
+        </div>
+
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h3 class="panel-title"><i class="fa-solid fa-chart-pie"></i> Length of Stay (LoS) Distribution</h3>
+            <span class="panel-badge">Bed Utilization</span>
+          </div>
+          <div style="height: 340px;">
+            <canvas id="readmit-donut-care"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-panel">
+        <div class="panel-header">
+          <h3 class="panel-title"><i class="fa-solid fa-notes-medical"></i> High-Risk Clinical Cohort Insights</h3>
+          <span class="panel-badge">30-Day Readmission Analysis</span>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:1.25rem; font-size:0.84rem;">
+          <div
+            style="background:rgba(12,19,34,0.6); padding:1rem; border-radius:8px; border:1px solid var(--border-subtle);">
+            <strong style="color:#00f0ff;">Congestive Heart Failure (CHF)</strong>
+            <p style="color:#94a3b8; margin:0.4rem 0;">Readmission rate: <strong>22.4%</strong>. Primary driver:
+              post-discharge fluid retention. OLA RPM wearables decrease readmission by 38%.</p>
+          </div>
+          <div
+            style="background:rgba(12,19,34,0.6); padding:1rem; border-radius:8px; border:1px solid var(--border-subtle);">
+            <strong style="color:#38bdf8;">Sepsis / Critical Care Post-ICU</strong>
+            <p style="color:#94a3b8; margin:0.4rem 0;">Readmission rate: <strong>24.1%</strong>. High NEWS2 scores at
+              step-down predict secondary organ decline within 72 hours.</p>
+          </div>
+          <div
+            style="background:rgba(12,19,34,0.6); padding:1rem; border-radius:8px; border:1px solid var(--border-subtle);">
+            <strong style="color:#f59e0b;">COPD Exacerbation</strong>
+            <p style="color:#94a3b8; margin:0.4rem 0;">Readmission rate: <strong>20.2%</strong>. Strongly correlated
+              with air quality indices. Automated inhaler adherence alerts deployed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         TAB 6: LIVE IOT WEARABLE & TELEMETRY MESH
+         ============================================================== -->
+    <section class="tab-pane" id="tab-iot">
+      <div class="glass-panel" style="margin-bottom:2rem;">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title"><i class="fa-solid fa-satellite-dish"></i> OLA IoT Mesh & Continuous
+              Biometric Telemetry</h2>
+            <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.25rem;">
+              Wirelessly syncing wearable sensor patches, smart hospital bed load cells, and micro-telemetry nodes.
+            </p>
+          </div>
+          <span class="live-badge"><span class="live-dot"></span> 418 NODES CONNECTED</span>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem;"
+          id="active-streams-grid">
+          <!-- Dynamically populated via telemetry.js -->
+        </div>
+      </div>
+
+      <div class="glass-panel">
+        <div class="panel-header">
+          <h3 class="panel-title"><i class="fa-solid fa-bell"></i> Complete Telemetry Anomaly & Early Warning Log</h3>
+          <span class="panel-badge">NEWS2 Trigger Protocol</span>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Timestamp</th>
+                <th>Patient ID</th>
+                <th>Bed Node</th>
+                <th>Biometric Marker</th>
+                <th>Alert Severity</th>
+                <th>Clinical Action Dispatched</th>
+              </tr>
+            </thead>
+            <tbody id="iot-alerts-tbody-full">
+              <tr>
+                <td style="font-family:'JetBrains Mono';">14:22:10</td>
+                <td><strong style="color:#00f0ff;">PAT-00102</strong></td>
+                <td><span class="panel-badge">BED-104</span></td>
+                <td>SpO2 Drop (88.5%)</td>
+                <td><span class="rebalance-badge high">CRITICAL</span></td>
+                <td>Acute desaturation detected via smart optical wearable. Supplemental O2 dispatched.</td>
+              </tr>
+              <tr>
+                <td style="font-family:'JetBrains Mono';">14:18:45</td>
+                <td><strong style="color:#00f0ff;">PAT-00445</strong></td>
+                <td><span class="panel-badge">BED-112</span></td>
+                <td>Tachycardia (134 bpm)</td>
+                <td><span class="rebalance-badge medium">WARNING</span></td>
+                <td>Sustained supraventricular tachycardia trend > 15 mins. EKG triggered.</td>
+              </tr>
+              <tr>
+                <td style="font-family:'JetBrains Mono';">14:05:12</td>
+                <td><strong style="color:#00f0ff;">PAT-00219</strong></td>
+                <td><span class="panel-badge">BED-128</span></td>
+                <td>Hypertensive Surge (188 mmHg)</td>
+                <td><span class="rebalance-badge high">CRITICAL</span></td>
+                <td>Systolic BP peaked at 188 mmHg. Telemetry auto-alert to on-call resident.</td>
+              </tr>
+              <tr>
+                <td style="font-family:'JetBrains Mono';">13:52:00</td>
+                <td><strong style="color:#00f0ff;">PAT-00780</strong></td>
+                <td><span class="panel-badge">BED-145</span></td>
+                <td>Respiratory Rate (28 bpm)</td>
+                <td><span class="rebalance-badge medium">WARNING</span></td>
+                <td>Tachypneic breathing pattern. NEWS2 score jumped to 7.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         TAB 7: PREDICTIVE AI LABORATORY (INTERACTIVE CALCULATORS)
+         ============================================================== -->
+    <section class="tab-pane" id="tab-lab">
+      <div class="glass-panel" style="margin-bottom:1.5rem;">
+        <h2 class="panel-title" style="font-size:1.3rem;"><i class="fa-solid fa-flask"></i> Interactive Machine Learning
+          Laboratory</h2>
+        <p style="font-size:0.84rem; color:var(--text-secondary); margin-top:0.25rem;">
+          Run real-time inference on the serialized predictive models: test patient flow scenarios, length of stay, and
+          readmission risk.
+        </p>
+      </div>
+
+      <div class="dashboard-grid-3">
+
+        <!-- Calculator 1: Inflow -->
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h4 class="panel-title"><i class="fa-solid fa-chart-line"></i> ER Inflow Predictor</h4>
+            <span class="panel-badge">Model 1</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Hour of Day (0 - 23)</label>
+            <input type="number" id="calc-inflow-hour" class="form-input" min="0" max="23" value="14">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Day of Week</label>
+            <select id="calc-inflow-dow" class="form-select">
+              <option value="0">Monday</option>
+              <option value="1">Tuesday</option>
+              <option value="2">Wednesday</option>
+              <option value="3">Thursday</option>
+              <option value="4" selected>Friday</option>
+              <option value="5">Saturday</option>
+              <option value="6">Sunday</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Weather Condition</label>
+            <select id="calc-inflow-weather" class="form-select">
+              <option value="Clear / Mild">Clear / Mild</option>
+              <option value="Rain / Storm">Rain / Storm</option>
+              <option value="Freezing / Snow">Freezing / Snow</option>
+              <option value="High Smog / Poor AQI">High Smog / Poor AQI</option>
+            </select>
+          </div>
+
+          <button class="btn-primary-neon" style="width:100%; margin-top:0.5rem;" id="btn-calc-inflow">
+            <i class="fa-solid fa-calculator"></i> Run Inflow Inference
+          </button>
+
+          <div class="calc-result-box" style="margin-top:1.25rem;">
+            <div style="font-size:0.75rem; color:#94a3b8; text-transform:uppercase;">Predicted 2-Hour Arrivals</div>
+            <div class="calc-val-huge" id="res-inflow-val">4.2</div>
+            <div style="font-size:0.8rem; color:#fff;">
+              Surge Risk: <strong id="res-inflow-surge" style="color:#f59e0b;">HIGH</strong>
+            </div>
+            <div style="font-size:0.75rem; color:#38bdf8; margin-top:0.25rem;" id="res-inflow-staff">
+              Recommended: 9 ER Providers
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator 2: Length of Stay -->
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h4 class="panel-title"><i class="fa-solid fa-stopwatch"></i> Length of Stay (LoS)</h4>
+            <span class="panel-badge">Model 2</span>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem;">
+            <div class="form-group">
+              <label class="form-label">Patient Age</label>
+              <input type="number" id="calc-los-age" class="form-input" min="1" max="100" value="64">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Acuity (ESI 1-5)</label>
+              <select id="calc-los-esi" class="form-select">
+                <option value="1">ESI 1 - Resuscitation</option>
+                <option value="2" selected>ESI 2 - Emergent</option>
+                <option value="3">ESI 3 - Urgent</option>
+                <option value="4">ESI 4 - Semi-urgent</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Department</label>
+            <select id="calc-los-dept" class="form-select">
+              <option value="Cardiology">Cardiology</option>
+              <option value="ICU">ICU</option>
+              <option value="Neurology">Neurology</option>
+              <option value="Pulmonology">Pulmonology</option>
+              <option value="General Surgery">General Surgery</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Diagnosis</label>
+            <select id="calc-los-diag" class="form-select">
+              <option value="Congestive Heart Failure">Congestive Heart Failure</option>
+              <option value="Acute Myocardial Infarction">Acute Myocardial Infarction</option>
+              <option value="Sepsis / Septic Shock">Sepsis / Septic Shock</option>
+              <option value="Acute Ischemic Stroke">Acute Ischemic Stroke</option>
+              <option value="Severe Pneumonia / ARDS">Severe Pneumonia / ARDS</option>
+            </select>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.4rem;">
+            <div class="form-group">
+              <label class="form-label">HR</label>
+              <input type="number" id="calc-los-hr" class="form-input" value="96">
+            </div>
+            <div class="form-group">
+              <label class="form-label">SpO2</label>
+              <input type="number" id="calc-los-spo2" class="form-input" value="93">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Sys BP</label>
+              <input type="number" id="calc-los-sys" class="form-input" value="145">
+            </div>
+          </div>
+
+          <button class="btn-primary-neon" style="width:100%;" id="btn-calc-los">
+            <i class="fa-solid fa-calculator"></i> Predict Length of Stay
+          </button>
+
+          <div class="calc-result-box" style="margin-top:1.25rem;">
+            <div style="font-size:0.75rem; color:#94a3b8; text-transform:uppercase;">Predicted Hospitalization</div>
+            <div class="calc-val-huge" id="res-los-val">5.8 Days</div>
+            <div style="font-size:0.8rem; color:#fff;" id="res-los-discharge">
+              Target: Oct 07, 2026
+            </div>
+            <div style="font-size:0.75rem; color:#00f0ff; margin-top:0.25rem;" id="res-los-category">
+              Standard Inpatient Care
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator 3: 30-Day Readmission Risk -->
+        <div class="glass-panel">
+          <div class="panel-header">
+            <h4 class="panel-title"><i class="fa-solid fa-shield-heart"></i> Readmission Risk Classifier</h4>
+            <span class="panel-badge">Model 3</span>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem;">
+            <div class="form-group">
+              <label class="form-label">Age</label>
+              <input type="number" id="calc-readmit-age" class="form-input" value="71">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Length of Stay</label>
+              <input type="number" id="calc-readmit-los" class="form-input" value="6.5">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Primary Diagnosis</label>
+            <select id="calc-readmit-diag" class="form-select">
+              <option value="Congestive Heart Failure">Congestive Heart Failure</option>
+              <option value="Sepsis / Septic Shock">Sepsis / Septic Shock</option>
+              <option value="COPD Exacerbation">COPD Exacerbation</option>
+              <option value="Acute Myocardial Infarction">Acute Myocardial Infarction</option>
+            </select>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.4rem;">
+            <div class="form-group">
+              <label class="form-label">HR</label>
+              <input type="number" id="calc-readmit-hr" class="form-input" value="88">
+            </div>
+            <div class="form-group">
+              <label class="form-label">SpO2</label>
+              <input type="number" id="calc-readmit-spo2" class="form-input" value="91">
+            </div>
+            <div class="form-group">
+              <label class="form-label">NEWS2</label>
+              <input type="number" id="calc-readmit-news2" class="form-input" value="5">
+            </div>
+          </div>
+
+          <button class="btn-primary-neon" style="width:100%; margin-top:0.4rem;" id="btn-calc-readmit">
+            <i class="fa-solid fa-calculator"></i> Evaluate Readmission Risk
+          </button>
+
+          <div class="calc-result-box" style="margin-top:1.25rem;">
+            <div style="font-size:0.75rem; color:#94a3b8; text-transform:uppercase;">Readmission Probability</div>
+            <div class="calc-val-huge" id="res-readmit-val" style="color:#f43f5e;">38.4%</div>
+            <div style="margin-bottom:0.5rem;">
+              <span class="rebalance-badge high" id="res-readmit-tier">MODERATE / HIGH RISK</span>
+            </div>
+            <ul style="font-size:0.72rem; color:#94a3b8; text-align:left; padding-left:1rem;"
+              id="res-readmit-interventions">
+              <li>Enroll in Remote Patient Monitoring (RPM Wearable SpO2)</li>
+              <li>Schedule 48-Hour Telehealth Follow-up</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         TAB 8: CASE STUDY & MODEL BENCHMARKS
+         ============================================================== -->
+    <section class="tab-pane" id="tab-case-study">
+      <div class="glass-panel" style="margin-bottom:2rem;">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title" style="font-size:1.35rem;"><i class="fa-solid fa-book-medical"></i> Clinical Case
+              Study & Quantitative System Benchmarks</h2>
+            <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.25rem;">
+              Title: <em>Optimizing Hospital Operations & Patient Outcomes using Predictive Analytics and Intelligent
+                Dashboards</em>
+            </p>
+          </div>
+          <span class="panel-badge">OLA Health OS Technical Report</span>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:1.25rem; margin-bottom:1.75rem;">
+          <div
+            style="background:rgba(12,19,34,0.7); border:1px solid var(--border-accent); border-radius:10px; padding:1.25rem; text-align:center;">
+            <div style="font-size:2rem; font-weight:800; color:#10b981; font-family:'Outfit';">-34.2%</div>
+            <div style="font-size:0.78rem; color:#94a3b8; text-transform:uppercase;">ER Wait Time Reduction</div>
+            <div style="font-size:0.72rem; color:#64748b; margin-top:0.2rem;">From 105 mins down to 69.2 mins</div>
+          </div>
+          <div
+            style="background:rgba(12,19,34,0.7); border:1px solid var(--border-accent); border-radius:10px; padding:1.25rem; text-align:center;">
+            <div style="font-size:2rem; font-weight:800; color:#00f0ff; font-family:'Outfit';">+28.5%</div>
+            <div style="font-size:0.78rem; color:#94a3b8; text-transform:uppercase;">Bed Turnaround Efficiency</div>
+            <div style="font-size:0.72rem; color:#64748b; margin-top:0.2rem;">Mean turnover lag reduced by 41 mins</div>
+          </div>
+          <div
+            style="background:rgba(12,19,34,0.7); border:1px solid var(--border-accent); border-radius:10px; padding:1.25rem; text-align:center;">
+            <div style="font-size:2rem; font-weight:800; color:#38bdf8; font-family:'Outfit';">-19.1%</div>
+            <div style="font-size:0.78rem; color:#94a3b8; text-transform:uppercase;">30-Day Readmission Decline</div>
+            <div style="font-size:0.72rem; color:#64748b; margin-top:0.2rem;">Proactive RPM remote surveillance</div>
+          </div>
+          <div
+            style="background:rgba(12,19,34,0.7); border:1px solid var(--border-accent); border-radius:10px; padding:1.25rem; text-align:center;">
+            <div style="font-size:2rem; font-weight:800; color:#f59e0b; font-family:'Outfit';">4.43 / 5</div>
+            <div style="font-size:0.78rem; color:#94a3b8; text-transform:uppercase;">Patient Satisfaction (HCAHPS)</div>
+            <div style="font-size:0.72rem; color:#64748b; margin-top:0.2rem;">+0.74 point clinical gain</div>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem;">
+          <div>
+            <h4 style="color:#00f0ff; font-family:'Outfit'; margin-bottom:0.5rem;">Executive Summary & Problem Statement
+            </h4>
+            <p style="font-size:0.84rem; color:#cbd5e1; line-height:1.6; margin-bottom:0.75rem;">
+              Modern hospital networks struggle with severe operational friction: emergency department overcrowding,
+              prolonged inpatient boarding, erratic staffing allocation, and unexpected patient readmissions.
+              Traditional legacy Electronic Health Records (EHRs) operate as passive digital filing cabinets rather than
+              proactive decision-support systems.
+            </p>
+            <p style="font-size:0.84rem; color:#cbd5e1; line-height:1.6;">
+              <strong>The OLA Command Center Paradigm:</strong> OLA Health OS was engineered as a decentralized, holographic command
+              center that "floats above" siloed department operations. By continuously ingesting data across IoT
+              wearable patches, smart bed load sensors, triage vitals, and meteorological forecasts, OLA Health OS provides
+              unified predictive visibility that eliminates bottlenecks before they materialize.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="color:#00f0ff; font-family:'Outfit'; margin-bottom:0.5rem;">Trained Machine Learning Model
+              Benchmarks</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Algorithm</th>
+                  <th>Primary Metric</th>
+                  <th>Secondary Metric</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ER Inflow Forecaster</strong></td>
+                  <td>Gradient Boosting Regressor</td>
+                  <td><span style="color:#10b981; font-family:'JetBrains Mono';">R² = <span
+                        id="metric-m1-r2">0.972</span></span></td>
+                  <td><span style="color:#94a3b8; font-family:'JetBrains Mono';">MAE = <span
+                        id="metric-m1-mae">0.280</span></span></td>
+                </tr>
+                <tr>
+                  <td><strong>Length of Stay (LoS)</strong></td>
+                  <td>Random Forest Regressor</td>
+                  <td><span style="color:#00f0ff; font-family:'JetBrains Mono';">MAE = <span id="metric-m2-mae">2.54
+                        days</span></span></td>
+                  <td><span style="color:#94a3b8; font-family:'JetBrains Mono';">R² = 0.537</span></td>
+                </tr>
+                <tr>
+                  <td><strong>30-Day Readmission Risk</strong></td>
+                  <td>Gradient Boosting Classifier</td>
+                  <td><span style="color:#38bdf8; font-family:'JetBrains Mono';">Acc = <span
+                        id="metric-m3-acc">80.9%</span></span></td>
+                  <td><span style="color:#94a3b8; font-family:'JetBrains Mono';">ROC-AUC = <span
+                        id="metric-m3-auc">0.635</span></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Feature Importance Row -->
+        <div style="margin-top:2rem;">
+          <h4 style="color:#fff; font-family:'Outfit'; margin-bottom:1rem;"><i class="fa-solid fa-brain"></i>
+            Algorithmic Feature Importance Rankings</h4>
+          <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1.25rem;">
+            <div
+              style="background:rgba(12,19,34,0.7); padding:1rem; border-radius:8px; border:1px solid var(--border-subtle);">
+              <h5 style="color:#00f0ff; font-size:0.82rem; margin-bottom:0.6rem;">ER Inflow Key Drivers</h5>
+              <div id="m1-features-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+            <div
+              style="background:rgba(12,19,34,0.7); padding:1rem; border-radius:8px; border:1px solid var(--border-subtle);">
+              <h5 style="color:#38bdf8; font-size:0.82rem; margin-bottom:0.6rem;">Length of Stay Key Drivers</h5>
+              <div id="m2-features-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+            <div
+              style="background:rgba(12,19,34,0.7); padding:1rem; border-radius:8px; border:1px solid var(--border-subtle);">
+              <h5 style="color:#f59e0b; font-size:0.82rem; margin-bottom:0.6rem;">Readmission Risk Key Drivers</h5>
+              <div id="m3-features-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Bed Inspection Modal -->
+  <div class="modal-overlay" id="bed-inspect-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="DigitalTwinManager.closeModal()">&times;</button>
+      <div id="bed-inspect-details">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/js/telemetry.js"></script>
+  <script src="/static/js/charts.js"></script>
+  <script src="/static/js/twin.js"></script>
+  <script src="/static/js/dashboard.js"></script>
+</body>
+
+</html>

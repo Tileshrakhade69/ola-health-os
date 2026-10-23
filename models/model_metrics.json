@@ -1,0 +1,122 @@
+{
+  "trained_at": "2026-10-01T21:20:40.682992",
+  "models": {
+    "er_inflow": {
+      "model_name": "ER Patient Inflow Forecaster",
+      "algorithm": "Gradient Boosting Regressor",
+      "metrics": {
+        "mae": 0.28,
+        "rmse": 0.385,
+        "r2": 0.972
+      },
+      "top_features": [
+        {
+          "feature": "rolling_mean_6h",
+          "importance": 0.5268
+        },
+        {
+          "feature": "lag_2h",
+          "importance": 0.1907
+        },
+        {
+          "feature": "lag_4h",
+          "importance": 0.1883
+        },
+        {
+          "feature": "hour",
+          "importance": 0.0838
+        },
+        {
+          "feature": "weather_Clear / Mild",
+          "importance": 0.0046
+        },
+        {
+          "feature": "day_of_week",
+          "importance": 0.0021
+        }
+      ]
+    },
+    "length_of_stay": {
+      "model_name": "Length of Stay (LoS) Predictor",
+      "algorithm": "Random Forest Regressor",
+      "metrics": {
+        "mae_days": 2.54,
+        "rmse_days": 3.53,
+        "r2": 0.537
+      },
+      "top_features": [
+        {
+          "feature": "charlson_comorbidity_index",
+          "importance": 0.2966
+        },
+        {
+          "feature": "diagnosis_Sepsis / Septic Shock",
+          "importance": 0.1297
+        },
+        {
+          "feature": "age",
+          "importance": 0.0784
+        },
+        {
+          "feature": "department_General Surgery",
+          "importance": 0.0662
+        },
+        {
+          "feature": "heart_rate",
+          "importance": 0.0528
+        },
+        {
+          "feature": "systolic_bp",
+          "importance": 0.0512
+        }
+      ]
+    },
+    "readmission_risk": {
+      "model_name": "30-Day Readmission Risk Classifier",
+      "algorithm": "Gradient Boosting Classifier",
+      "metrics": {
+        "accuracy": 0.8087,
+        "roc_auc": 0.6354,
+        "precision": 0.5,
+        "recall": 0.0294,
+        "f1_score": 0.0556,
+        "confusion_matrix": [
+          [
+            571,
+            4
+          ],
+          [
+            132,
+            4
+          ]
+        ]
+      },
+      "top_features": [
+        {
+          "feature": "heart_rate",
+          "importance": 0.2105
+        },
+        {
+          "feature": "length_of_stay_days",
+          "importance": 0.1936
+        },
+        {
+          "feature": "age",
+          "importance": 0.1393
+        },
+        {
+          "feature": "charlson_comorbidity_index",
+          "importance": 0.1081
+        },
+        {
+          "feature": "news2_deterioration_score",
+          "importance": 0.0742
+        },
+        {
+          "feature": "oxygen_saturation",
+          "importance": 0.043
+        }
+      ]
+    }
+  }
+}

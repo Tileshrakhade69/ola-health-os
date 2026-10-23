@@ -1,0 +1,297 @@
+staff_id,name,department,role,current_shift,patients_assigned,shift_hours_worked,workload_score,fatigue_risk_level,status
+STF-0001,Provider 2,Emergency,Attending Physician,Day (07:00-19:00),7,10.4,80.3,Moderate,Active
+STF-0002,Provider 3,Emergency,Attending Physician,Day (07:00-19:00),9,2.0,66.5,Normal,Active
+STF-0003,Provider 4,Emergency,Attending Physician,Night (19:00-07:00),6,9.7,70.6,Normal,Active
+STF-0004,Provider 5,Emergency,Attending Physician,Day (07:00-19:00),4,7.0,93.0,High,Off Duty
+STF-0005,Provider 6,Emergency,Emergency Resident,Day (07:00-15:00),2,10.0,72.6,Normal,Active
+STF-0006,Provider 7,Emergency,Emergency Resident,Day (07:00-15:00),2,4.2,89.0,High,Active
+STF-0007,Provider 8,Emergency,Emergency Resident,Evening (15:00-23:00),4,7.1,83.3,Moderate,Active
+STF-0008,Provider 9,Emergency,ICU Registered Nurse (RN),Night (19:00-07:00),1,4.9,92.6,High,Active
+STF-0009,Provider 10,Emergency,ICU Registered Nurse (RN),Night (19:00-07:00),3,8.5,85.6,High,Active
+STF-0010,Provider 11,Emergency,ICU Registered Nurse (RN),Day (07:00-19:00),2,8.9,62.1,Normal,On Break
+STF-0011,Provider 12,Emergency,ICU Registered Nurse (RN),Night (19:00-07:00),2,5.8,87.2,High,Active
+STF-0012,Provider 13,Emergency,ICU Registered Nurse (RN),Night (19:00-07:00),2,4.3,65.4,Normal,Active
+STF-0013,Provider 14,Emergency,ICU Registered Nurse (RN),Day (07:00-19:00),2,9.0,93.1,High,Active
+STF-0014,Provider 15,Emergency,ICU Registered Nurse (RN),Night (19:00-07:00),3,3.6,84.9,Moderate,Active
+STF-0015,Provider 16,Emergency,ICU Registered Nurse (RN),Night (19:00-07:00),2,2.9,71.4,Normal,Off Duty
+STF-0016,Provider 17,Emergency,ICU Registered Nurse (RN),Day (07:00-19:00),2,3.7,84.4,Moderate,Active
+STF-0017,Provider 18,Emergency,ICU Registered Nurse (RN),Day (07:00-19:00),3,7.0,73.9,Normal,On Break
+STF-0018,Provider 19,Emergency,ICU Registered Nurse (RN),Day (07:00-19:00),2,4.8,77.0,Moderate,Active
+STF-0019,Provider 20,Emergency,ICU Registered Nurse (RN),Night (19:00-07:00),3,7.3,88.3,High,Active
+STF-0020,Provider 21,Emergency,Telemetry / Floor Nurse,Day (07:00-19:00),5,4.2,91.9,High,Active
+STF-0021,Provider 22,Emergency,Telemetry / Floor Nurse,Day (07:00-19:00),3,6.3,69.0,Normal,Active
+STF-0022,Provider 23,Emergency,Telemetry / Floor Nurse,Day (07:00-19:00),5,4.2,93.4,High,Active
+STF-0023,Provider 24,Emergency,Telemetry / Floor Nurse,Day (07:00-19:00),5,9.2,63.1,Normal,Active
+STF-0024,Provider 25,Emergency,Telemetry / Floor Nurse,Night (19:00-07:00),4,8.0,89.9,High,Active
+STF-0025,Provider 26,Emergency,Telemetry / Floor Nurse,Night (19:00-07:00),5,7.5,87.9,High,Active
+STF-0026,Provider 27,Emergency,Telemetry / Floor Nurse,Day (07:00-19:00),3,6.7,82.1,Moderate,Active
+STF-0027,Provider 28,Emergency,Telemetry / Floor Nurse,Day (07:00-19:00),5,7.2,93.6,High,Active
+STF-0028,Provider 29,Emergency,Telemetry / Floor Nurse,Day (07:00-19:00),4,6.4,89.0,High,Active
+STF-0029,Provider 30,Emergency,Telemetry / Floor Nurse,Day (07:00-19:00),4,7.3,72.3,Normal,Active
+STF-0030,Provider 31,Emergency,Telemetry / Floor Nurse,Night (19:00-07:00),5,4.0,67.4,Normal,Active
+STF-0031,Provider 32,Emergency,Telemetry / Floor Nurse,Night (19:00-07:00),3,10.2,75.2,Moderate,Off Duty
+STF-0032,Provider 33,Emergency,Respiratory Therapist,Night (19:00-07:00),2,7.6,74.8,Moderate,Active
+STF-0033,Provider 34,Emergency,Respiratory Therapist,Day (07:00-19:00),9,8.3,65.7,Normal,Active
+STF-0034,Provider 35,Emergency,Respiratory Therapist,Night (19:00-07:00),8,9.7,85.6,High,Active
+STF-0035,Provider 36,Emergency,Bed Management Coordinator,Evening (16:00-00:00),40,2.9,89.1,High,Active
+STF-0036,Provider 37,Emergency,Bed Management Coordinator,Day (08:00-16:00),25,10.7,82.8,Moderate,Active
+STF-0037,Provider 38,Emergency,Bed Management Coordinator,Day (08:00-16:00),3,7.6,89.9,High,Active
+STF-0038,Provider 39,ICU,Attending Physician,Day (07:00-19:00),2,7.3,80.9,Moderate,On Break
+STF-0039,Provider 40,ICU,Attending Physician,Day (07:00-19:00),7,8.3,70.8,Normal,On Break
+STF-0040,Provider 41,ICU,Attending Physician,Night (19:00-07:00),5,2.4,81.4,Moderate,Active
+STF-0041,Provider 42,ICU,Attending Physician,Day (07:00-19:00),3,6.9,75.5,Moderate,Active
+STF-0042,Provider 43,ICU,Emergency Resident,Night (23:00-07:00),7,11.5,87.1,High,Active
+STF-0043,Provider 44,ICU,Emergency Resident,Evening (15:00-23:00),1,6.6,84.1,Moderate,Active
+STF-0044,Provider 45,ICU,Emergency Resident,Day (07:00-15:00),6,8.3,86.5,High,On Break
+STF-0045,Provider 46,ICU,ICU Registered Nurse (RN),Day (07:00-19:00),2,2.4,72.3,Normal,On Break
+STF-0046,Provider 47,ICU,ICU Registered Nurse (RN),Night (19:00-07:00),3,5.4,76.1,Moderate,Active
+STF-0047,Provider 48,ICU,ICU Registered Nurse (RN),Night (19:00-07:00),3,9.0,81.8,Moderate,Active
+STF-0048,Provider 49,ICU,ICU Registered Nurse (RN),Night (19:00-07:00),1,11.3,70.4,Normal,Active
+STF-0049,Provider 50,ICU,ICU Registered Nurse (RN),Day (07:00-19:00),1,4.9,93.1,High,Active
+STF-0050,Provider 51,ICU,ICU Registered Nurse (RN),Day (07:00-19:00),3,9.1,82.8,Moderate,Off Duty
+STF-0051,Provider 52,ICU,ICU Registered Nurse (RN),Night (19:00-07:00),1,7.1,89.2,High,Active
+STF-0052,Provider 53,ICU,ICU Registered Nurse (RN),Night (19:00-07:00),2,10.9,82.1,Moderate,Active
+STF-0053,Provider 54,ICU,ICU Registered Nurse (RN),Day (07:00-19:00),2,6.2,85.8,High,On Break
+STF-0054,Provider 55,ICU,ICU Registered Nurse (RN),Night (19:00-07:00),3,3.4,79.2,Moderate,Active
+STF-0055,Provider 56,ICU,ICU Registered Nurse (RN),Night (19:00-07:00),2,5.4,87.7,High,Active
+STF-0056,Provider 57,ICU,ICU Registered Nurse (RN),Night (19:00-07:00),2,9.7,75.2,Moderate,Active
+STF-0057,Provider 58,ICU,Telemetry / Floor Nurse,Day (07:00-19:00),3,10.1,88.2,High,Off Duty
+STF-0058,Provider 59,ICU,Telemetry / Floor Nurse,Day (07:00-19:00),2,3.3,64.1,Normal,Active
+STF-0059,Provider 60,ICU,Telemetry / Floor Nurse,Day (07:00-19:00),3,4.0,86.3,High,Active
+STF-0060,Provider 61,ICU,Telemetry / Floor Nurse,Night (19:00-07:00),4,3.5,73.7,Normal,Off Duty
+STF-0061,Provider 62,ICU,Telemetry / Floor Nurse,Day (07:00-19:00),2,6.8,83.2,Moderate,Off Duty
+STF-0062,Provider 63,ICU,Telemetry / Floor Nurse,Day (07:00-19:00),1,9.9,84.7,Moderate,Active
+STF-0063,Provider 64,ICU,Telemetry / Floor Nurse,Night (19:00-07:00),4,8.1,91.5,High,Off Duty
+STF-0064,Provider 65,ICU,Telemetry / Floor Nurse,Day (07:00-19:00),2,5.6,69.3,Normal,Off Duty
+STF-0065,Provider 66,ICU,Telemetry / Floor Nurse,Night (19:00-07:00),2,9.0,64.2,Normal,Active
+STF-0066,Provider 67,ICU,Telemetry / Floor Nurse,Night (19:00-07:00),1,6.4,87.5,High,Active
+STF-0067,Provider 68,ICU,Telemetry / Floor Nurse,Night (19:00-07:00),5,8.7,87.4,High,Active
+STF-0068,Provider 69,ICU,Telemetry / Floor Nurse,Day (07:00-19:00),4,5.4,73.1,Normal,Active
+STF-0069,Provider 70,ICU,Respiratory Therapist,Day (07:00-19:00),7,9.0,91.5,High,Off Duty
+STF-0070,Provider 71,ICU,Respiratory Therapist,Day (07:00-19:00),6,5.2,75.6,Moderate,Off Duty
+STF-0071,Provider 72,ICU,Respiratory Therapist,Day (07:00-19:00),9,5.8,64.5,Normal,Active
+STF-0072,Provider 73,ICU,Bed Management Coordinator,Evening (16:00-00:00),6,9.5,90.5,High,Active
+STF-0073,Provider 74,ICU,Bed Management Coordinator,Evening (16:00-00:00),20,10.4,83.4,Moderate,Active
+STF-0074,Provider 75,ICU,Bed Management Coordinator,Evening (16:00-00:00),11,6.6,88.2,High,Active
+STF-0075,Provider 76,Cardiology,Attending Physician,Day (07:00-19:00),2,9.7,85.6,High,On Break
+STF-0076,Provider 77,Cardiology,Attending Physician,Night (19:00-07:00),6,4.3,71.2,Normal,Active
+STF-0077,Provider 78,Cardiology,Attending Physician,Day (07:00-19:00),4,10.1,88.0,High,Active
+STF-0078,Provider 79,Cardiology,Attending Physician,Day (07:00-19:00),6,5.7,80.4,Moderate,On Break
+STF-0079,Provider 80,Cardiology,Emergency Resident,Day (07:00-15:00),2,5.6,79.9,Moderate,Active
+STF-0080,Provider 81,Cardiology,Emergency Resident,Night (23:00-07:00),7,5.9,85.9,High,Off Duty
+STF-0081,Provider 82,Cardiology,Emergency Resident,Day (07:00-15:00),3,5.7,66.5,Normal,Active
+STF-0082,Provider 83,Cardiology,ICU Registered Nurse (RN),Day (07:00-19:00),3,3.3,88.0,High,On Break
+STF-0083,Provider 84,Cardiology,ICU Registered Nurse (RN),Day (07:00-19:00),3,4.1,66.3,Normal,Active
+STF-0084,Provider 85,Cardiology,ICU Registered Nurse (RN),Day (07:00-19:00),3,8.9,64.3,Normal,Off Duty
+STF-0085,Provider 86,Cardiology,ICU Registered Nurse (RN),Day (07:00-19:00),2,7.9,90.5,High,Active
+STF-0086,Provider 87,Cardiology,ICU Registered Nurse (RN),Night (19:00-07:00),2,5.1,89.7,High,Active
+STF-0087,Provider 88,Cardiology,ICU Registered Nurse (RN),Night (19:00-07:00),1,4.8,88.1,High,Active
+STF-0088,Provider 89,Cardiology,ICU Registered Nurse (RN),Day (07:00-19:00),3,2.6,69.9,Normal,Active
+STF-0089,Provider 90,Cardiology,ICU Registered Nurse (RN),Night (19:00-07:00),2,4.9,91.1,High,On Break
+STF-0090,Provider 91,Cardiology,ICU Registered Nurse (RN),Night (19:00-07:00),1,5.6,88.0,High,Active
+STF-0091,Provider 92,Cardiology,ICU Registered Nurse (RN),Day (07:00-19:00),1,7.6,74.1,Moderate,Active
+STF-0092,Provider 93,Cardiology,ICU Registered Nurse (RN),Night (19:00-07:00),2,5.4,90.6,High,Active
+STF-0093,Provider 94,Cardiology,ICU Registered Nurse (RN),Day (07:00-19:00),2,10.1,77.6,Moderate,Active
+STF-0094,Provider 95,Cardiology,Telemetry / Floor Nurse,Day (07:00-19:00),1,4.1,71.6,Normal,On Break
+STF-0095,Provider 96,Cardiology,Telemetry / Floor Nurse,Night (19:00-07:00),1,9.6,62.1,Normal,Active
+STF-0096,Provider 97,Cardiology,Telemetry / Floor Nurse,Day (07:00-19:00),4,4.6,88.6,High,Active
+STF-0097,Provider 98,Cardiology,Telemetry / Floor Nurse,Night (19:00-07:00),2,3.3,90.0,High,Active
+STF-0098,Provider 99,Cardiology,Telemetry / Floor Nurse,Day (07:00-19:00),2,9.2,80.3,Moderate,Off Duty
+STF-0099,Provider 100,Cardiology,Telemetry / Floor Nurse,Day (07:00-19:00),2,5.6,70.1,Normal,Active
+STF-0100,Provider 101,Cardiology,Telemetry / Floor Nurse,Day (07:00-19:00),3,7.5,74.0,Normal,Active
+STF-0101,Provider 102,Cardiology,Telemetry / Floor Nurse,Night (19:00-07:00),2,9.4,65.0,Normal,Active
+STF-0102,Provider 103,Cardiology,Telemetry / Floor Nurse,Night (19:00-07:00),2,2.6,80.9,Moderate,On Break
+STF-0103,Provider 104,Cardiology,Telemetry / Floor Nurse,Day (07:00-19:00),3,4.7,71.3,Normal,Active
+STF-0104,Provider 105,Cardiology,Telemetry / Floor Nurse,Night (19:00-07:00),3,2.5,75.6,Moderate,Active
+STF-0105,Provider 106,Cardiology,Telemetry / Floor Nurse,Night (19:00-07:00),1,8.9,78.1,Moderate,Active
+STF-0106,Provider 107,Cardiology,Respiratory Therapist,Day (07:00-19:00),3,2.8,64.7,Normal,Active
+STF-0107,Provider 108,Cardiology,Respiratory Therapist,Day (07:00-19:00),6,7.1,70.0,Normal,Active
+STF-0108,Provider 109,Cardiology,Respiratory Therapist,Day (07:00-19:00),1,9.6,92.2,High,Active
+STF-0109,Provider 110,Cardiology,Bed Management Coordinator,Evening (16:00-00:00),32,5.9,65.1,Normal,Active
+STF-0110,Provider 111,Cardiology,Bed Management Coordinator,Evening (16:00-00:00),17,6.3,71.6,Normal,Active
+STF-0111,Provider 112,Cardiology,Bed Management Coordinator,Day (08:00-16:00),22,7.5,66.6,Normal,Active
+STF-0112,Provider 113,Neurology,Attending Physician,Day (07:00-19:00),3,8.7,73.9,Normal,Active
+STF-0113,Provider 114,Neurology,Attending Physician,Night (19:00-07:00),2,2.5,63.1,Normal,Off Duty
+STF-0114,Provider 115,Neurology,Attending Physician,Night (19:00-07:00),9,8.6,90.0,High,Active
+STF-0115,Provider 116,Neurology,Attending Physician,Day (07:00-19:00),9,3.3,83.6,Moderate,Active
+STF-0116,Provider 117,Neurology,Emergency Resident,Day (07:00-15:00),6,2.3,65.1,Normal,Active
+STF-0117,Provider 118,Neurology,Emergency Resident,Day (07:00-15:00),1,5.0,65.3,Normal,Active
+STF-0118,Provider 119,Neurology,Emergency Resident,Day (07:00-15:00),7,5.8,62.6,Normal,On Break
+STF-0119,Provider 120,Neurology,ICU Registered Nurse (RN),Day (07:00-19:00),2,3.2,89.2,High,On Break
+STF-0120,Provider 121,Neurology,ICU Registered Nurse (RN),Night (19:00-07:00),3,4.2,63.2,Normal,Off Duty
+STF-0121,Provider 122,Neurology,ICU Registered Nurse (RN),Day (07:00-19:00),1,5.5,67.9,Normal,Active
+STF-0122,Provider 123,Neurology,ICU Registered Nurse (RN),Day (07:00-19:00),2,7.8,65.1,Normal,Active
+STF-0123,Provider 124,Neurology,ICU Registered Nurse (RN),Day (07:00-19:00),1,7.1,65.6,Normal,Active
+STF-0124,Provider 125,Neurology,ICU Registered Nurse (RN),Day (07:00-19:00),2,5.5,68.2,Normal,Active
+STF-0125,Provider 126,Neurology,ICU Registered Nurse (RN),Day (07:00-19:00),1,9.0,87.5,High,Active
+STF-0126,Provider 127,Neurology,ICU Registered Nurse (RN),Night (19:00-07:00),1,4.1,83.7,Moderate,Active
+STF-0127,Provider 128,Neurology,ICU Registered Nurse (RN),Night (19:00-07:00),3,7.8,71.5,Normal,Active
+STF-0128,Provider 129,Neurology,ICU Registered Nurse (RN),Day (07:00-19:00),2,6.1,67.5,Normal,Active
+STF-0129,Provider 130,Neurology,ICU Registered Nurse (RN),Day (07:00-19:00),3,7.5,85.9,High,Active
+STF-0130,Provider 131,Neurology,ICU Registered Nurse (RN),Night (19:00-07:00),2,6.5,86.0,High,Off Duty
+STF-0131,Provider 132,Neurology,Telemetry / Floor Nurse,Day (07:00-19:00),3,8.1,70.9,Normal,Active
+STF-0132,Provider 133,Neurology,Telemetry / Floor Nurse,Night (19:00-07:00),2,9.9,88.6,High,Active
+STF-0133,Provider 134,Neurology,Telemetry / Floor Nurse,Day (07:00-19:00),5,5.8,93.9,High,On Break
+STF-0134,Provider 135,Neurology,Telemetry / Floor Nurse,Day (07:00-19:00),4,5.7,70.6,Normal,Active
+STF-0135,Provider 136,Neurology,Telemetry / Floor Nurse,Day (07:00-19:00),3,7.9,89.9,High,Active
+STF-0136,Provider 137,Neurology,Telemetry / Floor Nurse,Night (19:00-07:00),3,11.4,65.4,Normal,Active
+STF-0137,Provider 138,Neurology,Telemetry / Floor Nurse,Night (19:00-07:00),4,3.5,89.2,High,On Break
+STF-0138,Provider 139,Neurology,Telemetry / Floor Nurse,Night (19:00-07:00),2,8.8,91.6,High,Active
+STF-0139,Provider 140,Neurology,Telemetry / Floor Nurse,Night (19:00-07:00),3,8.5,68.7,Normal,Off Duty
+STF-0140,Provider 141,Neurology,Telemetry / Floor Nurse,Day (07:00-19:00),5,7.5,86.4,High,On Break
+STF-0141,Provider 142,Neurology,Telemetry / Floor Nurse,Day (07:00-19:00),2,10.7,66.9,Normal,Active
+STF-0142,Provider 143,Neurology,Telemetry / Floor Nurse,Night (19:00-07:00),3,4.8,77.8,Moderate,Active
+STF-0143,Provider 144,Neurology,Respiratory Therapist,Day (07:00-19:00),6,8.1,67.0,Normal,Off Duty
+STF-0144,Provider 145,Neurology,Respiratory Therapist,Day (07:00-19:00),8,4.1,85.8,High,Active
+STF-0145,Provider 146,Neurology,Respiratory Therapist,Night (19:00-07:00),5,9.1,75.1,Moderate,Active
+STF-0146,Provider 147,Neurology,Bed Management Coordinator,Day (08:00-16:00),6,8.9,75.2,Moderate,Active
+STF-0147,Provider 148,Neurology,Bed Management Coordinator,Evening (16:00-00:00),13,7.8,80.9,Moderate,On Break
+STF-0148,Provider 149,Neurology,Bed Management Coordinator,Day (08:00-16:00),19,4.1,75.3,Moderate,Off Duty
+STF-0149,Provider 150,General Surgery,Attending Physician,Day (07:00-19:00),9,6.9,65.2,Normal,Active
+STF-0150,Provider 151,General Surgery,Attending Physician,Night (19:00-07:00),3,6.7,64.8,Normal,Active
+STF-0151,Provider 152,General Surgery,Attending Physician,Day (07:00-19:00),5,3.6,74.1,Moderate,On Break
+STF-0152,Provider 153,General Surgery,Attending Physician,Day (07:00-19:00),3,7.8,92.2,High,On Break
+STF-0153,Provider 154,General Surgery,Emergency Resident,Night (23:00-07:00),1,10.5,90.9,High,Active
+STF-0154,Provider 155,General Surgery,Emergency Resident,Evening (15:00-23:00),1,11.3,80.4,Moderate,Off Duty
+STF-0155,Provider 156,General Surgery,Emergency Resident,Evening (15:00-23:00),5,4.8,87.1,High,Active
+STF-0156,Provider 157,General Surgery,ICU Registered Nurse (RN),Night (19:00-07:00),2,10.0,67.9,Normal,Active
+STF-0157,Provider 158,General Surgery,ICU Registered Nurse (RN),Day (07:00-19:00),3,5.3,74.4,Moderate,Active
+STF-0158,Provider 159,General Surgery,ICU Registered Nurse (RN),Day (07:00-19:00),2,9.1,81.1,Moderate,Active
+STF-0159,Provider 160,General Surgery,ICU Registered Nurse (RN),Night (19:00-07:00),2,7.4,62.4,Normal,Active
+STF-0160,Provider 161,General Surgery,ICU Registered Nurse (RN),Day (07:00-19:00),1,8.1,93.8,High,Active
+STF-0161,Provider 162,General Surgery,ICU Registered Nurse (RN),Night (19:00-07:00),2,2.8,85.0,Moderate,Active
+STF-0162,Provider 163,General Surgery,ICU Registered Nurse (RN),Day (07:00-19:00),3,4.1,75.2,Moderate,Active
+STF-0163,Provider 164,General Surgery,ICU Registered Nurse (RN),Day (07:00-19:00),3,3.0,63.1,Normal,Active
+STF-0164,Provider 165,General Surgery,ICU Registered Nurse (RN),Day (07:00-19:00),3,4.3,65.6,Normal,Active
+STF-0165,Provider 166,General Surgery,ICU Registered Nurse (RN),Day (07:00-19:00),1,4.2,86.4,High,Active
+STF-0166,Provider 167,General Surgery,ICU Registered Nurse (RN),Night (19:00-07:00),3,6.0,68.9,Normal,Active
+STF-0167,Provider 168,General Surgery,ICU Registered Nurse (RN),Day (07:00-19:00),1,9.5,92.6,High,Active
+STF-0168,Provider 169,General Surgery,Telemetry / Floor Nurse,Night (19:00-07:00),1,2.7,64.8,Normal,Active
+STF-0169,Provider 170,General Surgery,Telemetry / Floor Nurse,Day (07:00-19:00),5,10.6,63.2,Normal,Active
+STF-0170,Provider 171,General Surgery,Telemetry / Floor Nurse,Night (19:00-07:00),2,8.2,62.3,Normal,Active
+STF-0171,Provider 172,General Surgery,Telemetry / Floor Nurse,Day (07:00-19:00),1,5.0,86.7,High,On Break
+STF-0172,Provider 173,General Surgery,Telemetry / Floor Nurse,Day (07:00-19:00),1,7.0,90.6,High,On Break
+STF-0173,Provider 174,General Surgery,Telemetry / Floor Nurse,Night (19:00-07:00),5,5.8,89.3,High,Active
+STF-0174,Provider 175,General Surgery,Telemetry / Floor Nurse,Day (07:00-19:00),1,7.9,85.9,High,Active
+STF-0175,Provider 176,General Surgery,Telemetry / Floor Nurse,Night (19:00-07:00),5,9.3,66.6,Normal,Active
+STF-0176,Provider 177,General Surgery,Telemetry / Floor Nurse,Night (19:00-07:00),2,3.5,71.7,Normal,Active
+STF-0177,Provider 178,General Surgery,Telemetry / Floor Nurse,Night (19:00-07:00),3,8.6,68.3,Normal,Active
+STF-0178,Provider 179,General Surgery,Telemetry / Floor Nurse,Day (07:00-19:00),5,7.6,77.5,Moderate,Active
+STF-0179,Provider 180,General Surgery,Telemetry / Floor Nurse,Night (19:00-07:00),2,6.6,63.9,Normal,On Break
+STF-0180,Provider 181,General Surgery,Respiratory Therapist,Day (07:00-19:00),2,10.3,87.3,High,Active
+STF-0181,Provider 182,General Surgery,Respiratory Therapist,Day (07:00-19:00),5,10.1,80.7,Moderate,Active
+STF-0182,Provider 183,General Surgery,Respiratory Therapist,Day (07:00-19:00),7,10.2,71.7,Normal,Active
+STF-0183,Provider 184,General Surgery,Bed Management Coordinator,Day (08:00-16:00),7,10.0,71.3,Normal,Active
+STF-0184,Provider 185,General Surgery,Bed Management Coordinator,Evening (16:00-00:00),47,10.9,72.1,Normal,Active
+STF-0185,Provider 186,General Surgery,Bed Management Coordinator,Day (08:00-16:00),25,6.8,93.0,High,Active
+STF-0186,Provider 187,Pulmonology,Attending Physician,Night (19:00-07:00),2,2.7,89.5,High,Active
+STF-0187,Provider 188,Pulmonology,Attending Physician,Day (07:00-19:00),6,4.9,63.2,Normal,Off Duty
+STF-0188,Provider 189,Pulmonology,Attending Physician,Night (19:00-07:00),6,4.7,65.9,Normal,Active
+STF-0189,Provider 190,Pulmonology,Attending Physician,Day (07:00-19:00),3,2.5,65.8,Normal,Active
+STF-0190,Provider 191,Pulmonology,Emergency Resident,Day (07:00-15:00),2,2.5,91.4,High,Active
+STF-0191,Provider 192,Pulmonology,Emergency Resident,Evening (15:00-23:00),2,2.6,92.9,High,Active
+STF-0192,Provider 193,Pulmonology,Emergency Resident,Evening (15:00-23:00),7,3.7,72.8,Normal,Active
+STF-0193,Provider 194,Pulmonology,ICU Registered Nurse (RN),Night (19:00-07:00),1,8.0,90.6,High,Active
+STF-0194,Provider 195,Pulmonology,ICU Registered Nurse (RN),Day (07:00-19:00),2,7.2,91.9,High,Active
+STF-0195,Provider 196,Pulmonology,ICU Registered Nurse (RN),Night (19:00-07:00),3,5.4,78.7,Moderate,Active
+STF-0196,Provider 197,Pulmonology,ICU Registered Nurse (RN),Night (19:00-07:00),3,7.7,78.2,Moderate,Off Duty
+STF-0197,Provider 198,Pulmonology,ICU Registered Nurse (RN),Day (07:00-19:00),2,8.0,73.8,Normal,Active
+STF-0198,Provider 199,Pulmonology,ICU Registered Nurse (RN),Night (19:00-07:00),3,10.7,76.4,Moderate,Active
+STF-0199,Provider 200,Pulmonology,ICU Registered Nurse (RN),Night (19:00-07:00),1,3.4,86.9,High,Off Duty
+STF-0200,Provider 201,Pulmonology,ICU Registered Nurse (RN),Night (19:00-07:00),1,3.5,82.4,Moderate,Active
+STF-0201,Provider 202,Pulmonology,ICU Registered Nurse (RN),Night (19:00-07:00),1,5.6,75.0,Moderate,Active
+STF-0202,Provider 203,Pulmonology,ICU Registered Nurse (RN),Day (07:00-19:00),1,10.2,83.2,Moderate,Active
+STF-0203,Provider 204,Pulmonology,ICU Registered Nurse (RN),Night (19:00-07:00),1,11.4,65.6,Normal,Active
+STF-0204,Provider 205,Pulmonology,ICU Registered Nurse (RN),Night (19:00-07:00),1,9.5,89.6,High,Active
+STF-0205,Provider 206,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),1,8.1,90.1,High,On Break
+STF-0206,Provider 207,Pulmonology,Telemetry / Floor Nurse,Night (19:00-07:00),1,4.6,79.3,Moderate,Off Duty
+STF-0207,Provider 208,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),3,2.1,77.5,Moderate,Active
+STF-0208,Provider 209,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),1,5.3,78.0,Moderate,Active
+STF-0209,Provider 210,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),1,3.4,66.5,Normal,Active
+STF-0210,Provider 211,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),3,6.5,71.1,Normal,On Break
+STF-0211,Provider 212,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),4,7.7,73.5,Normal,Active
+STF-0212,Provider 213,Pulmonology,Telemetry / Floor Nurse,Night (19:00-07:00),4,7.3,65.0,Normal,Active
+STF-0213,Provider 214,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),5,3.0,69.3,Normal,Active
+STF-0214,Provider 215,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),1,10.1,73.1,Normal,Active
+STF-0215,Provider 216,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),4,6.2,72.2,Normal,Active
+STF-0216,Provider 217,Pulmonology,Telemetry / Floor Nurse,Day (07:00-19:00),1,10.8,91.6,High,Active
+STF-0217,Provider 218,Pulmonology,Respiratory Therapist,Night (19:00-07:00),8,2.4,92.6,High,Active
+STF-0218,Provider 219,Pulmonology,Respiratory Therapist,Day (07:00-19:00),13,2.2,62.9,Normal,Active
+STF-0219,Provider 220,Pulmonology,Respiratory Therapist,Night (19:00-07:00),4,10.2,65.3,Normal,Off Duty
+STF-0220,Provider 221,Pulmonology,Bed Management Coordinator,Day (08:00-16:00),32,10.3,71.6,Normal,Active
+STF-0221,Provider 222,Pulmonology,Bed Management Coordinator,Day (08:00-16:00),14,6.5,91.8,High,Active
+STF-0222,Provider 223,Pulmonology,Bed Management Coordinator,Evening (16:00-00:00),46,3.2,71.2,Normal,Active
+STF-0223,Provider 224,Orthopedics,Attending Physician,Day (07:00-19:00),7,10.8,82.5,Moderate,Active
+STF-0224,Provider 225,Orthopedics,Attending Physician,Night (19:00-07:00),4,11.3,69.1,Normal,Active
+STF-0225,Provider 226,Orthopedics,Attending Physician,Day (07:00-19:00),3,7.3,83.6,Moderate,Active
+STF-0226,Provider 227,Orthopedics,Attending Physician,Day (07:00-19:00),8,7.9,65.1,Normal,Off Duty
+STF-0227,Provider 228,Orthopedics,Emergency Resident,Evening (15:00-23:00),7,4.3,70.0,Normal,Active
+STF-0228,Provider 229,Orthopedics,Emergency Resident,Night (23:00-07:00),3,5.2,80.4,Moderate,Active
+STF-0229,Provider 230,Orthopedics,Emergency Resident,Evening (15:00-23:00),6,7.6,91.3,High,Active
+STF-0230,Provider 231,Orthopedics,ICU Registered Nurse (RN),Day (07:00-19:00),1,7.5,79.4,Moderate,Active
+STF-0231,Provider 232,Orthopedics,ICU Registered Nurse (RN),Night (19:00-07:00),2,8.1,81.3,Moderate,Active
+STF-0232,Provider 233,Orthopedics,ICU Registered Nurse (RN),Night (19:00-07:00),2,9.6,90.6,High,Active
+STF-0233,Provider 234,Orthopedics,ICU Registered Nurse (RN),Night (19:00-07:00),1,5.1,64.1,Normal,Active
+STF-0234,Provider 235,Orthopedics,ICU Registered Nurse (RN),Day (07:00-19:00),1,6.2,76.5,Moderate,Active
+STF-0235,Provider 236,Orthopedics,ICU Registered Nurse (RN),Night (19:00-07:00),2,2.9,72.2,Normal,Active
+STF-0236,Provider 237,Orthopedics,ICU Registered Nurse (RN),Day (07:00-19:00),3,2.6,71.6,Normal,Active
+STF-0237,Provider 238,Orthopedics,ICU Registered Nurse (RN),Day (07:00-19:00),1,8.9,78.4,Moderate,Active
+STF-0238,Provider 239,Orthopedics,ICU Registered Nurse (RN),Day (07:00-19:00),3,4.8,82.5,Moderate,Active
+STF-0239,Provider 240,Orthopedics,ICU Registered Nurse (RN),Night (19:00-07:00),1,9.6,89.5,High,On Break
+STF-0240,Provider 241,Orthopedics,ICU Registered Nurse (RN),Night (19:00-07:00),1,3.3,83.6,Moderate,Active
+STF-0241,Provider 242,Orthopedics,ICU Registered Nurse (RN),Day (07:00-19:00),1,2.3,71.6,Normal,Active
+STF-0242,Provider 243,Orthopedics,Telemetry / Floor Nurse,Day (07:00-19:00),4,5.2,71.9,Normal,Off Duty
+STF-0243,Provider 244,Orthopedics,Telemetry / Floor Nurse,Night (19:00-07:00),2,5.2,81.2,Moderate,Active
+STF-0244,Provider 245,Orthopedics,Telemetry / Floor Nurse,Day (07:00-19:00),5,7.3,74.3,Moderate,Active
+STF-0245,Provider 246,Orthopedics,Telemetry / Floor Nurse,Day (07:00-19:00),2,2.6,70.9,Normal,Off Duty
+STF-0246,Provider 247,Orthopedics,Telemetry / Floor Nurse,Day (07:00-19:00),1,9.6,69.1,Normal,Active
+STF-0247,Provider 248,Orthopedics,Telemetry / Floor Nurse,Night (19:00-07:00),5,10.1,73.5,Normal,Active
+STF-0248,Provider 249,Orthopedics,Telemetry / Floor Nurse,Day (07:00-19:00),2,4.7,78.8,Moderate,Off Duty
+STF-0249,Provider 250,Orthopedics,Telemetry / Floor Nurse,Day (07:00-19:00),2,10.6,81.4,Moderate,Active
+STF-0250,Provider 251,Orthopedics,Telemetry / Floor Nurse,Day (07:00-19:00),1,4.8,76.2,Moderate,Active
+STF-0251,Provider 252,Orthopedics,Telemetry / Floor Nurse,Day (07:00-19:00),1,2.8,88.5,High,Active
+STF-0252,Provider 253,Orthopedics,Telemetry / Floor Nurse,Day (07:00-19:00),2,4.3,91.0,High,Active
+STF-0253,Provider 254,Orthopedics,Telemetry / Floor Nurse,Night (19:00-07:00),2,10.2,74.2,Moderate,On Break
+STF-0254,Provider 255,Orthopedics,Respiratory Therapist,Night (19:00-07:00),2,5.4,69.1,Normal,Active
+STF-0255,Provider 256,Orthopedics,Respiratory Therapist,Day (07:00-19:00),3,3.5,65.9,Normal,Active
+STF-0256,Provider 257,Orthopedics,Respiratory Therapist,Night (19:00-07:00),2,6.0,62.2,Normal,Active
+STF-0257,Provider 258,Orthopedics,Bed Management Coordinator,Day (08:00-16:00),13,4.3,65.4,Normal,Active
+STF-0258,Provider 259,Orthopedics,Bed Management Coordinator,Day (08:00-16:00),25,7.7,77.7,Moderate,Active
+STF-0259,Provider 260,Orthopedics,Bed Management Coordinator,Day (08:00-16:00),30,5.2,67.9,Normal,Active
+STF-0260,Provider 261,Pediatrics,Attending Physician,Day (07:00-19:00),4,8.8,67.9,Normal,Active
+STF-0261,Provider 262,Pediatrics,Attending Physician,Night (19:00-07:00),7,5.4,64.0,Normal,Active
+STF-0262,Provider 263,Pediatrics,Attending Physician,Day (07:00-19:00),6,7.9,85.3,High,On Break
+STF-0263,Provider 264,Pediatrics,Attending Physician,Day (07:00-19:00),8,5.3,62.0,Normal,On Break
+STF-0264,Provider 265,Pediatrics,Emergency Resident,Day (07:00-15:00),2,11.1,66.4,Normal,Active
+STF-0265,Provider 266,Pediatrics,Emergency Resident,Evening (15:00-23:00),6,9.3,76.9,Moderate,Active
+STF-0266,Provider 267,Pediatrics,Emergency Resident,Evening (15:00-23:00),6,10.0,71.3,Normal,Active
+STF-0267,Provider 268,Pediatrics,ICU Registered Nurse (RN),Day (07:00-19:00),3,5.4,81.7,Moderate,Active
+STF-0268,Provider 269,Pediatrics,ICU Registered Nurse (RN),Day (07:00-19:00),3,11.3,91.4,High,Active
+STF-0269,Provider 270,Pediatrics,ICU Registered Nurse (RN),Night (19:00-07:00),2,5.3,84.8,Moderate,Active
+STF-0270,Provider 271,Pediatrics,ICU Registered Nurse (RN),Night (19:00-07:00),1,7.5,64.1,Normal,Active
+STF-0271,Provider 272,Pediatrics,ICU Registered Nurse (RN),Night (19:00-07:00),1,8.3,77.3,Moderate,Active
+STF-0272,Provider 273,Pediatrics,ICU Registered Nurse (RN),Day (07:00-19:00),1,8.4,67.0,Normal,Active
+STF-0273,Provider 274,Pediatrics,ICU Registered Nurse (RN),Night (19:00-07:00),2,6.5,62.8,Normal,Active
+STF-0274,Provider 275,Pediatrics,ICU Registered Nurse (RN),Night (19:00-07:00),1,8.5,69.9,Normal,Active
+STF-0275,Provider 276,Pediatrics,ICU Registered Nurse (RN),Night (19:00-07:00),1,3.3,80.7,Moderate,On Break
+STF-0276,Provider 277,Pediatrics,ICU Registered Nurse (RN),Night (19:00-07:00),2,4.1,82.7,Moderate,Active
+STF-0277,Provider 278,Pediatrics,ICU Registered Nurse (RN),Day (07:00-19:00),1,5.0,71.2,Normal,Active
+STF-0278,Provider 279,Pediatrics,ICU Registered Nurse (RN),Day (07:00-19:00),1,9.9,92.0,High,Active
+STF-0279,Provider 280,Pediatrics,Telemetry / Floor Nurse,Day (07:00-19:00),3,10.6,80.2,Moderate,Active
+STF-0280,Provider 281,Pediatrics,Telemetry / Floor Nurse,Day (07:00-19:00),1,3.4,84.5,Moderate,Active
+STF-0281,Provider 282,Pediatrics,Telemetry / Floor Nurse,Night (19:00-07:00),2,11.2,74.2,Moderate,Active
+STF-0282,Provider 283,Pediatrics,Telemetry / Floor Nurse,Night (19:00-07:00),4,3.9,65.3,Normal,Active
+STF-0283,Provider 284,Pediatrics,Telemetry / Floor Nurse,Night (19:00-07:00),1,11.4,73.0,Normal,On Break
+STF-0284,Provider 285,Pediatrics,Telemetry / Floor Nurse,Day (07:00-19:00),1,4.6,63.3,Normal,On Break
+STF-0285,Provider 286,Pediatrics,Telemetry / Floor Nurse,Night (19:00-07:00),1,6.1,87.7,High,Active
+STF-0286,Provider 287,Pediatrics,Telemetry / Floor Nurse,Night (19:00-07:00),4,4.1,76.2,Moderate,On Break
+STF-0287,Provider 288,Pediatrics,Telemetry / Floor Nurse,Day (07:00-19:00),3,11.4,87.8,High,Active
+STF-0288,Provider 289,Pediatrics,Telemetry / Floor Nurse,Night (19:00-07:00),5,4.4,69.1,Normal,Off Duty
+STF-0289,Provider 290,Pediatrics,Telemetry / Floor Nurse,Night (19:00-07:00),2,9.1,83.5,Moderate,Active
+STF-0290,Provider 291,Pediatrics,Telemetry / Floor Nurse,Night (19:00-07:00),3,4.8,70.3,Normal,Active
+STF-0291,Provider 292,Pediatrics,Respiratory Therapist,Day (07:00-19:00),11,4.7,70.9,Normal,Active
+STF-0292,Provider 293,Pediatrics,Respiratory Therapist,Day (07:00-19:00),6,3.3,62.7,Normal,Active
+STF-0293,Provider 294,Pediatrics,Respiratory Therapist,Night (19:00-07:00),13,6.0,80.5,Moderate,Active
+STF-0294,Provider 295,Pediatrics,Bed Management Coordinator,Evening (16:00-00:00),8,8.4,89.5,High,On Break
+STF-0295,Provider 296,Pediatrics,Bed Management Coordinator,Day (08:00-16:00),45,8.8,86.0,High,Active
+STF-0296,Provider 297,Pediatrics,Bed Management Coordinator,Day (08:00-16:00),36,7.8,85.7,High,Active
